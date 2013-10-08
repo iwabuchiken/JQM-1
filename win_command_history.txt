@@ -1,0 +1,66 @@
+a
+pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && rails s --port 3001
+
+pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+
+pushd C:\WORKS\WS\WS_Android\IFM_R_1
+gitk
+
+C:\WORKS\PROGRAMS\FreeMind\Freemind.exe C:\WORKS\WORKSPACES_ANDROID\FM\NewsReader3_R\NewsReader3.mm
+
+pushd C:\WORKS\WS\WS_Android\IFM_R_1
+rails s --port 3001
+
+
+pushd C:\WORKS\WORKSPACES_APTANA\NewsReader3
+
+
+
+[Git]
+git init && g a . && gitk
+g a . && gitk
+
+git log --grep=master -6
+
+[Set up 2013/05/17 12:23:23]----------------------------
+#bundle install
+
+rails s --port 3001
+
+gem install heroku --no-ri --no-rdoc
+
+heroku keys:add
+
+		Found existing public key: C:/Users/IwabuchiKen/.ssh/id_rsa.pub
+		Uploading SSH public key C:/Users/IwabuchiKen/.ssh/id_rsa.pub... done
+
+heroku create --stack cedar
+
+heroku rename cosmos-cr6
+
+g p heroku master
+
+g p origin master && g p heroku master
+
+#heroku open
+
+[B1 2013/05/17 12:23:23]----------------------------
+#rails generate scaffold Image file_name:string file_path:string memos:text tags:string table_name:string last_viewed_at:integer created_at_mill:integer updated_at_mill:integer date_added:integer date_modified:integer loc_file_id:integer loc_created_at:integer loc_modified_at:integer
+
+bundle exec rake db:migrate
+
+#g p origin master && g p heroku master && heroku run rake db:migrate
+
+g p origin master && g p heroku master
+
+[B2_v-2.1-e2 2013/05/28 16:39:26]----------------------------
+#rails generate controller admin main sub1 sub2
+
+aa
+============STORAGE============================
+
+============EOF============
