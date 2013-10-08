@@ -1,4 +1,13 @@
 JQM1::Application.routes.draw do
+  
+  root :to => 'sample#index'
+  
+  get "admin/main"
+
+  get "admin/sub1"
+
+  get "admin/sub2"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

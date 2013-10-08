@@ -50,6 +50,14 @@ g p origin master && g p heroku master
 
 #heroku open
 
+============ OPERATIONS ============================
+rails generate controller admin main sub1 sub2
+
+rails g controller sample
+
+
+============STORAGE============================
+
 [B1 2013/05/17 12:23:23]----------------------------
 #rails generate scaffold Image file_name:string file_path:string memos:text tags:string table_name:string last_viewed_at:integer created_at_mill:integer updated_at_mill:integer date_added:integer date_modified:integer loc_file_id:integer loc_created_at:integer loc_modified_at:integer
 
@@ -63,6 +71,5 @@ g p origin master && g p heroku master
 #rails generate controller admin main sub1 sub2
 
 aa
-============STORAGE============================
 
 ============EOF============
