@@ -1,2 +1,8 @@
-<h1>Admin#main</h1>
-<p>Find me in app/views/admin/main.html.erb</p>
+<h1>App list</h1>
+
+<%= link_to_unless_current \
+				'TwitterApp',
+				:controller => 'twitter_app',
+				:action => 'main',
+				:class => 'link' %>
+

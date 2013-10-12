@@ -75,6 +75,15 @@ rails generate scaffold Setting mobile_view:boolean
 
 bundle exec rake db:migrate
 
+bundle exec rake assets:precompile
+
+#g p origin master && g p heroku master && heroku run rake db:migrate
+
+rails generate controller TwitterApp main sub1 sub2
+
+bundle exec rake db:migrate
+
+
 aa
 
 ============EOF============

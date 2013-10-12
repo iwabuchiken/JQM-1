@@ -1,5 +1,11 @@
 JQM1::Application.routes.draw do
   
+  get "twitter_app/main"
+
+  get "twitter_app/sub1"
+
+  get "twitter_app/sub2"
+
   resources :settings
 
   root :to => 'admin#main'
