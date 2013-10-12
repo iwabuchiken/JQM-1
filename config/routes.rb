@@ -1,8 +1,11 @@
 JQM1::Application.routes.draw do
   
-  root :to => 'sample#index'
+  resources :settings
+
+  root :to => 'admin#main'
   
   get "admin/main"
+  get "admin/m_main"
 
   get "admin/sub1"
 

@@ -1,0 +1,16 @@
+<hr />
+
+<%= link_to_unless_current 'Mobile view', :controller => 'admin', :action => 'm_main', :class => 'link' %>&nbsp;|&nbsp;
+
+<%= link_to_unless_current \
+				'Desktop view',
+				:controller => 'admin',
+				:action => 'main',
+				:class => 'link' %>&nbsp;|&nbsp;
+
+<%= link_to_unless_current \
+				'Settings',
+				:controller => 'settings',
+				:action => 'index',
+				:class => 'link' %>&nbsp;|&nbsp;
+

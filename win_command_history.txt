@@ -70,6 +70,11 @@ g p origin master && g p heroku master
 [B2_v-2.1-e2 2013/05/28 16:39:26]----------------------------
 #rails generate controller admin main sub1 sub2
 
+[20131012_094128]----------------------------
+rails generate scaffold Setting mobile_view:boolean
+
+bundle exec rake db:migrate
+
 aa
 
 ============EOF============
