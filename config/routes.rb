@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
   
+  resources :articles
+
   get "twitter_app/main"
 
   get "twitter_app/sub1"

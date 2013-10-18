@@ -1,8 +1,3 @@
 <h1>App list</h1>
 
-<%= link_to_unless_current \
-				'TwitterApp',
-				:controller => 'twitter_app',
-				:action => 'main',
-				:class => 'link' %>
-
+<%= render :partial => 'admin/main/main_contents' %>

@@ -71,6 +71,7 @@ g p origin master && g p heroku master
 #rails generate controller admin main sub1 sub2
 
 [20131012_094128]----------------------------
+
 rails generate scaffold Setting mobile_view:boolean
 
 bundle exec rake db:migrate
@@ -78,10 +79,18 @@ bundle exec rake db:migrate
 bundle exec rake assets:precompile
 
 #g p origin master && g p heroku master && heroku run rake db:migrate
+g p origin master && g p heroku master
 
 rails generate controller TwitterApp main sub1 sub2
 
 bundle exec rake db:migrate
+
+[20131019_002221]----------------------------
+rails generate scaffold Article line:text url:string vendor:string news_time:string genre:string cat:string subcat:string
+
+bundle exec rake db:migrate
+
+bundle exec rake db:rollback
 
 
 aa

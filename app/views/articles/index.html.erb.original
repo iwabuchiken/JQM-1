@@ -1,0 +1,35 @@
+<h1>Listing articles</h1>
+
+<table>
+  <tr>
+    <th>Line</th>
+    <th>Url</th>
+    <th>Vendor</th>
+    <th>News time</th>
+    <th>Genre</th>
+    <th>Cat</th>
+    <th>Subcat</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.line %></td>
+    <td><%= article.url %></td>
+    <td><%= article.vendor %></td>
+    <td><%= article.news_time %></td>
+    <td><%= article.genre %></td>
+    <td><%= article.cat %></td>
+    <td><%= article.subcat %></td>
+    <td><%= link_to 'Show', article %></td>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Article', new_article_path %>

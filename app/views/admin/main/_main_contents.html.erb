@@ -1,0 +1,33 @@
+<table>
+	<tr>
+		<td>
+			1
+		</td>
+		<td>
+			
+			<%= link_to_unless_current \
+							'TwitterApp',
+							:controller => 'twitter_app',
+							:action => 'main',
+							:class => 'link' %>
+							
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			2
+		</td>
+		<td>
+			
+			<%= link_to_unless_current \
+							'NR4',
+							:controller => 'articles',
+							:action => 'index',
+							:class => 'link' %>
+							
+		</td>
+	</tr>
+
+
+</table>

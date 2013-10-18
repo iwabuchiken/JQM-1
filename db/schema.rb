@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131012004209) do
+ActiveRecord::Schema.define(:version => 20131018152509) do
+
+  create_table "articles", :force => true do |t|
+    t.text     "line"
+    t.string   "url"
+    t.string   "vendor"
+    t.string   "news_time"
+    t.string   "genre"
+    t.string   "cat"
+    t.string   "subcat"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "settings", :force => true do |t|
     t.boolean  "mobile_view"
