@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- REF http://www.htmq.com/html5/meta.shtml -->
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+	
+  <title>JQM1</title>
+	
+  	<meta name="viewport"
+           content="width=device-width,
+			user-scalable=yes,
+			initial-scale=1.0,
+                    maximum-scale=3.0" />
+                    
+                    
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+                    
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  
+	<%= stylesheet_link_tag "http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" %>
+	
+	
+	<%= javascript_include_tag \
+				"http://code.jquery.com/jquery-1.10.2.min.js" %>
+	
+	<%= javascript_include_tag \
+				"http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js" %>
+	
+  <%= javascript_include_tag "application" %>
+  
+  <%= csrf_meta_tags %>
+  
+
+                    
+	
+</head>
+<body>
+
+<%= yield %>
+
+	<%#= render :partial => 'layouts/application_footer' %>
+	<%= render :partial => 'layouts/nr4/application_footer' %>
+YYYYYYYYYYYYYYYYYYYYYYYYYYY
+</body>
+</html>

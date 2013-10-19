@@ -1,2 +1,12 @@
 articles/index<br />
-genre = <%= @genre %>
+genre = <%= @genre %><br />
+<br />
+
+@log_path = <%= @log_path %>
+<br />
+<br />
+
+<%#= @articles_set[0] %>
+<!-- REF http://stackoverflow.com/questions/4052906/how-to-display-content-with-raw-html answered Oct 29 '10 at 14:46 -->
+
+<%= raw(@articles_set[0]) %>
