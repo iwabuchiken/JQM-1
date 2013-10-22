@@ -47,6 +47,8 @@ class ArticlesController < ApplicationController
     #----------------------
     @articles_set = get_articles_set(number, @genre)
     
+    @content = get_tag_content(@articles_set[0])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
@@ -153,7 +155,13 @@ private
         #=====================
         docs = get_docs(doc_num, genre)
         
-        
+        #=====================
+        # 3. Get a_tags
+        #=====================
+        a_tags = get_atags(docs)
+
+        return a_tags
+                
     end#def get_articles_set(doc_num=3, genre="soci")
 
 
@@ -190,5 +198,61 @@ private
         return docs
 
     end#def get_docs(number)
+
+      def get_atags(docs)
+      
+          a_tags_href = []
+          
+          vendor_list = []
+      
+          docs.each do |doc|
+                #--------------------
+                # Modify 'a' tags
+                #--------------------
+                
+                # Get 'a' tags
+                a_tags = doc.css("div ul li a")
+                
+                # href value
+                a_tags.each do |a_tag|
+                  if a_tag['href'].start_with?("/hl?")
+                    # Modify url
+                    a_tag['href'] = "http://headlines.yahoo.co.jp" + a_tag['href']
+                    
+                    # Add
+                    a_tags_href.push(a_tag)
+                    
+                  end#if a_tag['href'].start_with?("/hl?")
+                end#a_tags.each do |a_tag|
+  
+        
+          end#docs.each do |doc|
+  
+          #debug
+          write_log(
+                  @log_path,
+                  "vendor_list.size=" + vendor_list.size.to_s +
+                  "/" + "a_tags_href.size=" + a_tags_href.size.to_s,
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+  
+  
+          # Return
+          return a_tags_href
+    
+    end#def get_atags
+
+    def get_tag_content(a_tag)
+    
+        return a_tag.content
+    
+#        doc = Nokogiri::HTML(a_tag)
+#        
+#        return doc.xpath('a').first.text
+    
+    
+    end#def get_tag_content(a_tag)
+
 
 end#class ArticlesController < ApplicationController

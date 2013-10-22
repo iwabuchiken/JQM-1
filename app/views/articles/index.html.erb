@@ -1,8 +1,11 @@
 articles/index<br />
-genre = <%= @genre %><br />
+genre = <%= @genre %>
+
+<br />
 <br />
 
 @log_path = <%= @log_path %>
+
 <br />
 <br />
 
@@ -10,3 +13,27 @@ genre = <%= @genre %><br />
 <!-- REF http://stackoverflow.com/questions/4052906/how-to-display-content-with-raw-html answered Oct 29 '10 at 14:46 -->
 
 <%= raw(@articles_set[0]) %>
+
+<br />
+<br />
+
+String=<%= @articles_set[0] %>
+
+<br />
+<br />
+
+@articles_set=<%= @articles_set.size %>
+
+<br/>
+<br/>
+
+@articles_set[0]['href']=<%= @articles_set[0]['href'] %>
+
+<br/>
+<br/>
+
+@content = <div><%= @content %></div>
+
+
+
+<!-- REF Cache killer http://stackoverflow.com/questions/5690269/disabling-chrome-cache-for-website-development answered Aug 2 '12 at 21:46 -->
