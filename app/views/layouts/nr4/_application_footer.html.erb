@@ -15,4 +15,13 @@
 				:class => 'link' %>&nbsp;|&nbsp;
 
 <hr />
-YES
+
+<%= link_to_unless_current \
+				'Heroku site',
+				'http://cosmos-test-apps.herokuapp.com/articles?class=link'
+				%>&nbsp;|&nbsp;
+				
+<%= link_to_unless_current \
+				'Local site',
+				'http://localhost:3001/articles?class=link'
+				%>&nbsp;|&nbsp;
