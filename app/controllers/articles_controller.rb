@@ -160,7 +160,12 @@ private
         #=====================
         a_tags = get_atags(docs)
 
-        return a_tags
+        #=====================
+        # 3. Get a_tags
+        #=====================
+        articles_set = build_articles_set(a_tags)
+
+        return articles_set
                 
     end#def get_articles_set(doc_num=3, genre="soci")
 
@@ -255,5 +260,10 @@ private
     
     end#def get_tag_content(a_tag)
 
+    def build_articles_set(a_tags)
+        
+        return a_tags
+        
+    end#def build_articles_set(a_tags)
 
 end#class ArticlesController < ApplicationController
