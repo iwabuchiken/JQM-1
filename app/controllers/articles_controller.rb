@@ -244,7 +244,8 @@ private
     end#def get_atags
 
     def get_tag_content(a_tag)
-    
+        
+        #REF http://nokogiri.org/Nokogiri/XML/Node.html ** https://blog.engineyard.com/2010/getting-started-with-nokogiri
         return a_tag.content
     
 #        doc = Nokogiri::HTML(a_tag)

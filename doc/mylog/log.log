@@ -223,3 +223,13 @@ File size=6878------------------------=[end]
 vendor_list.size=0/a_tags_href.size=75
 File size=7024------------------------=[end]
 
+[begin]------------------------=
+[2013/10/22 12:42:47] [articles_controller.rb: 42]
+genre=soci
+File size=7199------------------------=[end]
+
+[begin]------------------------=
+[2013/10/22 12:42:48] [articles_controller.rb: 238]
+vendor_list.size=0/a_tags_href.size=75
+File size=7345------------------------=[end]
+
