@@ -1,6 +1,9 @@
 class GenresController < ApplicationController
   # GET /genres
   # GET /genres.json
+  
+  layout 'layouts/nr4/genres'
+  
   def index
     @genres = Genre.all
 
