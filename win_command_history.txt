@@ -86,6 +86,7 @@ rails generate controller TwitterApp main sub1 sub2
 bundle exec rake db:migrate
 
 [20131019_002221]----------------------------
+
 rails generate scaffold Article line:text url:string vendor:string news_time:string genre:string cat:string subcat:string
 
 bundle exec rake db:migrate
@@ -96,6 +97,12 @@ g merge D-4_NR4 && g p origin master && g p heroku master && heroku run rake db:
 g merge D-4_NR4 && g p origin master && g p heroku master
 g p origin master && g p heroku master && heroku run rake db:migrate
 g p origin master && g p heroku master
+
+[20131024_060757]----------------------------
+rails generate scaffold Genre name:string code:string
+
+bundle exec rake db:migrate
+
 
 aa
 

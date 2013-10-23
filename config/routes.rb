@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
   
+  resources :genres
+
   resources :articles
 
   get "twitter_app/main"
