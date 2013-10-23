@@ -62,12 +62,6 @@ class ArticlesController < ApplicationController
         
     end#def get_num_of_docs()
     
-    def get_genre()
-        
-        return 'soci'
-        
-    end#    def get_genre()
-
   # GET /articles/1
   # GET /articles/1.json
   def show
@@ -265,5 +259,39 @@ private
         return a_tags
         
     end#def build_articles_set(a_tags)
+
+    def get_genre()
+        
+        if params['genre']
+        
+            p_genre = params['genre']
+  
+        else
+          
+            p_genre = session[:genre]
+          
+        end
+    
+        if p_genre != nil
+          
+            write_log(
+                    @log_path,
+                    "genre => #{p_genre}",
+                    __FILE__, __LINE__)
+                    
+            return p_genre
+          
+        else
+      
+            write_log(
+                    @log_path,
+                    "genre => soci",
+                    __FILE__, __LINE__)
+          
+            return "soci"
+      
+        end
+        
+    end#    def get_genre()
 
 end#class ArticlesController < ApplicationController
