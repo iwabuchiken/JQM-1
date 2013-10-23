@@ -1,0 +1,21 @@
+<% @articles_set.each_with_index do |article, i| %>
+
+	<% @articles_set[i].content =\
+				@articles_set[i].content\
+				+ "(#{@articles_set[i]['href'].split("=")[1].split("-")[2]}"\
+				+ ","\
+				+ "#{@articles_set[i]['href'].split("=")[1].split("-")[0]})"
+				
+				# + "(" + @articles_set[0]['href'].split("=")[1].split("-")[2] + ")"
+						 
+	%>
+
+	<%= "#{i + 1}. " %>
+	
+	<%= link_to\
+			raw(@articles_set[i].content),
+		@articles_set[i]['href'], :target => "_blank" %>
+		
+	<br />
+			
+<% end %>
