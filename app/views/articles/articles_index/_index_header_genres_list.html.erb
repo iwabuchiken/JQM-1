@@ -1,0 +1,18 @@
+<select name="genre">
+	<% @genres.length.times do |i| %>
+		<option value="<%= @genres[@genres.keys[i]] %>" 
+					<%#= params['genre_name'] == i.to_s ? "selected" : '' %>
+				<% if session[:genre] %>
+					<%= session[:genre] == @genres[@genres.keys[i]] ? "selected" : '' %>
+				<% else %>
+					<%= params['genre'] == @genres[@genres.keys[i]] ? "selected" : '' %>
+				<% end %>
+					
+			>
+				<%#= @genres.keys[i] %>
+				<!-- REF http://stackoverflow.com/questions/9474730/rails-active-record-runtimeerror-cant-modify-frozen-string-somehow-related answered Feb 29 '12 at 15:42 -->
+				<%= @genres.keys[i].dup %>
+				
+		</option>
+	<% end %>
+</select>

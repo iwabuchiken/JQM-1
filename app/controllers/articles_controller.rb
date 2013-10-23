@@ -33,6 +33,11 @@ class ArticlesController < ApplicationController
     #----------------------
     @genre = get_genre()
 
+    #----------------------
+    # Get: Genres list
+    #----------------------
+    @genres = get_genres_list()
+
     #debug
     write_log(
               @log_path,
@@ -294,4 +299,18 @@ private
         
     end#    def get_genre()
 
+    def get_genres_list()
+        
+        genres_src = Genre.all
+        
+        genres = {}
+        
+        genres_src.each do |item|
+           genres[item.name] = item.code
+        end
+        
+        return genres
+        
+    end#get_genres_list()
+    
 end#class ArticlesController < ApplicationController

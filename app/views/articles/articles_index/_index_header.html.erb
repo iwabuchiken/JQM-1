@@ -15,9 +15,10 @@
 		<span style="background-color: green; color: white">
 			ジャンル</span>
 <!-- 			<select name="genre_name"> -->
-			<select name="genre">
-			
-			</select>
+	
+			<%= render :partial => 'articles/articles_index/index_header_genres_list' %>
+		
+			<%#= "#{@genres.class.to_s} => #{@genres.length}" %>
 		</span>
 
 		<%= submit_tag "Go" %>
