@@ -99,10 +99,14 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 g p origin master && g p heroku master
 
 [20131024_060757]----------------------------
+
 rails generate scaffold Genre name:string code:string
 
 bundle exec rake db:migrate
 
+[25/10/2013 21:45:23]----------------------------
+rails generate scaffold KeyWordSet genre:string category:string keywords:text
+bundle exec rake db:migrate
 
 aa
 

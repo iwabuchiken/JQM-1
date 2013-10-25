@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Genre:</b>
+  <%= @key_word_set.genre %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @key_word_set.category %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%= @key_word_set.keywords %>
+</p>
+
+
+<%= link_to 'Edit', edit_key_word_set_path(@key_word_set) %> |
+<%= link_to 'Back', key_word_sets_path %>

@@ -50,9 +50,16 @@ class ArticlesController < ApplicationController
     #----------------------
     # Get: Articles list
     #----------------------
-    @articles_set = get_articles_set(number, @genre)
+
+    articles_set = get_articles_set(number, @genre)
+
+    #----------------------
+    # Get: Articles models list
+    #----------------------    
+    @articles_set = get_articles_model_set(articles_set)
     
-    @content = get_tag_content(@articles_set[0])
+    
+    # @categorized_set = 
     
     respond_to do |format|
       format.html # index.html.erb
@@ -162,17 +169,24 @@ private
         #=====================
         # 3. Get a_tags
         #=====================
-        articles_set = build_articles_set(a_tags)
+        articles_set = a_tags
+        # articles_set = build_articles_set(a_tags)
 
-        #=====================
-        # Get: Categorized articles set
-        #=====================
-        categorized_set = build_categorized_set(articles_set, genre)
+        # #=====================
+        # # Get: Categorized articles set
+        # #=====================
+        # if genre == 'int'
+#           
+            # categorized_set = build_categorized_set(articles_set, genre)
+#             
+        # else
+#         
+            # categorized_set = articles_set
+#         
+        # end
 
-
-
-
-        return categorized_set
+        return articles_set
+        # return categorized_set
                 
     end#def get_articles_set(doc_num=3, genre="soci")
 
@@ -267,12 +281,6 @@ private
     
     end#def get_tag_content(a_tag)
 
-    def build_articles_set(a_tags)
-        
-        return a_tags
-        
-    end#def build_articles_set(a_tags)
-
     def build_categorized_set(articles_set, genre="soci")
         
         #==============================
@@ -284,7 +292,7 @@ private
         # Array
         categories = get_categories(genre)
         
-        # Hash
+        # Array of KeyWordSet models
         keywords = get_keywords(genre, categories)
         
         
@@ -292,7 +300,7 @@ private
         categorized_set = articles_set
         
         return categorized_set
-        # aa
+        
     end#build_categorized_set(articles_set)
 
     def get_categories(genre)
@@ -313,7 +321,7 @@ private
 
     def _get_categories_int()
       
-        return ['China', 'Others']
+        return ['China', 'US']
       
     end
 
@@ -321,9 +329,21 @@ private
         
         if genre == 'int'
             
-            return {
-                "China" =>  ["中国", "尖閣"],
-                "US" =>     ["米国", "オバマ"] }
+            key_words_set = []
+            
+            kws1 = KeyWordSet.new
+            
+            kws1.category = "China"
+            kws1.keywords = "中国 尖閣"
+
+            kws2 = KeyWordSet.new
+            kws2.category = "US"
+            kws2.keywords = "米国 オバマ"
+            
+            key_words_set.push(kws1)
+            key_words_set.push(kws2)
+            
+            return key_words_set
             
         else
             
@@ -381,5 +401,26 @@ private
         return genres
         
     end#get_genres_list()
-    
+
+
+    def get_articles_model_set(articles_set)
+        
+        model_set = []
+        
+        articles_set.length.times {|i|
+            
+            a = Article.new
+            
+            a.line      = articles_set[i].content
+            a.url       = articles_set[i]['href']
+            a.vendor    = articles_set[i]['href'].split("=")[1].split("-")[2]
+            a.news_time = articles_set[i]['href'].split("=")[1].split("-")[0]
+            
+            model_set.push(a)
+            
+        }
+        
+        return model_set
+        
+    end#get_articles_model_set(articles_set)
 end#class ArticlesController < ApplicationController

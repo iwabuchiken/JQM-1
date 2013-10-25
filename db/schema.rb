@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131023231702) do
+ActiveRecord::Schema.define(:version => 20131025124719) do
 
   create_table "articles", :force => true do |t|
     t.text     "line"
@@ -28,6 +28,14 @@ ActiveRecord::Schema.define(:version => 20131023231702) do
   create_table "genres", :force => true do |t|
     t.string   "name"
     t.string   "code"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "key_word_sets", :force => true do |t|
+    t.string   "genre"
+    t.string   "category"
+    t.text     "keywords"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

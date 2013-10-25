@@ -1,0 +1,27 @@
+<h1>Listing key_word_sets</h1>
+
+<table>
+  <tr>
+    <th>Genre</th>
+    <th>Category</th>
+    <th>Keywords</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @key_word_sets.each do |key_word_set| %>
+  <tr>
+    <td><%= key_word_set.genre %></td>
+    <td><%= key_word_set.category %></td>
+    <td><%= key_word_set.keywords %></td>
+    <td><%= link_to 'Show', key_word_set %></td>
+    <td><%= link_to 'Edit', edit_key_word_set_path(key_word_set) %></td>
+    <td><%= link_to 'Destroy', key_word_set, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Key word set', new_key_word_set_path %>

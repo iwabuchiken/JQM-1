@@ -1,21 +1,41 @@
-<% @articles_set.each_with_index do |article, i| %>
-
-	<% @articles_set[i].content =\
-				@articles_set[i].content\
-				+ "(#{@articles_set[i]['href'].split("=")[1].split("-")[2]}"\
-				+ ","\
-				+ "#{@articles_set[i]['href'].split("=")[1].split("-")[0]})"
-				
-				# + "(" + @articles_set[0]['href'].split("=")[1].split("-")[2] + ")"
-						 
-	%>
-
-	<%= "#{i + 1}. " %>
-	
-	<%= link_to\
-			raw(@articles_set[i].content),
-		@articles_set[i]['href'], :target => "_blank" %>
+<table>
+	<% @articles_set.each_with_index do |article, i| %>
+		<% if i % 6 == 0 %>
 		
-	<br />
+			<tr>
+				<td colspan="4">*****</td>
+			</tr>
+
+		<% end %>
+		
+		<tr>
+			<td>
+				
+				<%= "#{i + 1}" %>
+				
+			</td>
+		
+			<td>
+				
+				<%= link_to\
+						raw(@articles_set[i].line),
+					@articles_set[i].url, :target => "_blank" %>
+			</td>
 			
-<% end %>
+			<td>
+				
+				<%= @articles_set[i].vendor %>
+				
+			</td>
+			
+			<td>
+				
+				<%= @articles_set[i].news_time %>
+				
+			</td>
+			
+		</tr>	
+		
+	<% end %>
+
+</table>
