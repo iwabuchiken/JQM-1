@@ -164,7 +164,15 @@ private
         #=====================
         articles_set = build_articles_set(a_tags)
 
-        return articles_set
+        #=====================
+        # Get: Categorized articles set
+        #=====================
+        categorized_set = build_categorized_set(articles_set, genre)
+
+
+
+
+        return categorized_set
                 
     end#def get_articles_set(doc_num=3, genre="soci")
 
@@ -264,6 +272,67 @@ private
         return a_tags
         
     end#def build_articles_set(a_tags)
+
+    def build_categorized_set(articles_set, genre="soci")
+        
+        #==============================
+        # Get: Categories for the genre
+        # Get: Keywords for each obtained category
+        # Build: List of categorized articles
+        #==============================
+        
+        # Array
+        categories = get_categories(genre)
+        
+        # Hash
+        keywords = get_keywords(genre, categories)
+        
+        
+        
+        categorized_set = articles_set
+        
+        return categorized_set
+        # aa
+    end#build_categorized_set(articles_set)
+
+    def get_categories(genre)
+        
+        if genre == 'int'
+            
+            return _get_categories_int()
+            # return ['China', 'Others']
+            
+        else
+            
+            return ['Others']
+            
+        end
+        
+        
+    end#get_categories(genre)
+
+    def _get_categories_int()
+      
+        return ['China', 'Others']
+      
+    end
+
+    def get_keywords(genre, categories)
+        
+        if genre == 'int'
+            
+            return {
+                "China" =>  ["中国", "尖閣"],
+                "US" =>     ["米国", "オバマ"] }
+            
+        else
+            
+            return []
+            
+        end
+        
+        
+    end#get_keywords(genre, categories)
 
     def get_genre()
         
