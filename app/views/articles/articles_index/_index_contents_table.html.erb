@@ -1,0 +1,41 @@
+<% if i % 5 == 0 && i <=> 0 %>
+
+	<tr>
+		<td colspan="2">*****</td>
+		
+		<td colspan="2">
+			<a href="#top">Top</a> &nbsp;
+		
+			<a href="#bottom">Bottom</a>
+		</td>
+	</tr>
+
+<% end %>
+
+<tr>
+	<td>
+		
+		<%= "#{i + 1}" %>
+		
+	</td>
+
+	<td>
+		
+		<%= link_to\
+				raw(a.line),
+				a.url, :target => "_blank" %>
+	</td>
+	
+	<td>
+		
+		<%= a.vendor %>
+		
+	</td>
+	
+	<td>
+		
+		<%= a.news_time %>
+		
+	</td>
+	
+</tr>	

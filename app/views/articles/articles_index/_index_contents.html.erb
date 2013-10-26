@@ -1,41 +1,47 @@
-<table>
-	<% @articles_set.each_with_index do |article, i| %>
-		<% if i % 6 == 0 %>
-		
-			<tr>
-				<td colspan="4">*****</td>
-			</tr>
+<hr />
+<% @categorized_articles_set.keys.each_with_index do |key, i| %>
 
+	<%= link_to key, "##{key}" %> |
+
+<% end %>
+
+
+<%# @categorized_articles_set.keys.each_with_index do |a, i| %>
+<% @categorized_articles_set.keys.each_with_index do |key, i| %>
+
+	<table>
+		<hr />
+		<%#= "@categorized_articles_set[#{a}] => #{@categorized_articles_set[a]}" %>
+		<div>
+			<span id="<%= key.dup %>">
+				<%= key.dup %> (<%= @categorized_articles_set[key].size %>) |
+			</span>
+			
+			<span>
+				<%= link_to "Top", "#top" %>
+			</span>
+			
+			&nbsp;
+			
+			<span>
+				<%= link_to "Bottom", "#bottom" %>
+			</span>
+		</div>
+		
+		<% @categorized_articles_set[key].each_with_index do |a, i| %>
+			<!-- REF locals http://stackoverflow.com/questions/6279651/rails-3-passing-local-variable-to-partial answered Jun 8 '11 at 15:08-->
+				<%= render :partial => \
+						'articles/articles_index/index_contents_table',
+						:locals => {:i => i, :a => a} %>	
+			
 		<% end %>
 		
-		<tr>
-			<td>
-				
-				<%= "#{i + 1}" %>
-				
-			</td>
+		<hr />
 		
-			<td>
-				
-				<%= link_to\
-						raw(@articles_set[i].line),
-					@articles_set[i].url, :target => "_blank" %>
-			</td>
-			
-			<td>
-				
-				<%= @articles_set[i].vendor %>
-				
-			</td>
-			
-			<td>
-				
-				<%= @articles_set[i].news_time %>
-				
-			</td>
-			
-		</tr>	
-		
-	<% end %>
+	</table>
 
-</table>
+<% end %><!-- @categorized_articles_set.keys -->
+
+<br/>
+<br/>
+

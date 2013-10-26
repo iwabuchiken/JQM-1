@@ -56,8 +56,11 @@ class ArticlesController < ApplicationController
     #----------------------
     # Get: Articles models list
     #----------------------    
-    @articles_set = get_articles_model_set(articles_set)
+    #@articles_set = get_articles_model_set(articles_set)
+    articles_model_set = get_articles_model_set(articles_set)
     
+    
+    @categorized_articles_set = get_categorized_set(articles_model_set, @genre)
     
     # @categorized_set = 
     
@@ -307,8 +310,8 @@ private
         
         if genre == 'int'
             
-            return _get_categories_int()
-            # return ['China', 'Others']
+#            return _get_categories_int()
+            return ['China', 'US']
             
         else
             
@@ -319,13 +322,7 @@ private
         
     end#get_categories(genre)
 
-    def _get_categories_int()
-      
-        return ['China', 'US']
-      
-    end
-
-    def get_keywords(genre, categories)
+    def get_keywords(genre)
         
         if genre == 'int'
             
@@ -423,4 +420,38 @@ private
         return model_set
         
     end#get_articles_model_set(articles_set)
+    
+    def get_categorized_set(articles_model_set, genre)
+    
+        # Array
+        if genre == 'int'
+        
+          key_word_set = get_keywords(genre)
+          
+          return {
+              'First'\
+                    => articles_model_set[
+                          0.. \
+                          articles_model_set.length/2 - 1],
+               'Others'\
+                    => articles_model_set[
+                          articles_model_set.length/2 \
+                          ..articles_model_set.length - 1]}
+          
+        else 
+          
+          return {
+              'First'\
+                    => articles_model_set[
+                          0.. \
+                          articles_model_set.length/2 - 1],
+               'Others'\
+                    => articles_model_set[
+                          articles_model_set.length/2 \
+                          ..articles_model_set.length - 1]}
+          
+        end
+    
+    end#get_categorized_set(articles_model_set, @genre)
+    
 end#class ArticlesController < ApplicationController
