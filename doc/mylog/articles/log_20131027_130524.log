@@ -1,0 +1,450 @@
+[begin]------------------------=
+[2013/10/20 00:30:38] [articles_controller.rb: 40]
+genre=soci
+File size=0------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:39:22] [articles_controller.rb: 40]
+genre=soci
+File size=143------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:39:32] [articles_controller.rb: 40]
+genre=soci
+File size=288------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:39:51] [articles_controller.rb: 40]
+genre=soci
+File size=433------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:40:23] [articles_controller.rb: 41]
+genre=soci
+File size=578------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:40:24] [articles_controller.rb: 41]
+genre=soci
+File size=723------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:43:32] [articles_controller.rb: 41]
+genre=soci
+File size=868------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:44:05] [articles_controller.rb: 42]
+genre=soci
+File size=1013------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:45:23] [articles_controller.rb: 42]
+genre=soci
+File size=1159------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:45:45] [articles_controller.rb: 42]
+genre=soci
+File size=1305------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:48:24] [articles_controller.rb: 42]
+genre=soci
+File size=1451------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:48:36] [articles_controller.rb: 42]
+genre=soci
+File size=1597------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:49:37] [articles_controller.rb: 42]
+genre=soci
+File size=1743------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:50:39] [articles_controller.rb: 42]
+genre=soci
+File size=1889------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 00:50:52] [articles_controller.rb: 42]
+genre=soci
+File size=2035------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:04:38] [articles_controller.rb: 42]
+genre=soci
+File size=2181------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:05:25] [articles_controller.rb: 42]
+genre=soci
+File size=2327------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:05:41] [articles_controller.rb: 42]
+genre=soci
+File size=2473------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:08:38] [articles_controller.rb: 42]
+genre=soci
+File size=2619------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:09:36] [articles_controller.rb: 42]
+genre=soci
+File size=2765------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:11:31] [articles_controller.rb: 42]
+genre=soci
+File size=2911------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:12:12] [articles_controller.rb: 42]
+genre=soci
+File size=3057------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:12:50] [articles_controller.rb: 43]
+genre=soci
+File size=3203------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:19:28] [articles_controller.rb: 42]
+genre=soci
+File size=3349------------------------=[end]
+
+[begin]------------------------=
+[2013/10/20 01:20:29] [articles_controller.rb: 42]
+genre=soci
+File size=3495------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:37:34] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:37:34] [articles_controller.rb: 48]
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:37:35] [articles_controller.rb: 268]
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:38:06] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:38:06] [articles_controller.rb: 48]
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:38:07] [articles_controller.rb: 268]
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:41:40] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=4691
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:41:40] [articles_controller.rb: 48]
+genre=int
+File size=4937
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:41:41] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=5118
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:43:01] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=5329
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:43:01] [articles_controller.rb: 48]
+genre=int
+File size=5575
+------------------------=[end]
+
+[begin]------------------------=
+fname=doc/mylog/articles/log.log
+[2013/10/27 12:43:01] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=5756
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:53:43] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=5967
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:53:43] [articles_controller.rb: 48]
+genre=int
+File size=6179
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:53:44] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=6326
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:53:44] [articles_controller.rb: 464]
+category_name=China
+File size=6503
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:54:51] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=6661
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:54:51] [articles_controller.rb: 48]
+genre=int
+File size=6873
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:54:52] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=7020
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:54:52] [articles_controller.rb: 464]
+keywords=["中国", "日中"]
+File size=7197
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:58:38] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=7365
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:58:38] [articles_controller.rb: 48]
+genre=int
+File size=7577
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 12:58:39] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=7724
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:00:54] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=7901
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:00:54] [articles_controller.rb: 48]
+genre=int
+File size=8113
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:00:56] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=8260
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:01:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=8437
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:01:04] [articles_controller.rb: 48]
+genre=int
+File size=8649
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:01:05] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=8796
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:01:05] [articles_controller.rb: 483]
+new_set.size=6
+File size=8973
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:02:26] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=9126
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:02:26] [articles_controller.rb: 48]
+genre=int
+File size=9338
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:02:27] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=9485
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:02:27] [articles_controller.rb: 485]
+new_set.size=6/residue_set=[#<Article id: nil, line: "ナイジェリア軍、イスラム過激派７０人以上を殺害", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039035...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "南ア芸術家の作品集めた展覧会、独ドレスデンで開催", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000017...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "７９人殺害容疑で２０歳男逮捕、麻薬組織の構成員　メキシコ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039034...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米通信大手幹部の聴取検討＝情報監視問題でブラジル警察", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000060...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "民間人被害なら無人機攻撃説明必要…国連報告者", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000645...", vendor: "yom", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ベルギーのレース鳩、6羽からコカインなど検出", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000016...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ＦＩＦＡブラッター会長が５選狙う？　「使命ある」と意欲示す", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039033...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "中道左派が第1党＝新党躍進、旧与党は惨敗―チェコ総選挙", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000052...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "砂浜にずらり並んだ彫像、シドニーで野外展示会", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000015...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米政権、イラン制裁検討の中断を議会に要請", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000573...", vendor: "yom", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "街を行くマンモスのレプリカ像、チェコ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000013...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "娘１２人の「処女」売った疑いで母親逮捕　コロンビア", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039032...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "チュニジア、３週間後に内閣退陣　与野党が対話開始へ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000020...", vendor: "asahi", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "改名を希望＝元ナチ将校の孫―アルゼンチン", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000046...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "独首相の携帯、機密機能に問題？…米盗聴疑惑", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000341...", vendor: "yom", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "イタリア沖で移民船から７００人近く救出　遭難相次ぐ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039030...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "旅行フェアで情報ゲット、ネット上で日本を学ぼう＝台湾メディア", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000003...", vendor: "scn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "未明の地震で津波注意報、石巻などに小さな津波", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000008...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ロマ族集落で保護の少女、ブルガリア男女の実子と判明", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039027...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜米盗聴疑惑＞標的は独首相の党務用か　セキュリティー弱く", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000034...", vendor: "mai", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜北朝鮮＞ドイツ舞台に米と非公式接触", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000026...", vendor: "mai", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "福島県沖で地震　一時津波注意報も", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039025...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "モスク前で自動車爆弾爆発、子ども7人を含む40人死亡 シリア", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000001...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "世界有数「星空保護区」、ナミブ砂漠", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039003...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米、無人機攻撃に理解求める＝パキスタンは黙認説否定―国連", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000013...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "福島県に最大1メートルの津波注意報＝気象庁", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000013...", vendor: "reut", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "マレーシアのナジブ首相、6％の物品サービス税を15年に導入", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000004...", vendor: "reut", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "カナダ旅行当選の豪夫婦、実は覚せい剤の運び屋に", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000037...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "北京の故宮博物院で殺人事件　従業員ケンカ？２人死亡", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000050...", vendor: "asahi", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "フェイスブック使用を注意された17歳が自殺、インド", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000036...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜独首相盗聴疑惑＞米批判再燃　大統領「今後しない」", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000115...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "カタール王女、美術業界で最も影響力のある人物に 英美術誌", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000035...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜ＥＵ＞移民政策見直しへ　国境管理機能を強化", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000093...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜韓国＞北朝鮮が拘束の男性６人送還　１人の妻は遺体で", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000087...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "アジア重視戦略の米軍、地域の軍備を強化", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000033...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "通信傍受、イタリアで米も英も活動…伊誌報道", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000891...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "【マレーシア】消費税、15年４月から６％で開始", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000100...", vendor: "nna_kyodo", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "薄熙来被告の無期懲役が確定、2審で上訴棄却", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000032...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "「日本」さん、スペインで４００人写真展", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000888...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "仏パリの広場に日本人の芸術作品", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000030...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ホワイトハウスがピンク色に、乳がん啓発月間", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000027...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "１５歳の少女が父親に焼き殺される　イエメン", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35039001...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米情報機関元トップの匿名インタビューが筒抜け、つぶやかれる", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000025...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "韓国で続く性犯罪被害に遭った女性たちの苦悩", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000867...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "（特派員メモ　プノンペン）人生トゥクトゥク", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000014...", vendor: "asahik", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "（地球２４時）核実験場に新トンネル　米大、衛星写真で確認", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000012...", vendor: "asahik", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "インドでまた強姦殺人か、家族の前で少女に火放つ", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000085...", vendor: "reut", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "一斉授乳の世界記録に挑戦、公共での授乳の権利訴え 比", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000024...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "地球から最も遠く離れた銀河を発見　米研究", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038997...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米国民生活にツケ回した政府機関閉鎖―債務問題は「政争の具」", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000863...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "独メルケル首相はメール魔―盗聴問題で再び焦点に", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000861...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "無免許で美容整形の偽医師に禁錮1年、米フロリダ", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000022...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米盗聴疑惑、ＥＵ首脳会議議題に…独首相が怒り", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000503...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "過去に79人殺害か、メキシコで逮捕の20歳の男が供述", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000065...", vendor: "reut", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米ＮＳＡ、世界の指導者３５人盗聴…英紙報道", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000419...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "クリント・イーストウッドさんの妻、離婚を申請", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038989...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "韓国軍と海洋警察庁、竹島と周辺海域で合同訓練", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000574...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "フィリピン地震、長さ5キロ以上の岩壁が出現", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000019...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "薄被告、無期懲役が確定…高裁が１審判決を支持", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000556...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米無人機攻撃、パキスタン政府かつては協力　米紙報道", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038980...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "「金髪の天使」の実親か、ブルガリアで夫婦を聴取", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000016...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "３時間の昼寝付きランチなくなる？　スペインで合理化提案", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038977...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ラテンなピエロたちが集結、メキシコで中南米クラウン大会", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000012...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米中学生を殺人未遂で逮捕、学校に銃と弾薬400発持ち込む", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000011...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜ＮＳＡ盗聴＞独仏、米情報機関との協力関係を年内に見直し", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000019...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "この秋お勧めのノートパソコンは？", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000859...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ロマ集落の少女の実母か、ブルガリア女性が名乗り出る", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038973...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "２歳児と３歳児をレイプし殺害、男ら逮捕　南ア", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038972...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "労働者への忠告─上司はあなたをずっと監視している", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000857...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>]
+File size=9662
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:07] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=28533
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:07] [articles_controller.rb: 48]
+genre=int
+File size=28746
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:08] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=28894
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:08] [articles_controller.rb: 485]
+new_set.size=6/residue_set.size=69
+File size=29072
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:31] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=29246
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:31] [articles_controller.rb: 48]
+genre=int
+File size=29459
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:32] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=29607
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:03:32] [articles_controller.rb: 486]
+new_set.size=6
+                  /residue_set.size=69
+File size=29785
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:03] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=29979
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:03] [articles_controller.rb: 48]
+genre=int
+File size=30192
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:05] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=30340
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:05] [articles_controller.rb: 486]
+new_set.size=6                  /residue_set.size=69
+File size=30518
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:34] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=30710
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:34] [articles_controller.rb: 48]
+genre=int
+File size=30923
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:35] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=31071
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:04:35] [articles_controller.rb: 486]
+new_set.size=6/residue_set.size=69
+File size=31249
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:05:11] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=31423
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:05:11] [articles_controller.rb: 48]
+genre=int
+File size=31636
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:05:12] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=31784
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/27 13:05:12] [articles_controller.rb: 487]
+new_set.size=6/residue_set.size=69/articles_model_set.size=[#<Article id: nil, line: "ナイジェリア軍、イスラム過激派７０人以上を殺害", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039035...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "南ア芸術家の作品集めた展覧会、独ドレスデンで開催", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000017...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "７９人殺害容疑で２０歳男逮捕、麻薬組織の構成員　メキシコ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039034...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米通信大手幹部の聴取検討＝情報監視問題でブラジル警察", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000060...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "民間人被害なら無人機攻撃説明必要…国連報告者", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000645...", vendor: "yom", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ベルギーのレース鳩、6羽からコカインなど検出", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000016...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ＦＩＦＡブラッター会長が５選狙う？　「使命ある」と意欲示す", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039033...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "中道左派が第1党＝新党躍進、旧与党は惨敗―チェコ総選挙", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000052...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "砂浜にずらり並んだ彫像、シドニーで野外展示会", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000015...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米政権、イラン制裁検討の中断を議会に要請", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000573...", vendor: "yom", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "街を行くマンモスのレプリカ像、チェコ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000013...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "娘１２人の「処女」売った疑いで母親逮捕　コロンビア", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039032...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "チュニジア、３週間後に内閣退陣　与野党が対話開始へ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000020...", vendor: "asahi", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "改名を希望＝元ナチ将校の孫―アルゼンチン", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000046...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "独首相の携帯、機密機能に問題？…米盗聴疑惑", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000341...", vendor: "yom", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "イタリア沖で移民船から７００人近く救出　遭難相次ぐ", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039030...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "旅行フェアで情報ゲット、ネット上で日本を学ぼう＝台湾メディア", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000003...", vendor: "scn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "中国当局、独自報道を全面禁止…記者拘束事件", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000326...", vendor: "yom", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "未明の地震で津波注意報、石巻などに小さな津波", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000008...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ロマ族集落で保護の少女、ブルガリア男女の実子と判明", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039027...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜米盗聴疑惑＞標的は独首相の党務用か　セキュリティー弱く", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000034...", vendor: "mai", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜北朝鮮＞ドイツ舞台に米と非公式接触", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000026...", vendor: "mai", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "福島県沖で地震　一時津波注意報も", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039025...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "モスク前で自動車爆弾爆発、子ども7人を含む40人死亡 シリア", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000001...", vendor: "jij_afp", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "世界有数「星空保護区」、ナミブ砂漠", url: "http://headlines.yahoo.co.jp/hl?a=20131026-35039003...", vendor: "cnn", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米、無人機攻撃に理解求める＝パキスタンは黙認説否定―国連", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000013...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "福島県に最大1メートルの津波注意報＝気象庁", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000013...", vendor: "reut", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "中国の神華能源、1―9月期は減益　通期売上高見通し下方修正", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000010...", vendor: "reut", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "マレーシアのナジブ首相、6％の物品サービス税を15年に導入", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000004...", vendor: "reut", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "中国に252件勧告＝人権、報道の自由に注文―国連部会", url: "http://headlines.yahoo.co.jp/hl?a=20131026-00000000...", vendor: "jij", news_time: "20131026", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "カナダ旅行当選の豪夫婦、実は覚せい剤の運び屋に", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000037...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "北京の故宮博物院で殺人事件　従業員ケンカ？２人死亡", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000050...", vendor: "asahi", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "フェイスブック使用を注意された17歳が自殺、インド", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000036...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜独首相盗聴疑惑＞米批判再燃　大統領「今後しない」", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000115...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜フィリピン＞中国批判を撤回　南シナ海のブロックで", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000113...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "カタール王女、美術業界で最も影響力のある人物に 英美術誌", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000035...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜ＥＵ＞移民政策見直しへ　国境管理機能を強化", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000093...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜韓国＞北朝鮮が拘束の男性６人送還　１人の妻は遺体で", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000087...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "アジア重視戦略の米軍、地域の軍備を強化", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000033...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "通信傍受、イタリアで米も英も活動…伊誌報道", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000891...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "【マレーシア】消費税、15年４月から６％で開始", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000100...", vendor: "nna_kyodo", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "薄熙来被告の無期懲役が確定、2審で上訴棄却", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000032...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "「日本」さん、スペインで４００人写真展", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000888...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "仏パリの広場に日本人の芸術作品", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000030...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ホワイトハウスがピンク色に、乳がん啓発月間", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000027...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "１５歳の少女が父親に焼き殺される　イエメン", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35039001...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米情報機関元トップの匿名インタビューが筒抜け、つぶやかれる", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000025...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "韓国で続く性犯罪被害に遭った女性たちの苦悩", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000867...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "（特派員メモ　プノンペン）人生トゥクトゥク", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000014...", vendor: "asahik", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "（地球２４時）核実験場に新トンネル　米大、衛星写真で確認", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000012...", vendor: "asahik", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "インドでまた強姦殺人か、家族の前で少女に火放つ", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000085...", vendor: "reut", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "一斉授乳の世界記録に挑戦、公共での授乳の権利訴え 比", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000024...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "地球から最も遠く離れた銀河を発見　米研究", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038997...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "薄熙来被告の上訴棄却、無期懲役が確定　中国", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038996...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米国民生活にツケ回した政府機関閉鎖―債務問題は「政争の具」", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000863...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "独メルケル首相はメール魔―盗聴問題で再び焦点に", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000861...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "無免許で美容整形の偽医師に禁錮1年、米フロリダ", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000022...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米盗聴疑惑、ＥＵ首脳会議議題に…独首相が怒り", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000503...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "過去に79人殺害か、メキシコで逮捕の20歳の男が供述", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000065...", vendor: "reut", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米ＮＳＡ、世界の指導者３５人盗聴…英紙報道", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000419...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "クリント・イーストウッドさんの妻、離婚を申請", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038989...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "薄熙来被告の上訴棄却、無期懲役確定へ　中国で二審判決", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000026...", vendor: "asahi", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "韓国軍と海洋警察庁、竹島と周辺海域で合同訓練", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000574...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "フィリピン地震、長さ5キロ以上の岩壁が出現", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000019...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "薄被告、無期懲役が確定…高裁が１審判決を支持", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000556...", vendor: "yom", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米無人機攻撃、パキスタン政府かつては協力　米紙報道", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038980...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "「金髪の天使」の実親か、ブルガリアで夫婦を聴取", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000016...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "３時間の昼寝付きランチなくなる？　スペインで合理化提案", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038977...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ラテンなピエロたちが集結、メキシコで中南米クラウン大会", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000012...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "米中学生を殺人未遂で逮捕、学校に銃と弾薬400発持ち込む", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000011...", vendor: "jij_afp", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "＜ＮＳＡ盗聴＞独仏、米情報機関との協力関係を年内に見直し", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000019...", vendor: "mai", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "この秋お勧めのノートパソコンは？", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000859...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "ロマ集落の少女の実母か、ブルガリア女性が名乗り出る", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038973...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "２歳児と３歳児をレイプし殺害、男ら逮捕　南ア", url: "http://headlines.yahoo.co.jp/hl?a=20131025-35038972...", vendor: "cnn", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>, #<Article id: nil, line: "労働者への忠告─上司はあなたをずっと監視している", url: "http://headlines.yahoo.co.jp/hl?a=20131025-00000857...", vendor: "wsj", news_time: "20131025", genre: nil, cat: nil, subcat: nil, created_at: nil, updated_at: nil>]
+File size=31962
+------------------------=[end]
+

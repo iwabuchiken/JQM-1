@@ -3,7 +3,8 @@
 require 'nokogiri'
 require 'open-uri'
 
-require 'utils'
+#require 'utils'
+require 'utils2'
 
 class ArticlesController < ApplicationController
     
@@ -426,17 +427,7 @@ private
         # Array
         if genre == 'int'
         
-          key_word_set = get_keywords(genre)
-          
-          return {
-              'First'\
-                    => articles_model_set[
-                          0.. \
-                          articles_model_set.length/2 - 1],
-               'Others'\
-                    => articles_model_set[
-                          articles_model_set.length/2 \
-                          ..articles_model_set.length - 1]}
+          return _get_categorized_set_int(articles_model_set, genre)
           
         else 
           
@@ -453,5 +444,86 @@ private
         end
     
     end#get_categorized_set(articles_model_set, @genre)
+    
+    def _get_categorized_set_int(articles_model_set, genre)
+        
+        key_word_set = _get_keywords_int()
+        #key_word_set = ['China', 'US', 'Others']
+        
+        kws1 = key_word_set[0]
+        keywords = kws1.keywords.split(' ')
+        
+        category_name = kws1.category
+        
+        new_set = []
+        
+        articles_model_set.size.times do |i|
+        
+            keywords.size.times do |j|
+            
+                if articles_model_set[i].line.include?(keywords[j])
+                    
+                    new_set.push(articles_model_set[i])
+                    
+                    break
+                    
+                end
+            
+            end#keywords.size.times do |kw,j|
+        
+        
+        end#articles_model_set.size.times do |a,i|
+        
+        residue_set = articles_model_set - new_set
+        
+        #debug
+        write_log(
+                  @log_path,
+                  "new_set.size=#{new_set.size}"\
+                  + "/residue_set.size=#{residue_set.size}"\
+                  + "/articles_model_set.size=#{articles_model_set.size}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        return {
+             category_name \
+                  => new_set,
+             'US'\
+                  => residue_set[
+                        00 \
+                        ..(residue_set.length * 1/2)],
+                        
+             'Others'\
+                  => residue_set[
+                        residue_set.length * 1/2 \
+                        ..(residue_set.length - 1)]}
+    
+    end#_get_categorized_set_int(articles_model_set, genre)
+    
+    #==================================
+    #   _get_keywords_int()
+    # Return    => Array of KeyWordSet models
+    #
+    #==================================
+    def _get_keywords_int()
+    
+        result = []
+        
+        kws1 = KeyWordSet.new
+        kws1.category = 'China'
+        kws1.keywords = '中国 日中'
+        
+        kws2 = KeyWordSet.new
+        kws2.category = 'US'
+        kws2.keywords = '米国 アメリカ'
+        
+        result.push(kws1)
+        result.push(kws2)
+        
+        return result
+    
+    end#_get_keywords_int()
+    
     
 end#class ArticlesController < ApplicationController

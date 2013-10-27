@@ -1,125 +1,72 @@
 [begin]------------------------=
-[2013/10/20 00:30:38] [articles_controller.rb: 40]
-genre=soci
-File size=0------------------------=[end]
+[2013/10/27 13:05:24] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=0
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:39:22] [articles_controller.rb: 40]
-genre=soci
-File size=143------------------------=[end]
+[2013/10/27 13:05:24] [articles_controller.rb: 48]
+genre=int
+File size=209
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:39:32] [articles_controller.rb: 40]
-genre=soci
-File size=288------------------------=[end]
+[2013/10/27 13:05:25] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=355
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:39:51] [articles_controller.rb: 40]
-genre=soci
-File size=433------------------------=[end]
+[2013/10/27 13:05:25] [articles_controller.rb: 487]
+new_set.size=6/residue_set.size=69/articles_model_set.size=75
+File size=531
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:40:23] [articles_controller.rb: 41]
-genre=soci
-File size=578------------------------=[end]
+[2013/10/27 13:08:55] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=730
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:40:24] [articles_controller.rb: 41]
-genre=soci
-File size=723------------------------=[end]
+[2013/10/27 13:08:55] [articles_controller.rb: 48]
+genre=int
+File size=941
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:43:32] [articles_controller.rb: 41]
-genre=soci
-File size=868------------------------=[end]
+[2013/10/27 13:08:56] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=1087
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:44:05] [articles_controller.rb: 42]
-genre=soci
-File size=1013------------------------=[end]
+[2013/10/27 13:08:56] [articles_controller.rb: 487]
+new_set.size=6/residue_set.size=69/articles_model_set.size=75
+File size=1264
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:45:23] [articles_controller.rb: 42]
-genre=soci
-File size=1159------------------------=[end]
+[2013/10/27 13:10:26] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=1464
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:45:45] [articles_controller.rb: 42]
-genre=soci
-File size=1305------------------------=[end]
+[2013/10/27 13:10:26] [articles_controller.rb: 48]
+genre=int
+File size=1676
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:48:24] [articles_controller.rb: 42]
-genre=soci
-File size=1451------------------------=[end]
+[2013/10/27 13:10:27] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=1823
+------------------------=[end]
 
 [begin]------------------------=
-[2013/10/20 00:48:36] [articles_controller.rb: 42]
-genre=soci
-File size=1597------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 00:49:37] [articles_controller.rb: 42]
-genre=soci
-File size=1743------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 00:50:39] [articles_controller.rb: 42]
-genre=soci
-File size=1889------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 00:50:52] [articles_controller.rb: 42]
-genre=soci
-File size=2035------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:04:38] [articles_controller.rb: 42]
-genre=soci
-File size=2181------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:05:25] [articles_controller.rb: 42]
-genre=soci
-File size=2327------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:05:41] [articles_controller.rb: 42]
-genre=soci
-File size=2473------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:08:38] [articles_controller.rb: 42]
-genre=soci
-File size=2619------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:09:36] [articles_controller.rb: 42]
-genre=soci
-File size=2765------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:11:31] [articles_controller.rb: 42]
-genre=soci
-File size=2911------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:12:12] [articles_controller.rb: 42]
-genre=soci
-File size=3057------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:12:50] [articles_controller.rb: 43]
-genre=soci
-File size=3203------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:19:28] [articles_controller.rb: 42]
-genre=soci
-File size=3349------------------------=[end]
-
-[begin]------------------------=
-[2013/10/20 01:20:29] [articles_controller.rb: 42]
-genre=soci
-File size=3495------------------------=[end]
+[2013/10/27 13:10:27] [articles_controller.rb: 487]
+new_set.size=6/residue_set.size=69/articles_model_set.size=75
+File size=2000
+------------------------=[end]
 

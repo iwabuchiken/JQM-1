@@ -91,7 +91,6 @@ def write_log(dpath, text, file, line)
       
     
     f.write("[begin]------------------------=\n")
-    f.write("fname=#{fname}\n")
     
     # f.write("[#{get_time_label_now()}]" + line + ": " + text)
     f.write("[#{get_time_label_now()}] [#{file}: #{line}]\n")
