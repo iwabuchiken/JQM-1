@@ -447,13 +447,20 @@ private
     
     def _get_categorized_set_int(articles_model_set, genre)
         
-        key_word_set = _get_keywords_int()
+        key_word_sets = _get_keywords_int()
         #key_word_set = ['China', 'US', 'Others']
         
-        kws1 = key_word_set[0]
+        category_names = []
+        
+        categorized_sets = {}
+        
+        # China
+        
+        kws1 = key_word_sets[0]
         keywords = kws1.keywords.split(' ')
         
-        category_name = kws1.category
+        #category_name = kws1.category
+        category_names.push(kws1.category)
         
         new_set = []
         
@@ -476,6 +483,44 @@ private
         
         residue_set = articles_model_set - new_set
         
+        categorized_sets[category_names[0]] = new_set
+        
+        # US
+        
+        kws2 = key_word_sets[1]
+        keywords = kws2.keywords.split(' ')
+        
+        category_names.push(kws2.category)
+        #category_name = kws2.category
+        
+        new_set = []
+        
+        residue_set.size.times do |i|
+        
+            keywords.size.times do |j|
+            
+                if residue_set[i].line.include?(keywords[j])
+                    
+                    new_set.push(residue_set[i])
+                    
+                    break
+                    
+                end
+            
+            end#keywords.size.times do |kw,j|
+        
+        
+        end#articles_model_set.size.times do |a,i|
+        
+        residue_set = articles_model_set - new_set
+        
+        categorized_sets[category_names[1]] = new_set
+        
+        # Others
+        category_names.push("Others")
+        
+        categorized_sets[category_names[2]] = residue_set
+        
         #debug
         write_log(
                   @log_path,
@@ -487,17 +532,24 @@ private
                   __LINE__.to_s)
         
         return {
-             category_name \
-                  => new_set,
-             'US'\
-                  => residue_set[
-                        00 \
-                        ..(residue_set.length * 1/2)],
+             category_names[0] \
+                  => categorized_sets[category_names[0]],
+             
+             category_names[1] \
+                  => categorized_sets[category_names[1]],
+
+#             'US'\
+#                  => residue_set[
+#                        00 \
+#                        ..(residue_set.length * 1/2)],
+
+             category_names[2] \
+                  => categorized_sets[category_names[2]]}
                         
-             'Others'\
-                  => residue_set[
-                        residue_set.length * 1/2 \
-                        ..(residue_set.length - 1)]}
+#             'Others'\
+#                  => residue_set[
+#                        residue_set.length * 1/2 \
+#                        ..(residue_set.length - 1)]}
     
     end#_get_categorized_set_int(articles_model_set, genre)
     
@@ -516,7 +568,8 @@ private
         
         kws2 = KeyWordSet.new
         kws2.category = 'US'
-        kws2.keywords = '米国 アメリカ'
+#        kws2.keywords = '米国 アメリカ'
+        kws2.keywords = '米国 アメリカ オバマ 米選挙'
         
         result.push(kws1)
         result.push(kws2)
