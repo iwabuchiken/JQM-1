@@ -1,7 +1,7 @@
 <hr />
 <% @categorized_articles_set.keys.each_with_index do |key, i| %>
 
-	<%= link_to key, "##{key}" %> |
+	<%= link_to key + " (#{@categorized_articles_set[key].size})", "##{key}" %> |
 
 <% end %>
 
@@ -12,7 +12,7 @@
 	<table>
 		<hr />
 		<%#= "@categorized_articles_set[#{a}] => #{@categorized_articles_set[a]}" %>
-		<div>
+		<div class="category_label">
 			<span id="<%= key.dup %>">
 				<%= key.dup %> (<%= @categorized_articles_set[key].size %>) |
 			</span>

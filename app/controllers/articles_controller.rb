@@ -531,6 +531,27 @@ private
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
         
+        # Build the return value
+        result = {}
+        
+        category_names.each_with_index do |c, i|
+            
+            result[category_names[i]] = categorized_sets[category_names[i]]
+          
+        end
+        
+        #debug
+        write_log(
+                  @log_path,
+                  "result.size => #{result.size}"\
+                  + "/result.keys => #{result.keys}",  
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
+        
+        # return result
+        
         return {
              category_names[0] \
                   => categorized_sets[category_names[0]],
@@ -543,8 +564,10 @@ private
 #                        00 \
 #                        ..(residue_set.length * 1/2)],
 
-             category_names[2] \
-                  => categorized_sets[category_names[2]]}
+             category_names[-1] \
+                  => categorized_sets[category_names[-1]]}
+             # category_names[2] \
+                  # => categorized_sets[category_names[2]]}
                         
 #             'Others'\
 #                  => residue_set[

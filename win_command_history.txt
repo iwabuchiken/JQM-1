@@ -4,6 +4,7 @@ pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001
+a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001 -e development
 
 pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
@@ -96,10 +97,7 @@ bundle exec rake db:rollback
 g merge D-4_NR4 && g p origin master && g p heroku master && heroku run rake db:migrate
 g merge D-4_NR4 && g p origin master && g p heroku master
 g merge D-4_NR4 && g p origin master && g p heroku master && heroku open
-<<<<<<< HEAD
 g co master && g merge D-4_NR4 && g p origin master && g p heroku master && heroku open
-=======
->>>>>>> cd03e344eaf6d7353a338c6777539d2dd57742a9
 
 g p origin master && g p heroku master && heroku run rake db:migrate
 g p origin master && g p heroku master
@@ -113,6 +111,9 @@ bundle exec rake db:migrate
 [25/10/2013 21:45:23]----------------------------
 rails generate scaffold KeyWordSet genre:string category:string keywords:text
 bundle exec rake db:migrate
+
+#REF http://tamosblog.wordpress.com/2013/03/11/assets/
+bundle exec rake assets:clean
 
 aa
 

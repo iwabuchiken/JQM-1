@@ -1,9 +1,16 @@
 <% if i % 5 == 0 && i <=> 0 %>
 
-	<tr>
-		<td colspan="2">*****</td>
+	<tr class="tr_spacer">
+		<!-- <td colspan="1" class="col_id">*</td> -->
+		<!-- <td colspan="2"></td> -->
+		<!-- <td colspan="2"><pre>     </pre></td> -->
+		<!-- <td colspan="2">*****</td> -->
+		<!-- <td colspan="2" class="col_id">*****</td> -->
+		<td colspan="2" style="text-align: left;">*****</td>
 		
-		<td colspan="2">
+		<td colspan="2" class="link_top_bottom">
+		<!-- <td colspan="3" class="link_top_bottom"> -->
+		<!-- <td colspan="4" class="link_top_bottom"> -->
 			<a href="#top">Top</a> &nbsp;
 		
 			<a href="#bottom">Bottom</a>
@@ -13,7 +20,7 @@
 <% end %>
 
 <tr>
-	<td>
+	<td class="col_id">
 		
 		<%= "#{i + 1}" %>
 		
@@ -26,13 +33,13 @@
 				a.url, :target => "_blank" %>
 	</td>
 	
-	<td>
+	<td class="col_vendor">
 		
 		<%= a.vendor %>
 		
 	</td>
 	
-	<td>
+	<td class="col_news_time">
 		
 		<%= a.news_time %>
 		

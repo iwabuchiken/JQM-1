@@ -12,5 +12,27 @@
  *= require_tree .
 */
 table, th, td {
+	/*border: 2px solid red;*/
 	border: 2px solid blue;
+	/*border: 2px solid #A9D0F5;*/
+}
+
+/*.category_label {*/
+div.category_label {
+	
+	background: #BEF781;
+	/*background: #CEE3F6;*/
+	
+}
+
+td.col_id, td.col_vendor, td.col_news_time, td.link_top_bottom {
+	
+	text-align: center;
+	
+}
+
+tr.tr_spacer {
+	
+	background: #E0F8E6;
+	
 }
