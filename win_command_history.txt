@@ -28,6 +28,9 @@ g a . && gitk
 
 git log --grep=master -6
 
+g l --grep="\bm\b"
+
+
 [Set up 2013/05/17 12:23:23]----------------------------
 bundle install
 
@@ -125,6 +128,8 @@ bundle exec rake db:migrate
 
 rails generate scaffold Keyword name:string genre_id:integer category_id:integer
 bundle exec rake db:migrate
+
+g p origin master && g p heroku master && heroku run rake db:migrate
 
 aa
 
