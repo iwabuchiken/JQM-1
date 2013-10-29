@@ -447,7 +447,7 @@ private
     
     def _get_categorized_set_int(articles_model_set, genre)
         
-        key_word_sets = _get_keywords_int()
+        key_word_sets = _get_keywords_set_int()
         #key_word_set = ['China', 'US', 'Others']
         
         category_names = []
@@ -512,7 +512,8 @@ private
         
         end#articles_model_set.size.times do |a,i|
         
-        residue_set = articles_model_set - new_set
+        residue_set = residue_set - new_set
+        # residue_set = articles_model_set - new_set
         
         categorized_sets[category_names[1]] = new_set
         
@@ -577,29 +578,71 @@ private
     end#_get_categorized_set_int(articles_model_set, genre)
     
     #==================================
-    #   _get_keywords_int()
+    #   _get_keywords_set_int()
     # Return    => Array of KeyWordSet models
     #
     #==================================
-    def _get_keywords_int()
+    def _get_keywords_set_int()
     
         result = []
         
-        kws1 = KeyWordSet.new
-        kws1.category = 'China'
-        kws1.keywords = '中国 日中'
+        genre_int = Genre.find(:all, :conditions => {:code => 'int'})[0]
         
-        kws2 = KeyWordSet.new
-        kws2.category = 'US'
-#        kws2.keywords = '米国 アメリカ'
-        kws2.keywords = '米国 アメリカ オバマ 米選挙'
+        categories = Category.find(:all, :conditions => {:genre_id => genre_int.id})
         
-        result.push(kws1)
-        result.push(kws2)
+        #debug
+        if categories != nil
+            
+            write_log(
+                      @log_path,
+                      "categories.size => #{categories.size}",  
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+
+        else
+            write_log(
+                      @log_path,
+                      "categories => nil",  
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)            
+        end
+        
+        if categories != nil and categories.size > 0
+            
+            kws1 = KeyWordSet.new
+            kws1.category = 'China'
+            kws1.keywords = '中国 日中'
+            
+            kws2 = KeyWordSet.new
+            kws2.category = 'Europe'
+    #        kws2.keywords = '米国 アメリカ'
+            kws2.keywords = '欧州 イギリス ドイツ  フランス ロシア'
+            
+            result.push(kws1)
+            result.push(kws2)
+            
+        else
+            
+            kws1 = KeyWordSet.new
+            kws1.category = 'China'
+            kws1.keywords = '中国 日中'
+            
+            kws2 = KeyWordSet.new
+            kws2.category = 'US'
+    #        kws2.keywords = '米国 アメリカ'
+            kws2.keywords = '米国 アメリカ オバマ 米選挙'
+            
+            result.push(kws1)
+            result.push(kws2)
+            
+        end
+        
         
         return result
     
-    end#_get_keywords_int()
+    end#_get_keywords_set_int()
     
     
 end#class ArticlesController < ApplicationController

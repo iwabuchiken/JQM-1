@@ -1,10 +1,11 @@
 a
-pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
+# gitk
+pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
+# rails s
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001
-a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001 -e development
 
 pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
@@ -114,6 +115,16 @@ bundle exec rake db:migrate
 
 #REF http://tamosblog.wordpress.com/2013/03/11/assets/
 bundle exec rake assets:clean
+
+bundle exec rake assets:precompile
+
+[30/10/2013 00:49:34]----------------------------
+rails generate scaffold Category name:string genre_id:integer
+
+bundle exec rake db:migrate
+
+rails generate scaffold Keyword name:string genre_id:integer category_id:integer
+bundle exec rake db:migrate
 
 aa
 

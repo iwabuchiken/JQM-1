@@ -1,5 +1,9 @@
 JQM1::Application.routes.draw do
   
+  resources :keywords
+
+  resources :categories
+
   resources :key_word_sets
 
   resources :genres

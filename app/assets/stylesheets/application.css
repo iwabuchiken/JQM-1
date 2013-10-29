@@ -13,8 +13,10 @@
 */
 table, th, td {
 	/*border: 2px solid red;*/
-	border: 2px solid blue;
+	/*border: 2px solid blue;*/
 	/*border: 2px solid #A9D0F5;*/
+	/*border: 2px solid #6361FF;*/
+	border: 2px solid #1e90ff;	/* dodgerblue http://www.colordic.org/*/
 }
 
 /*.category_label {*/
