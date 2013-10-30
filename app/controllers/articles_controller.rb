@@ -445,7 +445,7 @@ private
     
     end#get_categorized_set(articles_model_set, @genre)
     
-    def _get_categorized_set_int(articles_model_set, genre)
+    def _get_categorized_set_int__v_1_55(articles_model_set, genre)
         
         key_word_sets = _get_keywords_set_int()
         #key_word_set = ['China', 'US', 'Others']
@@ -551,29 +551,80 @@ private
                   __LINE__.to_s)
 
         
-        # return result
+        return result
         
-        return {
-             category_names[0] \
-                  => categorized_sets[category_names[0]],
-             
-             category_names[1] \
-                  => categorized_sets[category_names[1]],
+        # return {
+             # category_names[0] \
+                  # => categorized_sets[category_names[0]],
+#              
+             # category_names[1] \
+                  # => categorized_sets[category_names[1]],
+# 
+# #             'US'\
+# #                  => residue_set[
+# #                        00 \
+# #                        ..(residue_set.length * 1/2)],
+# 
+             # category_names[-1] \
+                  # => categorized_sets[category_names[-1]]}
+             # # category_names[2] \
+                  # # => categorized_sets[category_names[2]]}
+#                         
+# #             'Others'\
+# #                  => residue_set[
+# #                        residue_set.length * 1/2 \
+# #                        ..(residue_set.length - 1)]}
+    
+    end#_get_categorized_set_int(articles_model_set, genre)
 
-#             'US'\
-#                  => residue_set[
-#                        00 \
-#                        ..(residue_set.length * 1/2)],
+    def _get_categorized_set_int(articles_model_set, genre)
+        
+        key_word_sets = _get_keywords_set_int()
+        #key_word_set = ['China', 'US', 'Others']
+        
+        residue_set = articles_model_set
+        
+        categorized_set = {}
+        
+        # Start: Build list
+        # key_word_sets.each_with_index do |i|
+        key_word_sets.each_with_index do |item, i|
+        
+            kws = key_word_sets[i]
+            
+            keywords = kws.keywords.split(' ')
+            
+            new_set = []
+            
+            residue_set.size.times do |j|
 
-             category_names[-1] \
-                  => categorized_sets[category_names[-1]]}
-             # category_names[2] \
-                  # => categorized_sets[category_names[2]]}
+                keywords.size.times do |h|
+                
+                    if residue_set[j].line.include?(keywords[h])
                         
-#             'Others'\
-#                  => residue_set[
-#                        residue_set.length * 1/2 \
-#                        ..(residue_set.length - 1)]}
+                        new_set.push(residue_set[j])
+                        
+                        break
+                        
+                    end
+                
+                end#keywords.size.times do |h|
+                
+                
+                
+            end#residue_set.size.times do |j|
+            
+            residue_set = residue_set - new_set
+            # sidue_set = residue_set - new_set
+            
+            categorized_set[kws.category] = new_set
+            
+          
+        end#key_word_sets.each_with_index do |i|
+        
+        categorized_set['Others'] = residue_set
+        
+        return categorized_set
     
     end#_get_categorized_set_int(articles_model_set, genre)
     
@@ -582,7 +633,7 @@ private
     # Return    => Array of KeyWordSet models
     #
     #==================================
-    def _get_keywords_set_int()
+    def _get_keywords_set_int_v_1_55()
     
         result = []
         
@@ -622,6 +673,74 @@ private
             
             result.push(kws1)
             result.push(kws2)
+            
+        else
+            
+            kws1 = KeyWordSet.new
+            kws1.category = 'China'
+            kws1.keywords = '中国 日中'
+            
+            kws2 = KeyWordSet.new
+            kws2.category = 'US'
+    #        kws2.keywords = '米国 アメリカ'
+            kws2.keywords = '米国 アメリカ オバマ 米選挙'
+            
+            result.push(kws1)
+            result.push(kws2)
+            
+        end
+        
+        
+        return result
+    
+    end#_get_keywords_set_int()
+    
+    def _get_keywords_set_int()
+    
+        result = []
+        
+        genre_int = Genre.find(:all, :conditions => {:code => 'int'})[0]
+        
+        categories = Category.find(:all, :conditions => {:genre_id => genre_int.id})
+        
+        #debug
+        if categories != nil
+            
+            write_log(
+                      @log_path,
+                      "categories.size => #{categories.size}",  
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+
+        else
+            write_log(
+                      @log_path,
+                      "categories => nil",  
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)            
+        end
+        
+        if categories != nil and categories.size > 0
+            
+            kws1 = KeyWordSet.new
+            kws1.category = 'China'
+            kws1.keywords = '中国 日中 天安門'
+            
+            kws2 = KeyWordSet.new
+            kws2.category = 'Europe'
+    #        kws2.keywords = '米国 アメリカ'
+            kws2.keywords = '欧州 イギリス ドイツ  フランス ロシア'
+            
+            kws3 = KeyWordSet.new
+            kws3.category = 'US'
+    # #        kws3.keywords = '米国 アメリカ'
+            kws3.keywords = '米国 オバマ アメリカ'
+#             
+            result.push(kws1)
+            result.push(kws2)
+            result.push(kws3)
             
         else
             
