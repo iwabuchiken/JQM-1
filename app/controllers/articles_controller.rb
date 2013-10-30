@@ -617,7 +617,10 @@ private
             residue_set = residue_set - new_set
             # sidue_set = residue_set - new_set
             
-            categorized_set[kws.category] = new_set
+            # categorized_set[kws.category] = new_set
+            #categorized_set[kws.category] = new_set.sort!{|x1, x2| x1.news_time <=> x2.news_time}
+            categorized_set[kws.category] = 
+                    new_set.sort!{|x1, x2| x2.news_time <=> x1.news_time}
             
           
         end#key_word_sets.each_with_index do |i|
@@ -693,7 +696,7 @@ private
         
         return result
     
-    end#_get_keywords_set_int()
+    end#_get_keywords_set_int_v_1_55()
     
     def _get_keywords_set_int()
     
@@ -726,7 +729,24 @@ private
             
             kws1 = KeyWordSet.new
             kws1.category = 'China'
-            kws1.keywords = '中国 日中 天安門'
+            
+            #REF http://railsdoc.com/references/find
+            keywords1 = Keyword.find(
+                            :all,
+                            :conditions \
+                                => ["genre_id = ? and category_id = ?", 2, 1])
+            
+            if keywords1 == nil or keywords1.size < 1
+              
+                kws1.keywords = '中国 日中 天安門'
+                
+            else
+              
+                #kws1.keywords = keywords1.collect{|kw| kw.name}
+                kws1.keywords = keywords1.collect{|kw| kw.name}.join(" ")
+              
+            end
+            
             
             kws2 = KeyWordSet.new
             kws2.category = 'Europe'
@@ -737,7 +757,7 @@ private
             kws3.category = 'US'
     # #        kws3.keywords = '米国 アメリカ'
             kws3.keywords = '米国 オバマ アメリカ 米軍 米政府 米ＮＳＡ 米NSA 米上院 米大統領'
-#             
+#           
             result.push(kws1)
             result.push(kws2)
             result.push(kws3)
