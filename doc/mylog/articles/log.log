@@ -724,3 +724,27 @@ categories.size => 1
 File size=21451
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/10/30 10:29:07] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=21673
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/30 10:29:07] [articles_controller.rb: 48]
+genre=int
+File size=21886
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/30 10:29:08] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=22034
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/30 10:29:08] [articles_controller.rb: 714]
+categories.size => 1
+File size=22212
+------------------------=[end]
+

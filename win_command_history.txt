@@ -54,7 +54,7 @@ heroku keys:add
 
 heroku create --stack cedar
 
-heroku rename cosmos-cr6
+heroku rename cosmos-jqm-1
 
 heroku keys:add && heroku create --stack cedar && heroku rename cosmos-jqm-1
 
