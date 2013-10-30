@@ -736,7 +736,7 @@ private
             kws3 = KeyWordSet.new
             kws3.category = 'US'
     # #        kws3.keywords = '米国 アメリカ'
-            kws3.keywords = '米国 オバマ アメリカ'
+            kws3.keywords = '米国 オバマ アメリカ 米軍 米政府 米ＮＳＡ 米NSA 米上院 米大統領'
 #             
             result.push(kws1)
             result.push(kws2)
