@@ -1042,3 +1042,69 @@ categories.size => 1
 File size=30825
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/10/31 08:56:02] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 372]
+genre => int
+File size=30985
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/31 08:56:02] [articles_controller.rb: 48]
+genre=int
+File size=31198
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/31 08:56:03] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=31346
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/31 08:56:03] [articles_controller.rb: 717]
+categories.size => 1
+File size=31524
+------------------------=[end]
+
+[begin]------------------------=
+[2013/10/31 08:56:03] [articles_controller.rb: 745]
+keywords1=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">]
+File size=31684
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/01 08:46:30] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 381]
+genre => soci
+File size=32236
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/01 08:46:30] [articles_controller.rb: 48]
+genre=soci
+File size=32450
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/01 08:46:31] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=32599
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/01 08:48:18] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 381]
+genre => soci
+File size=32777
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/01 08:48:18] [articles_controller.rb: 48]
+genre=soci
+File size=32991
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/01 08:48:19] [articles_controller.rb: 268]
+vendor_list.size=0/a_tags_href.size=75
+File size=33140
+------------------------=[end]
+

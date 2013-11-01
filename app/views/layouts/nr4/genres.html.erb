@@ -28,6 +28,8 @@
 	
   <%= javascript_include_tag "application" %>
   
+  <%= javascript_include_tag "/javascript/admin" %>
+  
   <%= csrf_meta_tags %>
   
 
@@ -41,6 +43,8 @@
 	<hr />
 	
 	<%= render :partial => 'layouts/nr4/genres_footer' %>
+	
+	<%= render :partial => 'layouts/nr4/genres_footer_log' %>
 		
 </body>
 
