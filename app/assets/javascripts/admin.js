@@ -15,20 +15,35 @@ $(document).ready(function(){
   
   $("#show_button").click(function(){
 	  
-//	  alert("Show");
+	  $.ajax({
+		    url: "/genres/show_log",
+		    type: "GET",
+		    timeout: 10000
+		}).done(function(data, status, xhr) {
+		    $("#show_log").html(data);
+		}).fail(function(xhr, status, error) {
+		    $("#show_log").append("xhr.status = " + xhr.status + "<br>");          // 例: 404
+//		    $("#log").append("xhr.statusText = " + xhr.statusText + "<br>");  // 例: Not Found
+//		    $("#log").append("status = " + status + "<br>");                  // 例: error
+//		    $("#log").append("error = " + error + "<br>");                    // 例: Not Found
+		});
 	  
-
-    $("#logs").show();
-
-    // REF disabled http://stackoverflow.com/questions/5580616/jquery-change-button-text
-    $(this).attr("disabled", true);
-    
-    // REF disabled http://d.hatena.ne.jp/ogakky/20110711/1310349297
-    $("#hide_button").removeAttr("disabled");
-//    $(".hide_button").removeAttr("disabled");
-    
-    
-    // $("#logs").css("visibility", "visible");
+	  
+	  
+////	  alert("Show");
+//	  
+//
+//    $("#logs").show();
+//
+//    // REF disabled http://stackoverflow.com/questions/5580616/jquery-change-button-text
+//    $(this).attr("disabled", true);
+//    
+//    // REF disabled http://d.hatena.ne.jp/ogakky/20110711/1310349297
+//    $("#hide_button").removeAttr("disabled");
+////    $(".hide_button").removeAttr("disabled");
+//    
+//    
+//    // $("#logs").css("visibility", "visible");
   });
   
 //  $(".hide_button").click(function(){

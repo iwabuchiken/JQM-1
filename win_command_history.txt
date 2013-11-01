@@ -142,4 +142,11 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 aa
 
+============RESOURCE============
+[Javascript]
+1. Edit js file
+2. Reboot server
+	=> Edition effective
+
+
 ============EOF============
