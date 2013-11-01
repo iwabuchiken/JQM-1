@@ -1,4 +1,6 @@
 JQM1::Application.routes.draw do
+
+      get "genres/show_log"
   
   resources :keywords
 
