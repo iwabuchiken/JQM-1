@@ -82,5 +82,29 @@ class GenresController < ApplicationController
       format.html { redirect_to genres_url }
       format.json { head :no_content }
     end
+
   end
+
+    def show_log
+        
+        target = "doc/mylog/articles/log.log"
+        
+        @content = ""
+        
+        if File.exists?(target)
+          
+          contentArray = File.readlines(target)
+    
+        else
+          
+          contentArray = ['No log data']
+          
+        end
+        
+        respond_to do |format|
+          format.html { render :text => contentArray.join('<br/>') }
+          # format.json { head :no_content }
+        end        
+    end#show_log
+
 end
