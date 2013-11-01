@@ -15,6 +15,7 @@ $(document).ready(function(){
   
   $("#show_button").click(function(){
 	  
+	  //REF http://www.tohoho-web.com/js/jquery/ajax.htm
 	  $.ajax({
 		    url: "/genres/show_log",
 		    type: "GET",
@@ -49,14 +50,17 @@ $(document).ready(function(){
 //  $(".hide_button").click(function(){
   $("#hide_button").click(function(){
 
-    // alert($(this).attr("value"));
-
-	// REF visibility http://www.htmq.com/style/visibility.shtml
-    // $("#logs").css("visibility", "hide");
-    $("#logs").hide();
-    
-    $(this).attr("disabled", true);
-    $("#show_button").removeAttr("disabled");
+	  $("#show_log").html("");
+	  
+	  
+//    // alert($(this).attr("value"));
+//
+//	// REF visibility http://www.htmq.com/style/visibility.shtml
+//    // $("#logs").css("visibility", "hide");
+//    $("#logs").hide();
+//    
+//    $(this).attr("disabled", true);
+//    $("#show_button").removeAttr("disabled");
     
   });
   
