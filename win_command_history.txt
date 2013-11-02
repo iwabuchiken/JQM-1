@@ -140,6 +140,9 @@ bundle exec rake db:migrate
 
 g p origin master && g p heroku master && heroku run rake db:migrate
 
+
+bundle exec rake assets:precompile
+
 aa
 
 ============RESOURCE============

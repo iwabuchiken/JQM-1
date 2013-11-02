@@ -93,7 +93,7 @@ class GenresController < ApplicationController
         
         if File.exists?(target)
           
-          contentArray = File.readlines(target)
+          contentArray = File.readlines(target).reverse!
     
         else
           

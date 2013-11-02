@@ -21,7 +21,21 @@ $(document).ready(function(){
 		    type: "GET",
 		    timeout: 10000
 		}).done(function(data, status, xhr) {
+			
 		    $("#show_log").html(data);
+		    
+//		    $(this).prop("disabled", true);	//=> Not working
+		    
+//		    $(this).attr("disabled", true);	//=> Not working
+		    
+		    //REF http://stackoverflow.com/questions/3806685/jquery-add-disabled-attribute-to-input answered Sep 27 '10 at 18:32
+//		    document.getElementById("show_log").disabled = true;	//=> Not working
+		    
+		    $("#hide_button").removeAttr("disabled");
+		    
+		    $(".log_navigation").show();
+		    
+		    
 		}).fail(function(xhr, status, error) {
 		    $("#show_log").append("xhr.status = " + xhr.status + "<br>");          // 例: 404
 //		    $("#log").append("xhr.statusText = " + xhr.statusText + "<br>");  // 例: Not Found
@@ -50,8 +64,11 @@ $(document).ready(function(){
 //  $(".hide_button").click(function(){
   $("#hide_button").click(function(){
 
-	  $("#show_log").html("");
+	  $("#show_log").html("LOG");
 	  
+	  $(this).attr("disabled", true);
+	  
+	  $(".log_navigation").hide();
 	  
 //    // alert($(this).attr("value"));
 //
