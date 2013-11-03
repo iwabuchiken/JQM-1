@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>ID</th>
     <th>Name</th>
     <th>Genre</th>
     <th>Category</th>
@@ -12,9 +13,12 @@
 
 <% @keywords.each do |keyword| %>
   <tr>
+    <td><%= keyword.id %></td>
     <td><%= keyword.name %></td>
-    <td><%= keyword.genre_id %></td>
-    <td><%= keyword.category_id %></td>
+    <td><%= keyword.category.genre.name %></td> 
+    <!-- <td><%= keyword.genre_id %></td> --> 
+    <!-- <td><%#= keyword.category_id.genre_id.name %></td> -->
+    <td><%= keyword.category.name %></td>
     <td><%= link_to 'Show', keyword %></td>
     <td><%= link_to 'Edit', edit_keyword_path(keyword) %></td>
     <td><%= link_to 'Destroy', keyword, confirm: 'Are you sure?', method: :delete %></td>

@@ -1264,3 +1264,39 @@ tokens=["ウイグル", "チベット"]
 File size=37804
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/03 11:01:19] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 383]
+genre => soci
+File size=37982
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 11:01:19] [articles_controller.rb: 48]
+genre=soci
+File size=38196
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 11:01:20] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=38345
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/04 08:11:10] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 383]
+genre => soci
+File size=38523
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/04 08:11:10] [articles_controller.rb: 48]
+genre=soci
+File size=38737
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/04 08:11:11] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=38886
+------------------------=[end]
+
