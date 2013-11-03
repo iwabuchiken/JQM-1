@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 class KeywordsController < ApplicationController
   # GET /keywords
   # GET /keywords.json
@@ -43,17 +45,66 @@ class KeywordsController < ApplicationController
   # POST /keywords
   # POST /keywords.json
   def create
-    @keyword = Keyword.new(params[:keyword])
+  
+       log_path
+  
+       tokens = params[:keyword][:name].gsub(/　/, " ").split()
+       
+       #debug
+        write_log(
+                  @log_path,
+                  "tokens=#{tokens}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
 
-    respond_to do |format|
-      if @keyword.save
-        format.html { redirect_to @keyword, notice: 'Keyword was successfully created.' }
-        format.json { render json: @keyword, status: :created, location: @keyword }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @keyword.errors, status: :unprocessable_entity }
-      end
-    end
+       
+       if tokens.length > 1
+            
+            #aa
+            
+            tokens.length.times do |i|
+            
+                keyword = Keyword.new(params[:keyword])
+                
+                keyword.name = tokens[i]
+                
+                
+                
+                if keyword.save
+                
+                    @keyword = keyword
+                    
+                end
+                
+            end
+            
+            respond_to do |format|
+                if @keyword != nil
+                    format.html { redirect_to @keyword, notice: 'Keyword was successfully created.' }
+                    format.json { render json: @keyword, status: :created, location: @keyword }
+                else
+                    format.html { render action: "new" }
+                    format.json { render json: @keyword.errors, status: :unprocessable_entity }            
+                end
+            end
+            
+       else
+       
+            @keyword = Keyword.new(params[:keyword])
+        
+            
+            respond_to do |format|
+              if @keyword.save
+                format.html { redirect_to @keyword, notice: 'Keyword was successfully created.' }
+                format.json { render json: @keyword, status: :created, location: @keyword }
+              else
+                format.html { render action: "new" }
+                format.json { render json: @keyword.errors, status: :unprocessable_entity }
+              end
+            end
+       end#if tokens.length > 1
+        
   end
 
   # PUT /keywords/1
@@ -83,4 +134,14 @@ class KeywordsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  
+private
+
+    def log_path
+       
+       @log_path = "doc/mylog/articles"
+        
+    end
+
 end

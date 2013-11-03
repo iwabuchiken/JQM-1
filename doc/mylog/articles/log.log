@@ -1198,3 +1198,69 @@ vendor_list.size=0/a_tags_href.size=75
 File size=35845
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/03 10:47:27] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 383]
+genre => soci
+File size=36023
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:47:27] [articles_controller.rb: 48]
+genre=soci
+File size=36237
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:47:28] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=36386
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:49:24] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 383]
+genre => soci
+File size=36564
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:49:24] [articles_controller.rb: 48]
+genre=soci
+File size=36778
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:49:25] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=36927
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:49:34] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 374]
+genre => int
+File size=37105
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:49:34] [articles_controller.rb: 48]
+genre=int
+File size=37318
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:49:35] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=37466
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:49:35] [articles_controller.rb: 719]
+categories.size => 1
+File size=37644
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/03 10:56:21] [keywords_controller.rb: 59]
+tokens=["ウイグル", "チベット"]
+File size=37804
+------------------------=[end]
+
