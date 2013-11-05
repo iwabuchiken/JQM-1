@@ -77,6 +77,11 @@ JQM1::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+     namespace :nr4 do
+       # Directs /admin/products/* to Admin::ProductsController
+       # (app/controllers/admin/products_controller.rb)
+       resources :settings_nr4s, :articles
+     end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.

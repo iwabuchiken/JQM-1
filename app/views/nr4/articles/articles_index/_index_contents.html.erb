@@ -31,7 +31,7 @@
 		<% @categorized_articles_set[key].each_with_index do |a, i| %>
 			<!-- REF locals http://stackoverflow.com/questions/6279651/rails-3-passing-local-variable-to-partial answered Jun 8 '11 at 15:08-->
 				<%= render :partial => \
-						'articles/articles_index/index_contents_table',
+						'nr4/articles/articles_index/index_contents_table',
 						:locals => {:i => i, :a => a} %>	
 			
 		<% end %>

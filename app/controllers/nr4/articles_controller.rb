@@ -6,7 +6,7 @@ require 'open-uri'
 #require 'utils'
 require 'utils2'
 
-class ArticlesController < ApplicationController
+class Nr4::ArticlesController < ApplicationController
     
     # layout 'nr4/application'
     layout 'layouts/nr4/application'

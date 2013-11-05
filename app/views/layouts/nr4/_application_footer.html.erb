@@ -1,18 +1,11 @@
 <hr />
 
-<%= link_to_unless_current 'Main(Mobile)', :controller => 'admin', :action => 'm_main', :class => 'link' %>&nbsp;|&nbsp;
+<%#= link_to_unless_current 'Main(Mobile)', :controller => 'admin', :action => 'm_main', :class => 'link' %><!-- &nbsp;|&nbsp;  -->
+<%= link_to_unless_current 'Main(Mobile)', "/admin/m_main", :class => 'link' %>&nbsp;|&nbsp;
 
-<%= link_to_unless_current \
-				'Main(Desktop)',
-				:controller => 'admin',
-				:action => 'main',
-				:class => 'link' %>&nbsp;|&nbsp;
+<%= link_to_unless_current 'Main(Desktop)', "/admin/main", :class => 'link' %>&nbsp;|&nbsp;
 
-<%= link_to_unless_current \
-				'Settings',
-				:controller => 'settings',
-				:action => 'index',
-				:class => 'link' %>&nbsp;|&nbsp;
+<%= link_to_unless_current 'Settings', "/settings", :class => 'link' %>&nbsp;|&nbsp;
 
 <hr />
 

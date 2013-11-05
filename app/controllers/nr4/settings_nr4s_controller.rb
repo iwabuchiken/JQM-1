@@ -1,7 +1,9 @@
-class SettingsNr4sController < ApplicationController
+#class SettingsNr4sController < ApplicationController
+class Nr4::SettingsNr4sController < ApplicationController
   # GET /settings_nr4s
   # GET /settings_nr4s.json
   
+    #layout '../layouts/nr4/genres'
     layout 'layouts/nr4/genres'
     
   def index
