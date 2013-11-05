@@ -1,0 +1,2 @@
+module SettingsNr4sHelper
+end

@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
 
+  resources :settings_nr4s
+
       get "genres/show_log"
   
   resources :keywords

@@ -1300,3 +1300,39 @@ vendor_list.size=0/a_tags_href.size=75
 File size=38886
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/04 08:48:44] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 383]
+genre => soci
+File size=39064
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/04 08:48:44] [articles_controller.rb: 48]
+genre=soci
+File size=39278
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/04 08:48:45] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=39427
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/06 07:48:46] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/articles_controller.rb: 383]
+genre => soci
+File size=39605
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/06 07:48:46] [articles_controller.rb: 48]
+genre=soci
+File size=39819
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/06 07:48:47] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=39968
+------------------------=[end]
+

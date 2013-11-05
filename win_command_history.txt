@@ -151,6 +151,10 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 bundle exec rake assets:precompile
 
+[06/11/2013 06:51:13]----------------------------
+#rails generate scaffold SettingsNR4 sort_genre:integer sort_category:integer
+bundle exec rake db:migrate
+
 aa
 
 ============RESOURCE============
