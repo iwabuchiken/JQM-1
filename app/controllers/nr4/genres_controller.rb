@@ -1,4 +1,4 @@
-class GenresController < ApplicationController
+class Nr4::GenresController < ApplicationController
   # GET /genres
   # GET /genres.json
   

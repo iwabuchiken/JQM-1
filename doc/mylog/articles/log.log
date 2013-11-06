@@ -268,3 +268,75 @@ vendor_list.size=0/a_tags_href.size=75
 File size=7941
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/07 08:05:11] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=8118
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:05:11] [articles_controller.rb: 48]
+genre=soci
+File size=8335
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:05:13] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=8483
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:07:58] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=8660
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:07:58] [articles_controller.rb: 48]
+genre=soci
+File size=8877
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:07:58] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=9025
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:20:44] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=9202
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:20:44] [articles_controller.rb: 48]
+genre=soci
+File size=9419
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:20:45] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=9567
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:21:39] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=9744
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:21:39] [articles_controller.rb: 48]
+genre=soci
+File size=9961
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:21:40] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=10109
+------------------------=[end]
+
