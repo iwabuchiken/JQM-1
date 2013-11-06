@@ -340,3 +340,21 @@ vendor_list.size=0/a_tags_href.size=75
 File size=10109
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/07 08:27:13] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=10287
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:27:13] [articles_controller.rb: 48]
+genre=soci
+File size=10505
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:27:14] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=10654
+------------------------=[end]
+

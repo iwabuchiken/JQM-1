@@ -1,6 +1,6 @@
 #encoding: utf-8
 
-class KeywordsController < ApplicationController
+class Nr4::KeywordsController < ApplicationController
   # GET /keywords
   # GET /keywords.json
   

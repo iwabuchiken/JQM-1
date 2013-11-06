@@ -1,4 +1,4 @@
-class CategoriesController < ApplicationController
+class Nr4::CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   
