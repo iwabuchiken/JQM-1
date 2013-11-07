@@ -7,6 +7,18 @@ class Nr4::KeywordsController < ApplicationController
   layout 'layouts/nr4/genres'
   
   def index
+      #debug
+      if @log_path == nil
+            @log_path = log_path
+      end
+      
+        write_log(
+                  @log_path,
+                  "keywords#index",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
     @keywords = Keyword.all
 
     respond_to do |format|

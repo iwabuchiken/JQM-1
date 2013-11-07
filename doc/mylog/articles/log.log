@@ -526,3 +526,93 @@ categories.size => 1 / categories=China
 File size=15945
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/07 10:46:48] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=16124
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:46:48] [articles_controller.rb: 48]
+genre=soci
+File size=16342
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:46:49] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=16491
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 11:17:45] [keywords_controller.rb: 20]
+keywords#index
+File size=16669
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 11:23:16] [keywords_controller.rb: 20]
+keywords#index
+File size=16822
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 11:30:43] [keywords_controller.rb: 20]
+keywords#index
+File size=16975
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 11:34:34] [keywords_controller.rb: 20]
+keywords#index
+File size=17128
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 11:35:21] [keywords_controller.rb: 20]
+keywords#index
+File size=17281
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 11:43:03] [keywords_controller.rb: 71]
+tokens=["習近平"]
+File size=17434
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 11:43:12] [keywords_controller.rb: 20]
+keywords#index
+File size=17593
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:04:40] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=17746
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:04:40] [articles_controller.rb: 48]
+genre=soci
+File size=17964
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:04:41] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=18113
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:05:28] [keywords_controller.rb: 20]
+keywords#index
+File size=18291
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:06:29] [keywords_controller.rb: 71]
+tokens=["米中"]
+File size=18444
+------------------------=[end]
+

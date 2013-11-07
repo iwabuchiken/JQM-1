@@ -4,8 +4,14 @@ JQM1::Application.routes.draw do
 
       get "/nr4/genres/show_log"
       #get "genres/show_log"
+      
+  # Matches
+  #match "/keywords" => redirect ("/nr4/keywords") #=> syntax error, unexpected tLPAREN_ARG
+  #post "/keywords", to: redirect('/nr4/keywords')
+  #post "/nr4/keywords/create"
+  #post "/keywords", to: redirect('/nr4/keywords/create')
   
-  resources :keywords
+  resources :keywords, module: 'nr4'
 
   resources :categories
 
@@ -31,6 +37,7 @@ JQM1::Application.routes.draw do
   get "admin/sub1"
 
   get "admin/sub2"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -83,6 +90,12 @@ JQM1::Application.routes.draw do
        # (app/controllers/admin/products_controller.rb)
        resources :settings_nr4s, :articles, :genres, :categories, :keywords
      end
+     
+     # Scopes
+     #REF http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing
+     #scope module: 'nr4' do
+     #       resources :keywords
+     #end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
