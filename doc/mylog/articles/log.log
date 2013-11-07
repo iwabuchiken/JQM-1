@@ -358,3 +358,171 @@ vendor_list.size=0/a_tags_href.size=75
 File size=10654
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/07 08:30:25] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=10832
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:30:25] [articles_controller.rb: 48]
+genre=soci
+File size=11050
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:30:26] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=11199
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:31:43] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=11377
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:31:43] [articles_controller.rb: 48]
+genre=soci
+File size=11595
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:31:44] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=11744
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:49:25] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=11922
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:49:25] [articles_controller.rb: 48]
+genre=soci
+File size=12140
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:49:25] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=12289
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:21] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=12467
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:21] [articles_controller.rb: 48]
+genre=int
+File size=12684
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:22] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=12832
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:22] [articles_controller.rb: 720]
+categories.size => 1 / categories=[#<Category id: 1, name: "China", genre_id: 2, created_at: "2013-10-29 16:22:57", updated_at: "2013-10-29 16:22:57">]
+File size=13010
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:57] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=13301
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:57] [articles_controller.rb: 48]
+genre=int
+File size=13518
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:58] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=13666
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:50:58] [articles_controller.rb: 720]
+categories.size => 1 / categories=[#<Category id: 1, name: "China", genre_id: 2, created_at: "2013-10-29 16:22:57", updated_at: "2013-10-29 16:22:57">]
+File size=13844
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:51:20] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=14135
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:51:21] [articles_controller.rb: 48]
+genre=int
+File size=14352
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:51:21] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=14500
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 08:51:21] [articles_controller.rb: 720]
+categories.size => 1 / categories=China
+File size=14678
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:39:48] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=14857
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:39:48] [articles_controller.rb: 48]
+genre=soci
+File size=15075
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:39:49] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=15224
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:39:54] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=15402
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:39:54] [articles_controller.rb: 48]
+genre=int
+File size=15619
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:39:55] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=15767
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 10:39:55] [articles_controller.rb: 725]
+categories.size => 1 / categories=China
+File size=15945
+------------------------=[end]
+

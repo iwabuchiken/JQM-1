@@ -701,6 +701,72 @@ private
     end#_get_keywords_set_int_v_1_55()
     
     def _get_keywords_set_int()
+        ##########################################
+        #
+        # Variables
+        #
+        ##########################################
+
+        result = []
+        
+        genre_int = Genre.find(:all, :conditions => {:code => 'int'})[0]
+        
+        categories = Category.find(:all, :conditions => {:genre_id => genre_int.id})
+        
+        #debug
+        if categories != nil
+            
+            write_log(
+                      @log_path,
+                      "categories.size => #{categories.size}"\
+                      + " / categories=#{categories[0].name}",  
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+
+        else
+            write_log(
+                      @log_path,
+                      "categories => nil",  
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)            
+        end
+        
+        ##########################################
+        #
+        # Operations
+        #
+        ##########################################        
+        categories.each_with_index do |cat, i|
+        
+            keywords = Keyword.find(
+                              :all,
+                              :conditions => \
+                                    ['genre_id = ? and category_id = ?',
+                                          genre_int, cat.id])
+                                          
+            kws = KeyWordSet.new
+            
+            kws.category = cat.name
+            
+            if keywords != nil
+                  
+                  kws.keywords = keywords.collect{|kw| kw.name}.join(" ")
+            else
+                  kws.keywords = ""
+            
+            end
+            
+            result.push(kws)
+        
+        end#categories.each_with_index do |cat, i|
+        
+        return result
+    
+    end#_get_keywords_set_int()
+    
+    def _get_keywords_set_int_upto_v_1_6_4()
     
         result = []
         

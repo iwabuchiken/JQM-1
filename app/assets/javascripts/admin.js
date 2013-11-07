@@ -17,7 +17,8 @@ $(document).ready(function(){
 	  
 	  //REF http://www.tohoho-web.com/js/jquery/ajax.htm
 	  $.ajax({
-		    url: "/genres/show_log",
+//		    url: "/genres/show_log",
+		    url: "/nr4/genres/show_log",
 		    type: "GET",
 		    timeout: 10000
 		}).done(function(data, status, xhr) {
