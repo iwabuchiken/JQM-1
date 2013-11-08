@@ -616,3 +616,81 @@ tokens=["米中"]
 File size=18444
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/07 15:12:29] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=18600
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:12:29] [articles_controller.rb: 48]
+genre=soci
+File size=18818
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:12:29] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=18967
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:12:37] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=19145
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:12:37] [articles_controller.rb: 48]
+genre=int
+File size=19362
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:12:38] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=19510
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/07 15:12:38] [articles_controller.rb: 725]
+categories.size => 1 / categories=China
+File size=19688
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:22:35] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=19867
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:22:35] [articles_controller.rb: 48]
+genre=soci
+File size=20085
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:22:36] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=20234
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:22:48] [keywords_controller.rb: 20]
+keywords#index
+File size=20412
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:24:40] [keywords_controller.rb: 71]
+tokens=["日中", "尖閣"]
+File size=20565
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:24:45] [keywords_controller.rb: 20]
+keywords#index
+File size=20731
+------------------------=[end]
+

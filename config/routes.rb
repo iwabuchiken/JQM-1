@@ -11,9 +11,10 @@ JQM1::Application.routes.draw do
   #post "/nr4/keywords/create"
   #post "/keywords", to: redirect('/nr4/keywords/create')
   
+  #REF http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing "If you want to route /posts (without the prefix /admin) to Admin::PostsController, you could use:"
   resources :keywords, module: 'nr4'
 
-  resources :categories
+  resources :categories, module: 'nr4'
 
   resources :key_word_sets
 
