@@ -43,6 +43,10 @@ class Nr4::KeywordsController < ApplicationController
   def new
     @keyword = Keyword.new
 
+    @genres = Genre.all
+    
+    @categories = Category.all
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @keyword }

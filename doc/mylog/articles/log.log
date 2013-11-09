@@ -694,3 +694,189 @@ keywords#index
 File size=20731
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/08 18:41:05] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=20884
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:41:05] [articles_controller.rb: 48]
+genre=soci
+File size=21102
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:41:05] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=21251
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:42:21] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=21429
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:42:21] [articles_controller.rb: 48]
+genre=int
+File size=21646
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:42:22] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=21794
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:42:22] [articles_controller.rb: 725]
+categories.size => 2 / categories=China
+File size=21972
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:03] [keywords_controller.rb: 20]
+keywords#index
+File size=22151
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:17] [keywords_controller.rb: 71]
+tokens=["米大統領"]
+File size=22304
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:23] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=22466
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:23] [articles_controller.rb: 48]
+genre=int
+File size=22683
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:24] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=22831
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:24] [articles_controller.rb: 725]
+categories.size => 2 / categories=China
+File size=23009
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:46] [keywords_controller.rb: 20]
+keywords#index
+File size=23188
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:44:57] [keywords_controller.rb: 71]
+tokens=["FDA"]
+File size=23341
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:45:06] [keywords_controller.rb: 20]
+keywords#index
+File size=23494
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:45:14] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=23647
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:45:14] [articles_controller.rb: 48]
+genre=int
+File size=23864
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:45:15] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=24012
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:45:15] [articles_controller.rb: 725]
+categories.size => 2 / categories=China
+File size=24190
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/08 18:46:02] [keywords_controller.rb: 20]
+keywords#index
+File size=24369
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:01:06] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=24522
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:01:06] [articles_controller.rb: 48]
+genre=soci
+File size=24740
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:01:07] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=24889
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:01:36] [keywords_controller.rb: 20]
+keywords#index
+File size=25067
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:14:30] [keywords_controller.rb: 20]
+keywords#index
+File size=25220
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:18:07] [keywords_controller.rb: 20]
+keywords#index
+File size=25373
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:18:46] [keywords_controller.rb: 73]
+tokens=["オバマ"]
+File size=25526
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:18:50] [keywords_controller.rb: 20]
+keywords#index
+File size=25685
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:23:07] [keywords_controller.rb: 75]
+tokens=["国務長官"]
+File size=25838
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:23:10] [keywords_controller.rb: 20]
+keywords#index
+File size=26000
+------------------------=[end]
+

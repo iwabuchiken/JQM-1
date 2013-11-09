@@ -22,14 +22,28 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
     <%= f.label :genre_id %><br />
-    <%= f.number_field :genre_id %>
+    <%#= f.number_field :genre_id %>
+    <% genre_ids = [] %>
+    <% @genres.each do |g| %>
+    	<% genre_ids.push([g.name, g.id]) %>
+    <% end %>
+    <%= select :keyword, :genre_id, genre_ids %>
+    <%#= select :keyword, :genre_id, [["Society", 1], ["Overseas", 2]] %>
   </div>
+  
   <div class="field">
     <%= f.label :category_id %><br />
-    <%= f.number_field :category_id %>
+    <% category_ids = [] %>
+    <% @categories.each do |c| %>
+    	<% category_ids.push([c.name, c.id]) %>
+    <% end %>
+    <%= select :keyword, :category_id, category_ids %>
+    <%#= f.number_field :category_id %>
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
