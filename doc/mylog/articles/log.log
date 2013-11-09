@@ -880,3 +880,87 @@ keywords#index
 File size=26000
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/09 23:31:51] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=26153
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:31:51] [articles_controller.rb: 48]
+genre=int
+File size=26370
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:31:52] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=26518
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/09 23:31:52] [articles_controller.rb: 725]
+categories.size => 2 / categories=China
+File size=26696
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:38:12] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=26875
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:38:12] [articles_controller.rb: 48]
+genre=soci
+File size=27093
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:38:13] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=27242
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:39:09] [keywords_controller.rb: 20]
+keywords#index
+File size=27420
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:39:32] [keywords_controller.rb: 75]
+tokens=["欧州", "ヨーロッパ", "ドイツ", "フランス", "イギリス", "イタリア", "ポーランド"]
+File size=27573
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:39:37] [keywords_controller.rb: 20]
+keywords#index
+File size=27828
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:39:51] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 374]
+genre => int
+File size=27981
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:39:51] [articles_controller.rb: 48]
+genre=int
+File size=28198
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:39:52] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=28346
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:39:52] [articles_controller.rb: 725]
+categories.size => 3 / categories=China
+File size=28524
+------------------------=[end]
+

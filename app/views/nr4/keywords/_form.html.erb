@@ -30,6 +30,7 @@
     <% @genres.each do |g| %>
     	<% genre_ids.push([g.name, g.id]) %>
     <% end %>
+    <!-- REF select http://railsdoc.com/references/select -->
     <%= select :keyword, :genre_id, genre_ids %>
     <%#= select :keyword, :genre_id, [["Society", 1], ["Overseas", 2]] %>
   </div>

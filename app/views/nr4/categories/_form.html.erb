@@ -16,10 +16,14 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
     <%= f.label :genre_id %><br />
-    <%= f.number_field :genre_id %>
+    <%#= f.number_field :genre_id %>
+    <% genre_ids = @genres.collect{|g| [g.name, g.id]} %>
+    <%= select :category, :genre_id, genre_ids %>
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
