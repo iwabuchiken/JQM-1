@@ -1,0 +1,13 @@
+<%#= @genre.name %>
+
+Category
+
+<br/>
+<br/>
+
+<% category_ids = [] %>
+<% @categories.each do |c| %>
+	<% category_ids.push([c.name, c.id]) %>
+<% end %>
+<%= select :keyword, :category_id, category_ids %>
+

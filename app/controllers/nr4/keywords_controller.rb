@@ -157,6 +157,9 @@ class Nr4::KeywordsController < ApplicationController
 
     def show_genre_list
         
+        # @genre = Genre.first
+        @genres = Genre.all
+        
         # layout 'layouts/nr4/keywords/show_genre_list'
         #REF http://www.rubylife.jp/rails/template/index3.html#section3
         render :layout => 'layouts/nr4/keywords/show_genre_list'
