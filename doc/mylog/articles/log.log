@@ -964,3 +964,123 @@ categories.size => 3 / categories=China
 File size=28524
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/10 08:54:18] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=28703
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:54:18] [articles_controller.rb: 48]
+genre=soci
+File size=28921
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 08:54:18] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=29070
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:11:48] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=29248
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:11:48] [articles_controller.rb: 48]
+genre=soci
+File size=29466
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:11:49] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=29615
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:12:27] [keywords_controller.rb: 20]
+keywords#index
+File size=29793
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:14:09] [keywords_controller.rb: 20]
+keywords#index
+File size=29946
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:24:31] [keywords_controller.rb: 75]
+tokens=[]
+File size=30099
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:25:57] [keywords_controller.rb: 75]
+tokens=[]
+File size=30247
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:27:47] [keywords_controller.rb: 75]
+tokens=[]
+File size=30395
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:29:31] [keywords_controller.rb: 75]
+tokens=[]
+File size=30543
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:35:02] [keywords_controller.rb: 75]
+tokens=[]
+File size=30691
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:37:23] [keywords_controller.rb: 20]
+keywords#index
+File size=30839
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:37:57] [keywords_controller.rb: 20]
+keywords#index
+File size=30992
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:41:24] [keywords_controller.rb: 20]
+keywords#index
+File size=31145
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:51:52] [keywords_controller.rb: 165]
+show_genre_list
+File size=31298
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:54:03] [keywords_controller.rb: 170]
+show_genre_list
+File size=31453
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:54:27] [keywords_controller.rb: 170]
+show_genre_list
+File size=31608
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/10 21:55:59] [keywords_controller.rb: 170]
+show_genre_list
+File size=31763
+------------------------=[end]
+

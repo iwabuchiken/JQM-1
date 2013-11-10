@@ -6,6 +6,9 @@ class Nr4::KeywordsController < ApplicationController
   
   layout 'layouts/nr4/genres'
   
+  #REF http://maskana-soft.com/rails/pro/body/41
+  before_filter :log_path
+  
   def index
       #debug
       if @log_path == nil
@@ -150,7 +153,33 @@ class Nr4::KeywordsController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
+
+    def show_genre_list
+        
+        # layout 'layouts/nr4/keywords/show_genre_list'
+        #REF http://www.rubylife.jp/rails/template/index3.html#section3
+        render :layout => 'layouts/nr4/keywords/show_genre_list'
+        
+        #debug
+        write_log(
+                  @log_path,
+                  "show_genre_list",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
+        # respond_to do |format|
+          # format.html { redirect_to keywords_url }
+          # format.json { head :no_content }
+        # end
+        
+        # respond_to do |format|
+          # format.html # index.html.erb
+          # #format.json { render json: @keywords }
+        # end        
+        
+    end#show_genre_list
   
 private
 
