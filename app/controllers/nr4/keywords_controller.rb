@@ -24,12 +24,33 @@ class Nr4::KeywordsController < ApplicationController
 
     @keywords = Keyword.all
 
+    #----------------------
+    # Get: Articles models list
+    #----------------------
+    if params['sort']
+        
+        _index__1_sort(params['sort'])
+      
+    else
+        
+        #debug
+        write_log(
+                  @log_path,
+                  "sort => nil",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+    end    
+    
+    
+              
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @keywords }
     end
   end
-
+  
   # GET /keywords/1
   # GET /keywords/1.json
   def show
@@ -224,5 +245,41 @@ private
        @log_path = "doc/mylog/articles"
         
     end
+    
+    def _index__1_sort(sort_key)
+        
+        if sort_key == "id"
+            
+            @keywords.sort! {|k1, k2|
+                
+                k1.id <=> k2.id
+            }
+            
+        elsif sort_key == "category"
+            
+            @keywords.sort! {|k1, k2|
+                
+                k1.category.id <=> k2.category.id
+            }
+            
+        elsif sort_key == "genre"
+            
+            @keywords.sort! {|k1, k2|
+                
+                k1.category.genre.id <=> k2.category.genre.id
+            }
+            
+        elsif sort_key == "name"
+            
+            @keywords.sort! {|k1, k2|
+                
+                k1.name <=> k2.name
+            }
+            
+        else
+            
+        end
+        
+    end#_index__1_sort(sort_key)
 
 end

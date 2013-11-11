@@ -1,0 +1,17 @@
+  <tr>
+  	
+    <th><%= link_to 'ID', nr4_keywords_path(sort: "id") %></th>
+    <!-- <th>ID</th> -->
+    <th><%= link_to 'Name', nr4_keywords_path(sort: "name") %></th>
+    <th><%= link_to 'Genre', nr4_keywords_path(sort: "genre") %></th>
+    <!-- <th>Genre</th> -->
+    <!-- <th>Category</th> -->
+    
+    <!-- REF http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to -->
+    <th><%= link_to 'Category', nr4_keywords_path(sort: "category") %></th>
+    <!-- <th><%#= link_to 'Category', nr4_keywords_path, sort: "category" %></th> //=> a href="/nr4/keywords" sort="category" -->
+    <!-- <th><%#= link_to 'Category', nr4_keywords_path %></th> -->
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
