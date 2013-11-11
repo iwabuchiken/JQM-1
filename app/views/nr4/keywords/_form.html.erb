@@ -23,10 +23,35 @@
     <%= f.text_field :name %>
   </div>
   
-  <div>
-  		<b onclick="show_genre_list();">Genres</b>
+  <div class="field">
+    <%= f.label :genre_id %><br />
+    <%#= f.number_field :genre_id %>
+    <% genre_ids = [] %>
+    <% @genres.each do |g| %>
+    	<% genre_ids.push([g.name, g.id]) %>
+    <% end %>
+    
+    <!-- REF select http://railsdoc.com/references/select -->
+    <!-- REF selected http://html.eweb-design.com/0905_slc.html -->
+    <%= select :keyword, :genre_id, genre_ids, :selected => genre_ids[0] %>
+    <%#= select :keyword, :genre_id, [["Society", 1], ["Overseas", 2]] %>
+    
   </div>
-  <div id="genre_list"></div>
+  
+  <!-- <div class="field" id="category_list" style="background: yellow;"> -->
+  <div class="field" id="category_list">
+    <%= f.label :category_id %>
+    (<span onclick="show_category_list()" style="color: blue;">Refresh</span>)
+    <br />
+    <% category_ids = [] %>
+    <% @categories.each do |c| %>
+    	<% category_ids.push([c.name, c.id]) %>
+    <% end %>
+    <%= select :keyword, :category_id, category_ids %>
+    <%#= f.number_field :category_id %>
+  </div>
+
+  <!-- <div id="category_list"></div> -->
   <br />
   
 	<%#= link_to \

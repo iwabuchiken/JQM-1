@@ -1,9 +1,9 @@
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk && rails s --port 3001
 
-a
-
 #pushd
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1
+
+a
 
 # gitk
 pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk

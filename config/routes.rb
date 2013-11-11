@@ -4,6 +4,7 @@ JQM1::Application.routes.draw do
 
       get "/nr4/genres/show_log"
       get "/nr4/keywords/show_genre_list"
+      get "/nr4/keywords/show_category_list"
       #get "genres/show_log"
       
   # Matches

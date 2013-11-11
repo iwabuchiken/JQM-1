@@ -1114,3 +1114,231 @@ show_genre_list
 File size=32538
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/11 10:03:50] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=32693
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:03:50] [articles_controller.rb: 48]
+genre=soci
+File size=32911
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:03:51] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=33060
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:05:46] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=33238
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:05:46] [articles_controller.rb: 48]
+genre=soci
+File size=33456
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:05:46] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=33605
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:05:57] [keywords_controller.rb: 23]
+keywords#index
+File size=33783
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:06:11] [keywords_controller.rb: 173]
+show_genre_list
+File size=33936
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:10:14] [keywords_controller.rb: 23]
+keywords#index
+File size=34091
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:17:28] [keywords_controller.rb: 23]
+keywords#index
+File size=34244
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 10:19:30] [keywords_controller.rb: 23]
+keywords#index
+File size=34397
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:21:03] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=34550
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:21:03] [articles_controller.rb: 48]
+genre=soci
+File size=34768
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:21:03] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=34917
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:21:12] [keywords_controller.rb: 23]
+keywords#index
+File size=35095
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:24:48] [keywords_controller.rb: 204]
+show_category_list/selected_genre=
+File size=35248
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:25:41] [keywords_controller.rb: 204]
+show_category_list/selected_genre=1
+File size=35422
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:27:58] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=35597
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:28:46] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=35772
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:29:50] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=35947
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:30:02] [keywords_controller.rb: 23]
+keywords#index
+File size=36122
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:30:31] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=36275
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:30:38] [keywords_controller.rb: 206]
+show_category_list/selected_genre=1
+File size=36450
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:30:57] [keywords_controller.rb: 78]
+tokens=["原発", "福島"]
+File size=36625
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:31:02] [keywords_controller.rb: 23]
+keywords#index
+File size=36791
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:36:25] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=36944
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:36:34] [keywords_controller.rb: 206]
+show_category_list/selected_genre=1
+File size=37119
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:36:45] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=37294
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:38:13] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=37469
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:38:20] [keywords_controller.rb: 206]
+show_category_list/selected_genre=1
+File size=37644
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:38:32] [keywords_controller.rb: 206]
+show_category_list/selected_genre=3
+File size=37819
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:38:37] [keywords_controller.rb: 206]
+show_category_list/selected_genre=3
+File size=37994
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:38:42] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=38169
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:39:02] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=38344
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:39:07] [keywords_controller.rb: 206]
+show_category_list/selected_genre=1
+File size=38519
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:39:11] [keywords_controller.rb: 206]
+show_category_list/selected_genre=2
+File size=38694
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:39:21] [keywords_controller.rb: 78]
+tokens=["米軍"]
+File size=38869
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/11 12:39:23] [keywords_controller.rb: 23]
+keywords#index
+File size=39025
+------------------------=[end]
+

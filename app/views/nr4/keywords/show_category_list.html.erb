@@ -1,9 +1,14 @@
 <%#= @genre.name %>
 
-Category
+<!-- Category=<%#= @genre %> -->
 
-<br/>
-<br/>
+<label for="keyword_category_id">Category</label>
+
+(<span onclick="show_category_list()" style="color: blue;">Refresh</span>)
+
+<br />
+
+<!-- Selected genre = <%#= @genre %> -->
 
 <% category_ids = [] %>
 <% @categories.each do |c| %>

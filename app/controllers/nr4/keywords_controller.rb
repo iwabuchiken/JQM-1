@@ -48,7 +48,7 @@ class Nr4::KeywordsController < ApplicationController
 
     @genres = Genre.all
     
-    @categories = Category.all
+    @categories = Category.find(:all, :conditions => {:genre_id => @genres[0].id})
     
     respond_to do |format|
       format.html # new.html.erb
@@ -168,6 +168,39 @@ class Nr4::KeywordsController < ApplicationController
         write_log(
                   @log_path,
                   "show_genre_list",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
+        # respond_to do |format|
+          # format.html { redirect_to keywords_url }
+          # format.json { head :no_content }
+        # end
+        
+        # respond_to do |format|
+          # format.html # index.html.erb
+          # #format.json { render json: @keywords }
+        # end        
+        
+    end#show_genre_list
+    
+    def show_category_list
+        
+        # @genre = Genre.first
+        @genres = Genre.all
+        
+        @genre = params[:selected_genre]
+        
+        @categories = Category.find(:all, :conditions => {:genre_id => @genre})
+        
+        # layout 'layouts/nr4/keywords/show_genre_list'
+        #REF http://www.rubylife.jp/rails/template/index3.html#section3
+        render :layout => 'layouts/nr4/keywords/show_genre_list'
+        
+        #debug
+        write_log(
+                  @log_path,
+                  "show_category_list/selected_genre=#{@genre}",
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
