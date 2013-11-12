@@ -2,16 +2,74 @@
   	
     <th><%= link_to 'ID', nr4_keywords_path(sort: "id") %></th>
     <!-- <th>ID</th> -->
-    <th><%= link_to 'Name', nr4_keywords_path(sort: "name") %></th>
-    <th><%= link_to 'Genre', nr4_keywords_path(sort: "genre") %></th>
+    <th>
+    	<%= link_to 'Name', nr4_keywords_path(sort: "name") %>
+    	<br />
+    	<%= form_tag('/nr4/keywords', :method => :get) do %>
+    	
+	    	 <%= text_field_tag\
+							"filter[name]",
+							'',
+							:size => '5',
+							:style => "text-align: right;" %>
+    	
+    		<%= submit_tag 'Go' %>
+    	<% end %>
+	</th>
+    
+    <th>
+    	<%= link_to 'Genre', nr4_keywords_path(sort: "genre") %>
+    	<!-- <br /> -->
+    	
+    	<!-- REF http://railsdoc.com/form -->
+    	<%= form_tag('/nr4/keywords', :method => :get) do %>
+    	
+    	    <% genre_ids = [] %>
+		    <% @genres.each do |g| %>
+		    	<% genre_ids.push([g.name, g.id]) %>
+		    <% end %>
+		    
+		    <!-- REF select http://railsdoc.com/references/select -->
+		    <!-- REF selected http://html.eweb-design.com/0905_slc.html -->
+		    <%= select \
+		    		:filter,
+		    		:genre,
+		    		genre_ids,
+		    		
+		    		:include_blank => true %>
+    	
+    		<%= submit_tag 'Go' %>
+    	<% end %>
+    </th>
+    
     <!-- <th>Genre</th> -->
     <!-- <th>Category</th> -->
     
     <!-- REF http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to -->
-    <th><%= link_to 'Category', nr4_keywords_path(sort: "category") %></th>
+    <th>
+    	<%= link_to 'Category', nr4_keywords_path(sort: "category") %>
+    	<br />
+    	<%= form_tag('/nr4/keywords', :method => :get) do %>
+    	
+    	    <% category_ids = [] %>
+		    <% @categories.each do |c| %>
+		    	<% category_ids.push([c.name, c.id]) %>
+		    <% end %>
+		    
+		    <!-- REF select http://railsdoc.com/references/select -->
+		    <!-- REF selected http://html.eweb-design.com/0905_slc.html -->
+		    <%= select \
+		    		:filter,
+		    		:category,
+		    		category_ids,
+		    		
+		    		:include_blank => true %>
+    	
+    		<%= submit_tag 'Go' %>
+    	<% end %>
+
+	</th>
     <!-- <th><%#= link_to 'Category', nr4_keywords_path, sort: "category" %></th> //=> a href="/nr4/keywords" sort="category" -->
     <!-- <th><%#= link_to 'Category', nr4_keywords_path %></th> -->
-    <th></th>
-    <th></th>
-    <th></th>
+    <th colspan="3"></th>
   </tr>

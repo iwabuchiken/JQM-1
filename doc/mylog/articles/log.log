@@ -172,3 +172,399 @@ keywords#index
 File size=4238
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/12 08:40:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=4390
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:40:04] [articles_controller.rb: 48]
+genre=soci
+File size=4607
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:40:05] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=4755
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:40:13] [keywords_controller.rb: 23]
+keywords#index
+File size=4932
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:40:13] [keywords_controller.rb: 42]
+sort => nil
+File size=5084
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:44:02] [keywords_controller.rb: 23]
+keywords#index
+File size=5233
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:44:02] [keywords_controller.rb: 42]
+sort => nil
+File size=5385
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:46:01] [keywords_controller.rb: 23]
+keywords#index
+File size=5534
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:46:02] [keywords_controller.rb: 42]
+sort => nil
+File size=5686
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:46:18] [keywords_controller.rb: 23]
+keywords#index
+File size=5835
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:46:18] [keywords_controller.rb: 42]
+sort => nil
+File size=5987
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:47:37] [keywords_controller.rb: 23]
+keywords#index
+File size=6136
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:47:37] [keywords_controller.rb: 42]
+sort => nil
+File size=6288
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:47:48] [keywords_controller.rb: 23]
+keywords#index
+File size=6437
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:47:48] [keywords_controller.rb: 42]
+sort => nil
+File size=6589
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:49:16] [keywords_controller.rb: 23]
+keywords#index
+File size=6738
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:49:16] [keywords_controller.rb: 42]
+sort => nil
+File size=6890
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:49:55] [keywords_controller.rb: 23]
+keywords#index
+File size=7039
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:49:55] [keywords_controller.rb: 42]
+sort => nil
+File size=7191
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:50:05] [keywords_controller.rb: 23]
+keywords#index
+File size=7340
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:50:05] [keywords_controller.rb: 42]
+sort => nil
+File size=7492
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:51:38] [keywords_controller.rb: 23]
+keywords#index
+File size=7641
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:51:38] [keywords_controller.rb: 42]
+sort => nil
+File size=7793
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:00] [keywords_controller.rb: 23]
+keywords#index
+File size=7942
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:00] [keywords_controller.rb: 42]
+sort => nil
+File size=8094
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:17] [keywords_controller.rb: 23]
+keywords#index
+File size=8243
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:17] [keywords_controller.rb: 42]
+sort => nil
+File size=8395
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:30] [keywords_controller.rb: 23]
+keywords#index
+File size=8544
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:30] [keywords_controller.rb: 42]
+sort => nil
+File size=8696
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:45] [keywords_controller.rb: 23]
+keywords#index
+File size=8845
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:52:45] [keywords_controller.rb: 42]
+sort => nil
+File size=8997
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:53:44] [keywords_controller.rb: 23]
+keywords#index
+File size=9146
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:53:44] [keywords_controller.rb: 42]
+sort => nil
+File size=9298
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:54:04] [keywords_controller.rb: 23]
+keywords#index
+File size=9447
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:54:04] [keywords_controller.rb: 42]
+sort => nil
+File size=9599
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:55:55] [keywords_controller.rb: 23]
+keywords#index
+File size=9748
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:55:55] [keywords_controller.rb: 42]
+sort => nil
+File size=9900
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:56:04] [keywords_controller.rb: 23]
+keywords#index
+File size=10049
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:56:04] [keywords_controller.rb: 42]
+sort => nil
+File size=10202
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:58:21] [keywords_controller.rb: 23]
+keywords#index
+File size=10352
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:58:21] [keywords_controller.rb: 47]
+sort => nil
+File size=10505
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:10] [keywords_controller.rb: 23]
+keywords#index
+File size=10655
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:10] [keywords_controller.rb: 47]
+sort => nil
+File size=10808
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:11] [keywords_controller.rb: 23]
+keywords#index
+File size=10958
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:11] [keywords_controller.rb: 47]
+sort => nil
+File size=11111
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:42] [keywords_controller.rb: 23]
+keywords#index
+File size=11261
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:42] [keywords_controller.rb: 47]
+sort => nil
+File size=11414
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:49] [keywords_controller.rb: 23]
+keywords#index
+File size=11564
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:49] [keywords_controller.rb: 47]
+sort => nil
+File size=11717
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:55] [keywords_controller.rb: 23]
+keywords#index
+File size=11867
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 08:59:55] [keywords_controller.rb: 47]
+sort => nil
+File size=12020
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:02:08] [keywords_controller.rb: 23]
+keywords#index
+File size=12170
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:02:08] [keywords_controller.rb: 47]
+sort => nil
+File size=12323
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:02:56] [keywords_controller.rb: 23]
+keywords#index
+File size=12473
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:02:56] [keywords_controller.rb: 47]
+sort => nil
+File size=12626
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:51:00] [keywords_controller.rb: 23]
+keywords#index
+File size=12776
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:51:00] [keywords_controller.rb: 50]
+sort => nil
+File size=12929
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:51:56] [keywords_controller.rb: 23]
+keywords#index
+File size=13079
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:52:13] [keywords_controller.rb: 23]
+keywords#index
+File size=13232
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:52:13] [keywords_controller.rb: 51]
+sort => nil
+File size=13385
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:54:53] [keywords_controller.rb: 23]
+keywords#index
+File size=13535
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:54:53] [keywords_controller.rb: 56]
+sort => nil
+File size=13688
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:56:30] [keywords_controller.rb: 23]
+keywords#index
+File size=13838
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:56:30] [keywords_controller.rb: 56]
+sort => nil
+File size=13991
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:57:30] [keywords_controller.rb: 23]
+keywords#index
+File size=14141
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/12 09:57:30] [keywords_controller.rb: 56]
+sort => nil
+File size=14294
+------------------------=[end]
+

@@ -22,8 +22,22 @@ class Nr4::KeywordsController < ApplicationController
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
 
+    #----------------------
+    # Filter
+    #----------------------
     @keywords = Keyword.all
-
+    # _index__2_filter(params['filter'])
+        
+    #----------------------
+    # @genres
+    #----------------------
+    @genres = Genre.all
+    
+    #----------------------
+    # @categories
+    #----------------------
+    @categories = Category.all
+    
     #----------------------
     # Get: Articles models list
     #----------------------
@@ -257,6 +271,7 @@ private
             
         elsif sort_key == "category"
             
+            #REF http://ref.xaio.jp/ruby/classes/array/sort
             @keywords.sort! {|k1, k2|
                 
                 k1.category.id <=> k2.category.id
@@ -281,5 +296,16 @@ private
         end
         
     end#_index__1_sort(sort_key)
-
+    
+    def _index__2_filter(filter)
+        
+        settings = SettingsNr4.first
+        
+        #----------------------
+        # Filter: Genre
+        #----------------------
+        
+        
+        
+    end#_index__2_filter(params['filter'])
 end
