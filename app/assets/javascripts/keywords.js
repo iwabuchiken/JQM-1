@@ -51,7 +51,7 @@ function show_category_list() {
 	
 	var selected_genre_id = select_genre.val();
 	
-	alert("Selected genre => " + selected_genre_id);
+//	alert("Selected genre => " + selected_genre_id);
 	
 	// Chagne the div background to yellow while ajaxing
 	//REF .css() http://stackoverflow.com/questions/4283141/jquery-change-background-color answered Nov 26 '10 at 7:12

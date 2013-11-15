@@ -470,12 +470,32 @@ private
         
             keywords.size.times do |j|
             
+                # if articles_model_set[i].line.include?(keywords[j]) or
+                    # articles_model_set[i].line.match(/#{keywords[j]}/)
+
                 if articles_model_set[i].line.include?(keywords[j])
                     
                     new_set.push(articles_model_set[i])
                     
-                    break
+                    # #debug
+                    # write_log(
+                              # @log_path,
+                              # "MATCH: sen=#{articles_model_set[i].line}/kw=#{kw}",  
+                              # # __FILE__,
+                              # __FILE__.split("/")[-1],
+                              # __LINE__.to_s)
+
                     
+                    break
+                
+                # else
+                    # #debug
+                    # write_log(
+                              # @log_path,
+                              # "NO MATCH: sen=#{articles_model_set[i].line}/kw=#{kw}",  
+                              # # __FILE__,
+                              # __FILE__.split("/")[-1],
+                              # __LINE__.to_s)
                 end
             
             end#keywords.size.times do |kw,j|
@@ -602,7 +622,15 @@ private
 
                 keywords.size.times do |h|
                 
-                    if residue_set[j].line.include?(keywords[h])
+                    if residue_set[j].line.include?(keywords[h]) or
+                            residue_set[j].line.match(/#{keywords[h]}/)
+                    # if residue_set[j].line.include?(keywords[h])
+                        
+                        residue_set[j].line.gsub!( \
+                                /#{keywords[h]}/,
+                                "<font color=\"blue\">
+                                        #{residue_set[j].line.match(
+                                            /#{keywords[h]}/)}</font>")
                         
                         new_set.push(residue_set[j])
                         
