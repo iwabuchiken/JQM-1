@@ -1,0 +1,34 @@
+<%= form_for(@env_nr4) do |f| %>
+<%#= form_for(@env_nr4, :url => "env_nr4s") do |f| %>
+  <% if @env_nr4.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@env_nr4.errors.count, "error") %> prohibited this env_nr4 from being saved:</h2>
+
+      <ul>
+      <% @env_nr4.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sort_genre %><br />
+    <%= f.number_field :sort_genre %>
+  </div>
+  <div class="field">
+    <%= f.label :sort_category %><br />
+    <%= f.number_field :sort_category %>
+  </div>
+  <div class="field">
+    <%= f.label :genre_id %><br />
+    <%= f.number_field :genre_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br />
+    <%= f.number_field :category_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

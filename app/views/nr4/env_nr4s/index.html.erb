@@ -1,0 +1,29 @@
+<h1>Listing env_nr4s</h1>
+
+<table>
+  <tr>
+    <th>Sort genre</th>
+    <th>Sort category</th>
+    <th>Genre</th>
+    <th>Category</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @env_nr4s.each do |env_nr4| %>
+  <tr>
+    <td><%= env_nr4.sort_genre %></td>
+    <td><%= env_nr4.sort_category %></td>
+    <td><%= env_nr4.genre_id %></td>
+    <td><%= env_nr4.category_id %></td>
+    <td><%= link_to 'Show', env_nr4 %></td>
+    <td><%= link_to 'Edit', edit_env_nr4_path(env_nr4) %></td>
+    <td><%= link_to 'Destroy', env_nr4, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Env nr4', new_env_nr4_path %>

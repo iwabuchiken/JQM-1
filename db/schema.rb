@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131116005356) do
+ActiveRecord::Schema.define(:version => 20131116121631) do
 
   create_table "articles", :force => true do |t|
     t.text     "line"
@@ -30,6 +30,15 @@ ActiveRecord::Schema.define(:version => 20131116005356) do
     t.integer  "genre_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "env_nr4s", :force => true do |t|
+    t.integer  "sort_genre"
+    t.integer  "sort_category"
+    t.integer  "genre_id"
+    t.integer  "category_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "genres", :force => true do |t|
@@ -53,6 +62,24 @@ ActiveRecord::Schema.define(:version => 20131116005356) do
     t.integer  "category_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "nr4_admin_nr4s", :force => true do |t|
+    t.integer  "sort_genre"
+    t.integer  "sort_category"
+    t.integer  "genre_id"
+    t.integer  "category_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "nr4_env_nr4s", :force => true do |t|
+    t.integer  "sort_genre"
+    t.integer  "sort_category"
+    t.integer  "genre_id"
+    t.integer  "category_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "settings", :force => true do |t|

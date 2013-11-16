@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sort genre:</b>
+  <%= @env_nr4.sort_genre %>
+</p>
+
+<p>
+  <b>Sort category:</b>
+  <%= @env_nr4.sort_category %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @env_nr4.genre_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @env_nr4.category_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_env_nr4_path(@env_nr4) %> |
+<%= link_to 'Back', env_nr4s_path %>

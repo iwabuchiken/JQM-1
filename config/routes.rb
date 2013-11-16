@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
 
+  resources :env_nr4s, module: 'nr4'
+
   resources :settings_nr4s, module: 'nr4'
 
       get "/nr4/genres/show_log"
