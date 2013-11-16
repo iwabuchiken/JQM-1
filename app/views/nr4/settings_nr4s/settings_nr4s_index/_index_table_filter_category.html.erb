@@ -1,0 +1,25 @@
+<% if settings_nr4.filter_category != nil %>
+	
+	<% if settings_nr4.filter_category == 0 %>
+	
+		<td>ALL</td>
+	
+	<% else %>
+	    <% category = Category.first(:conditions => ["id = ?", settings_nr4.filter_category])%>
+	
+		<% if category != nil %>
+		
+			<td><%= "#{category.name}(#{category.id})" %></td>
+			
+		<% else %>
+		
+			<td>No category for id=<%= settings_nr4.filter_category%></td>
+		<% end %>
+		
+	<% end %><%# if settings_nr4.filter_category == 0 %>
+	
+<% else %>
+
+	<td>NO DATA</td>
+
+<% end %>

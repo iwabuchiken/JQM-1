@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131105215550) do
+ActiveRecord::Schema.define(:version => 20131116005356) do
 
   create_table "articles", :force => true do |t|
     t.text     "line"
@@ -64,8 +64,10 @@ ActiveRecord::Schema.define(:version => 20131105215550) do
   create_table "settings_nr4s", :force => true do |t|
     t.integer  "sort_genre"
     t.integer  "sort_category"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "filter_genre"
+    t.integer  "filter_category"
   end
 
 end

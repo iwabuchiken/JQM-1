@@ -1,0 +1,25 @@
+<% if settings_nr4.filter_genre != nil %>
+	
+	<% if settings_nr4.filter_genre == 0 %>
+	
+		<td>ALL</td>
+	
+	<% else %>
+	    <% genre = Genre.first(:conditions => ["id = ?", settings_nr4.filter_genre])%>
+	
+		<% if genre != nil %>
+		
+			<td><%= "#{genre.name}(#{genre.id})" %></td>
+			
+		<% else %>
+		
+			<td>No genre for id=<%= settings_nr4.filter_genre%></td>
+		<% end %>
+		
+	<% end %><%# if settings_nr4.filter_genre == 0 %>
+	
+<% else %>
+
+	<td>NO DATA</td>
+
+<% end %>

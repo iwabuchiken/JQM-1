@@ -155,6 +155,10 @@ bundle exec rake assets:precompile
 #rails generate scaffold SettingsNR4 sort_genre:integer sort_category:integer
 bundle exec rake db:migrate
 
+#rails generate migration AddColumnFilterGenreToSettingsNR4
+bundle exec rake db:migrate
+
+
 aa
 
 ============RESOURCE============

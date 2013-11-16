@@ -1,15 +1,54 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Sort genre:</b>
-  <%= @settings_nr4.sort_genre %>
-</p>
+<table>
+	<tr>
+		<th>
+			Item
+		</th>
+		<th>
+			Value
+		</th>
+	</tr>
+	
+	<tr>
+		<td>
+			Sort genre
+		</td>
+		<td>
+			<%= @settings_nr4.sort_genre %>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Sort category
+		</td>
+		<td>
+			<%= @settings_nr4.sort_category %>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Filter genre
+		</td>
+		<td>
+			<%= @settings_nr4.filter_genre %>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Filter category
+		</td>
+		<td>
+			<%= @settings_nr4.filter_category %>
+		</td>
+	</tr>
+	
+</table>
 
-<p>
-  <b>Sort category:</b>
-  <%= @settings_nr4.sort_category %>
-</p>
-
+<hr />
 
 <%= link_to 'Edit', edit_settings_nr4_path(@settings_nr4) %> |
 <%= link_to 'Back', settings_nr4s_path %>

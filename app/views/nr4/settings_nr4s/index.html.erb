@@ -5,6 +5,8 @@
     <th>ID</th>
     <th>Sort genre</th>
     <th>Sort category</th>
+    <th>Filter genre</th>
+    <th>Filter category</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +17,15 @@
     <td><%= settings_nr4.id %></td>
     <td><%= settings_nr4.sort_genre %></td>
     <td><%= settings_nr4.sort_category %></td>
+    
+	<%= render :partial => 
+			'nr4/settings_nr4s/settings_nr4s_index/index_table_filter_genre',
+			:locals => {:settings_nr4 => settings_nr4} %>
+	
+	<%= render :partial => 
+			'nr4/settings_nr4s/settings_nr4s_index/index_table_filter_category',
+			:locals => {:settings_nr4 => settings_nr4} %>
+	
     <td><%= link_to 'Show', settings_nr4 %></td>
     <td><%= link_to 'Edit', edit_settings_nr4_path(settings_nr4) %></td>
     <td><%= link_to 'Destroy', settings_nr4, confirm: 'Are you sure?', method: :delete %></td>
