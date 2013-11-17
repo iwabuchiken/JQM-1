@@ -1,0 +1,8 @@
+  <div class="field">
+  	
+    <%= f.label :genre_id %><br />
+    
+    <% genre_ids = Genre.all.collect{|g| [g.name, g.id]} %>
+    <%= select :env_nr4, :genre_id, genre_ids %>
+    
+  </div>

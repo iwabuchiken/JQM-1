@@ -1,0 +1,19 @@
+<% if env_nr4.category_id != 0 %>
+
+	<% category = Category.first(:conditions => ["id = ?", env_nr4.category_id])%>
+	
+	<% if category != nil %>
+	
+    	<td><%= "#{category.name}(#{category.id})" %></td>
+    	
+    <% else %>
+    
+    	<td>No data(<%= env_nr4.category_id %>)</td>
+    
+    <% end %>
+    
+<% else %>
+	
+	<td>All</td>
+	
+<% end %>

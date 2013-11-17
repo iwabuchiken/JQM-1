@@ -15,8 +15,11 @@
   <tr>
     <td><%= env_nr4.sort_genre %></td>
     <td><%= env_nr4.sort_category %></td>
-    <td><%= env_nr4.genre_id %></td>
-    <td><%= env_nr4.category_id %></td>
+    
+    <%= render :partial => 'nr4/env_nr4s/env_nr4s_index/index_td_genre', :locals => {:env_nr4 => env_nr4} %>
+    
+    <%= render :partial => 'nr4/env_nr4s/env_nr4s_index/index_td_category', :locals => {:env_nr4 => env_nr4} %>
+    
     <td><%= link_to 'Show', env_nr4 %></td>
     <td><%= link_to 'Edit', edit_env_nr4_path(env_nr4) %></td>
     <td><%= link_to 'Destroy', env_nr4, confirm: 'Are you sure?', method: :delete %></td>
@@ -26,4 +29,6 @@
 
 <br />
 
-<%= link_to 'New Env nr4', new_env_nr4_path %>
+<% unless @env_nr4s.size > 0 %>
+	<%= link_to 'New Env nr4', new_env_nr4_path %>
+<% end %>

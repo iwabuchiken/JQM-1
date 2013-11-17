@@ -1,0 +1,8 @@
+  <div class="field">
+  	
+    <%= f.label :category_id %><br />
+    
+    <% category_ids = Category.all.collect{|c| [c.name, c.id]} %>
+    <%= select :env_nr4, :category_id, category_ids %>
+    
+  </div>

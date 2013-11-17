@@ -1,5 +1,18 @@
-<%= form_for(@env_nr4) do |f| %>
-<%#= form_for(@env_nr4, :url => "env_nr4s") do |f| %>
+<%#= form_for(@env_nr4, :url => "nr4/env_nr4s") do |f| %><!-- No route matches [POST] "/env_nr4s/nr4/env_nr4s" -->
+
+
+<%= form_for(@env_nr4) do |f| %><!-- undefined method `nr4_env_nr4s_path' -->
+<%#= form_for(@env_nr4, :url => "env_nr4s") do |f| %><!-- No route matches [POST] "/env_nr4s/env_nr4s" -->
+<%#= form_for(@env_nr4, :url => "nr4") do |f| %><!-- No route matches [POST] "/env_nr4s/nr4" -->
+<%#= form_for(@env_nr4, :url => "nr4/env_nr4s") do |f| %><!-- No route matches [POST] "/env_nr4s/nr4/env_nr4s" -->
+
+<%#= form_for(@env_nr4, :url => "") do |f| %><!-- No route matches [POST] "/env_nr4s/new" -->
+<%#= form_for(@env_nr4, :url => "/") do |f| %><!-- action="/"  => Redirected to /admin/main -->
+<%#= form_for(@env_nr4, :url => ".") do |f| %><!-- action="."NoMethodError in Nr4::EnvNr4sController#create undefined method `nr4_env_nr4_url' -->
+<%#= form_for(@env_nr4, :namespace => "nr4") do |f| %><!-- NoMethodError in Nr4/env_nr4s#new undefined method `nr4_env_nr4s_path' -->
+<%#= form_for(@env_nr4, ,:url => "env_nr4s", :namespace => "nr4") do |f| %><!--  SyntaxError in Nr4/env_nr4s#new -->
+<%#= form_for(@env_nr4, ,{:url => "env_nr4s", :namespace => "nr4"}) do |f| %><!--  SyntaxError in Nr4/env_nr4s#new -->
+<%#= form_for(@env_nr4, ,[:url => "env_nr4s", :namespace => "nr4"]) do |f| %><!--  SyntaxError in Nr4/env_nr4s#new -->
   <% if @env_nr4.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@env_nr4.errors.count, "error") %> prohibited this env_nr4 from being saved:</h2>
@@ -20,14 +33,15 @@
     <%= f.label :sort_category %><br />
     <%= f.number_field :sort_category %>
   </div>
-  <div class="field">
-    <%= f.label :genre_id %><br />
-    <%= f.number_field :genre_id %>
-  </div>
-  <div class="field">
-    <%= f.label :category_id %><br />
-    <%= f.number_field :category_id %>
-  </div>
+  
+  <%= render :partial => 
+  		'nr4/env_nr4s/env_nr4s_form/form_genre',
+  		:locals => {:f => f} %>
+  
+  <%= render :partial => 
+  		'nr4/env_nr4s/env_nr4s_form/form_category',
+  		:locals => {:f => f} %>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

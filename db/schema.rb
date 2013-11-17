@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(:version => 20131116121631) do
   create_table "env_nr4s", :force => true do |t|
     t.integer  "sort_genre"
     t.integer  "sort_category"
-    t.integer  "genre_id"
-    t.integer  "category_id"
+    t.integer  "genre_id"       #=> Filter key for genre in keywords#index
+    t.integer  "category_id"    #=> Filter key for category in keywords#index
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

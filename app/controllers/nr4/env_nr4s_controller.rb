@@ -1,10 +1,15 @@
 require 'utils2'
 
 class Nr4::EnvNr4sController < ApplicationController
+    
+    layout 'layouts/nr4/genres'
+    
   # GET /env_nr4s
   # GET /env_nr4s.json
   def index
     @env_nr4s = EnvNr4.all
+    
+    
 
     respond_to do |format|
       format.html # index.html.erb
