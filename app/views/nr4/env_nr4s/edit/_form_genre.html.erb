@@ -3,6 +3,9 @@
     <%= f.label :genre_id %><br />
     
     <% genre_ids = Genre.all.collect{|g| [g.name, g.id]} %>
+    <%#= select :env_nr4, :genre_id, genre_ids, :include_blank => true %>
+    
+    <%#= select :env_nr4, :genre_id, genre_ids, :prompt => "All" %>
     
     <% if @env_nr4.genre_id != nil %>
     
@@ -13,7 +16,5 @@
     	<%= select :env_nr4, :genre_id, genre_ids, :include_blank => true %>
     
     <% end %>
-    
-    <%#= select :env_nr4, :genre_id, genre_ids, :prompt => "All" %>
     
   </div>

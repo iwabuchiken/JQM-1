@@ -25,7 +25,8 @@ class Nr4::KeywordsController < ApplicationController
     #----------------------
     # Filter
     #----------------------
-    @keywords = Keyword.all
+    # @keywords = Keyword.all
+    @keywords = _index__1_filter()
     # _index__2_filter(params['filter'])
         
     #----------------------
@@ -64,6 +65,85 @@ class Nr4::KeywordsController < ApplicationController
       format.json { render json: @keywords }
     end
   end
+  
+    def _index__1_filter()
+        
+        # Get: filter_genre
+        _filter_genre = params['filter_genre']
+        
+        #debug
+        if _filter_genre == ""
+            write_log(
+                      @log_path,
+                      "_filter_genre => \"\"",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)        
+                      
+         elsif _filter_genre == nil
+            write_log(
+                      @log_path,
+                      "_filter_genre => nil",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+         else
+             write_log(
+                      @log_path,
+                      "_filter_genre => ?",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+        
+         end
+        
+        if _filter_genre != nil
+            
+            filter_genre = _filter_genre
+            
+        elsif EnvNr4.first != nil and EnvNr4.first.genre_id != nil
+        # elsif EnvNr4.first != nil and EnvNr4.first.genre_id = nil
+            
+            filter_genre = EnvNr4.first.genre_id
+            
+        else
+            
+            filter_genre = nil
+            
+        end
+        
+        write_log(
+                      @log_path,
+                      "filter_genre => #{filter_genre}",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+        
+        
+        
+        # Get: keywords
+        
+        if filter_genre != nil
+            
+            keywords = Keyword.find(:all, :conditions => ["genre_id = ?", filter_genre])
+
+        else
+            
+            keywords = Keyword.all
+            
+        end
+        
+        write_log(
+                  @log_path,
+                  "keywords=#{keywords}(size=#{keywords.size})",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        return keywords
+        
+    end#_index__1_filter()
+
   
   # GET /keywords/1
   # GET /keywords/1.json
@@ -165,6 +245,8 @@ class Nr4::KeywordsController < ApplicationController
   # PUT /keywords/1.json
   def update
     @keyword = Keyword.find(params[:id])
+    
+    
 
     respond_to do |format|
       if @keyword.update_attributes(params[:keyword])

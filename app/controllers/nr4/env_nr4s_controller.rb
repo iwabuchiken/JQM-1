@@ -3,10 +3,16 @@ require 'utils2'
 class Nr4::EnvNr4sController < ApplicationController
     
     layout 'layouts/nr4/genres'
+
+    #REF http://maskana-soft.com/rails/pro/body/41
+    before_filter :log_path
     
   # GET /env_nr4s
   # GET /env_nr4s.json
   def index
+      
+      
+      
     @env_nr4s = EnvNr4.all
     
     
@@ -16,7 +22,7 @@ class Nr4::EnvNr4sController < ApplicationController
       format.json { render json: @env_nr4s }
     end
   end
-
+  
   # GET /env_nr4s/1
   # GET /env_nr4s/1.json
   def show
@@ -64,6 +70,35 @@ class Nr4::EnvNr4sController < ApplicationController
   # PUT /env_nr4s/1.json
   def update
     @env_nr4 = EnvNr4.find(params[:id])
+    
+    if @env_nr4.genre_id.to_s == ""
+        
+        write_log(
+                  @log_path,
+                  "@env_nr4.genre_id => \"\"(class=#{@env_nr4.genre_id.class.to_s})",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+    elsif @env_nr4.genre_id.to_s == nil
+    
+        write_log(
+                  @log_path,
+                  "@env_nr4.genre_id => nil(class=#{@env_nr4.genre_id.class.to_s})",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+    else
+        
+        write_log(
+                  @log_path,
+                  "@env_nr4.genre_id=#{@env_nr4.genre_id.to_s}(class=#{@env_nr4.genre_id.class.to_s})",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+    end
 
     respond_to do |format|
       if @env_nr4.update_attributes(params[:env_nr4])
@@ -87,4 +122,14 @@ class Nr4::EnvNr4sController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  
+private
+
+    def log_path
+       
+       @log_path = "doc/mylog/articles"
+        
+    end
+
 end

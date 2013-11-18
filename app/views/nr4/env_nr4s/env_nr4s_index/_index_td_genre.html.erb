@@ -1,11 +1,19 @@
-<% if env_nr4.genre_id != 0 %>
+<% if env_nr4.genre_id == nil %>
+
+	<!-- <td>No data</td> -->
+	
+<%# elsif env_nr4.genre_id == "" %>
+
+	<td>All(value=blank)</td>
+
+<% elsif env_nr4.genre_id != 0 %>
 
 	<% genre = Genre.first(:conditions => ["id = ?", env_nr4.genre_id])%>
 	
 	<% if genre != nil %>
 	
     	<td><%= "#{genre.name}(#{genre.id})" %></td>
-    	
+
     <% else %>
     
     	<td>No data(<%= env_nr4.genre_id %>)</td>

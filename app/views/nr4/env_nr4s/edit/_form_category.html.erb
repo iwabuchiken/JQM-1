@@ -1,0 +1,29 @@
+  <div class="field">
+  	
+    <%= f.label :category_id %><br />
+    
+    <% if @env_nr4.genre_id != nil %>
+    
+    	<% category_ids = Category.find(:all, :conditions => ["genre_id = ?", @env_nr4.genre_id]).collect{|g| [g.name, g.id]} %>
+    
+    <% else %>
+    
+    	<% category_ids = Category.all.collect{|g| [g.name, g.id]} %>
+    
+    <% end %>
+    
+    <%#= select :env_nr4, :genre_id, genre_ids, :include_blank => true %>
+    
+    <%#= select :env_nr4, :genre_id, genre_ids, :prompt => "All" %>
+    
+    <% if @env_nr4.category_id != nil %>
+    
+    	<%= select :env_nr4, :category_id, category_ids, :include_blank => true, :selected => @env_nr4.category_id.to_s %>
+    
+    <% else %>
+    
+    	<%= select :env_nr4, :category_id, category_ids, :include_blank => true %>
+    
+    <% end %>
+    
+  </div>
