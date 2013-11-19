@@ -70,3 +70,87 @@ File size=5154
 File size=5325
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/18 19:17:34] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=5496
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/18 19:17:34] [articles_controller.rb: 48]
+genre=soci
+File size=5713
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/18 19:17:35] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=5861
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 19:32:15] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 383]
+genre => soci
+File size=6038
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 19:32:15] [articles_controller.rb: 48]
+genre=soci
+File size=6255
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 19:32:16] [articles_controller.rb: 270]
+vendor_list.size=0/a_tags_href.size=75
+File size=6403
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:23:17] [env_nr4s_controller.rb: 81]
+@env_nr4.genre_id => ""(class=NilClass)
+File size=6580
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:23:34] [env_nr4s_controller.rb: 99]
+@env_nr4.genre_id=1(class=Fixnum)
+File size=6757
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:28:44] [env_nr4s_controller.rb: 99]
+@env_nr4.genre_id=1(class=Fixnum)
+File size=6928
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:29:01] [keywords_controller.rb: 23]
+keywords#index
+File size=7099
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:29:01] [keywords_controller.rb: 89]
+_filter_genre => nil
+File size=7251
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:29:01] [keywords_controller.rb: 120]
+filter_genre => 1
+File size=7409
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:29:01] [keywords_controller.rb: 141]
+keywords=[#<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">](size=2)
+File size=7565
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/19 21:29:01] [keywords_controller.rb: 57]
+sort => nil
+File size=7989
+------------------------=[end]
+

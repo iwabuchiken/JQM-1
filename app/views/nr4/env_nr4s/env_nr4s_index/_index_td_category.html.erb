@@ -1,4 +1,12 @@
-<% if env_nr4.category_id != 0 %>
+<% if env_nr4.category_id == nil %>
+
+	<!-- <td>No data</td> -->
+	
+<%# elsif env_nr4.genre_id == "" %>
+
+	<td>All(value=nil)</td>
+	
+<% elsif env_nr4.category_id != 0 %>
 
 	<% category = Category.first(:conditions => ["id = ?", env_nr4.category_id])%>
 	
@@ -12,8 +20,12 @@
     
     <% end %>
     
+<% elsif env_nr4.category_id == 0 %>
+
+	<td>All(value=0)</td>
+	
 <% else %>
 	
-	<td>All</td>
+	<td>Unknown value(<%= env_nr4.category_id %>)</td>
 	
 <% end %>

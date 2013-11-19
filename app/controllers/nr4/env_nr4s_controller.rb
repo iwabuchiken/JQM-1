@@ -123,6 +123,23 @@ class Nr4::EnvNr4sController < ApplicationController
     end
   end
   
+    def show_category_list
+        
+        
+        @selected_genre = params[:selected_genre]
+        
+        # @categories = Category.find(\
+                            # :all,
+                            # :conditions => {:genre_id => @genre})
+        
+        # layout 'layouts/nr4/keywords/show_genre_list'
+        #REF http://www.rubylife.jp/rails/template/index3.html#section3
+        # render :layout => 'layouts/env_nr4s/show_genre_list'
+        render :layout => 'layouts/nr4/keywords/show_genre_list'
+        
+
+    end#show_genre_list
+
   
 private
 

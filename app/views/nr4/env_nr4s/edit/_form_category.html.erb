@@ -1,10 +1,24 @@
+<div class="field" id="category_list">
   <div class="field">
   	
-    <%= f.label :category_id %><br />
+    <%= f.label :category_id %>
+    
+    (<span
+    	onclick="show_category_list_env_nr4()"
+    	style="color: blue;">
+    		Refresh
+    </span>)
+    
+    <br />
     
     <% if @env_nr4.genre_id != nil %>
     
-    	<% category_ids = Category.find(:all, :conditions => ["genre_id = ?", @env_nr4.genre_id]).collect{|g| [g.name, g.id]} %>
+    	<% category_ids = \
+    		Category.find(
+    			:all,
+    			:conditions => 
+    				["genre_id = ?", @env_nr4.genre_id]
+    		).collect{|g| [g.name, g.id]} %>
     
     <% else %>
     
@@ -27,3 +41,4 @@
     <% end %>
     
   </div>
+</div>

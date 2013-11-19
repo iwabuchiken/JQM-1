@@ -4,7 +4,7 @@
 	
 <%# elsif env_nr4.genre_id == "" %>
 
-	<td>All(value=blank)</td>
+	<td>All(value=nil)</td>
 
 <% elsif env_nr4.genre_id != 0 %>
 
@@ -19,9 +19,14 @@
     	<td>No data(<%= env_nr4.genre_id %>)</td>
     
     <% end %>
-    
+
+<% elsif env_nr4.genre_id == 0 %>
+
+	<td>All(value=0)</td>
+	
 <% else %>
 	
-	<td>All</td>
+	<td>Unknown value(<%= env_nr4.genre_id %>)</td>
+	
 	
 <% end %>

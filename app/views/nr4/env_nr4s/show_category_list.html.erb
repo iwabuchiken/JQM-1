@@ -1,0 +1,21 @@
+<%#= @genre.name %>
+
+<label for="keyword_category_id">Category</label>
+    
+(<span
+	onclick="show_category_list_env_nr4()"
+	style="color: blue;">
+		Refresh
+</span>)
+
+<br />
+    
+<% category_ids = Category.find(\
+				:all,
+				:conditions => 
+						["genre_id = ?",
+							@selected_genre])\
+				.collect{|c| [c.name, c.id]} %>
+
+<%= select :env_nr4, :category_id, category_ids %>
+
