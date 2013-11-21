@@ -68,64 +68,62 @@ class Nr4::KeywordsController < ApplicationController
   
     def _index__1_filter()
         
-        # Get: filter_genre
-        _filter_genre = params['filter_genre']
+        filter_genre = 
+                _index__1_filter_get_genre()
         
-        #debug
-        if _filter_genre == ""
-            write_log(
-                      @log_path,
-                      "_filter_genre => \"\"",
-                      # __FILE__,
-                      __FILE__.split("/")[-1],
-                      __LINE__.to_s)        
-                      
-         elsif _filter_genre == nil
-            write_log(
-                      @log_path,
-                      "_filter_genre => nil",
-                      # __FILE__,
-                      __FILE__.split("/")[-1],
-                      __LINE__.to_s)
-         else
-             write_log(
-                      @log_path,
-                      "_filter_genre => ?",
-                      # __FILE__,
-                      __FILE__.split("/")[-1],
-                      __LINE__.to_s)
-        
-         end
-        
-        if _filter_genre != nil
-            
-            filter_genre = _filter_genre
-            
-        elsif EnvNr4.first != nil and EnvNr4.first.genre_id != nil
-        # elsif EnvNr4.first != nil and EnvNr4.first.genre_id = nil
-            
-            filter_genre = EnvNr4.first.genre_id
-            
-        else
-            
-            filter_genre = nil
-            
-        end
+        filter_categories =
+                _index__1_filter_get_categories(filter_genre)
         
         write_log(
                       @log_path,
-                      "filter_genre => #{filter_genre}",
+                      "filter_categories => 
+                            #{filter_categories}(class=#{filter_categories.class.to_s})",
                       # __FILE__,
                       __FILE__.split("/")[-1],
                       __LINE__.to_s)
-        
-        
         
         # Get: keywords
         
         if filter_genre != nil
             
-            keywords = Keyword.find(:all, :conditions => ["genre_id = ?", filter_genre])
+            # filter_categories = Category.find(
+                        # :all,
+                        # :conditions => ["genre_id = ?", filter_genre])
+
+            # => If the length of filter_categories is one or less than one,
+            # =>    then just build a keywords list using only filter_genre
+            # =>    value.
+            if filter_categories == nil or filter_categories.length < 1
+                
+                keywords = Keyword.find(
+                      :all,
+                      :conditions => ["genre_id = ?", filter_genre])
+                      
+            elsif filter_categories.length == 1
+                
+                keywords = Keyword.find(
+                      :all,
+                      :conditions => ["genre_id = ? and category_id = ?", filter_genre, filter_categories[0]])
+                      
+            else
+                
+                keywords = Keyword.find(
+                      :all,
+                      :conditions => ["genre_id = ?", filter_genre])
+                      
+                
+                sql = _index__1_filter_Build_SQL(
+                                filter_genre,
+                                filter_categories)
+                
+                write_log(
+                      @log_path,
+                      "sql => #{sql}",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+                      
+            end
 
         else
             
@@ -139,12 +137,193 @@ class Nr4::KeywordsController < ApplicationController
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
+
         
         return keywords
         
     end#_index__1_filter()
 
-  
+    def _index__1_filter_Build_SQL(filter_genre,filter_categories)
+        
+        sql = []
+        temp = []
+        statement = ""
+        
+        temp.push("genre_id = ? and")
+        temp.push("category_id = ?")
+        
+        ((filter_categories.length) - 1).times {
+            
+            temp.push(" or category_id = ?")
+            
+        }
+        
+        statement = temp.join(" ")
+        
+        sql.push(statement)
+        sql.push(filter_genre)
+        
+        filter_categories.length.times {|i|
+            
+            sql.push(filter_categories[i])
+            
+        }
+        
+        # sql = sql + filter_categories.collect{|cat| cat.name}
+            
+        #debug
+        write_log(
+                  @log_path,
+                  "sql=#{sql.flatten}(class=#{sql.flatten.class.to_s})",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        return sql.join(" ")
+        
+    end#_index__1_filter_Build_SQL()
+
+    def _index__1_filter_get_genre()  
+    
+                # Get: filter_genre
+        _filter_genre = params['filter_genre']
+        
+        #debug
+        if _filter_genre == ""
+            # write_log(
+                      # @log_path,
+                      # "_filter_genre => \"\"",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1],
+                      # __LINE__.to_s)        
+#                       
+         elsif _filter_genre == nil
+            # write_log(
+                      # @log_path,
+                      # "_filter_genre => nil",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1],
+                      # __LINE__.to_s)
+         else
+             # write_log(
+                      # @log_path,
+                      # "_filter_genre => ?(value=#{_filter_genre})",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1],
+                      # __LINE__.to_s)
+#         
+         end
+        
+        if _filter_genre != nil
+            
+            filter_genre = _filter_genre
+            
+            # #debug
+            # write_log(
+                      # @log_path,
+                      # "_filter_genre != nil",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1],
+                      # __LINE__.to_s)
+            
+        elsif EnvNr4.first != nil and EnvNr4.first.genre_id != nil
+        # elsif EnvNr4.first != nil and EnvNr4.first.genre_id = nil
+            
+            # #debug
+            # write_log(
+                      # @log_path,
+                      # "EnvNr4.first != nil and EnvNr4.first.genre_id != nil",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1],
+                      # __LINE__.to_s)
+            
+            filter_genre = EnvNr4.first.genre_id
+            
+        else
+            # #debug
+            # write_log(
+                      # @log_path,
+                      # "_filter_genre => else",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1],
+                      # __LINE__.to_s)
+            
+            filter_genre = nil
+            
+        end
+        
+            #debug
+            write_log(
+                      @log_path,
+                      "filter_genre => #{filter_genre}",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+            
+        return filter_genre
+        
+    end#_index__1_filter_get_genre
+    
+    #########################################
+    # _index__1_filter_get_categories(filter_genre)
+    # Return => Array<String>
+    #########################################
+    def _index__1_filter_get_categories(filter_genre)
+        
+        filter_categories = []
+        
+        if filter_genre != nil
+                            # Get: filter_genre
+            _filter_category = params['filter_category']
+            
+            if _filter_category != nil
+                
+                filter_categories.push(_filter_category)
+                
+                # #debug
+                # write_log(
+                          # @log_path,
+                          # "_filter_genre != nil",
+                          # # __FILE__,
+                          # __FILE__.split("/")[-1],
+                          # __LINE__.to_s)
+                
+            elsif EnvNr4.first != nil and EnvNr4.first.category_id != nil
+            # elsif EnvNr4.first != nil and EnvNr4.first.genre_id = nil
+                
+                # #debug
+                # write_log(
+                          # @log_path,
+                          # "EnvNr4.first != nil and EnvNr4.first.genre_id != nil",
+                          # # __FILE__,
+                          # __FILE__.split("/")[-1],
+                          # __LINE__.to_s)
+                
+                filter_categories.push(EnvNr4.first.category_id)
+                
+            else
+                # #debug
+                # write_log(
+                          # @log_path,
+                          # "_filter_genre => else",
+                          # # __FILE__,
+                          # __FILE__.split("/")[-1],
+                          # __LINE__.to_s)
+                
+                filter_categories = nil
+                
+            end
+    
+        else#if filter_genre != nil
+            
+            filter_categories = Category.all.collect{|cat| cat.id}
+            
+        end
+        
+            return filter_categories
+        
+    end#_index__1_filter_get_categories(filter_genre)
+    
   # GET /keywords/1
   # GET /keywords/1.json
   def show
