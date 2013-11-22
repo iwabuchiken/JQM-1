@@ -32,7 +32,7 @@ class Nr4::ArticlesController < ApplicationController
     #----------------------
     # 2. Set genre
     #----------------------
-    @genre = get_genre()
+    @genre_code = get_genre()
 
     #----------------------
     # Get: Genres list
@@ -42,7 +42,7 @@ class Nr4::ArticlesController < ApplicationController
     #debug
     write_log(
               @log_path,
-              "genre=" + @genre,  
+              "genre_code=" + @genre_code,  
               # __FILE__,
               __FILE__.split("/")[-1],
               __LINE__.to_s)
@@ -52,7 +52,7 @@ class Nr4::ArticlesController < ApplicationController
     # Get: Articles list
     #----------------------
 
-    articles_set = get_articles_set(number, @genre)
+    articles_set = get_articles_set(number, @genre_code)
 
     #----------------------
     # Get: Articles models list
@@ -61,7 +61,8 @@ class Nr4::ArticlesController < ApplicationController
     articles_model_set = get_articles_model_set(articles_set)
     
     
-    @categorized_articles_set = get_categorized_set(articles_model_set, @genre)
+    @categorized_articles_set = 
+            get_categorized_set(articles_model_set, @genre_code)
     
     # @categorized_set = 
     
@@ -424,12 +425,15 @@ private
         
     end#get_articles_model_set(articles_set)
     
-    def get_categorized_set(articles_model_set, genre)
+    def get_categorized_set(articles_model_set, genre_code)
     
         # Array
-        if genre == 'int'
+        #if genre == 'int'
+        if genre_code == 'int' \
+              or genre_code == 'soci' \
+              or genre_code == 'bus_all'
         
-          return _get_categorized_set_int(articles_model_set, genre)
+          return _get_categorized_set_int(articles_model_set, genre_code)
           
         else 
           
@@ -599,9 +603,9 @@ private
     
     end#_get_categorized_set_int(articles_model_set, genre)
 
-    def _get_categorized_set_int(articles_model_set, genre)
+    def _get_categorized_set_int(articles_model_set, genre_code)
         
-        key_word_sets = _get_keywords_set_int()
+        key_word_sets = _get_keywords_set_int(genre_code)
         #key_word_set = ['China', 'US', 'Others']
         
         residue_set = articles_model_set
@@ -728,7 +732,7 @@ private
     
     end#_get_keywords_set_int_v_1_55()
     
-    def _get_keywords_set_int()
+    def _get_keywords_set_int(genre_code)
         ##########################################
         #
         # Variables
@@ -737,12 +741,17 @@ private
 
         result = []
         
-        genre_int = Genre.find(:all, :conditions => {:code => 'int'})[0]
+        #genre_int = Genre.find(:all, :conditions => {:code => 'int'})[0]
+        genre = Genre.find(
+                      :all,
+                      :conditions => {:code => genre_code})[0]
         
-        categories = Category.find(:all, :conditions => {:genre_id => genre_int.id})
+        categories = Category.find(
+                      :all,
+                      :conditions => {:genre_id => genre.id})
         
         #debug
-        if categories != nil
+        if categories != nil and categories[0] != nil
             
             write_log(
                       @log_path,
@@ -755,7 +764,7 @@ private
         else
             write_log(
                       @log_path,
-                      "categories => nil",  
+                      "categories or categories[0] => nil",  
                       # __FILE__,
                       __FILE__.split("/")[-1],
                       __LINE__.to_s)            
@@ -772,7 +781,7 @@ private
                               :all,
                               :conditions => \
                                     ['genre_id = ? and category_id = ?',
-                                          genre_int, cat.id])
+                                          genre, cat.id])
                                           
             kws = KeyWordSet.new
             

@@ -1,368 +1,277 @@
 [begin]------------------------=
-[2013/11/21 18:31:58] [keywords_controller.rb: 193]
-_filter_genre => nil
+[2013/11/22 10:17:59] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => soci
 File size=0
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:31:58] [keywords_controller.rb: 82]
-filter_genre => 
-                            2(class=Fixnum)
-File size=156
+[2013/11/22 10:17:59] [articles_controller.rb: 48]
+genre_code=soci
+File size=214
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:31:58] [keywords_controller.rb: 167]
-sql=["genre_id = ? and category_id = ?  or category_id = ?  or category_id = ?", 2, "China", "US", "Europe"](class=Array)
-File size=354
+[2013/11/22 10:18:00] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=366
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:31:58] [keywords_controller.rb: 117]
-sql => genre_id = ? and category_id = ?  or category_id = ?  or category_id = ? 2 China US Europe
-File size=613
+[2013/11/22 10:18:00] [articles_controller.rb: 760]
+categories.size => 2 / categories=Nuc plants
+File size=542
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:31:58] [keywords_controller.rb: 132]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=26)
-File size=848
+[2013/11/22 10:18:09] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => int
+File size=724
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:31:58] [keywords_controller.rb: 57]
-sort => nil
-File size=4555
+[2013/11/22 10:18:09] [articles_controller.rb: 48]
+genre_code=int
+File size=939
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 23]
+[2013/11/22 10:18:10] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=1090
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:18:10] [articles_controller.rb: 760]
+categories.size => 3 / categories=China
+File size=1267
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:19:01] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => bus_all
+File size=1445
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:19:01] [articles_controller.rb: 48]
+genre_code=bus_all
+File size=1665
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:19:01] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=1821
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:19:23] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => bus_all
+File size=1998
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:19:23] [articles_controller.rb: 48]
+genre_code=bus_all
+File size=2218
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:19:24] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=2374
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => soci
+File size=2551
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:04] [articles_controller.rb: 48]
+genre_code=soci
+File size=2768
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:05] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=2921
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:05] [articles_controller.rb: 762]
+categories.size => 2 / categories=Nuc plants
+File size=3098
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:10] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => int
+File size=3281
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:10] [articles_controller.rb: 48]
+genre_code=int
+File size=3497
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:11] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=3649
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:11] [articles_controller.rb: 762]
+categories.size => 3 / categories=China
+File size=3826
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:16] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => bus_all
+File size=4004
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:16] [articles_controller.rb: 48]
+genre_code=bus_all
+File size=4224
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:20:17] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=4380
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:21:35] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => bus_all
+File size=4557
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:21:35] [articles_controller.rb: 48]
+genre_code=bus_all
+File size=4777
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:21:36] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=4933
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:21:36] [articles_controller.rb: 770]
+categories or categories[0] => nil
+File size=5110
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:22:35] [keywords_controller.rb: 23]
 keywords#index
-File size=4704
+File size=5283
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 193]
-_filter_genre => nil
-File size=4856
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 225]
-EnvNr4.first != nil and EnvNr4.first.genre_id != nil
-File size=5015
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 82]
-filter_genre => 
-                            2(class=Fixnum)
-File size=5206
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 167]
-sql=["genre_id = ? and category_id = ?  or category_id = ?  or category_id = ?", 2, "China", "US", "Europe"](class=Array)
-File size=5405
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 117]
-sql => genre_id = ? and category_id = ?  or category_id = ?  or category_id = ? 2 China US Europe
-File size=5665
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 132]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=26)
-File size=5901
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:33:51] [keywords_controller.rb: 57]
-sort => nil
-File size=9609
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 23]
-keywords#index
-File size=9758
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 193]
-_filter_genre => nil
-File size=9910
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 225]
-EnvNr4.first != nil and EnvNr4.first.genre_id != nil
-File size=10069
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 248]
+[2013/11/22 10:22:35] [keywords_controller.rb: 261]
 filter_genre => 2
-File size=10261
+File size=5435
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 82]
-filter_genre => 
-                            2(class=Fixnum)
-File size=10418
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 167]
-sql=["genre_id = ? and category_id = ?  or category_id = ?  or category_id = ?", 2, "China", "US", "Europe"](class=Array)
-File size=10618
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 117]
-sql => genre_id = ? and category_id = ?  or category_id = ?  or category_id = ? 2 China US Europe
-File size=10879
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 132]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=26)
-File size=11116
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:35:01] [keywords_controller.rb: 57]
-sort => nil
-File size=14825
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:45:02] [keywords_controller.rb: 23]
-keywords#index
-File size=14975
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:45:02] [keywords_controller.rb: 249]
-filter_genre => 2
-File size=15128
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:46:21] [keywords_controller.rb: 23]
-keywords#index
-File size=15285
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:46:21] [keywords_controller.rb: 249]
-filter_genre => 2
-File size=15438
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:46:21] [keywords_controller.rb: 168]
-sql=["genre_id = ? and category_id = ?  or category_id = ?  or category_id = ?", 2, "China", "US", "Europe"](class=Array)
-File size=15595
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:46:21] [keywords_controller.rb: 118]
-sql => genre_id = ? and category_id = ?  or category_id = ?  or category_id = ? 2 China US Europe
-File size=15856
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:46:21] [keywords_controller.rb: 133]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=26)
-File size=16093
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 18:46:21] [keywords_controller.rb: 57]
-sort => nil
-File size=19802
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:01:00] [keywords_controller.rb: 23]
-keywords#index
-File size=19952
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:01:00] [keywords_controller.rb: 255]
-filter_genre => 2
-File size=20105
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:01:00] [keywords_controller.rb: 133]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=26)
-File size=20262
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:01:00] [keywords_controller.rb: 57]
-sort => nil
-File size=23971
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:02:41] [keywords_controller.rb: 23]
-keywords#index
-File size=24121
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:02:41] [keywords_controller.rb: 255]
-filter_genre => 2
-File size=24274
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:02:41] [keywords_controller.rb: 83]
-filter_categories => 
-                            [2](class=Array)
-File size=24431
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:02:41] [keywords_controller.rb: 133]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=26)
-File size=24637
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:02:41] [keywords_controller.rb: 57]
-sort => nil
-File size=28346
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:06:44] [keywords_controller.rb: 23]
-keywords#index
-File size=28496
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:06:44] [keywords_controller.rb: 261]
-filter_genre => 2
-File size=28649
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:06:44] [keywords_controller.rb: 83]
-filter_categories => 
-                            [2](class=Array)
-File size=28806
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:06:44] [keywords_controller.rb: 139]
-keywords=[#<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=6)
-File size=29012
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:06:44] [keywords_controller.rb: 57]
-sort => nil
-File size=29988
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:07:29] [env_nr4s_controller.rb: 99]
-@env_nr4.genre_id=2(class=Fixnum)
-File size=30138
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:07:34] [keywords_controller.rb: 23]
-keywords#index
-File size=30310
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:07:34] [keywords_controller.rb: 261]
-filter_genre => 2
-File size=30463
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:07:34] [keywords_controller.rb: 83]
-filter_categories => 
-                            [2](class=Array)
-File size=30620
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:07:34] [keywords_controller.rb: 139]
-keywords=[#<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">](size=6)
-File size=30826
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:07:34] [keywords_controller.rb: 57]
-sort => nil
-File size=31802
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:10:31] [keywords_controller.rb: 23]
-keywords#index
-File size=31952
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:10:31] [keywords_controller.rb: 261]
-filter_genre => 2
-File size=32105
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/21 19:10:31] [keywords_controller.rb: 83]
+[2013/11/22 10:22:35] [keywords_controller.rb: 83]
 filter_categories => 
                             [3](class=Array)
-File size=32262
+File size=5591
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 19:10:31] [keywords_controller.rb: 139]
+[2013/11/22 10:22:35] [keywords_controller.rb: 139]
 keywords=[#<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">](size=7)
-File size=32468
+File size=5796
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 19:10:31] [keywords_controller.rb: 57]
+[2013/11/22 10:22:35] [keywords_controller.rb: 57]
 sort => nil
-File size=33602
+File size=6929
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 19:10:58] [keywords_controller.rb: 23]
-keywords#index
-File size=33752
+[2013/11/22 10:22:45] [keywords_controller.rb: 502]
+show_category_list/selected_genre=3
+File size=7078
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 19:10:58] [keywords_controller.rb: 261]
-filter_genre => 2
-File size=33905
+[2013/11/22 10:22:59] [keywords_controller.rb: 372]
+tokens=["自動車"]
+File size=7252
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 19:10:58] [keywords_controller.rb: 83]
-filter_categories => 
-                            [3](class=Array)
-File size=34062
+[2013/11/22 10:23:03] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => bus_all
+File size=7411
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/21 19:10:58] [keywords_controller.rb: 139]
-keywords=[#<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">](size=7)
-File size=34268
+[2013/11/22 10:23:03] [articles_controller.rb: 48]
+genre_code=bus_all
+File size=7631
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:23:05] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=7787
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:23:05] [articles_controller.rb: 762]
+categories.size => 1 / categories=Automobile
+File size=7964
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:23:37] [keywords_controller.rb: 502]
+show_category_list/selected_genre=3
+File size=8147
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:24:17] [keywords_controller.rb: 372]
+tokens=["トヨタ"]
+File size=8321
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:24:21] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+genre => bus_all
+File size=8480
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:24:21] [articles_controller.rb: 48]
+genre_code=bus_all
+File size=8700
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:24:22] [articles_controller.rb: 271]
+vendor_list.size=0/a_tags_href.size=75
+File size=8856
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/22 10:24:22] [articles_controller.rb: 762]
+categories.size => 1 / categories=Automobile
+File size=9033
 ------------------------=[end]
 
