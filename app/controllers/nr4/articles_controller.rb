@@ -201,10 +201,16 @@ private
     def get_docs(number, genre="soci")
         
         # Urls
-        url = "http://headlines.yahoo.co.jp/hl?c=#{genre}&t=l&p="
+        url_first = "http://headlines.yahoo.co.jp/hl?c=#{genre}&t=l"
     
         # HTML docs
         docs = []
+        
+        # First page
+        docs.push(Nokogiri::HTML(open(url_first)))
+        
+        # Urls
+        url = "http://headlines.yahoo.co.jp/hl?c=#{genre}&t=l&p="
         
         # Thread array
         threads = []
@@ -217,7 +223,8 @@ private
             threads << Thread.start(i, url) do
                 # puts "Thred #{i.to_s}: " + urls[i] 
                 # docs[i] = Nokogiri::HTML(open(urls[i]))
-                docs[i] = Nokogiri::HTML(open(url + (i + 1).to_s))
+                # docs[i] = Nokogiri::HTML(open(url + (i + 1).to_s))
+                docs.push(Nokogiri::HTML(open(url + (i + 1).to_s)))
             end
             
             # Join
@@ -427,11 +434,16 @@ private
     
     def get_categorized_set(articles_model_set, genre_code)
     
+        genre_codes = Genre.all.collect{|g| g.code}
+        
+        #REF http://stackoverflow.com/questions/1986386/check-if-value-exists-in-array-in-ruby answered Dec 31 '09 at 17:51
+        if genre_codes.include? genre_code
+        
         # Array
         #if genre == 'int'
-        if genre_code == 'int' \
-              or genre_code == 'soci' \
-              or genre_code == 'bus_all'
+        # if genre_code == 'int' \
+              # or genre_code == 'soci' \
+              # or genre_code == 'bus_all'
         
           return _get_categorized_set_int(articles_model_set, genre_code)
           

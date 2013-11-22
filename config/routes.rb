@@ -27,7 +27,8 @@ JQM1::Application.routes.draw do
 
   resources :key_word_sets
 
-  resources :genres
+  resources :genres, module: 'nr4'
+  # resources :genres
 
   resources :articles
 
