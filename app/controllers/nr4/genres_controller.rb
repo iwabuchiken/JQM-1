@@ -3,6 +3,9 @@ class Nr4::GenresController < ApplicationController
   # GET /genres.json
   
   layout 'layouts/nr4/genres'
+
+  #REF http://maskana-soft.com/rails/pro/body/41
+  before_filter :log_path
   
   def index
     @genres = Genre.all
@@ -106,5 +109,14 @@ class Nr4::GenresController < ApplicationController
           # format.json { head :no_content }
         end        
     end#show_log
+
+private
+
+    def log_path
+       
+       @log_path = "doc/mylog/articles"
+        
+    end
+
 
 end

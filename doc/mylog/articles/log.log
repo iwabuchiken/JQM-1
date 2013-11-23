@@ -1079,3 +1079,27 @@ article_line => 雪崩発生、数人巻き込まれる？　＝富山・立山�
 File size=33754
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/24 01:09:46] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 427]
+genre => soci
+File size=34013
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/24 01:09:46] [articles_controller.rb: 51]
+genre_code=soci
+File size=34231
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/24 01:09:48] [articles_controller.rb: 314]
+vendor_list.size=0/a_tags_href.size=105
+File size=34385
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/24 01:09:48] [articles_controller.rb: 810]
+categories.size => 2 / categories=Nuc plants
+File size=34564
+------------------------=[end]
+

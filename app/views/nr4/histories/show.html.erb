@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Line:</b>
+  <%= @history.line %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @history.url %>
+</p>
+
+<p>
+  <b>Vendor:</b>
+  <%= @history.vendor %>
+</p>
+
+<p>
+  <b>News time:</b>
+  <%= @history.news_time %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @history.genre %>
+</p>
+
+<p>
+  <b>Cat:</b>
+  <%= @history.cat %>
+</p>
+
+<p>
+  <b>Subcat:</b>
+  <%= @history.subcat %>
+</p>
+
+
+<%= link_to 'Edit', edit_history_path(@history) %> |
+<%= link_to 'Back', histories_path %>
