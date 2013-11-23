@@ -13,6 +13,9 @@ class Nr4::ArticlesController < ApplicationController
     # layout 'nr4'
     # @@log_path = "doc/mylog/articles"
     
+    #REF http://maskana-soft.com/rails/pro/body/41
+    before_filter :log_path
+    
   # GET /articles
   # GET /articles.json
   def index
@@ -42,7 +45,7 @@ class Nr4::ArticlesController < ApplicationController
     #debug
     write_log(
               @log_path,
-              "genre_code=" + @genre_code,  
+              "genre_code=" + @genre_code,
               # __FILE__,
               __FILE__.split("/")[-1],
               __LINE__.to_s)
@@ -151,6 +154,39 @@ class Nr4::ArticlesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+    def open_article
+        
+        article_line    = params['article_line']
+        article_url     = params['article_url']
+        article_genre   = params['article_genre']
+        article_key     = params['article_key']
+        
+        # article = params['article']
+        
+        #debug
+        write_log(
+              @log_path,
+              "article_line => #{article_line}(genre=#{article_genre}/category=#{article_key})",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+        
+        
+        if article_url != nil
+            
+            redirect_url = article_url
+            
+        else
+            
+            redirect_url = "/nr4/articles"
+            
+        end
+        
+        
+        redirect_to redirect_url
+        
+    end#open_article
   
 private
     

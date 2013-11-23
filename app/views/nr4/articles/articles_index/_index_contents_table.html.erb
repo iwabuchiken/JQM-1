@@ -30,7 +30,15 @@
 		
 		<%= link_to\
 				raw(a.line),
-				a.url, :target => "_blank" %>
+				{:controller => 'articles',
+					:action => 'open_article',
+					:article_line => a.line,
+					:article_url => a.url,
+					:article_genre => @genre_code,
+					:article_key => key
+					},
+				:target => "_blank" %>
+				<!-- a.url, :target => "_blank" %> -->
 	</td>
 	
 	<td class="col_vendor">

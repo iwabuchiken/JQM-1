@@ -677,3 +677,405 @@ categories or categories[0] => nil
 File size=21228
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/23 08:51:30] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 391]
+genre => soci
+File size=21402
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:51:30] [articles_controller.rb: 48]
+genre_code=soci
+File size=21620
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:51:31] [articles_controller.rb: 278]
+vendor_list.size=0/a_tags_href.size=105
+File size=21774
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:51:31] [articles_controller.rb: 774]
+categories.size => 2 / categories=Nuc plants
+File size=21953
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:57:21] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 397]
+genre => soci
+File size=22137
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:57:21] [articles_controller.rb: 48]
+genre_code=soci
+File size=22355
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:57:22] [articles_controller.rb: 284]
+vendor_list.size=0/a_tags_href.size=105
+File size=22509
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:57:22] [articles_controller.rb: 780]
+categories.size => 2 / categories=Nuc plants
+File size=22688
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:59:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 397]
+genre => soci
+File size=22872
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:59:04] [articles_controller.rb: 48]
+genre_code=soci
+File size=23090
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:59:05] [articles_controller.rb: 284]
+vendor_list.size=0/a_tags_href.size=105
+File size=23244
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 08:59:05] [articles_controller.rb: 780]
+categories.size => 2 / categories=Nuc plants
+File size=23423
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:00:27] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 399]
+genre => soci
+File size=23607
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:00:27] [articles_controller.rb: 48]
+genre_code=soci
+File size=23825
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:00:29] [articles_controller.rb: 286]
+vendor_list.size=0/a_tags_href.size=105
+File size=23979
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:00:29] [articles_controller.rb: 782]
+categories.size => 2 / categories=Nuc plants
+File size=24158
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:50:18] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 415]
+genre => soci
+File size=24342
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:50:18] [articles_controller.rb: 48]
+genre_code=soci
+File size=24560
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:50:19] [articles_controller.rb: 302]
+vendor_list.size=0/a_tags_href.size=105
+File size=24714
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:50:19] [articles_controller.rb: 798]
+categories.size => 2 / categories=Nuc plants
+File size=24893
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:51:41] [articles_controller.rb: 170]
+article_line=秋田の事故現場、過去３年で土砂崩落１１件
+File size=25077
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:57:46] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 443]
+genre => soci
+File size=25290
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:57:46] [articles_controller.rb: 51]
+genre_code=soci
+File size=25508
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:57:47] [articles_controller.rb: 330]
+vendor_list.size=0/a_tags_href.size=105
+File size=25662
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:57:47] [articles_controller.rb: 826]
+categories.size => 2 / categories=Nuc plants
+File size=25841
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:58:41] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 443]
+genre => soci
+File size=26025
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:58:41] [articles_controller.rb: 51]
+genre_code=soci
+File size=26243
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:58:42] [articles_controller.rb: 330]
+vendor_list.size=0/a_tags_href.size=105
+File size=26397
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:58:42] [articles_controller.rb: 826]
+categories.size => 2 / categories=Nuc plants
+File size=26576
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:59:41] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 450]
+genre => soci
+File size=26760
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:59:41] [articles_controller.rb: 51]
+genre_code=soci
+File size=26978
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:59:42] [articles_controller.rb: 337]
+vendor_list.size=0/a_tags_href.size=105
+File size=27132
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:59:42] [articles_controller.rb: 833]
+categories.size => 2 / categories=Nuc plants
+File size=27311
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 09:59:46] [articles_controller.rb: 205]
+article_line => nil
+File size=27495
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:00:06] [articles_controller.rb: 205]
+article_line => nil
+File size=27654
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:00:53] [articles_controller.rb: 205]
+article_line => nil
+File size=27813
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:02:14] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 450]
+genre => soci
+File size=27972
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:02:14] [articles_controller.rb: 51]
+genre_code=soci
+File size=28190
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:02:15] [articles_controller.rb: 337]
+vendor_list.size=0/a_tags_href.size=105
+File size=28344
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:02:15] [articles_controller.rb: 833]
+categories.size => 2 / categories=Nuc plants
+File size=28523
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:02:19] [articles_controller.rb: 195]
+article_line=猪瀬氏　徳洲会から５０００万円　昨年１１月１９日、虎雄氏が指示
+File size=28707
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:08:15] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 415]
+genre => soci
+File size=28953
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:08:15] [articles_controller.rb: 51]
+genre_code=soci
+File size=29171
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:08:16] [articles_controller.rb: 302]
+vendor_list.size=0/a_tags_href.size=105
+File size=29325
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:08:16] [articles_controller.rb: 798]
+categories.size => 2 / categories=Nuc plants
+File size=29504
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:10:42] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 430]
+genre => soci
+File size=29688
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:10:42] [articles_controller.rb: 51]
+genre_code=soci
+File size=29906
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:10:43] [articles_controller.rb: 317]
+vendor_list.size=0/a_tags_href.size=105
+File size=30060
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:10:43] [articles_controller.rb: 813]
+categories.size => 2 / categories=Nuc plants
+File size=30239
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:10:48] [articles_controller.rb: 170]
+article_line => ＪＲ北、改竄蔓延　「労組へ遠慮　対策不十分」
+File size=30423
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:11:07] [articles_controller.rb: 170]
+article_line => ＜秘密保護法案＞沖縄米軍基地跡地「枯れ葉剤」秘密扱い懸念
+File size=30645
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:11:09] [articles_controller.rb: 170]
+article_line => 長時間労働者「上司は評価」と解釈　内閣府調査
+File size=30885
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:11:11] [articles_controller.rb: 170]
+article_line => 徐行忘れ速度超過50キロ＝特急列車、工事区間で―JR北海道
+File size=31107
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 10:11:12] [articles_controller.rb: 170]
+article_line => ＜法政大＞次期総長に田中優子氏選出
+File size=31342
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:28:03] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 430]
+genre => soci
+File size=31549
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:28:03] [articles_controller.rb: 51]
+genre_code=soci
+File size=31767
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:28:04] [articles_controller.rb: 317]
+vendor_list.size=0/a_tags_href.size=105
+File size=31921
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:28:04] [articles_controller.rb: 813]
+categories.size => 2 / categories=Nuc plants
+File size=32100
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:33:02] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 430]
+genre => soci
+File size=32284
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:33:02] [articles_controller.rb: 51]
+genre_code=soci
+File size=32502
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:33:03] [articles_controller.rb: 317]
+vendor_list.size=0/a_tags_href.size=105
+File size=32656
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:33:03] [articles_controller.rb: 813]
+categories.size => 2 / categories=Nuc plants
+File size=32835
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:36:23] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 427]
+genre => soci
+File size=33019
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:36:23] [articles_controller.rb: 51]
+genre_code=soci
+File size=33237
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:36:25] [articles_controller.rb: 314]
+vendor_list.size=0/a_tags_href.size=105
+File size=33391
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:36:25] [articles_controller.rb: 810]
+categories.size => 2 / categories=Nuc plants
+File size=33570
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/23 12:36:29] [articles_controller.rb: 173]
+article_line => 雪崩発生、数人巻き込まれる？　＝富山・立山の真砂岳(genre=soci/category=Others)
+File size=33754
+------------------------=[end]
+

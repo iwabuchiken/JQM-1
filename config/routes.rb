@@ -30,7 +30,9 @@ JQM1::Application.routes.draw do
   resources :genres, module: 'nr4'
   # resources :genres
 
-  resources :articles
+  # Articles
+    get "/nr4/articles/open_article"
+    resources :articles, module: 'nr4'
 
   get "twitter_app/main"
 
