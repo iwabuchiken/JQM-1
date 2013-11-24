@@ -5,6 +5,10 @@ JQM1::Application.routes.draw do
       get "/nr4/env_nr4s/show_category_list"    # => ActiveRecord::RecordNotFound (Couldn't find EnvNr4 with id=show_category_list): app/controllers/nr4/env_nr4s_controller.rb:29:in `show'
       # get "/env_nr4s/show_category_list"  # => ActionController::RoutingError (uninitialized constant EnvNr4sController):
       
+      # get "/env_nr4s/backup_db", module: 'nr4'
+      # get "/env_nr4s/backup_db"
+      get "/nr4/env_nr4s/backup_db" # => Working
+      
   resources :env_nr4s, module: 'nr4'
 
   resources :settings_nr4s, module: 'nr4'

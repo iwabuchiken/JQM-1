@@ -140,6 +140,12 @@ class Nr4::EnvNr4sController < ApplicationController
 
     end#show_genre_list
 
+    def backup_db
+        
+        #REF http://railsdoc.com/references/render
+        render :text => "backup_db"
+        
+    end
   
 private
 

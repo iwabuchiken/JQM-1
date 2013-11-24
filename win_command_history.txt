@@ -1,5 +1,7 @@
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk && rails s --port 3001
 pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk && rails s --port 3001
+
+# No git
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001
 
 #pushd
@@ -177,6 +179,8 @@ bundle exec rake db:rollback STEP=1
 rails generate scaffold EnvNR4 sort_genre:integer sort_category:integer genre_id:integer, category_id:integer
 bundle exec rake db:migrate
 
+rails generate scaffold History line:text url:string vendor:string news_time:string genre:string cat:string subcat:string
+bundle exec rake db:migrate
 
 
 aa

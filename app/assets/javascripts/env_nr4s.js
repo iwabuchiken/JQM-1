@@ -41,3 +41,37 @@ function show_category_list_env_nr4() {
 //	$("#category_list").html("Selected genre => " + selected_genre_id);
 	
 }//function show_category_list() {
+
+function backup_db() {
+	
+	$("div#backup_result").css("background-color", "yellow");
+//	$("div#backup_result").css("disabled", "true");	// Not working
+//	$("div#backup_result").attr("disabled", 'true');
+	$("input#backup_button").attr("disabled", true);
+	
+//	alert("Starting backup...");
+	$.ajax({
+		
+//	    url: "/env_nr4s/show_category_list?selected_genre=" + selected_genre_id,
+	    url: "/nr4/env_nr4s/backup_db",
+	    type: "GET",
+	    timeout: 10000
+	    
+	}).done(function(data, status, xhr) {
+		
+		$("div#backup_result").css("background-color", "white");
+		$("div#backup_result").text(data);
+		
+		$("input#backup_button").attr("disabled", false);
+		
+//		$("#category_list").html(data);
+		
+	    
+	}).fail(function(xhr, status, error) {
+		
+	    $("div#backup_result").append("xhr.status = " + xhr.status + "<br>");          // 例: 404
+	    
+	});
+
+	
+}

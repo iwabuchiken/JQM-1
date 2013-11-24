@@ -33,6 +33,23 @@
 
 <br />
 
+<input 
+		type="button"
+		value="Backup DB"
+		id="backup_button"
+		onclick="backup_db();" >
+		
+<div id="backup_result">Backup result</div>
+
+<%#= button_to \
+			"Backup DB",
+			{:controller => 'env_nr4s',:action => 'backup_db'},
+			:method => 'get' %>
+<%#= button_to "Backup DB", :action => 'backup_db', [:method => 'get']%><!--  syntax error, unexpected ')', expecting tASSOC -->
+<%#= button_to "Backup DB", :action => 'backup_db', {:method => 'get'}%><!-- form action="/nr4/env_nr4s/backup_db?method=get" class="button_to" method="post" -->
+
+
 <% unless @env_nr4s.size > 0 %>
 	<%= link_to 'New Env nr4', new_env_nr4_path %>
 <% end %>
+
