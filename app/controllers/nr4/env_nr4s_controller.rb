@@ -151,47 +151,33 @@ class Nr4::EnvNr4sController < ApplicationController
         # @dir = Dir.glob(Rails.root.join('db'))
         # @dir = Dir.glob(Rails.root.join('db') + "/*")
         
+        @message = Dir.glob(Rails.root.join('db', '*'))
+        
         file_path = Rails.root.join('db', 'development.sqlite3')
         
-        # @message = Dir.glob(Rails.root.join('db', '*'))
-        # @message = Dir.glob(Rails.root.join('db', '*'))
-        # @message = Rails.root.join('db').class.to_s
-        # @message = Rails.root.join('db') + "/*"
-        # @message = Rails.root.join('db', '*')
         
-        # @message = 
-                # "@dir.length => #{@dir.length}<br>
-                # /Rails.root => #{Rails.root.to_s})<br>
-                # /db path => #{Rails.root.join('db')}
-                # "
-        
-        # @message = "dir.length => #{dir.length}/__FILE__ => (#{__FILE__})"
-        # @message = "dir.length => #{dir.length}/RAILS_ROOT => (#{RAILS_ROOT})"
-        
-        # f = open(Rails.root.join('db', 'development.sqlite3'))
-        
-        task = Net::FTP.open('ftp.benfranklin.chips.jp') do |ftp|
-            
-            ftp.login('chips.jp-benfranklin','9x9jh4')
-            
-            ftp.chdir('/rails_apps/nr4/db')
-            
-            ftp.put(file_path, File.basename(file_path))
-            
-            @message = "File ftp-ed => " + file_path.to_s
-            
-            # write_log(
-                  # @log_path,
-                  # "login => Done",
-                  # # __FILE__,
-                  # __FILE__.split("/")[-1],
-                  # __LINE__.to_s)
-
-            # message = "Login => Done"
-            
-            # ftp.list('*.*') { |file| @message += "#{file}<br/>" }
-            
-        end
+        # task = Net::FTP.open('ftp.benfranklin.chips.jp') do |ftp|
+#             
+            # ftp.login('chips.jp-benfranklin','9x9jh4')
+#             
+            # ftp.chdir('/rails_apps/nr4/db')
+#             
+            # ftp.put(file_path, File.basename(file_path))
+#             
+            # @message = "File ftp-ed => " + file_path.to_s
+#             
+            # # write_log(
+                  # # @log_path,
+                  # # "login => Done",
+                  # # # __FILE__,
+                  # # __FILE__.split("/")[-1],
+                  # # __LINE__.to_s)
+# 
+            # # message = "Login => Done"
+#             
+            # # ftp.list('*.*') { |file| @message += "#{file}<br/>" }
+#             
+        # end
         
         # render :layout => 'layouts/nr4/keywords/show_genre_list'
         render :layout => 'layouts/nr4/backup_db'
