@@ -151,7 +151,8 @@ class Nr4::EnvNr4sController < ApplicationController
         # @dir = Dir.glob(Rails.root.join('db'))
         # @dir = Dir.glob(Rails.root.join('db') + "/*")
         
-        @message = Dir.glob(Rails.root.join('db', '*'))
+        @message = Dir.glob(Rails.root.join('db', '**', '*'))
+        # @message = Dir.glob(Rails.root.join('db', '*'))
         
         file_path = Rails.root.join('db', 'development.sqlite3')
         
