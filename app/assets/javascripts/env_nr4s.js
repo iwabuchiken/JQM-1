@@ -47,6 +47,8 @@ function backup_db() {
 	$("div#backup_result").css("background-color", "yellow");
 //	$("div#backup_result").css("disabled", "true");	// Not working
 //	$("div#backup_result").attr("disabled", 'true');
+	
+	//REF http://d.hatena.ne.jp/ogakky/20110711/1310349297
 	$("input#backup_button").attr("disabled", true);
 	
 //	alert("Starting backup...");
@@ -60,7 +62,8 @@ function backup_db() {
 	}).done(function(data, status, xhr) {
 		
 		$("div#backup_result").css("background-color", "white");
-		$("div#backup_result").text(data);
+		$("div#backup_result").html(data);
+//		$("div#backup_result").text(data);
 		
 		$("input#backup_button").attr("disabled", false);
 		
@@ -70,6 +73,8 @@ function backup_db() {
 	}).fail(function(xhr, status, error) {
 		
 	    $("div#backup_result").append("xhr.status = " + xhr.status + "<br>");          // 例: 404
+	    
+	    $("input#backup_button").attr("disabled", false);
 	    
 	});
 
