@@ -4,3 +4,27 @@ sort => nil
 File size=0
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/26 08:18:54] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 427]
+genre => soci
+File size=146
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:18:54] [articles_controller.rb: 51]
+genre_code=soci
+File size=362
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:18:55] [articles_controller.rb: 314]
+vendor_list.size=0/a_tags_href.size=105
+File size=514
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:18:55] [articles_controller.rb: 810]
+categories.size => 2 / categories=Nuc plants
+File size=691
+------------------------=[end]
+
