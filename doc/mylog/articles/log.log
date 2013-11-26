@@ -1,1249 +1,193 @@
 [begin]------------------------=
-[2013/11/22 10:17:59] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => soci
+[2013/11/26 08:39:21] [articles_controller.rb: 185]
+genre_code => nil
 File size=0
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:17:59] [articles_controller.rb: 48]
-genre_code=soci
-File size=214
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:18:00] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=366
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:18:00] [articles_controller.rb: 760]
-categories.size => 2 / categories=Nuc plants
-File size=542
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:18:09] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => int
-File size=724
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:18:09] [articles_controller.rb: 48]
-genre_code=int
-File size=939
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:18:10] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=1090
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:18:10] [articles_controller.rb: 760]
-categories.size => 3 / categories=China
-File size=1267
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:19:01] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => bus_all
-File size=1445
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:19:01] [articles_controller.rb: 48]
-genre_code=bus_all
-File size=1665
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:19:01] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=1821
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:19:23] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => bus_all
-File size=1998
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:19:23] [articles_controller.rb: 48]
-genre_code=bus_all
-File size=2218
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:19:24] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=2374
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:20:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+[2013/11/26 08:39:59] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 456]
 genre => soci
-File size=2551
+File size=153
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:04] [articles_controller.rb: 48]
+[2013/11/26 08:39:59] [articles_controller.rb: 51]
 genre_code=soci
-File size=2768
+File size=369
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:05] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=2921
+[2013/11/26 08:40:00] [articles_controller.rb: 343]
+vendor_list.size=0/a_tags_href.size=105
+File size=521
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:05] [articles_controller.rb: 762]
+[2013/11/26 08:40:00] [articles_controller.rb: 839]
 categories.size => 2 / categories=Nuc plants
-File size=3098
+File size=698
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:10] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
+[2013/11/26 08:40:06] [articles_controller.rb: 185]
+genre_code => nil
+File size=880
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:40:48] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 456]
+genre => soci
+File size=1035
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:40:48] [articles_controller.rb: 51]
+genre_code=soci
+File size=1252
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:40:49] [articles_controller.rb: 343]
+vendor_list.size=0/a_tags_href.size=105
+File size=1405
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:40:49] [articles_controller.rb: 839]
+categories.size => 2 / categories=Nuc plants
+File size=1583
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:40:54] [articles_controller.rb: 185]
+genre_code => nil
+File size=1766
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:43:45] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 456]
+genre => soci
+File size=1922
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:43:45] [articles_controller.rb: 51]
+genre_code=soci
+File size=2139
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:43:46] [articles_controller.rb: 343]
+vendor_list.size=0/a_tags_href.size=105
+File size=2292
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:43:46] [articles_controller.rb: 839]
+categories.size => 2 / categories=Nuc plants
+File size=2470
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:43:50] [articles_controller.rb: 185]
+genre_code => nil
+File size=2653
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/26 08:44:06] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 447]
 genre => int
-File size=3281
+File size=2809
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:10] [articles_controller.rb: 48]
+[2013/11/26 08:44:06] [articles_controller.rb: 51]
 genre_code=int
-File size=3497
+File size=3025
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:11] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=3649
+[2013/11/26 08:44:07] [articles_controller.rb: 343]
+vendor_list.size=0/a_tags_href.size=102
+File size=3177
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:11] [articles_controller.rb: 762]
+[2013/11/26 08:44:07] [articles_controller.rb: 839]
 categories.size => 3 / categories=China
-File size=3826
+File size=3355
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:16] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => bus_all
-File size=4004
+[2013/11/26 08:44:11] [articles_controller.rb: 185]
+genre_code => nil
+File size=3533
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:16] [articles_controller.rb: 48]
-genre_code=bus_all
-File size=4224
+[2013/11/26 08:48:08] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 457]
+genre => soci
+File size=3689
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:20:17] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=4380
+[2013/11/26 08:48:08] [articles_controller.rb: 51]
+genre_code=soci
+File size=3906
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:21:35] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => bus_all
-File size=4557
+[2013/11/26 08:48:09] [articles_controller.rb: 344]
+vendor_list.size=0/a_tags_href.size=105
+File size=4059
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:21:35] [articles_controller.rb: 48]
-genre_code=bus_all
-File size=4777
+[2013/11/26 08:48:09] [articles_controller.rb: 840]
+categories.size => 2 / categories=Nuc plants
+File size=4237
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:21:36] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=4933
+[2013/11/26 08:48:17] [articles_controller.rb: 186]
+article_genre => nil
+File size=4420
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:21:36] [articles_controller.rb: 770]
-categories or categories[0] => nil
-File size=5110
+[2013/11/26 08:51:35] [articles_controller.rb: 177]
+article_genre => soci
+File size=4579
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:22:35] [keywords_controller.rb: 23]
+[2013/11/26 09:10:49] [keywords_controller.rb: 23]
 keywords#index
-File size=5283
+File size=4739
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:22:35] [keywords_controller.rb: 261]
+[2013/11/26 09:10:49] [keywords_controller.rb: 261]
 filter_genre => 2
-File size=5435
+File size=4891
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:22:35] [keywords_controller.rb: 83]
+[2013/11/26 09:10:49] [keywords_controller.rb: 83]
 filter_categories => 
                             [3](class=Array)
-File size=5591
+File size=5047
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:22:35] [keywords_controller.rb: 139]
+[2013/11/26 09:10:49] [keywords_controller.rb: 139]
 keywords=[#<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">](size=7)
-File size=5796
+File size=5252
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/11/22 10:22:35] [keywords_controller.rb: 57]
+[2013/11/26 09:10:49] [keywords_controller.rb: 57]
 sort => nil
-File size=6929
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:22:45] [keywords_controller.rb: 502]
-show_category_list/selected_genre=3
-File size=7078
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:22:59] [keywords_controller.rb: 372]
-tokens=["自動車"]
-File size=7252
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:23:03] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => bus_all
-File size=7411
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:23:03] [articles_controller.rb: 48]
-genre_code=bus_all
-File size=7631
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:23:05] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=7787
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:23:05] [articles_controller.rb: 762]
-categories.size => 1 / categories=Automobile
-File size=7964
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:23:37] [keywords_controller.rb: 502]
-show_category_list/selected_genre=3
-File size=8147
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:24:17] [keywords_controller.rb: 372]
-tokens=["トヨタ"]
-File size=8321
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:24:21] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 375]
-genre => bus_all
-File size=8480
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:24:21] [articles_controller.rb: 48]
-genre_code=bus_all
-File size=8700
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:24:22] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=8856
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 10:24:22] [articles_controller.rb: 762]
-categories.size => 1 / categories=Automobile
-File size=9033
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 22:57:59] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 384]
-genre => soci
-File size=9216
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 22:57:59] [articles_controller.rb: 48]
-genre_code=soci
-File size=9433
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 22:58:00] [articles_controller.rb: 271]
-vendor_list.size=0/a_tags_href.size=75
-File size=9586
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 22:58:00] [articles_controller.rb: 762]
-categories.size => 2 / categories=Nuc plants
-File size=9763
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:01:53] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 385]
-genre => soci
-File size=9946
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:01:53] [articles_controller.rb: 48]
-genre_code=soci
-File size=10163
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:01:54] [articles_controller.rb: 272]
-vendor_list.size=0/a_tags_href.size=75
-File size=10317
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:01:54] [articles_controller.rb: 763]
-categories.size => 2 / categories=Nuc plants
-File size=10495
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:02:01] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 376]
-genre => int
-File size=10679
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:02:01] [articles_controller.rb: 48]
-genre_code=int
-File size=10896
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:02:01] [articles_controller.rb: 272]
-vendor_list.size=0/a_tags_href.size=75
-File size=11049
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:02:01] [articles_controller.rb: 763]
-categories.size => 3 / categories=China
-File size=11227
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:03:54] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => int
-File size=11406
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:03:54] [articles_controller.rb: 48]
-genre_code=int
-File size=11623
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:03:57] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=11776
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:03:57] [articles_controller.rb: 769]
-categories.size => 3 / categories=China
-File size=11955
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:11] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => soci
-File size=12134
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:11] [articles_controller.rb: 48]
-genre_code=soci
-File size=12352
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:12] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=12506
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:12] [articles_controller.rb: 769]
-categories.size => 2 / categories=Nuc plants
-File size=12685
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:31] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 391]
-genre => soci
-File size=12869
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:31] [articles_controller.rb: 48]
-genre_code=soci
-File size=13087
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:32] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=13241
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:32] [articles_controller.rb: 769]
-categories.size => 2 / categories=Nuc plants
-File size=13420
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:43] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => int
-File size=13604
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:43] [articles_controller.rb: 48]
-genre_code=int
-File size=13821
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:44] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=13974
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:04:45] [articles_controller.rb: 769]
-categories.size => 3 / categories=China
-File size=14153
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:06:13] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => int
-File size=14332
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:06:13] [articles_controller.rb: 48]
-genre_code=int
-File size=14549
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:06:15] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=14702
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:06:15] [articles_controller.rb: 769]
-categories.size => 3 / categories=China
-File size=14881
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:14:58] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => int
-File size=15060
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:14:58] [articles_controller.rb: 48]
-genre_code=int
-File size=15277
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:14:59] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=15430
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:14:59] [articles_controller.rb: 769]
-categories.size => 3 / categories=China
-File size=15609
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:15:06] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => pol
-File size=15788
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:15:06] [articles_controller.rb: 48]
-genre_code=pol
-File size=16005
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:15:07] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=16158
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:22:31] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => pol
-File size=16337
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:22:31] [articles_controller.rb: 48]
-genre_code=pol
-File size=16554
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:22:32] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=16707
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:22:32] [articles_controller.rb: 782]
-categories or categories[0] => nil
-File size=16886
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:05] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => pol
-File size=17060
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:05] [articles_controller.rb: 48]
-genre_code=pol
-File size=17277
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:07] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=17430
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:07] [articles_controller.rb: 782]
-categories or categories[0] => nil
-File size=17609
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:11] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => s_ame
-File size=17783
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:11] [articles_controller.rb: 48]
-genre_code=s_ame
-File size=18002
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:13] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=99
-File size=18157
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:23:13] [articles_controller.rb: 782]
-categories or categories[0] => nil
-File size=18335
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:26] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => s_ame
-File size=18509
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:26] [articles_controller.rb: 48]
-genre_code=s_ame
-File size=18728
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:27] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=99
-File size=18883
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:27] [articles_controller.rb: 782]
-categories or categories[0] => nil
-File size=19061
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:32] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => kr
-File size=19235
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:32] [articles_controller.rb: 48]
-genre_code=kr
-File size=19451
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:33] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=100
-File size=19603
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:24:33] [articles_controller.rb: 782]
-categories or categories[0] => nil
-File size=19782
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:20] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => kr
-File size=19956
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:21] [articles_controller.rb: 48]
-genre_code=kr
-File size=20172
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:22] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=100
-File size=20324
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:22] [articles_controller.rb: 782]
-categories or categories[0] => nil
-File size=20503
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:27] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 382]
-genre => eurp
-File size=20677
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:27] [articles_controller.rb: 48]
-genre_code=eurp
-File size=20895
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:28] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=100
-File size=21049
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/22 23:25:28] [articles_controller.rb: 782]
-categories or categories[0] => nil
-File size=21228
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:51:30] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 391]
-genre => soci
-File size=21402
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:51:30] [articles_controller.rb: 48]
-genre_code=soci
-File size=21620
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:51:31] [articles_controller.rb: 278]
-vendor_list.size=0/a_tags_href.size=105
-File size=21774
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:51:31] [articles_controller.rb: 774]
-categories.size => 2 / categories=Nuc plants
-File size=21953
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:57:21] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 397]
-genre => soci
-File size=22137
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:57:21] [articles_controller.rb: 48]
-genre_code=soci
-File size=22355
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:57:22] [articles_controller.rb: 284]
-vendor_list.size=0/a_tags_href.size=105
-File size=22509
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:57:22] [articles_controller.rb: 780]
-categories.size => 2 / categories=Nuc plants
-File size=22688
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:59:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 397]
-genre => soci
-File size=22872
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:59:04] [articles_controller.rb: 48]
-genre_code=soci
-File size=23090
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:59:05] [articles_controller.rb: 284]
-vendor_list.size=0/a_tags_href.size=105
-File size=23244
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 08:59:05] [articles_controller.rb: 780]
-categories.size => 2 / categories=Nuc plants
-File size=23423
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:00:27] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 399]
-genre => soci
-File size=23607
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:00:27] [articles_controller.rb: 48]
-genre_code=soci
-File size=23825
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:00:29] [articles_controller.rb: 286]
-vendor_list.size=0/a_tags_href.size=105
-File size=23979
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:00:29] [articles_controller.rb: 782]
-categories.size => 2 / categories=Nuc plants
-File size=24158
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:50:18] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 415]
-genre => soci
-File size=24342
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:50:18] [articles_controller.rb: 48]
-genre_code=soci
-File size=24560
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:50:19] [articles_controller.rb: 302]
-vendor_list.size=0/a_tags_href.size=105
-File size=24714
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:50:19] [articles_controller.rb: 798]
-categories.size => 2 / categories=Nuc plants
-File size=24893
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:51:41] [articles_controller.rb: 170]
-article_line=秋田の事故現場、過去３年で土砂崩落１１件
-File size=25077
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:57:46] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 443]
-genre => soci
-File size=25290
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:57:46] [articles_controller.rb: 51]
-genre_code=soci
-File size=25508
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:57:47] [articles_controller.rb: 330]
-vendor_list.size=0/a_tags_href.size=105
-File size=25662
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:57:47] [articles_controller.rb: 826]
-categories.size => 2 / categories=Nuc plants
-File size=25841
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:58:41] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 443]
-genre => soci
-File size=26025
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:58:41] [articles_controller.rb: 51]
-genre_code=soci
-File size=26243
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:58:42] [articles_controller.rb: 330]
-vendor_list.size=0/a_tags_href.size=105
-File size=26397
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:58:42] [articles_controller.rb: 826]
-categories.size => 2 / categories=Nuc plants
-File size=26576
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:59:41] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 450]
-genre => soci
-File size=26760
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:59:41] [articles_controller.rb: 51]
-genre_code=soci
-File size=26978
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:59:42] [articles_controller.rb: 337]
-vendor_list.size=0/a_tags_href.size=105
-File size=27132
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:59:42] [articles_controller.rb: 833]
-categories.size => 2 / categories=Nuc plants
-File size=27311
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 09:59:46] [articles_controller.rb: 205]
-article_line => nil
-File size=27495
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:00:06] [articles_controller.rb: 205]
-article_line => nil
-File size=27654
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:00:53] [articles_controller.rb: 205]
-article_line => nil
-File size=27813
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:02:14] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 450]
-genre => soci
-File size=27972
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:02:14] [articles_controller.rb: 51]
-genre_code=soci
-File size=28190
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:02:15] [articles_controller.rb: 337]
-vendor_list.size=0/a_tags_href.size=105
-File size=28344
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:02:15] [articles_controller.rb: 833]
-categories.size => 2 / categories=Nuc plants
-File size=28523
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:02:19] [articles_controller.rb: 195]
-article_line=猪瀬氏　徳洲会から５０００万円　昨年１１月１９日、虎雄氏が指示
-File size=28707
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:08:15] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 415]
-genre => soci
-File size=28953
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:08:15] [articles_controller.rb: 51]
-genre_code=soci
-File size=29171
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:08:16] [articles_controller.rb: 302]
-vendor_list.size=0/a_tags_href.size=105
-File size=29325
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:08:16] [articles_controller.rb: 798]
-categories.size => 2 / categories=Nuc plants
-File size=29504
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:10:42] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 430]
-genre => soci
-File size=29688
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:10:42] [articles_controller.rb: 51]
-genre_code=soci
-File size=29906
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:10:43] [articles_controller.rb: 317]
-vendor_list.size=0/a_tags_href.size=105
-File size=30060
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:10:43] [articles_controller.rb: 813]
-categories.size => 2 / categories=Nuc plants
-File size=30239
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:10:48] [articles_controller.rb: 170]
-article_line => ＪＲ北、改竄蔓延　「労組へ遠慮　対策不十分」
-File size=30423
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:11:07] [articles_controller.rb: 170]
-article_line => ＜秘密保護法案＞沖縄米軍基地跡地「枯れ葉剤」秘密扱い懸念
-File size=30645
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:11:09] [articles_controller.rb: 170]
-article_line => 長時間労働者「上司は評価」と解釈　内閣府調査
-File size=30885
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:11:11] [articles_controller.rb: 170]
-article_line => 徐行忘れ速度超過50キロ＝特急列車、工事区間で―JR北海道
-File size=31107
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 10:11:12] [articles_controller.rb: 170]
-article_line => ＜法政大＞次期総長に田中優子氏選出
-File size=31342
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:28:03] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 430]
-genre => soci
-File size=31549
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:28:03] [articles_controller.rb: 51]
-genre_code=soci
-File size=31767
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:28:04] [articles_controller.rb: 317]
-vendor_list.size=0/a_tags_href.size=105
-File size=31921
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:28:04] [articles_controller.rb: 813]
-categories.size => 2 / categories=Nuc plants
-File size=32100
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:33:02] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 430]
-genre => soci
-File size=32284
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:33:02] [articles_controller.rb: 51]
-genre_code=soci
-File size=32502
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:33:03] [articles_controller.rb: 317]
-vendor_list.size=0/a_tags_href.size=105
-File size=32656
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:33:03] [articles_controller.rb: 813]
-categories.size => 2 / categories=Nuc plants
-File size=32835
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:36:23] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 427]
-genre => soci
-File size=33019
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:36:23] [articles_controller.rb: 51]
-genre_code=soci
-File size=33237
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:36:25] [articles_controller.rb: 314]
-vendor_list.size=0/a_tags_href.size=105
-File size=33391
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:36:25] [articles_controller.rb: 810]
-categories.size => 2 / categories=Nuc plants
-File size=33570
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/23 12:36:29] [articles_controller.rb: 173]
-article_line => 雪崩発生、数人巻き込まれる？　＝富山・立山の真砂岳(genre=soci/category=Others)
-File size=33754
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 01:09:46] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 427]
-genre => soci
-File size=34013
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 01:09:46] [articles_controller.rb: 51]
-genre_code=soci
-File size=34231
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 01:09:48] [articles_controller.rb: 314]
-vendor_list.size=0/a_tags_href.size=105
-File size=34385
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 01:09:48] [articles_controller.rb: 810]
-categories.size => 2 / categories=Nuc plants
-File size=34564
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 10:42:32] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 427]
-genre => soci
-File size=34748
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 10:42:32] [articles_controller.rb: 51]
-genre_code=soci
-File size=34966
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 10:42:34] [articles_controller.rb: 314]
-vendor_list.size=0/a_tags_href.size=105
-File size=35120
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 10:42:34] [articles_controller.rb: 810]
-categories.size => 2 / categories=Nuc plants
-File size=35299
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:40:21] [env_nr4s_controller.rb: 156]
-login => Done
-File size=35483
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:41:10] [env_nr4s_controller.rb: 158]
-login => Done
-File size=35636
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:42:28] [env_nr4s_controller.rb: 158]
-login => Done
-File size=35789
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:44:54] [env_nr4s_controller.rb: 158]
-login => Done
-File size=35942
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:48:47] [env_nr4s_controller.rb: 158]
-login => Done
-File size=36095
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:49:28] [env_nr4s_controller.rb: 158]
-login => Done
-File size=36248
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:49:51] [env_nr4s_controller.rb: 158]
-login => Done
-File size=36401
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:50:08] [env_nr4s_controller.rb: 158]
-login => Done
-File size=36554
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:50:27] [env_nr4s_controller.rb: 158]
-login => Done
-File size=36707
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 11:50:32] [env_nr4s_controller.rb: 158]
-login => Done
-File size=36860
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:12:22] [env_nr4s_controller.rb: 160]
-login => Done
-File size=37013
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:13:45] [env_nr4s_controller.rb: 160]
-login => Done
-File size=37166
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:14:02] [env_nr4s_controller.rb: 160]
-login => Done
-File size=37319
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:14:12] [env_nr4s_controller.rb: 160]
-login => Done
-File size=37472
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:14:18] [env_nr4s_controller.rb: 160]
-login => Done
-File size=37625
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:18:49] [env_nr4s_controller.rb: 160]
-login => Done
-File size=37778
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:21:48] [env_nr4s_controller.rb: 160]
-login => Done
-File size=37931
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:22:48] [env_nr4s_controller.rb: 160]
-login => Done
-File size=38084
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:23:06] [env_nr4s_controller.rb: 160]
-login => Done
-File size=38237
-------------------------=[end]
-
-[begin]------------------------=
-[2013/11/24 12:23:11] [env_nr4s_controller.rb: 160]
-login => Done
-File size=38390
+File size=6385
 ------------------------=[end]
 

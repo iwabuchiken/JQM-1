@@ -161,17 +161,31 @@ class Nr4::ArticlesController < ApplicationController
         article_url     = params['article_url']
         article_genre   = params['article_genre']
         article_key     = params['article_key']
+        article_vendor  = params['article_vendor']
+        article_news_time     = params['article_news_time']
+        
+
+        h = History.new
+        
+        h.line      = article_line.gsub(/<.+>/, "")
+        h.url       = article_url
+        h.vendor    = article_vendor
+        h.news_time = article_news_time
+        h.vendor    = article_vendor
+        h.genre     = Genre.first(
+              :conditions => ["code = ?", article_genre]).id
+        if article_key != "Others"
+        
+          h.cat       = Category.first(
+                :conditions => ["name = ?", article_key]).id
+                
+        end
+        
+        #h.cat       = article_key
+
+        h.save
         
         # article = params['article']
-        
-        #debug
-        write_log(
-              @log_path,
-              "article_line => #{article_line}(genre=#{article_genre}/category=#{article_key})",
-              # __FILE__,
-              __FILE__.split("/")[-1],
-              __LINE__.to_s)
-        
         
         if article_url != nil
             
