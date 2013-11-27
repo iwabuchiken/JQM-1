@@ -8,7 +8,24 @@ class Nr4::HistoriesController < ApplicationController
   # GET /histories
   # GET /histories.json
   def index
-    @histories = History.all
+      
+      per_page = _index_get_per_page()
+    @histories = History.paginate(
+                          :page => params[:page],
+                          :order => 'created_at asc',
+                          :per_page => per_page)
+                          # :per_page => per_page,
+                          # :conditions => ['memos LIKE ?', "%#{search_word}%"])
+
+    @history_size = History.all.size
+    
+        #debug
+        write_log(
+                  @log_path,
+                  "@histories.size => " + @histories.size.to_s,
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -16,6 +33,12 @@ class Nr4::HistoriesController < ApplicationController
     end
   end
 
+    def _index_get_per_page
+        
+        return 10
+        
+    end#_index_get_per_page
+    
   # GET /histories/1
   # GET /histories/1.json
   def show
