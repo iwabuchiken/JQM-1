@@ -1,0 +1,19 @@
+    <% if history.genre != nil %>
+    
+    	<% g = Genre.first(:conditions => ["id = ?", history.genre])%>
+    	
+    	<% if g != nil%>
+    	
+    		<td><%= "#{g.name}(#{history.genre})" %></td>
+    	
+    	<% else %>
+    	
+		    <td><%= history.genre %></td>
+		    
+    	<% end%>
+    
+    <% else %>
+    
+	    <td><%= history.genre %></td>
+	    
+    <% end %>

@@ -1,36 +1,22 @@
-<h1>Listing histories</h1>
+<a name="top">
+</a>
+	<h1>Histories</h1>
+
+<a href="#bottom">To bottom</a>
 
 <table>
-  <tr>
-    <th>ID</th>
-    <th>Line</th>
-    <th>Url</th>
-    <th>Vendor</th>
-    <th>News time</th>
-    <th>Genre</th>
-    <th>Cat</th>
-    <th>Subcat</th>
-    <th></th>
-  </tr>
+	
+	<%= render :partial => 'nr4/histories/index/index_table_header' %>
+	
+	<%= render :partial => 'nr4/histories/index/index_table_entries' %>
 
-<% @histories.each do |history| %>
-  <tr>
-    <td><%= history.id %></td>
-    
-    <td><%= link_to history.line, history %></td>
-    <td><%= link_to "Open", history.url, :target => "_blank" %></td>
-    
-    <td><%= history.vendor %></td>
-    <td><%= history.news_time %></td>
-    <td><%= history.genre %></td>
-    <td><%= history.cat %></td>
-    <td><%= history.subcat %></td>
-    
-    <td><%= link_to 'Destroy', history, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
 </table>
 
 <br />
+
+<a name="bottom"></a>
+
+<a href="#top">To top</a>
+
 
 <%#= link_to 'New History', new_history_path %>
