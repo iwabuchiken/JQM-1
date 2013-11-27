@@ -50,7 +50,6 @@ class Nr4::ArticlesController < ApplicationController
               __FILE__.split("/")[-1],
               __LINE__.to_s)
 
-
     #----------------------
     # Get: Articles list
     #----------------------

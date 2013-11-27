@@ -1,8 +1,10 @@
 <a name="top">
 </a>
-	<h1>Histories</h1>
+	<h1>Histories(<%= @history_size.to_s %>)</h1>
 
 <a href="#bottom">To bottom</a>
+
+<%= will_paginate @histories, :prev_label=>'«Previous', :next_label=>'Next»' %>
 
 <table>
 	
@@ -11,6 +13,8 @@
 	<%= render :partial => 'nr4/histories/index/index_table_entries' %>
 
 </table>
+
+<%= will_paginate @histories, :prev_label=>'«Previous', :next_label=>'Next»' %>
 
 <br />
 

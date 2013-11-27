@@ -215,3 +215,51 @@ categories.size => 2 / categories=Nuc plants
 File size=7082
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/28 08:23:15] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 441]
+genre => soci
+File size=7265
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:23:15] [articles_controller.rb: 51]
+genre_code=soci
+File size=7482
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:23:16] [articles_controller.rb: 328]
+vendor_list.size=0/a_tags_href.size=105
+File size=7635
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:23:16] [articles_controller.rb: 824]
+categories.size => 2 / categories=Nuc plants
+File size=7813
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:25:19] [histories_controller.rb: 26]
+@histories.size => 3
+File size=7996
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:26:03] [histories_controller.rb: 26]
+@histories.size => 10
+File size=8155
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:26:13] [histories_controller.rb: 26]
+@histories.size => 10
+File size=8315
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:27:26] [histories_controller.rb: 28]
+@histories.size => 10
+File size=8475
+------------------------=[end]
+
