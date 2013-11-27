@@ -1,0 +1,19 @@
+    <% if history.cat != nil %>
+    
+    	<% g = Category.first(:conditions => ["id = ?", history.cat])%>
+    	
+    	<% if g != nil%>
+    	
+    		<td><%= "#{g.name}(#{history.cat})" %></td>
+    	
+    	<% else %>
+    	
+		    <td><%= history.cat %></td>
+		    
+    	<% end%>
+    
+    <% else %>
+    
+	    <td><%= history.cat %></td>
+	    
+    <% end %>

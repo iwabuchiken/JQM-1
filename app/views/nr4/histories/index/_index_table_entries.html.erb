@@ -1,0 +1,44 @@
+<% @histories.each_with_index do |history, i| %>
+
+<% if i % 5 == 0 && i <=> 0 %>
+
+	<tr class="tr_spacer">
+		<!-- <td colspan="1" class="col_id">*</td> -->
+		<!-- <td colspan="2"></td> -->
+		<!-- <td colspan="2"><pre>     </pre></td> -->
+		<!-- <td colspan="2">*****</td> -->
+		<!-- <td colspan="2" class="col_id">*****</td> -->
+		<td colspan="5" style="text-align: left;">*****</td>
+		
+		<td colspan="4" class="link_top_bottom">
+		<!-- <td colspan="3" class="link_top_bottom"> -->
+		<!-- <td colspan="4" class="link_top_bottom"> -->
+			<a href="#top">Top</a> &nbsp;
+		
+			<a href="#bottom">Bottom</a>
+		</td>
+	</tr>
+
+<% end %>
+
+
+  <tr>
+    <td><%= history.id %></td>
+    
+    <td><%= link_to history.line, history %></td>
+    <td><%= link_to "Open", history.url, :target => "_blank" %></td>
+    
+    <td><%= history.vendor %></td>
+    <td><%= history.news_time %></td>
+    
+    <%= render :partial => 'nr4/histories/index/index_td_genre',
+    			:locals => {:history => history} %>
+    
+    <%= render :partial => 'nr4/histories/index/index_td_cat',
+    			:locals => {:history => history} %>
+    
+    <td><%= history.subcat %></td>
+    
+    <td><%= link_to 'Destroy', history, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
