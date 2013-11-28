@@ -110,6 +110,14 @@ class Nr4::EnvNr4sController < ApplicationController
                   
     end
 
+    write_log(
+                  @log_path,
+                  "params[:env_nr4][:history_pagination_size]
+                     => #{params[:env_nr4][:history_pagination_size]}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
     respond_to do |format|
       if @env_nr4.update_attributes(params[:env_nr4])
         format.html { redirect_to @env_nr4, notice: 'Env nr4 was successfully updated.' }

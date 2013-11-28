@@ -330,3 +330,28 @@ File size=11166
 File size=11339
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/28 22:25:39] [env_nr4s_controller.rb: 109]
+@env_nr4.genre_id=2(class=Fixnum)
+File size=11512
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 22:25:39] [env_nr4s_controller.rb: 118]
+@env_nr4.history_pagination_size => 8
+File size=11685
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 22:26:58] [env_nr4s_controller.rb: 109]
+@env_nr4.genre_id=2(class=Fixnum)
+File size=11862
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 22:26:58] [env_nr4s_controller.rb: 119]
+params[:env_nr4][:history_pagination_size]
+                     => 3
+File size=12035
+------------------------=[end]
+
