@@ -183,7 +183,16 @@ rails generate scaffold History line:text url:string vendor:string news_time:str
 bundle exec rake db:migrate
 
 [06/11/2013 06:51:13]----------------------------
-bundle update
+#bundle update
+
+#rails generate migration AddColumnHistoryPaginationSizeToEnvNr4s
+
+bundle exec rake db:migrate
+
+#bundle exec rake db:rollback
+
+#bundle exec rake db:migrate
+
 
 aa
 

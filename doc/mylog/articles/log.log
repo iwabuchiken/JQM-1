@@ -263,3 +263,70 @@ File size=8315
 File size=8475
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/11/28 08:33:07] [keywords_controller.rb: 23]
+keywords#index
+File size=8635
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:33:07] [keywords_controller.rb: 261]
+filter_genre => 2
+File size=8787
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:33:07] [keywords_controller.rb: 83]
+filter_categories => 
+                            [3](class=Array)
+File size=8943
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:33:07] [keywords_controller.rb: 139]
+keywords=[#<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">](size=7)
+File size=9148
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 08:33:07] [keywords_controller.rb: 57]
+sort => nil
+File size=10281
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 21:39:47] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=10431
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 21:39:47] [articles_controller.rb: 51]
+genre_code=soci
+File size=10649
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 21:39:48] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=10803
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 21:39:48] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=10982
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 22:09:39] [env_nr4s_controller.rb: 109]
+@env_nr4.genre_id=2(class=Fixnum)
+File size=11166
+------------------------=[end]
+
+[begin]------------------------=
+[2013/11/28 22:09:48] [env_nr4s_controller.rb: 109]
+@env_nr4.genre_id=2(class=Fixnum)
+File size=11339
+------------------------=[end]
+

@@ -1,24 +1,60 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Sort genre:</b>
-  <%= @env_nr4.sort_genre %>
-</p>
+<table>
 
-<p>
-  <b>Sort category:</b>
-  <%= @env_nr4.sort_category %>
-</p>
-
-<p>
-  <b>Genre:</b>
-  <%= @env_nr4.genre_id %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @env_nr4.category_id %>
-</p>
+		<% i = 1 %>
+		<tr>
+		  <td><%= i %></td>
+		  <% i += 1 %>
+		  <td>Sort genre</td>
+		  <td><%= @env_nr4.sort_genre %></td>
+		</tr>
+		
+		<tr>
+		  <td><%= i %></td>
+		  <% i += 1 %>
+		  <td>Sort category</td>
+		  <td><%= @env_nr4.sort_category %></td>
+		</tr>
+		
+		<tr>
+		  <td><%= i %></td>
+		  <% i += 1 %>
+		  <td>Genre</td>
+		  <% if @genre != nil %>
+		  
+		  	<td><%= "#{@genre.name}(#{@env_nr4.genre_id})" %></td>
+		  	
+		  <% else %>
+		  
+		  	<td><%= "Unknown ID(#{@env_nr4.genre_id})" %></td>
+		  	
+		  <% end %>
+		</tr>
+		
+		<tr>
+		  <td><%= i %></td>
+		  <% i += 1 %>
+		  <td>Category</td>
+		  <% if @category != nil %>
+		  
+		  	<td><%= "#{@category.name}(#{@env_nr4.category_id})" %></td>
+		  	
+		  <% else %>
+		  
+		  	<td><%= "Unknown ID(#{@env_nr4.category_id})" %></td>
+		  	
+		  <% end %>
+		  
+		</tr>
+		
+		<tr>
+		  <td><%= i %></td>
+		  <td>Pagination size (History)</td>
+		  <td><%= @env_nr4.history_pagination_size %></td>
+		  
+		</tr>
+</table>
 
 
 <%= link_to 'Edit', edit_env_nr4_path(@env_nr4) %> |

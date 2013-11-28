@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131123160737) do
+ActiveRecord::Schema.define(:version => 20131128123202) do
 
   create_table "articles", :force => true do |t|
     t.text     "line"
@@ -37,8 +37,9 @@ ActiveRecord::Schema.define(:version => 20131123160737) do
     t.integer  "sort_category"
     t.integer  "genre_id"
     t.integer  "category_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+    t.integer  "history_pagination_size"
   end
 
   create_table "genres", :force => true do |t|
