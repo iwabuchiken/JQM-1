@@ -17,5 +17,5 @@
 							@selected_genre])\
 				.collect{|c| [c.name, c.id]} %>
 
-<%= select :env_nr4, :category_id, category_ids %>
+<%= select :env_nr4, :category_id, category_ids, :include_blank => true %>
 

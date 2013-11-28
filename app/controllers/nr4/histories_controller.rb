@@ -35,7 +35,27 @@ class Nr4::HistoriesController < ApplicationController
 
     def _index_get_per_page
         
-        return 10
+        env = EnvNr4.first
+        
+        if env == nil
+            
+            return 10
+            
+        else#if env == nil
+          
+          if env.history_pagination_size == nil
+              
+            return 10
+              
+          else
+            
+            return env.history_pagination_size
+            
+          end
+          
+          
+        end#if env == nil
+        
         
     end#_index_get_per_page
     
