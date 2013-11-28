@@ -29,6 +29,14 @@ class Nr4::EnvNr4sController < ApplicationController
   # GET /env_nr4s/1.json
   def show
     @env_nr4 = EnvNr4.find(params[:id])
+    
+    @genre = Genre.find(
+                :first,
+                :conditions => ["id = ?", @env_nr4.genre_id])
+                
+    @category = Category.find(
+                :first,
+                :conditions => ["id = ?", @env_nr4.category_id])
 
     respond_to do |format|
       format.html # show.html.erb

@@ -1,0 +1,58 @@
+<h1>Listing env_nr4s</h1>
+
+<table>
+  <tr>
+    <th>Sort genre</th>
+    <th>Sort category</th>
+    <th>Genre</th>
+    <th>Category</th>
+    <th>Pagination size::History</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @env_nr4s.each do |env_nr4| %>
+  <tr>
+    <td><%= env_nr4.sort_genre %></td>
+    <td><%= env_nr4.sort_category %></td>
+    
+    <%= render \
+    		:partial => 'nr4/env_nr4s/env_nr4s_index/index_td_genre',
+    		:locals => {:env_nr4 => env_nr4} %>
+    
+    <%= render \
+    		:partial => 'nr4/env_nr4s/env_nr4s_index/index_td_category',
+    		:locals => {:env_nr4 => env_nr4} %>
+    
+    <td><%= env_nr4.history_pagination_size %></td>
+    
+    <td><%= link_to 'Show', env_nr4 %></td>
+    <td><%= link_to 'Edit', edit_env_nr4_path(env_nr4) %></td>
+    <td><%= link_to 'Destroy', env_nr4, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<input 
+		type="button"
+		value="Backup DB"
+		id="backup_button"
+		onclick="backup_db();" >
+		
+<div id="backup_result">Backup result</div>
+
+<%#= button_to \
+			"Backup DB",
+			{:controller => 'env_nr4s',:action => 'backup_db'},
+			:method => 'get' %>
+<%#= button_to "Backup DB", :action => 'backup_db', [:method => 'get']%><!--  syntax error, unexpected ')', expecting tASSOC -->
+<%#= button_to "Backup DB", :action => 'backup_db', {:method => 'get'}%><!-- form action="/nr4/env_nr4s/backup_db?method=get" class="button_to" method="post" -->
+
+
+<% unless @env_nr4s.size > 0 %>
+	<%= link_to 'New Env nr4', new_env_nr4_path %>
+<% end %>
+

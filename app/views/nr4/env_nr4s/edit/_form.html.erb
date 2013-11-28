@@ -30,6 +30,12 @@
     		:locals => {:f => f}
     		 %>
   
+  <div class="field">
+    <%= f.label :history_pagination_size %><br />
+    <%= f.number_field :history_pagination_size %>
+  </div>
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>
