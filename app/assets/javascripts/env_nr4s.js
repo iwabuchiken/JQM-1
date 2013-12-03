@@ -51,18 +51,31 @@ function backup_db() {
 	//REF http://d.hatena.ne.jp/ogakky/20110711/1310349297
 	$("input#backup_button").attr("disabled", true);
 	
+//	var data = {"data[Keyword][name]": "android"};	//=> Works
+	var data = {"data[Keyword][name]": "書き込み可能",
+				"data[Keyword][category_id]": 3
+			};
+//	var data = {"data[Keyword][created]": "333333"};
+	
 //	alert("Starting backup...");
 	$.ajax({
 		
+		
 //	    url: "/env_nr4s/show_category_list?selected_genre=" + selected_genre_id,
-	    url: "/nr4/env_nr4s/backup_db",
-	    type: "GET",
+//	    url: "/nr4/env_nr4s/backup_db",
+//		type: "GET",
+		
+		type: "POST",
+//	    url: "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add?data[Keyword][name]=android",
+	    url: "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add",
+	    data: data,
 	    timeout: 10000
 	    
 	}).done(function(data, status, xhr) {
 		
 		$("div#backup_result").css("background-color", "white");
-		$("div#backup_result").html(data);
+//		$("div#backup_result").html(data);
+		$("div#backup_result").text("Posted to remote: " + xhr.status);
 //		$("div#backup_result").text(data);
 		
 		$("input#backup_button").attr("disabled", false);
