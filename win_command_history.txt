@@ -1,10 +1,10 @@
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk && rails s --port 3001
 pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk && rails s --port 3001
 
-# No git
+# rails s/No git
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001
 
-#pushd
+# pushd
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1
 
 a
@@ -192,6 +192,11 @@ bundle exec rake db:migrate
 #bundle exec rake db:rollback
 
 #bundle exec rake db:migrate
+
+[06/11/2013 06:51:13]----------------------------
+
+rails generate scaffold AiKodaka line:text cut_morph:text page:integer
+bundle exec rake db:migrate
 
 
 aa

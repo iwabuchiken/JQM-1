@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  line: MyText
+  cut_morph: MyText
+  page: 1
+
+two:
+  line: MyText
+  cut_morph: MyText
+  page: 1

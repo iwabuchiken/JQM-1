@@ -1,0 +1,27 @@
+<h1>Listing ai_kodakas</h1>
+
+<table>
+  <tr>
+    <th>Line</th>
+    <th>Cut morph</th>
+    <th>Page</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ai_kodakas.each do |ai_kodaka| %>
+  <tr>
+    <td><%= ai_kodaka.line %></td>
+    <td><%= ai_kodaka.cut_morph %></td>
+    <td><%= ai_kodaka.page %></td>
+    <td><%= link_to 'Show', ai_kodaka %></td>
+    <td><%= link_to 'Edit', edit_ai_kodaka_path(ai_kodaka) %></td>
+    <td><%= link_to 'Destroy', ai_kodaka, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ai kodaka', new_ai_kodaka_path %>

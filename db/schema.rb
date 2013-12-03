@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131128123202) do
+ActiveRecord::Schema.define(:version => 20131201093003) do
+
+  create_table "ai_kodakas", :force => true do |t|
+    t.text     "line"
+    t.text     "cut_morph"
+    t.integer  "page"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "articles", :force => true do |t|
     t.text     "line"
