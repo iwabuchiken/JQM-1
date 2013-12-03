@@ -162,100 +162,59 @@ class Nr4::EnvNr4sController < ApplicationController
 
     def backup_db
         
-        keywords = Keyword.all
+        write_log(
+                  @log_path,
+                  "backup => Starts",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
         
-        num = 0
+        # @message = get_index_array(10, 3).to_s
+        @message = get_index_array(3, 5)
+        # @message = get_index_array(20, 5)
+        # @message = get_index_array(10, 2)
+        # @message = "DONE"
         
-        if keywords.size > 10
-          
-          num = 10
-          
-        else
-          
-          num = keywords.size
-          
-        end
-        
-        remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
-        
-        attr = "name"
-        
-        count = 0
-        
-        num.times do |i|
-          
-            key = "data[Keyword][#{attr}]"
-            
-            val = keywords[i].name
-            
-            params = {key => val}
-          
-            x = Net::HTTP.post_form(
-                    URI.parse(remote_url),
-                    params)
-                    
-            count += 1
-            
-        end
-        
-        @message = "Done => #{count.to_s} item(s)"
-        
-        
-        # #REF http://stackoverflow.com/questions/1195962/submitting-post-data-from-the-controller-in-rails-to-another-website Vlad Zloteanu
-        # name = "From heroku app(#{get_time_label_now_2})"
+        # keywords = Keyword.all
 #         
-        # target = "name"
+        # num = 0
 #         
-        # key = "data[Keyword][#{target}]"
-        # # key = "data[Keyword][name]"
+        # if keywords.size > 10
+#           
+          # num = 10
+#           
+        # else
+#           
+          # num = keywords.size
+#           
+        # end
 #         
-        # # params = {'data[Keyword][name]' => 'From heroku app'}
-        # params = {key => name}
-        # # params = {'data[Keyword][name]' => name}
         # remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
 #         
-        # x = Net::HTTP.post_form(
-                # URI.parse(remote_url),
-                # params)
-        # @message = x.class.to_s
-        
-        # @message = x.methods.sort
-        # @message = x.body
-        
-        
-        # @message = "message"
-        
-        # dir = Dir.glob("db")
-        # dir = Dir.glob("/db")
-        # @dir = Dir.glob(Rails.root.join('db'))
-        # @dir = Dir.glob(Rails.root.join('db') + "/*")
-        
-        #REF http://stackoverflow.com/questions/2983734/rails-auto-detecting-database-adapter answered Jun 6 '10 at 15:38
-        # @message = ActiveRecord::Base.configurations[Rails.env]['adapter']
-        
-        # @message = Dir.glob(Rails.root.join('db', '**', '*'))
-        # @message = Dir.glob(Rails.root.join('db', '*'))
-        
-        # db_type = ActiveRecord::Base.configurations[Rails.env]['adapter']
+        # attr = "name"
 #         
-        # if db_type == "sqlite3"
+        # count = 0
+#         
+        # num.times do |i|
+#           
+            # key = "data[Keyword][#{attr}]"
 #             
-            # @message = _backup_db_sqlite
+            # val = keywords[i].name
 #             
-        # else
-#             
-            # @message = "Other than sqlite3"
+            # params = {key => val}
+#           
+            # x = Net::HTTP.post_form(
+                    # URI.parse(remote_url),
+                    # params)
+#                     
+            # count += 1
 #             
         # end
-
+#         
+        # @message = "Done => #{count.to_s} item(s)"
         
-        # render :layout => 'layouts/nr4/keywords/show_genre_list'
         render :layout => 'layouts/nr4/backup_db'
         # render :template => 'nr4/env_nr4s/backup_db'
-        
-        #REF http://railsdoc.com/references/render
-        #render :text => message
-        # render :text => "backup_db"
         
     end
     
@@ -304,5 +263,73 @@ private
        @log_path = "doc/mylog/articles"
         
     end
+
+    def get_index_array(target=10, unit =2)
+        
+        cycle = target / unit
+        residue = target % unit
+        
+        # write_log(
+                  # @log_path,
+                  # "cycle=#{cycle}/residue=#{residue}",
+                  # # __FILE__,
+                  # __FILE__.split("/")[-1],
+                  # __LINE__.to_s)
+        
+        result = []
+        
+        if cycle < 1
+            
+            result.push(0..(target - 1))
+            # result.push(0..residue)
+            
+        else#if cycle < 1
+            
+            num = 0
+            
+            cycle.times do |i|
+                
+                result.push(num..(num + (unit - 1)))
+                
+                num += unit
+                
+            end
+            
+            # write_log(
+                  # @log_path,
+                  # "result=#{result}/residue=#{residue}",
+                  # # __FILE__,
+                  # __FILE__.split("/")[-1], __LINE__.to_s)
+            
+            if residue > 0
+                
+                # write_log(
+                      # @log_path,
+                      # "Now num is => #{num}",
+                      # # "Now num is => #{num}/len(target)=#{len(target)}",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1], __LINE__.to_s)
+                      
+                result.push(num..(target - 1))
+                # result.push(num..(len(target) - 1))
+                
+            # else#if residue > 0
+#                 
+                # write_log(
+                      # @log_path,
+                      # "(residue > 0) => false",
+                      # # __FILE__,
+                      # __FILE__.split("/")[-1], __LINE__.to_s)
+#                       
+                # result.push(num..(target - 1))
+                # # result.push(num..(len(target) - 1))
+                
+            end#if residue > 0
+            
+        end#if cycle < 1
+        
+        return result
+        
+    end#get_index_array(target=10, unit =2)
 
 end

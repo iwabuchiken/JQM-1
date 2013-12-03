@@ -505,3 +505,393 @@ categories.size => 2 / categories=Nuc plants
 File size=17356
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/03 21:28:55] [env_nr4s_controller.rb: 293]
+get_index_array => [0..1, 2..3, 4..5, 6..7, 8..9]
+File size=17540
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:30:58] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=17729
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:32:07] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=17885
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:32:07] [env_nr4s_controller.rb: 274]
+cycle=3/residue=1
+File size=18041
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:33:16] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=18198
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:33:16] [env_nr4s_controller.rb: 274]
+cycle=3/residue=1
+File size=18354
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:33:16] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]
+File size=18511
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:35:06] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=18676
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:35:06] [env_nr4s_controller.rb: 274]
+cycle=3/residue=1
+File size=18832
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:35:06] [env_nr4s_controller.rb: 298]
+result=[0..2, 3..5, 6..8]
+File size=18989
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:35:06] [env_nr4s_controller.rb: 306]
+Now num is => 9
+File size=19154
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:35:37] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=19309
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:35:37] [env_nr4s_controller.rb: 274]
+cycle=3/residue=1
+File size=19465
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:35:37] [env_nr4s_controller.rb: 298]
+result=[0..2, 3..5, 6..8]
+File size=19622
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:36:52] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=19787
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:36:52] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=19943
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:36:52] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]
+File size=20100
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:37:44] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=20265
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:37:44] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=20421
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:37:44] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=20578
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:38:38] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=20753
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:38:38] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=20909
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:38:38] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=21066
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:40:09] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=21241
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:40:09] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=21397
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:40:09] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=21554
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:40:41] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=21729
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:40:41] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=21885
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:40:41] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=22042
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:41:38] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=22217
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:41:38] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=22373
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:41:38] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=22530
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:42:17] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=22705
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:42:17] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=22861
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:42:17] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=23018
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:43:06] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=23193
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:43:06] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=23349
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:43:06] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=23506
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:43:06] [env_nr4s_controller.rb: 308]
+Now num is => 9
+File size=23681
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:43:06] [env_nr4s_controller.rb: 275]
+cycle=3/residue=1
+File size=23836
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:43:06] [env_nr4s_controller.rb: 299]
+result=[0..2, 3..5, 6..8]/residue=1
+File size=23993
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:43:06] [env_nr4s_controller.rb: 308]
+Now num is => 9
+File size=24168
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:18] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=24323
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:18] [env_nr4s_controller.rb: 275]
+cycle=5/residue=0
+File size=24479
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:18] [env_nr4s_controller.rb: 299]
+result=[0..1, 2..3, 4..5, 6..7, 8..9]/residue=0
+File size=24636
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:18] [env_nr4s_controller.rb: 319]
+(residue > 0) => false
+File size=24823
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:31] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=24985
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:31] [env_nr4s_controller.rb: 275]
+cycle=5/residue=0
+File size=25141
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:31] [env_nr4s_controller.rb: 299]
+result=[0..1, 2..3, 4..5, 6..7, 8..9]/residue=0
+File size=25298
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:44:31] [env_nr4s_controller.rb: 319]
+(residue > 0) => false
+File size=25485
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:45:00] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=25647
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:45:00] [env_nr4s_controller.rb: 275]
+cycle=5/residue=0
+File size=25803
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:45:00] [env_nr4s_controller.rb: 299]
+result=[0..1, 2..3, 4..5, 6..7, 8..9]/residue=0
+File size=25960
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:45:00] [env_nr4s_controller.rb: 319]
+(residue > 0) => false
+File size=26147
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:45:42] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=26309
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:45:42] [env_nr4s_controller.rb: 275]
+cycle=5/residue=0
+File size=26465
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:45:42] [env_nr4s_controller.rb: 299]
+result=[0..1, 2..3, 4..5, 6..7, 8..9]/residue=0
+File size=26622
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:46:00] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=26809
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:46:00] [env_nr4s_controller.rb: 276]
+cycle=4/residue=0
+File size=26965
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:46:00] [env_nr4s_controller.rb: 300]
+result=[0..4, 5..9, 10..14, 15..19]/residue=0
+File size=27122
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:47:17] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=27307
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:47:17] [env_nr4s_controller.rb: 276]
+cycle=4/residue=0
+File size=27463
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:47:17] [env_nr4s_controller.rb: 300]
+result=[0..4, 5..9, 10..14, 15..19]/residue=0
+File size=27620
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:48:42] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=27805
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/03 21:49:23] [env_nr4s_controller.rb: 170]
+backup => Starts
+File size=27961
+------------------------=[end]
+
