@@ -1,6 +1,8 @@
 require 'utils2'
 require 'net/ftp'
 
+require "uri"
+require "net/http"
 
 class Nr4::EnvNr4sController < ApplicationController
     
@@ -160,7 +162,68 @@ class Nr4::EnvNr4sController < ApplicationController
 
     def backup_db
         
-        @message = ""
+        keywords = Keyword.all
+        
+        num = 0
+        
+        if keywords.size > 10
+          
+          num = 10
+          
+        else
+          
+          num = keywords.size
+          
+        end
+        
+        remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
+        
+        attr = "name"
+        
+        count = 0
+        
+        num.times do |i|
+          
+            key = "data[Keyword][#{attr}]"
+            
+            val = keywords[i].name
+            
+            params = {key => val}
+          
+            x = Net::HTTP.post_form(
+                    URI.parse(remote_url),
+                    params)
+                    
+            count += 1
+            
+        end
+        
+        @message = "Done => #{count.to_s} item(s)"
+        
+        
+        # #REF http://stackoverflow.com/questions/1195962/submitting-post-data-from-the-controller-in-rails-to-another-website Vlad Zloteanu
+        # name = "From heroku app(#{get_time_label_now_2})"
+#         
+        # target = "name"
+#         
+        # key = "data[Keyword][#{target}]"
+        # # key = "data[Keyword][name]"
+#         
+        # # params = {'data[Keyword][name]' => 'From heroku app'}
+        # params = {key => name}
+        # # params = {'data[Keyword][name]' => name}
+        # remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
+#         
+        # x = Net::HTTP.post_form(
+                # URI.parse(remote_url),
+                # params)
+        # @message = x.class.to_s
+        
+        # @message = x.methods.sort
+        # @message = x.body
+        
+        
+        # @message = "message"
         
         # dir = Dir.glob("db")
         # dir = Dir.glob("/db")
@@ -173,17 +236,17 @@ class Nr4::EnvNr4sController < ApplicationController
         # @message = Dir.glob(Rails.root.join('db', '**', '*'))
         # @message = Dir.glob(Rails.root.join('db', '*'))
         
-        db_type = ActiveRecord::Base.configurations[Rails.env]['adapter']
+        # db_type = ActiveRecord::Base.configurations[Rails.env]['adapter']
 #         
-        if db_type == "sqlite3"
-            
-            @message = _backup_db_sqlite
-            
-        else
-            
-            @message = "Other than sqlite3"
-            
-        end
+        # if db_type == "sqlite3"
+#             
+            # @message = _backup_db_sqlite
+#             
+        # else
+#             
+            # @message = "Other than sqlite3"
+#             
+        # end
 
         
         # render :layout => 'layouts/nr4/keywords/show_genre_list'

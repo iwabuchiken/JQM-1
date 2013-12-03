@@ -65,9 +65,17 @@ function backup_db() {
 //	    url: "/nr4/env_nr4s/backup_db",
 //		type: "GET",
 		
-		type: "POST",
+//		type: "POST",
 //	    url: "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add?data[Keyword][name]=android",
-	    url: "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add",
+//	    url: "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add",
+	    
+	    
+	    
+		type: "GET",
+	    
+//	    url: "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add?data[Keyword][name]=android",
+	    url: "/nr4/env_nr4s/backup_db",
+	    
 	    data: data,
 	    timeout: 10000
 	    
@@ -75,7 +83,9 @@ function backup_db() {
 		
 		$("div#backup_result").css("background-color", "white");
 //		$("div#backup_result").html(data);
-		$("div#backup_result").text("Posted to remote: " + xhr.status);
+//		$("div#backup_result").text("Posted to remote: " + xhr.status);
+//		$("div#backup_result").text("Backup db => Done : " + xhr.status);
+		$("div#backup_result").text(data + xhr.status);
 //		$("div#backup_result").text(data);
 		
 		$("input#backup_button").attr("disabled", false);
