@@ -162,18 +162,13 @@ class Nr4::EnvNr4sController < ApplicationController
 
     def backup_db
         
-        # write_log(
-                  # @log_path,
-                  # "backup => Starts",
-                  # # __FILE__,
-                  # __FILE__.split("/")[-1],
-                  # __LINE__.to_s)
-        
-        # @message = get_index_array(10, 3).to_s
         # @message = get_index_array(3, 5)
         # @message = get_index_array(20, 5)
         # @message = get_index_array(10, 2)
         # @message = "DONE"
+        
+        # Count time
+        start = Time.now
         
         keywords = Keyword.all
         
@@ -191,7 +186,7 @@ class Nr4::EnvNr4sController < ApplicationController
         
         remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
         
-        attr = "name"
+        #attr = "name"
         
         count = 0
         
@@ -202,11 +197,16 @@ class Nr4::EnvNr4sController < ApplicationController
             # Get docs
             threads << Thread.start(i, remote_url) do
                 
-                key = "data[Keyword][#{attr}]"
+                params = _backup_db__build_params(keywords[i])
                 
-                val = keywords[i].name
+#                attr = "name"
+#                
+#                key = "data[Keyword][#{attr}]"
+#                
+#                val = keywords[i].name
+#                
+#                params = {key => val}
                 
-                params = {key => val}
               
                 x = Net::HTTP.post_form(
                         URI.parse(remote_url),
@@ -225,12 +225,68 @@ class Nr4::EnvNr4sController < ApplicationController
             
         end
         
-        @message = "Done => #{count.to_s} item(s)"
+        now = Time.now
+        
+        sec = (now - start).to_int
+        
+        #REF millseconds http://stackoverflow.com/questions/9173696/split-float-into-integer-and-decimals-in-ruby answered Feb 7 '12 at 9:29
+        mil = (now - start) % 1
+        
+        @message = "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)"
+        
+        write_log(
+                  @log_path,
+                  "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
         
         render :layout => 'layouts/nr4/backup_db'
         # render :template => 'nr4/env_nr4s/backup_db'
         
     end
+
+    def _backup_db__build_params(kw)
+        # Name
+        params = {}
+        
+        attrs = [
+                    "name", "genre_id", "category_id",
+                    "remote_id", "created_at", "updated_at"]
+        
+        values = [
+                    kw.name, kw.genre_id, kw.category_id,
+                    kw.id, kw.created_at, kw.updated_at]
+        
+        attrs.size.times do |i|
+            
+            #REF add element http://www.rubylife.jp/ini/hash/index5.html
+            params["data[Keyword][#{attrs[i]}]"] = values[i]
+        
+        end
+
+=begin        
+        attr = "name"
+        
+        key = "data[Keyword][#{attr}]"
+        
+        val = kw.name
+        
+        params[key] = val
+        
+        # ID
+        attr = "remote_id"
+        
+        key = "data[Keyword][#{attr}]"
+        
+        val = kw.id
+        
+        params[key] = val
+=end
+        return params
+        
+    end#_backup_db__build_params
     
     def _backup_db_sqlite
         
