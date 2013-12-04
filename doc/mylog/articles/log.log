@@ -961,3 +961,9 @@ Done => 10 item(s)(7 seconds 0.2814160000000001 millseconds)
 File size=29977
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/04 22:20:45] [env_nr4s_controller.rb: 242]
+Done => 10 item(s)(10 seconds 0.8816229999999994 millseconds)
+File size=30177
+------------------------=[end]
+
