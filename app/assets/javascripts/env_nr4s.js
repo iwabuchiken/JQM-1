@@ -45,6 +45,9 @@ function show_category_list_env_nr4() {
 function backup_db() {
 	
 	$("div#backup_result").css("background-color", "yellow");
+	
+	$("div#backup_result").text("Processing...");
+	
 //	$("div#backup_result").css("disabled", "true");	// Not working
 //	$("div#backup_result").attr("disabled", 'true');
 	
@@ -95,7 +98,10 @@ function backup_db() {
 	    
 	}).fail(function(xhr, status, error) {
 		
-	    $("div#backup_result").append("xhr.status = " + xhr.status + "<br>");          // 例: 404
+		$("div#backup_result").css("background-color", "red");
+		
+//	    $("div#backup_result").append("xhr.status = " + xhr.status + "<br>");          // 例: 404
+	    $("div#backup_result").text("xhr.status = " + xhr.status + "<br>");          // 例: 404
 	    
 	    $("input#backup_button").attr("disabled", false);
 	    
