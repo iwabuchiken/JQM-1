@@ -172,17 +172,18 @@ class Nr4::EnvNr4sController < ApplicationController
         
         keywords = Keyword.all
         
-        num = 0
+        # num = 0
+        num = keywords.size
         
-        if keywords.size > 10
-          
-          num = 10
-          
-        else
-          
-          num = keywords.size
-          
-        end
+        # if keywords.size > 10
+#           
+          # num = 10
+#           
+        # else
+#           
+          # num = keywords.size
+#           
+        # end
         
         remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
         
@@ -266,24 +267,6 @@ class Nr4::EnvNr4sController < ApplicationController
         
         end
 
-=begin        
-        attr = "name"
-        
-        key = "data[Keyword][#{attr}]"
-        
-        val = kw.name
-        
-        params[key] = val
-        
-        # ID
-        attr = "remote_id"
-        
-        key = "data[Keyword][#{attr}]"
-        
-        val = kw.id
-        
-        params[key] = val
-=end
         return params
         
     end#_backup_db__build_params
