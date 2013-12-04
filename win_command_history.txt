@@ -7,6 +7,9 @@ a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001
 # pushd
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1
 
+# CakePHP/NR4
+/rails_apps/nr4/cakephp-2.3.10/keywords
+
 a
 
 # gitk
@@ -198,6 +201,9 @@ bundle exec rake db:migrate
 rails generate scaffold AiKodaka line:text cut_morph:text page:integer
 bundle exec rake db:migrate
 
+bundle exec rake assets:clean
+
+bundle exec rake assets:precompile
 
 aa
 

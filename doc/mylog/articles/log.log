@@ -895,3 +895,27 @@ backup => Starts
 File size=27961
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/04 09:25:46] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=28117
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/04 09:25:46] [articles_controller.rb: 51]
+genre_code=soci
+File size=28335
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/04 09:25:48] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=28489
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/04 09:25:48] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=28668
+------------------------=[end]
+

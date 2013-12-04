@@ -162,56 +162,70 @@ class Nr4::EnvNr4sController < ApplicationController
 
     def backup_db
         
-        write_log(
-                  @log_path,
-                  "backup => Starts",
-                  # __FILE__,
-                  __FILE__.split("/")[-1],
-                  __LINE__.to_s)
+        # write_log(
+                  # @log_path,
+                  # "backup => Starts",
+                  # # __FILE__,
+                  # __FILE__.split("/")[-1],
+                  # __LINE__.to_s)
         
         # @message = get_index_array(10, 3).to_s
-        @message = get_index_array(3, 5)
+        # @message = get_index_array(3, 5)
         # @message = get_index_array(20, 5)
         # @message = get_index_array(10, 2)
         # @message = "DONE"
         
-        # keywords = Keyword.all
-#         
-        # num = 0
-#         
-        # if keywords.size > 10
-#           
-          # num = 10
-#           
-        # else
-#           
-          # num = keywords.size
-#           
-        # end
-#         
-        # remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
-#         
-        # attr = "name"
-#         
-        # count = 0
-#         
-        # num.times do |i|
-#           
-            # key = "data[Keyword][#{attr}]"
-#             
-            # val = keywords[i].name
-#             
-            # params = {key => val}
-#           
-            # x = Net::HTTP.post_form(
-                    # URI.parse(remote_url),
-                    # params)
-#                     
-            # count += 1
-#             
-        # end
-#         
-        # @message = "Done => #{count.to_s} item(s)"
+        keywords = Keyword.all
+        
+        num = 0
+        
+        if keywords.size > 10
+          
+          num = 10
+          
+        else
+          
+          num = keywords.size
+          
+        end
+        
+        remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
+        
+        attr = "name"
+        
+        count = 0
+        
+        # Thread array
+        threads = []
+        
+        num.times do |i|
+            # Get docs
+            threads << Thread.start(i, remote_url) do
+                
+                key = "data[Keyword][#{attr}]"
+                
+                val = keywords[i].name
+                
+                params = {key => val}
+              
+                x = Net::HTTP.post_form(
+                        URI.parse(remote_url),
+                        params)
+                        
+                count += 1
+                
+            end
+            
+            # Join
+            threads.each do |t|
+                t.join
+            end
+          
+          
+            
+        end
+        
+        @message = "Done => #{count.to_s} item(s)"
         
         render :layout => 'layouts/nr4/backup_db'
         # render :template => 'nr4/env_nr4s/backup_db'
