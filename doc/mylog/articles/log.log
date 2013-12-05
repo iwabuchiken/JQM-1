@@ -73,3 +73,15 @@ categories.size => 2 / categories=Nuc plants
 File size=1820
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/05 12:15:57] [env_nr4s_controller.rb: 212]
+Dir.glob(#{_backup_path} + "/*")
+File size=2336
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/05 12:16:45] [env_nr4s_controller.rb: 214]
+["doc/backup/nr4/Genre_backup.csv"]
+File size=2507
+------------------------=[end]
+

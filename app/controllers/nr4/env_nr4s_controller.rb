@@ -203,6 +203,17 @@ class Nr4::EnvNr4sController < ApplicationController
         # msg += "<br/>"
         _backup_db__create_backup_files(class_and_columns)
         
+        #debug
+        tmp = Dir.glob(_backup_path + "/*")
+        
+        write_log(
+                  @log_path,
+                  tmp,
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
+        
 =begin
         tmp = Dir.glob("app/models/*.rb")
         
