@@ -197,6 +197,7 @@ class Nr4::EnvNr4sController < ApplicationController
         class_and_columns = _backup_db__get_columns(class_names)
         
         # => Create files
+        #REF File.join http://stackoverflow.com/questions/597488/how-to-do-a-safe-join-pathname-in-ruby answered Feb 28 '09 at 4:33
         # msg += File.join(_backup_path, class_and_columns[0].to_s, "_backup.csv")
         # msg += File.join(_backup_path, "#{class_names[0].to_s}_backup.csv")   # => Working
         # msg += File.join(_backup_path, "#{class_and_columns.keys.first.table_name.singularize.capitalize}_backup.csv")
