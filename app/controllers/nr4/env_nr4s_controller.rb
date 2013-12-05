@@ -164,10 +164,100 @@ class Nr4::EnvNr4sController < ApplicationController
     end#show_genre_list
 
     def backup_db
+        #=============================
+        # Steps
+        # => Dir exists?
+        # => Get an array of classes
+        # => Hash of {class => {column names}}
+        # => Create files
+        #=============================
+        
+        msg = ""
+        
+        # => Dir exists?
+        backup_path = _backup_path
+        
+        if !File.exists?(backup_path)
+            
+            #REF http://stackoverflow.com/questions/3686032/how-to-create-directories-recursively-in-ruby answered Sep 10 '10 at 15:49
+            FileUtils.mkpath backup_path
+            
+            msg += "Dir created: #{backup_path}<br/>"
+            
+        else
+            
+            msg += "Dir exists: #{backup_path}<br/>"
+            
+        end
+        
+        # => Get an array of classes
+        class_names = [Genre, Category, Keyword]
+        
+        # => Hash of {class => {column names}}
+        class_and_columns = _backup_db__get_columns(class_names)
+        
+        # => Create files
+        # msg += File.join(_backup_path, class_and_columns[0].to_s, "_backup.csv")
+        # msg += File.join(_backup_path, "#{class_names[0].to_s}_backup.csv")   # => Working
+        # msg += File.join(_backup_path, "#{class_and_columns.keys.first.table_name.singularize.capitalize}_backup.csv")
+        # msg += "<br/>"
+        _backup_db__create_backup_files(class_and_columns)
+        
+=begin
+        tmp = Dir.glob("app/models/*.rb")
+        
+        class_names = []
+        
+        tmp.each do |x|
+            
+            #REF extension https://www.ruby-forum.com/topic/179524 2009-02-24 00:03
+            class_names.push(File.basename(x, File.extname(x)).classify.constantize)
+            # class_names.push(File.basename(x))
+            
+        end
+=end
+        #msg += "classes => #{class_names}"
+        #msg += "class_and_columns => #{class_and_columns}"
+        
+        msg += "<br/>"
+        
+        msg += "Backup db done(Server=#{Socket.gethostname}
+                     /URL=#{request.host})"
+        
+        render :text => msg
+                    
+        
+=begin
         #REF http://www.funonrails.com/2012/01/get-models-list-inside-rails-app.html
         #REF Rails.root https://github.com/veerasundaravel/Facebook-Registration/issues/1 apmomp commented
         Dir.glob(Rails.root + '/app/models/*.rb').each { |file| require file }
         # Dir.glob(RAILS_ROOT + '/app/models/*.rb').each { |file| require file }
+        
+        # class_names = Dir.glob("app/models/*")
+        # class_names = Dir.glob("app/models/*.rb")
+        # class_names = Dir.glob("app/models/*.rb").each{|name| "abc"}
+        tmp = Dir.glob("app/models/*.rb")
+        
+        class_names = []
+        
+        tmp.each do |x|
+            
+            #REF basename http://docs.ruby-lang.org/ja/1.8.7/method/File/s/basename.html
+            # class_names.push(File.basename(x).classify.constantize)
+            
+            #REF extension https://www.ruby-forum.com/topic/179524 2009-02-24 00:03
+            class_names.push(File.basename(x, File.extname(x)).classify.constantize)
+            # class_names.push(File.basename(x))
+            
+        end
+        
+        # class_names = File.basename(tmp[0])
+        # class_names = tmp[0].class.to_s   # => String
+        # class_names = tmp.each{|elem| elem.split("/")[-1]}
+        # class_names = tmp.each{|elem| File.basename(elem)}
+        # class_names = File.basename("app/models/a.rb")
+        # class_names = tmp.class.to_s
+        # class_names = Dir.glob(Rails.root + '/app/models/*.rb')
         
         class_Keyword = "keywords".singularize.classify.constantize
         
@@ -183,7 +273,7 @@ class Nr4::EnvNr4sController < ApplicationController
         # class_names = ActiveRecord::Base.send(:classes)   # => undefined method `classes' for ActiveRecord::Base:Class
         
         #REF http://www.funonrails.com/2012/01/get-models-list-inside-rails-app.html
-        class_names = ActiveRecord::Base.send(:subclasses)
+        # class_names = ActiveRecord::Base.send(:subclasses)
         # class_names = ActiveRecord::Base.send(:subclasses).collect(&:name)
         
         # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
@@ -260,6 +350,7 @@ class Nr4::EnvNr4sController < ApplicationController
             # # end
 #             
         # end
+=end
 
 =begin
         CSV.generate(fpath) do |writer|
@@ -271,13 +362,14 @@ class Nr4::EnvNr4sController < ApplicationController
 =end
         
         #REF hostname http://stackoverflow.com/questions/7154914/how-to-get-host-name-in-rails-3 answered Aug 23 '11 at 0:34
-        render :text =>
-                    "Backup db (Server=#{Socket.gethostname}\
-                    /URL=#{request.host})/class_Keyword.class.to_s = #{class_Keyword.class.to_s}"
-                    # /URL=#{request.host})/class_names = #{class_names}"
+        # render :text =>
+                    # "Backup db (Server=#{Socket.gethostname}\
+                     # /URL=#{request.host})/class_names = #{class_names[0].to_s + 123.to_s}"
+                     # # /URL=#{request.host})/class_names = #{class_names}"
+                    # # /URL=#{request.host})/class_Keyword.class.to_s = #{class_Keyword.class.to_s}"
       
       
-        
+=begin
         # # @message = get_index_array(3, 5)
         # # @message = get_index_array(20, 5)
         # # @message = get_index_array(10, 2)
@@ -361,7 +453,8 @@ class Nr4::EnvNr4sController < ApplicationController
 #         
         # render :layout => 'layouts/nr4/backup_db'
         # # render :template => 'nr4/env_nr4s/backup_db'
-        
+=end
+
     end#backup_db
 
     def _backup_db__build_params(kw)
@@ -433,6 +526,59 @@ private
         
     end
 
+    def _backup_path
+        
+        return "doc/backup/nr4"
+        
+    end
+
+    def _backup_db__get_columns(class_names)
+        
+        res = {}
+        
+        class_names.each_with_index do |x, i|
+            
+            columns = class_names[i].columns.map{|c| c.name}
+            
+            res[class_names[i]] = columns
+        
+        end
+        
+        return res
+        
+    end#_backup_db__get_columns
+
+    def _backup_db__create_backup_files(class_and_columns)
+        
+        # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
+        fpath = File.join(
+                    _backup_path,
+                    "#{class_and_columns.keys.first.\
+                            table_name.singularize.capitalize}_backup.csv")
+        
+        #REF table_name http://stackoverflow.com/questions/6139640/how-to-determine-table-name-within-a-rails-3-model-class answered May 26 '11 at 14:12
+        table_info = [
+                    class_and_columns.keys.first.to_s,
+                    class_and_columns.keys.first.table_name]
+                    
+        columns = class_and_columns[class_and_columns.keys.first]
+                    
+        
+        CSV.open(fpath, 'w') do |w|
+            
+            w << table_info
+            w << columns
+=begin
+            values.each do |v|
+                
+                w << v
+                
+            end
+=end
+        end#CSV.open(fpath, 'w') do |w|
+        
+    end#_create_backup_files(class_and_columns)
+    
     def get_index_array(target=10, unit =2)
         
         cycle = target / unit
