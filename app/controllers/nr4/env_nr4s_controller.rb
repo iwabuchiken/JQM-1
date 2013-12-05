@@ -4,6 +4,9 @@ require 'net/ftp'
 require "uri"
 require "net/http"
 
+require "csv"
+require "socket"
+
 class Nr4::EnvNr4sController < ApplicationController
     
     layout 'layouts/nr4/genres'
@@ -161,92 +164,205 @@ class Nr4::EnvNr4sController < ApplicationController
     end#show_genre_list
 
     def backup_db
+        #REF http://www.funonrails.com/2012/01/get-models-list-inside-rails-app.html
+        #REF Rails.root https://github.com/veerasundaravel/Facebook-Registration/issues/1 apmomp commented
+        Dir.glob(Rails.root + '/app/models/*.rb').each { |file| require file }
+        # Dir.glob(RAILS_ROOT + '/app/models/*.rb').each { |file| require file }
         
-        # @message = get_index_array(3, 5)
-        # @message = get_index_array(20, 5)
-        # @message = get_index_array(10, 2)
-        # @message = "DONE"
+        class_Keyword = "keywords".singularize.classify.constantize
         
-        # Count time
-        start = Time.now
+        # models = [class_Keyword, Genre]
+        models = [Keyword, Genre]
         
-        keywords = Keyword.all
+        classes = Module.constants
         
-        # num = 0
-        num = keywords.size
+        #REF http://stackoverflow.com/questions/516579/is-there-a-way-to-get-a-collection-of-all-the-models-in-your-rails-app answered Feb 5 '09 at 16:17
+        # classes = Module.constants.select { |c| (eval c).is_a? Class }
         
-        # if keywords.size > 10
-#           
-          # num = 10
-#           
-        # else
-#           
-          # num = keywords.size
-#           
-        # end
+        # class_names = classes.map{|c| c.to_s}
+        # class_names = ActiveRecord::Base.send(:classes)   # => undefined method `classes' for ActiveRecord::Base:Class
         
-        remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
+        #REF http://www.funonrails.com/2012/01/get-models-list-inside-rails-app.html
+        class_names = ActiveRecord::Base.send(:subclasses)
+        # class_names = ActiveRecord::Base.send(:subclasses).collect(&:name)
         
-        #attr = "name"
+        # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
+        fpath = "tmp/backup_#{models[0].to_s}.csv"
         
-        count = 0
+        #REF table_name http://stackoverflow.com/questions/6139640/how-to-determine-table-name-within-a-rails-3-model-class answered May 26 '11 at 14:12
+        table_info = [models[0].to_s, models[0].table_name]
+        # table_info = ["Keyword", "keywords"]
         
-        # Thread array
-        threads = []
+        #REF http://stackoverflow.com/questions/3479551/how-to-get-an-array-with-column-names-of-a-table answered Aug 14 '10 at 9:17
+        columns = Keyword.columns.map{|c| c.name}
         
-        num.times do |i|
-            # Get docs
-            threads << Thread.start(i, remote_url) do
+        kws = models[0].all
+        # kws = Keyword.all
+        
+        values = []
+        
+        kws.each do |k|
+            
+            value = []
+            
+            columns.each do |c|
                 
-                params = _backup_db__build_params(keywords[i])
-                
-#                attr = "name"
-#                
-#                key = "data[Keyword][#{attr}]"
-#                
-#                val = keywords[i].name
-#                
-#                params = {key => val}
-                
-              
-                x = Net::HTTP.post_form(
-                        URI.parse(remote_url),
-                        params)
-                        
-                count += 1
+                value.push(k[c])
                 
             end
             
-            # Join
-            threads.each do |t|
-                t.join
+            values.push(value)
+            
+        end#kws.each do |k|
+        
+        CSV.open(fpath, 'w') do |w|
+            
+            w << table_info
+            w << columns
+            
+            values.each do |v|
+                
+                w << v
+                
             end
-          
-          
+            
+        end#CSV.open(fpath, 'w') do |w|
+        
+        
+        # kw = Keyword.first
+#         
+        # values = []
+#         
+        # columns.each do |c|
+#             
+            # values.push(kw[c])
+#             
+        # end
+#         
+        # # values = kw.methods.sort
+        # # values = [kw[columns[0]], kw[columns[1]]]
+#         
+        # # values = Keyword.public_constant.methods.sort
+        # # values = Keyword.methods.sort
+#         
+        # #REF http://libro.tuyano.com/index3?id=1102003&page=3
+        # CSV.open(fpath, 'w') do |writer|
+            # writer << table_info
+            # writer << columns
+            # writer << values
+#             
+            # # values.each do |v|
+# #                 
+                # # value = [v]
+                # # writer << value
+                # # # writer << v
+# #             
+            # # end
+#             
+        # end
+
+=begin
+        CSV.generate(fpath) do |writer|
+            
+            writer << data
+            # writer << "abc"
             
         end
+=end
         
-        now = Time.now
+        #REF hostname http://stackoverflow.com/questions/7154914/how-to-get-host-name-in-rails-3 answered Aug 23 '11 at 0:34
+        render :text =>
+                    "Backup db (Server=#{Socket.gethostname}\
+                    /URL=#{request.host})/class_Keyword.class.to_s = #{class_Keyword.class.to_s}"
+                    # /URL=#{request.host})/class_names = #{class_names}"
+      
+      
         
-        sec = (now - start).to_int
+        # # @message = get_index_array(3, 5)
+        # # @message = get_index_array(20, 5)
+        # # @message = get_index_array(10, 2)
+        # # @message = "DONE"
+#         
+        # # Count time
+        # start = Time.now
+#         
+        # keywords = Keyword.all
+#         
+        # # num = 0
+        # num = keywords.size
+#         
+        # # if keywords.size > 10
+# #           
+          # # num = 10
+# #           
+        # # else
+# #           
+          # # num = keywords.size
+# #           
+        # # end
+#         
+        # remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
+#         
+        # #attr = "name"
+#         
+        # count = 0
+#         
+        # # Thread array
+        # threads = []
+#         
+        # num.times do |i|
+            # # Get docs
+            # threads << Thread.start(i, remote_url) do
+#                 
+                # params = _backup_db__build_params(keywords[i])
+#                 
+# #                attr = "name"
+# #                
+# #                key = "data[Keyword][#{attr}]"
+# #                
+# #                val = keywords[i].name
+# #                
+# #                params = {key => val}
+#                 
+#               
+                # x = Net::HTTP.post_form(
+                        # URI.parse(remote_url),
+                        # params)
+#                         
+                # count += 1
+#                 
+            # end
+#             
+            # # Join
+            # threads.each do |t|
+                # t.join
+            # end
+#           
+#           
+#             
+        # end
+#         
+        # now = Time.now
+#         
+        # sec = (now - start).to_int
+#         
+        # #REF millseconds http://stackoverflow.com/questions/9173696/split-float-into-integer-and-decimals-in-ruby answered Feb 7 '12 at 9:29
+        # mil = (now - start) % 1
+#         
+        # @message = "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)"
+#         
+        # write_log(
+                  # @log_path,
+                  # "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)",
+                  # # __FILE__,
+                  # __FILE__.split("/")[-1],
+                  # __LINE__.to_s)
+# 
+#         
+        # render :layout => 'layouts/nr4/backup_db'
+        # # render :template => 'nr4/env_nr4s/backup_db'
         
-        #REF millseconds http://stackoverflow.com/questions/9173696/split-float-into-integer-and-decimals-in-ruby answered Feb 7 '12 at 9:29
-        mil = (now - start) % 1
-        
-        @message = "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)"
-        
-        write_log(
-                  @log_path,
-                  "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)",
-                  # __FILE__,
-                  __FILE__.split("/")[-1],
-                  __LINE__.to_s)
-
-        
-        render :layout => 'layouts/nr4/backup_db'
-        # render :template => 'nr4/env_nr4s/backup_db'
-        
-    end
+    end#backup_db
 
     def _backup_db__build_params(kw)
         # Name
