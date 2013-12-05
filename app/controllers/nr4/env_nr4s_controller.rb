@@ -4,6 +4,9 @@ require 'net/ftp'
 require "uri"
 require "net/http"
 
+require "csv"
+require "socket"
+
 class Nr4::EnvNr4sController < ApplicationController
     
     layout 'layouts/nr4/genres'
@@ -161,92 +164,298 @@ class Nr4::EnvNr4sController < ApplicationController
     end#show_genre_list
 
     def backup_db
+        #=============================
+        # Steps
+        # => Dir exists?
+        # => Get an array of classes
+        # => Hash of {class => {column names}}
+        # => Create files
+        #=============================
         
-        # @message = get_index_array(3, 5)
-        # @message = get_index_array(20, 5)
-        # @message = get_index_array(10, 2)
-        # @message = "DONE"
+        msg = ""
         
-        # Count time
-        start = Time.now
+        # => Dir exists?
+        backup_path = _backup_path
         
-        keywords = Keyword.all
-        
-        # num = 0
-        num = keywords.size
-        
-        # if keywords.size > 10
-#           
-          # num = 10
-#           
-        # else
-#           
-          # num = keywords.size
-#           
-        # end
-        
-        remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
-        
-        #attr = "name"
-        
-        count = 0
-        
-        # Thread array
-        threads = []
-        
-        num.times do |i|
-            # Get docs
-            threads << Thread.start(i, remote_url) do
-                
-                params = _backup_db__build_params(keywords[i])
-                
-#                attr = "name"
-#                
-#                key = "data[Keyword][#{attr}]"
-#                
-#                val = keywords[i].name
-#                
-#                params = {key => val}
-                
-              
-                x = Net::HTTP.post_form(
-                        URI.parse(remote_url),
-                        params)
-                        
-                count += 1
-                
-            end
+        if !File.exists?(backup_path)
             
-            # Join
-            threads.each do |t|
-                t.join
-            end
-          
-          
+            #REF http://stackoverflow.com/questions/3686032/how-to-create-directories-recursively-in-ruby answered Sep 10 '10 at 15:49
+            FileUtils.mkpath backup_path
+            
+            msg += "Dir created: #{backup_path}<br/>"
+            
+        else
+            
+            msg += "Dir exists: #{backup_path}<br/>"
             
         end
         
-        now = Time.now
+        # => Get an array of classes
+        class_names = [Genre, Category, Keyword]
         
-        sec = (now - start).to_int
+        # => Hash of {class => {column names}}
+        class_and_columns = _backup_db__get_columns(class_names)
         
-        #REF millseconds http://stackoverflow.com/questions/9173696/split-float-into-integer-and-decimals-in-ruby answered Feb 7 '12 at 9:29
-        mil = (now - start) % 1
+        # => Create files
+        # msg += File.join(_backup_path, class_and_columns[0].to_s, "_backup.csv")
+        # msg += File.join(_backup_path, "#{class_names[0].to_s}_backup.csv")   # => Working
+        # msg += File.join(_backup_path, "#{class_and_columns.keys.first.table_name.singularize.capitalize}_backup.csv")
+        # msg += "<br/>"
+        _backup_db__create_backup_files(class_and_columns)
         
-        @message = "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)"
+=begin
+        tmp = Dir.glob("app/models/*.rb")
         
-        write_log(
-                  @log_path,
-                  "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)",
-                  # __FILE__,
-                  __FILE__.split("/")[-1],
-                  __LINE__.to_s)
+        class_names = []
+        
+        tmp.each do |x|
+            
+            #REF extension https://www.ruby-forum.com/topic/179524 2009-02-24 00:03
+            class_names.push(File.basename(x, File.extname(x)).classify.constantize)
+            # class_names.push(File.basename(x))
+            
+        end
+=end
+        #msg += "classes => #{class_names}"
+        #msg += "class_and_columns => #{class_and_columns}"
+        
+        msg += "<br/>"
+        
+        msg += "Backup db done(Server=#{Socket.gethostname}
+                     /URL=#{request.host})"
+        
+        render :text => msg
+                    
+        
+=begin
+        #REF http://www.funonrails.com/2012/01/get-models-list-inside-rails-app.html
+        #REF Rails.root https://github.com/veerasundaravel/Facebook-Registration/issues/1 apmomp commented
+        Dir.glob(Rails.root + '/app/models/*.rb').each { |file| require file }
+        # Dir.glob(RAILS_ROOT + '/app/models/*.rb').each { |file| require file }
+        
+        # class_names = Dir.glob("app/models/*")
+        # class_names = Dir.glob("app/models/*.rb")
+        # class_names = Dir.glob("app/models/*.rb").each{|name| "abc"}
+        tmp = Dir.glob("app/models/*.rb")
+        
+        class_names = []
+        
+        tmp.each do |x|
+            
+            #REF basename http://docs.ruby-lang.org/ja/1.8.7/method/File/s/basename.html
+            # class_names.push(File.basename(x).classify.constantize)
+            
+            #REF extension https://www.ruby-forum.com/topic/179524 2009-02-24 00:03
+            class_names.push(File.basename(x, File.extname(x)).classify.constantize)
+            # class_names.push(File.basename(x))
+            
+        end
+        
+        # class_names = File.basename(tmp[0])
+        # class_names = tmp[0].class.to_s   # => String
+        # class_names = tmp.each{|elem| elem.split("/")[-1]}
+        # class_names = tmp.each{|elem| File.basename(elem)}
+        # class_names = File.basename("app/models/a.rb")
+        # class_names = tmp.class.to_s
+        # class_names = Dir.glob(Rails.root + '/app/models/*.rb')
+        
+        class_Keyword = "keywords".singularize.classify.constantize
+        
+        # models = [class_Keyword, Genre]
+        models = [Keyword, Genre]
+        
+        classes = Module.constants
+        
+        #REF http://stackoverflow.com/questions/516579/is-there-a-way-to-get-a-collection-of-all-the-models-in-your-rails-app answered Feb 5 '09 at 16:17
+        # classes = Module.constants.select { |c| (eval c).is_a? Class }
+        
+        # class_names = classes.map{|c| c.to_s}
+        # class_names = ActiveRecord::Base.send(:classes)   # => undefined method `classes' for ActiveRecord::Base:Class
+        
+        #REF http://www.funonrails.com/2012/01/get-models-list-inside-rails-app.html
+        # class_names = ActiveRecord::Base.send(:subclasses)
+        # class_names = ActiveRecord::Base.send(:subclasses).collect(&:name)
+        
+        # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
+        fpath = "tmp/backup_#{models[0].to_s}.csv"
+        
+        #REF table_name http://stackoverflow.com/questions/6139640/how-to-determine-table-name-within-a-rails-3-model-class answered May 26 '11 at 14:12
+        table_info = [models[0].to_s, models[0].table_name]
+        # table_info = ["Keyword", "keywords"]
+        
+        #REF http://stackoverflow.com/questions/3479551/how-to-get-an-array-with-column-names-of-a-table answered Aug 14 '10 at 9:17
+        columns = Keyword.columns.map{|c| c.name}
+        
+        kws = models[0].all
+        # kws = Keyword.all
+        
+        values = []
+        
+        kws.each do |k|
+            
+            value = []
+            
+            columns.each do |c|
+                
+                value.push(k[c])
+                
+            end
+            
+            values.push(value)
+            
+        end#kws.each do |k|
+        
+        CSV.open(fpath, 'w') do |w|
+            
+            w << table_info
+            w << columns
+            
+            values.each do |v|
+                
+                w << v
+                
+            end
+            
+        end#CSV.open(fpath, 'w') do |w|
+        
+        
+        # kw = Keyword.first
+#         
+        # values = []
+#         
+        # columns.each do |c|
+#             
+            # values.push(kw[c])
+#             
+        # end
+#         
+        # # values = kw.methods.sort
+        # # values = [kw[columns[0]], kw[columns[1]]]
+#         
+        # # values = Keyword.public_constant.methods.sort
+        # # values = Keyword.methods.sort
+#         
+        # #REF http://libro.tuyano.com/index3?id=1102003&page=3
+        # CSV.open(fpath, 'w') do |writer|
+            # writer << table_info
+            # writer << columns
+            # writer << values
+#             
+            # # values.each do |v|
+# #                 
+                # # value = [v]
+                # # writer << value
+                # # # writer << v
+# #             
+            # # end
+#             
+        # end
+=end
 
+=begin
+        CSV.generate(fpath) do |writer|
+            
+            writer << data
+            # writer << "abc"
+            
+        end
+=end
         
-        render :layout => 'layouts/nr4/backup_db'
-        # render :template => 'nr4/env_nr4s/backup_db'
-        
-    end
+        #REF hostname http://stackoverflow.com/questions/7154914/how-to-get-host-name-in-rails-3 answered Aug 23 '11 at 0:34
+        # render :text =>
+                    # "Backup db (Server=#{Socket.gethostname}\
+                     # /URL=#{request.host})/class_names = #{class_names[0].to_s + 123.to_s}"
+                     # # /URL=#{request.host})/class_names = #{class_names}"
+                    # # /URL=#{request.host})/class_Keyword.class.to_s = #{class_Keyword.class.to_s}"
+      
+      
+=begin
+        # # @message = get_index_array(3, 5)
+        # # @message = get_index_array(20, 5)
+        # # @message = get_index_array(10, 2)
+        # # @message = "DONE"
+#         
+        # # Count time
+        # start = Time.now
+#         
+        # keywords = Keyword.all
+#         
+        # # num = 0
+        # num = keywords.size
+#         
+        # # if keywords.size > 10
+# #           
+          # # num = 10
+# #           
+        # # else
+# #           
+          # # num = keywords.size
+# #           
+        # # end
+#         
+        # remote_url = "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
+#         
+        # #attr = "name"
+#         
+        # count = 0
+#         
+        # # Thread array
+        # threads = []
+#         
+        # num.times do |i|
+            # # Get docs
+            # threads << Thread.start(i, remote_url) do
+#                 
+                # params = _backup_db__build_params(keywords[i])
+#                 
+# #                attr = "name"
+# #                
+# #                key = "data[Keyword][#{attr}]"
+# #                
+# #                val = keywords[i].name
+# #                
+# #                params = {key => val}
+#                 
+#               
+                # x = Net::HTTP.post_form(
+                        # URI.parse(remote_url),
+                        # params)
+#                         
+                # count += 1
+#                 
+            # end
+#             
+            # # Join
+            # threads.each do |t|
+                # t.join
+            # end
+#           
+#           
+#             
+        # end
+#         
+        # now = Time.now
+#         
+        # sec = (now - start).to_int
+#         
+        # #REF millseconds http://stackoverflow.com/questions/9173696/split-float-into-integer-and-decimals-in-ruby answered Feb 7 '12 at 9:29
+        # mil = (now - start) % 1
+#         
+        # @message = "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)"
+#         
+        # write_log(
+                  # @log_path,
+                  # "Done => #{count.to_s} item(s)(#{sec} seconds #{mil} millseconds)",
+                  # # __FILE__,
+                  # __FILE__.split("/")[-1],
+                  # __LINE__.to_s)
+# 
+#         
+        # render :layout => 'layouts/nr4/backup_db'
+        # # render :template => 'nr4/env_nr4s/backup_db'
+=end
+
+    end#backup_db
 
     def _backup_db__build_params(kw)
         # Name
@@ -317,6 +526,59 @@ private
         
     end
 
+    def _backup_path
+        
+        return "doc/backup/nr4"
+        
+    end
+
+    def _backup_db__get_columns(class_names)
+        
+        res = {}
+        
+        class_names.each_with_index do |x, i|
+            
+            columns = class_names[i].columns.map{|c| c.name}
+            
+            res[class_names[i]] = columns
+        
+        end
+        
+        return res
+        
+    end#_backup_db__get_columns
+
+    def _backup_db__create_backup_files(class_and_columns)
+        
+        # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
+        fpath = File.join(
+                    _backup_path,
+                    "#{class_and_columns.keys.first.\
+                            table_name.singularize.capitalize}_backup.csv")
+        
+        #REF table_name http://stackoverflow.com/questions/6139640/how-to-determine-table-name-within-a-rails-3-model-class answered May 26 '11 at 14:12
+        table_info = [
+                    class_and_columns.keys.first.to_s,
+                    class_and_columns.keys.first.table_name]
+                    
+        columns = class_and_columns[class_and_columns.keys.first]
+                    
+        
+        CSV.open(fpath, 'w') do |w|
+            
+            w << table_info
+            w << columns
+=begin
+            values.each do |v|
+                
+                w << v
+                
+            end
+=end
+        end#CSV.open(fpath, 'w') do |w|
+        
+    end#_create_backup_files(class_and_columns)
+    
     def get_index_array(target=10, unit =2)
         
         cycle = target / unit
