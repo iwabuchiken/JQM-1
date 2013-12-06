@@ -160,3 +160,57 @@ File size=4797
 File size=5046
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/06 11:09:31] [env_nr4s_controller.rb: 213]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=5827
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:09:31] [env_nr4s_controller.rb: 220]
+["Genre", "Category", "Keyword"]
+File size=6076
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:10:34] [env_nr4s_controller.rb: 213]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=6247
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:10:34] [env_nr4s_controller.rb: 220]
+["Genre", "Category", "Keyword"]
+File size=6496
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:11:38] [env_nr4s_controller.rb: 215]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=6667
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:11:38] [env_nr4s_controller.rb: 222]
+["Genre", "Category", "Keyword"]
+File size=6916
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:12:26] [env_nr4s_controller.rb: 215]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=7087
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:12:26] [env_nr4s_controller.rb: 222]
+["Genre", "Category", "Keyword"]
+File size=7336
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:12:27] [env_nr4s_controller.rb: 701]
+Files ftp-ed => 3 item(s)
+File size=7507
+------------------------=[end]
+

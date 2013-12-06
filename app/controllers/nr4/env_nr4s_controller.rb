@@ -7,6 +7,8 @@ require "net/http"
 require "csv"
 require "socket"
 
+require 'fileutils'
+
 class Nr4::EnvNr4sController < ApplicationController
     
     layout 'layouts/nr4/genres'
@@ -94,7 +96,6 @@ class Nr4::EnvNr4sController < ApplicationController
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
-
                   
     elsif @env_nr4.genre_id.to_s == nil
     
@@ -221,7 +222,10 @@ class Nr4::EnvNr4sController < ApplicationController
                   __LINE__.to_s)
         
         # => FTP the files
-        _backup_db__ftp_files(class_names.collect{|x| x.table_name.singularize.capitalize})
+        _backup_db__ftp_files(
+                 class_names.collect{
+                     |x| x.table_name.singularize.capitalize
+                 })
         
 =begin
         tmp = Dir.glob("app/models/*.rb")
@@ -645,8 +649,56 @@ private
     
     def _backup_db__ftp_files(names)
         
+        counter = 0
         
+        names.each do |n|
         
+            f = File.join(_backup_path, "#{n}_backup.csv")
+            
+            # if !f.exists?
+            if !File.exists?(f)
+                
+                #REF http://stackoverflow.com/questions/4010039/equivalent-of-continue-in-ruby answered Oct 24 '10 at 19:41
+                next
+                
+            end
+            
+            tmp = File.basename(f).split(".")
+            
+            new_f = tmp.join("_#{get_time_label_now_2}.")
+            
+            ftp_url = "ftp.benfranklin.chips.jp"
+            
+            uname = "chips.jp-benfranklin"
+            
+            passwd = "9x9jh4"
+            
+            ftp_dir = "/rails_apps/nr4/db"
+            
+            # return temp_array.join("_#{get_time_label_now_2}.")
+            
+            # return file_path
+            
+            task = Net::FTP.open(ftp_url) do |ftp|
+                
+                ftp.login(uname, passwd)
+                
+                ftp.chdir(ftp_dir)
+                
+                ftp.put(f, new_f)
+                
+                counter += 1
+                
+            end#task = Net::FTP.open('ftp.benfranklin.chips.jp') do |ftp|
+        
+        end#names.each do |n|
+        
+        write_log(
+                  @log_path,
+                  "Files ftp-ed => #{counter.to_s} item(s)",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
         
     end#_backup_db__ftp_files(names)
         
