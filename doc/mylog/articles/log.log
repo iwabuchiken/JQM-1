@@ -562,3 +562,81 @@ File size=17899
 File size=18149
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/06 21:15:18] [env_nr4s_controller.rb: 242]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=18300
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:15:18] [env_nr4s_controller.rb: 249]
+["Keyword"]
+File size=18550
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:16:18] [env_nr4s_controller.rb: 242]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=18701
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:16:18] [env_nr4s_controller.rb: 249]
+["Keyword"]
+File size=18951
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:21:59] [env_nr4s_controller.rb: 322]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=19102
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:21:59] [env_nr4s_controller.rb: 329]
+["Keyword"]
+File size=19352
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:22:49] [env_nr4s_controller.rb: 322]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=19503
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:22:49] [env_nr4s_controller.rb: 329]
+["Genre", "Category", "Keyword"]
+File size=19753
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:24:25] [env_nr4s_controller.rb: 332]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=19925
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:24:25] [env_nr4s_controller.rb: 339]
+["Genre", "Category", "Keyword"]
+File size=20175
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:28:57] [histories_controller.rb: 28]
+@histories.size => 6
+File size=20347
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:35:10] [env_nr4s_controller.rb: 332]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=20507
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 21:35:10] [env_nr4s_controller.rb: 339]
+["Genre", "Category", "Keyword"]
+File size=20757
+------------------------=[end]
+

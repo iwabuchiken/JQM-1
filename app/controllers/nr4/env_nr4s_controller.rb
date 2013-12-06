@@ -179,17 +179,42 @@ class Nr4::EnvNr4sController < ApplicationController
         param = params['dl']
         
         if param
-          
-            f = File.join(_backup_path, "Keyword_backup.csv")
+            if param == "keyword"
+                
+                f = File.join(_backup_path, "Keyword_backup.csv")
+                
+                _download_file(f)
+                
+            elsif param == "genre"
+                
+                f = File.join(_backup_path, "Genre_backup.csv")
+                
+                _download_file(f)
+                
+                
+            elsif param == "category"
+                
+                f = File.join(_backup_path, "Category_backup.csv")
+                
+                _download_file(f)
             
-            _download_file(f)
+            elsif param == "build_csv"
+                
+                _backup_db__execute
+                
+            end#if param == "keyword"
             
             return
             
             #render :template => "env_nr4s/backup_db" #=> DoubleRenderError
-          
-        end
         
+        else
+            
+            @message = "BACKUP DB"
+            
+        end#if param
+
+=begin
         msg = ""
         
         # => Dir exists?
@@ -255,8 +280,80 @@ class Nr4::EnvNr4sController < ApplicationController
         # f = File.join(_backup_path, "Keyword_backup.csv")
 #         
         # _download_file(f)
+=end
+
+    end#backup_db
+
+    def _backup_db__execute
         
-    end
+        start = Time.now
+        
+        msg = ""
+        
+        # => Dir exists?
+        backup_path = _backup_path
+        
+        if !File.exists?(backup_path)
+            
+            #REF http://stackoverflow.com/questions/3686032/how-to-create-directories-recursively-in-ruby answered Sep 10 '10 at 15:49
+            FileUtils.mkpath backup_path
+            
+            msg += "Dir created: #{backup_path}<br/>"
+            
+        else
+            
+            msg += "Dir exists: #{backup_path}<br/>"
+            
+        end
+        
+        # => Get an array of classes
+        # class_names = [Keyword]
+        class_names = [Genre, Category, Keyword]
+        
+        # => Hash of {class => {column names}}
+        class_and_columns = _backup_db__get_columns(class_names)
+        
+        # => Create files
+        _backup_db__create_backup_files(class_and_columns)
+        
+        # Time
+        now = Time.now
+        
+        msg += "Building time => #{(now - start).to_s}"
+        
+        msg += "<br/>"
+        
+        
+        write_log(
+                  @log_path,
+                  Dir.glob("#{_backup_path}/*"),
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+        write_log(
+                  @log_path,
+                  class_names.collect{|x| x.table_name.singularize.capitalize},
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        # # => FTP the files
+        # _backup_db__ftp_files(
+                 # class_names.collect{
+                     # |x| x.table_name.singularize.capitalize
+                 # })
+        
+        msg += "<br/>"
+
+        msg += "Backup db done(Server=#{Socket.gethostname}
+                     /URL=#{request.host})"
+        
+        @message = msg
+        
+        @file_list = "Keyword_backup.csv"
+        
+    end#_backup_db__execute
 
     def ___backup_db
         #=============================

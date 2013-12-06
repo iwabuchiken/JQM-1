@@ -64,6 +64,12 @@
 
 <br />
 
+<%= link_to "Backup DB",
+			{:controller => "env_nr4s",
+			:action => "backup_db"},
+			:target => "_blank" %>
+
+<!-- 
 <input 
 		type="button"
 		value="Backup DB"
@@ -72,6 +78,7 @@
 		
 <div id="backup_result">Backup result</div>
 
+-->
 <%#= button_to \
 			"Backup DB",
 			{:controller => 'env_nr4s',:action => 'backup_db'},
