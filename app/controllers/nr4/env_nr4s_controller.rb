@@ -165,7 +165,7 @@ class Nr4::EnvNr4sController < ApplicationController
 
     end#show_genre_list
 
-    def ___backup_db
+    def backup_db
         
         f = File.join(_backup_path, "Keyword_backup.csv")
         
@@ -173,7 +173,7 @@ class Nr4::EnvNr4sController < ApplicationController
         
     end
 
-    def backup_db
+    def ___backup_db
         #=============================
         # Steps
         # => Dir exists?
