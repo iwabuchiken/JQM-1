@@ -142,3 +142,276 @@ File size=4797
 File size=5046
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/07 00:28:31] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=5217
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:28:31] [articles_controller.rb: 51]
+genre_code=soci
+File size=5434
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:28:33] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=5587
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:28:33] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=5765
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:29:09] [keywords_controller.rb: 23]
+keywords#index
+File size=5948
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:29:09] [keywords_controller.rb: 261]
+filter_genre => 
+File size=6100
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:29:09] [keywords_controller.rb: 83]
+filter_categories => 
+                            [1, 2, 3, 4, 5, 6](class=Array)
+File size=6255
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:29:09] [keywords_controller.rb: 139]
+keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">](size=30)
+File size=6475
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:29:09] [keywords_controller.rb: 57]
+sort => nil
+File size=10725
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:43:21] [keywords_controller.rb: 502]
+show_category_list/selected_genre=3
+File size=10875
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:43:32] [keywords_controller.rb: 502]
+show_category_list/selected_genre=2
+File size=11050
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:43:44] [keywords_controller.rb: 502]
+show_category_list/selected_genre=5
+File size=11225
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:44:16] [keywords_controller.rb: 502]
+show_category_list/selected_genre=7
+File size=11400
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:08] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=11575
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:08] [articles_controller.rb: 51]
+genre_code=soci
+File size=11793
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:10] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=11947
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:10] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=12126
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:43] [keywords_controller.rb: 23]
+keywords#index
+File size=12310
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:43] [keywords_controller.rb: 261]
+filter_genre => 
+File size=12463
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:43] [keywords_controller.rb: 83]
+filter_categories => 
+                            [1, 2, 3, 4, 5, 6](class=Array)
+File size=12619
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:43] [keywords_controller.rb: 139]
+keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">](size=30)
+File size=12840
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:43] [keywords_controller.rb: 57]
+sort => nil
+File size=17091
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:48:57] [keywords_controller.rb: 502]
+show_category_list/selected_genre=2
+File size=17241
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:49:40] [keywords_controller.rb: 502]
+show_category_list/selected_genre=2
+File size=17416
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:49:46] [keywords_controller.rb: 502]
+show_category_list/selected_genre=3
+File size=17591
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:51:26] [keywords_controller.rb: 502]
+show_category_list/selected_genre=4
+File size=17766
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:52:10] [keywords_controller.rb: 502]
+show_category_list/selected_genre=1
+File size=17941
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:52:15] [keywords_controller.rb: 502]
+show_category_list/selected_genre=1
+File size=18116
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:52:42] [keywords_controller.rb: 502]
+show_category_list/selected_genre=1
+File size=18291
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:53:52] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=18466
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:53:53] [articles_controller.rb: 51]
+genre_code=soci
+File size=18684
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:53:54] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=18838
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:53:54] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=19017
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:09] [keywords_controller.rb: 23]
+keywords#index
+File size=19201
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:09] [keywords_controller.rb: 261]
+filter_genre => 
+File size=19354
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:09] [keywords_controller.rb: 83]
+filter_categories => 
+                            [1, 2, 3, 4, 5, 6](class=Array)
+File size=19510
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:09] [keywords_controller.rb: 139]
+keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">](size=30)
+File size=19731
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:09] [keywords_controller.rb: 57]
+sort => nil
+File size=23982
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:20] [keywords_controller.rb: 502]
+show_category_list/selected_genre=1
+File size=24132
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:25] [keywords_controller.rb: 502]
+show_category_list/selected_genre=1
+File size=24307
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 00:54:52] [keywords_controller.rb: 502]
+show_category_list/selected_genre=1
+File size=24482
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 08:37:10] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=24657
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 08:37:10] [articles_controller.rb: 51]
+genre_code=soci
+File size=24875
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 08:37:11] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=25029
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 08:37:11] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=25208
+------------------------=[end]
+
