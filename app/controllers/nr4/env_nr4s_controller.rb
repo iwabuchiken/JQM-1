@@ -648,9 +648,24 @@ private
     
     def _backup_db__ftp_files(names)
         
+        write_log(
+                  @log_path,
+                  "FTP starting...",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
         counter = 0
         
         names.each do |n|
+            
+            write_log(
+                      @log_path,
+                      "FTP starts for => #{n}",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+            
         
             f = File.join(_backup_path, "#{n}_backup.csv")
             
@@ -696,6 +711,7 @@ private
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
+
         end#names.each do |n|
         
         write_log(
