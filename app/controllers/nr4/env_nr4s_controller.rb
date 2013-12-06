@@ -165,15 +165,100 @@ class Nr4::EnvNr4sController < ApplicationController
 
     end#show_genre_list
 
-    def ___backup_db
+    def backup_db
+      
+                #=============================
+        # Steps
+        # => Dir exists?
+        # => Get an array of classes
+        # => Hash of {class => {column names}}
+        # => Create files
+        # => FTP the files
+        #=============================
         
-        f = File.join(_backup_path, "Keyword_backup.csv")
+        param = params['dl']
         
-        _download_file(f)
+        if param
+          
+            f = File.join(_backup_path, "Keyword_backup.csv")
+            
+            _download_file(f)
+            
+            return
+            
+            #render :template => "env_nr4s/backup_db" #=> DoubleRenderError
+          
+        end
+        
+        msg = ""
+        
+        # => Dir exists?
+        backup_path = _backup_path
+        
+        if !File.exists?(backup_path)
+            
+            #REF http://stackoverflow.com/questions/3686032/how-to-create-directories-recursively-in-ruby answered Sep 10 '10 at 15:49
+            FileUtils.mkpath backup_path
+            
+            msg += "Dir created: #{backup_path}<br/>"
+            
+        else
+            
+            msg += "Dir exists: #{backup_path}<br/>"
+            
+        end
+        
+        # => Get an array of classes
+        class_names = [Keyword]
+        # class_names = [Genre, Category, Keyword]
+        
+        # => Hash of {class => {column names}}
+        class_and_columns = _backup_db__get_columns(class_names)
+        
+        # => Create files
+        _backup_db__create_backup_files(class_and_columns)
+        
+        write_log(
+                  @log_path,
+                  Dir.glob("#{_backup_path}/*"),
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+        write_log(
+                  @log_path,
+                  class_names.collect{|x| x.table_name.singularize.capitalize},
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        # # => FTP the files
+        # _backup_db__ftp_files(
+                 # class_names.collect{
+                     # |x| x.table_name.singularize.capitalize
+                 # })
+        
+        msg += "<br/>"
+
+        msg += "Backup db done(Server=#{Socket.gethostname}
+                     /URL=#{request.host})"
+        
+        @message = msg
+        
+        @file_list = "Keyword_backup.csv"
+        # @file_list = Dir.glob("#{_backup_path}/*")
+        
+        #aa
+        
+        # render :text => msg
+        
+        # f = File.join(_backup_path, "Keyword_backup.csv")
+#         
+        # _download_file(f)
         
     end
 
-    def backup_db
+    def ___backup_db
         #=============================
         # Steps
         # => Dir exists?
