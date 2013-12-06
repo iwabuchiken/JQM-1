@@ -690,6 +690,12 @@ private
                 
             end#task = Net::FTP.open('ftp.benfranklin.chips.jp') do |ftp|
         
+            write_log(
+                  @log_path,
+                  "File ftp-ed => #{f}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
         end#names.each do |n|
         
         write_log(
