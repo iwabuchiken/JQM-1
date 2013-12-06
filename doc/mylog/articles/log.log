@@ -214,3 +214,21 @@ Files ftp-ed => 3 item(s)
 File size=7507
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/06 11:17:46] [env_nr4s_controller.rb: 215]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=7671
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:17:46] [env_nr4s_controller.rb: 222]
+["Genre", "Category", "Keyword"]
+File size=7920
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 11:17:47] [env_nr4s_controller.rb: 701]
+Files ftp-ed => 3 item(s)
+File size=8091
+------------------------=[end]
+
