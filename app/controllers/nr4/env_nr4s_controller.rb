@@ -94,6 +94,7 @@ class Nr4::EnvNr4sController < ApplicationController
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
+
                   
     elsif @env_nr4.genre_id.to_s == nil
     
@@ -170,6 +171,7 @@ class Nr4::EnvNr4sController < ApplicationController
         # => Get an array of classes
         # => Hash of {class => {column names}}
         # => Create files
+        # => FTP the files
         #=============================
         
         msg = ""
@@ -202,6 +204,24 @@ class Nr4::EnvNr4sController < ApplicationController
         # msg += File.join(_backup_path, "#{class_and_columns.keys.first.table_name.singularize.capitalize}_backup.csv")
         # msg += "<br/>"
         _backup_db__create_backup_files(class_and_columns)
+        
+        write_log(
+                  @log_path,
+                  Dir.glob("#{_backup_path}/*"),
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+        write_log(
+                  @log_path,
+                  class_names.collect{|x| x.table_name.singularize.capitalize},
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        # => FTP the files
+        _backup_db__ftp_files(class_names.collect{|x| x.table_name.singularize.capitalize})
+        
         
 =begin
         tmp = Dir.glob("app/models/*.rb")
@@ -548,8 +568,59 @@ private
         
     end#_backup_db__get_columns
 
+    ################################################
+    # => _backup_db__create_backup_files(class_and_columns)
+    # => @param
+    # =>    class_and_columns
+    # =>        {Keyword => ["id", "name", ...], Genre => ...}
+    ################################################
     def _backup_db__create_backup_files(class_and_columns)
         
+        models = class_and_columns.keys
+        
+        models.each do |m|
+            
+            columns = class_and_columns[m]
+        
+            #REF table_name http://stackoverflow.com/questions/6139640/how-to-determine-table-name-within-a-rails-3-model-class answered May 26 '11 at 14:12
+            table_info = [m.to_s, m.table_name]
+
+            t = Time.now
+            
+            # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
+            fpath = File.join(
+                        _backup_path,
+                        "#{m.table_name.singularize.capitalize}_backup.csv")
+            
+            CSV.open(fpath, 'w') do |w|
+                
+                w << table_info
+                w << [t]
+                # w << t
+                w << columns
+                
+                # data
+                entries = m.all
+                
+                entries.each do |e|
+                    
+                    data = []
+                    
+                    columns.each do |c|
+                        
+                        data.push(e[c])
+                        
+                    end#columns.each do |c|
+                    
+                    w << data
+                    
+                end#entries.each do |e|
+                
+            end#CSV.open(fpath, 'w') do |w|
+            
+        end#models.each do |m|
+        
+=begin
         # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
         fpath = File.join(
                     _backup_path,
@@ -568,16 +639,17 @@ private
             
             w << table_info
             w << columns
-=begin
-            values.each do |v|
-                
-                w << v
-                
-            end
-=end
         end#CSV.open(fpath, 'w') do |w|
-        
+=end
     end#_create_backup_files(class_and_columns)
+    
+    def _backup_db__ftp_files(names)
+        
+        
+        
+        
+    end#_backup_db__ftp_files(names)
+        
     
     def get_index_array(target=10, unit =2)
         

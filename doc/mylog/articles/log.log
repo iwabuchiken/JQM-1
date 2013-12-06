@@ -64,3 +64,81 @@ categories.size => 2 / categories=Nuc plants
 File size=1820
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/06 08:42:02] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=2003
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 08:42:02] [articles_controller.rb: 51]
+genre_code=soci
+File size=2220
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 08:42:03] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=2373
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 08:42:03] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=2551
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 08:46:16] [env_nr4s_controller.rb: 564]
+{Genre(id: integer, name: string, code: string, created_at: datetime, updated_at: datetime)=>["id", "name", "code", "created_at", "updated_at"], Category(id: integer, name: string, genre_id: integer, created_at: datetime, updated_at: datetime)=>["id", "name", "genre_id", "created_at", "updated_at"], Keyword(id: integer, name: string, genre_id: integer, category_id: integer, created_at: datetime, updated_at: datetime)=>["id", "name", "genre_id", "category_id", "created_at", "updated_at"]}
+File size=2734
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:03:13] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=3365
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:03:13] [articles_controller.rb: 51]
+genre_code=soci
+File size=3582
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:03:14] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=3735
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:03:14] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=3913
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:17:59] [env_nr4s_controller.rb: 566]
+[Genre(id: integer, name: string, code: string, created_at: datetime, updated_at: datetime), Category(id: integer, name: string, genre_id: integer, created_at: datetime, updated_at: datetime), Keyword(id: integer, name: string, genre_id: integer, category_id: integer, created_at: datetime, updated_at: datetime)]
+File size=4096
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:31:08] [env_nr4s_controller.rb: 212]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=4548
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:38:17] [env_nr4s_controller.rb: 213]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=4797
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 10:38:17] [env_nr4s_controller.rb: 220]
+["Genre", "Category", "Keyword"]
+File size=5046
+------------------------=[end]
+

@@ -1,2 +1,10 @@
 Genre,genres
+2013-12-06 10:38:17 +0900
 id,name,code,created_at,updated_at
+1,Society,soci,2013-10-23 23:34:17 UTC,2013-10-23 23:34:17 UTC
+2,Overseas,int,2013-10-23 23:34:39 UTC,2013-10-23 23:34:39 UTC
+3,Economics,bus_all,2013-10-23 23:35:01 UTC,2013-10-23 23:35:01 UTC
+4,Domestic Politics,pol,2013-11-22 14:14:47 UTC,2013-11-22 14:14:47 UTC
+5,South America,s_ame,2013-11-22 14:23:00 UTC,2013-11-22 14:23:00 UTC
+6,S & N Korea,kr,2013-11-22 14:24:21 UTC,2013-11-22 14:24:21 UTC
+7,Europe,eurp,2013-11-22 14:25:13 UTC,2013-11-22 14:25:13 UTC
