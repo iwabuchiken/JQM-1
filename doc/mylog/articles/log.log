@@ -232,3 +232,45 @@ Files ftp-ed => 3 item(s)
 File size=8091
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/06 12:00:29] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=8255
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 12:00:29] [articles_controller.rb: 51]
+genre_code=soci
+File size=8472
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 12:00:30] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=8625
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 12:00:30] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=8803
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 12:06:30] [env_nr4s_controller.rb: 223]
+["doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/Keyword_backup.csv"]
+File size=8986
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 12:06:30] [env_nr4s_controller.rb: 230]
+["Genre", "Category", "Keyword"]
+File size=9235
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/06 12:06:31] [env_nr4s_controller.rb: 700]
+Files ftp-ed => 3 item(s)
+File size=9406
+------------------------=[end]
+

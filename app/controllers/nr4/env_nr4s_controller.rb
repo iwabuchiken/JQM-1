@@ -165,18 +165,15 @@ class Nr4::EnvNr4sController < ApplicationController
 
     end#show_genre_list
 
-    def backup_db
+    def ___backup_db
         
-        #REF http://qiita.com/akkun_choi/items/64080a8e17930879b4da
         f = File.join(_backup_path, "Keyword_backup.csv")
         
-        stat = File::stat(f)
-        
-        send_file(f, :filename => 'Keyword_backup.csv', :length => stat.size)
+        _download_file(f)
         
     end
 
-    def ___backup_db
+    def backup_db
         #=============================
         # Steps
         # => Dir exists?
@@ -772,5 +769,17 @@ private
         return result
         
     end#get_index_array(target=10, unit =2)
+
+    def _download_file(fullpath)
+        
+        #REF http://qiita.com/akkun_choi/items/64080a8e17930879b4da
+        
+        stat = File::stat(fullpath)
+        
+        send_file(fullpath,
+            :filename => File.basename(fullpath),
+            :length => stat.size)
+        
+    end
 
 end
