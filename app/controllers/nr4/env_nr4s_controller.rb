@@ -7,6 +7,8 @@ require "net/http"
 require "csv"
 require "socket"
 
+require 'fileutils'
+
 class Nr4::EnvNr4sController < ApplicationController
     
     layout 'layouts/nr4/genres'
@@ -94,7 +96,6 @@ class Nr4::EnvNr4sController < ApplicationController
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
-
                   
     elsif @env_nr4.genre_id.to_s == nil
     
@@ -165,6 +166,196 @@ class Nr4::EnvNr4sController < ApplicationController
     end#show_genre_list
 
     def backup_db
+      
+                #=============================
+        # Steps
+        # => Dir exists?
+        # => Get an array of classes
+        # => Hash of {class => {column names}}
+        # => Create files
+        # => FTP the files
+        #=============================
+        
+        param = params['dl']
+        
+        if param
+            if param == "keyword"
+                
+                f = File.join(_backup_path, "Keyword_backup.csv")
+                
+                _download_file(f)
+                
+            elsif param == "genre"
+                
+                f = File.join(_backup_path, "Genre_backup.csv")
+                
+                _download_file(f)
+                
+                
+            elsif param == "category"
+                
+                f = File.join(_backup_path, "Category_backup.csv")
+                
+                _download_file(f)
+            
+            elsif param == "build_csv"
+                
+                _backup_db__execute
+                
+            end#if param == "keyword"
+            
+            return
+            
+            #render :template => "env_nr4s/backup_db" #=> DoubleRenderError
+        
+        else
+            
+            @message = "BACKUP DB"
+            
+        end#if param
+
+=begin
+        msg = ""
+        
+        # => Dir exists?
+        backup_path = _backup_path
+        
+        if !File.exists?(backup_path)
+            
+            #REF http://stackoverflow.com/questions/3686032/how-to-create-directories-recursively-in-ruby answered Sep 10 '10 at 15:49
+            FileUtils.mkpath backup_path
+            
+            msg += "Dir created: #{backup_path}<br/>"
+            
+        else
+            
+            msg += "Dir exists: #{backup_path}<br/>"
+            
+        end
+        
+        # => Get an array of classes
+        class_names = [Keyword]
+        # class_names = [Genre, Category, Keyword]
+        
+        # => Hash of {class => {column names}}
+        class_and_columns = _backup_db__get_columns(class_names)
+        
+        # => Create files
+        _backup_db__create_backup_files(class_and_columns)
+        
+        write_log(
+                  @log_path,
+                  Dir.glob("#{_backup_path}/*"),
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+        write_log(
+                  @log_path,
+                  class_names.collect{|x| x.table_name.singularize.capitalize},
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        # # => FTP the files
+        # _backup_db__ftp_files(
+                 # class_names.collect{
+                     # |x| x.table_name.singularize.capitalize
+                 # })
+        
+        msg += "<br/>"
+
+        msg += "Backup db done(Server=#{Socket.gethostname}
+                     /URL=#{request.host})"
+        
+        @message = msg
+        
+        @file_list = "Keyword_backup.csv"
+        # @file_list = Dir.glob("#{_backup_path}/*")
+        
+        #aa
+        
+        # render :text => msg
+        
+        # f = File.join(_backup_path, "Keyword_backup.csv")
+#         
+        # _download_file(f)
+=end
+
+    end#backup_db
+
+    def _backup_db__execute
+        
+        start = Time.now
+        
+        msg = ""
+        
+        # => Dir exists?
+        backup_path = _backup_path
+        
+        if !File.exists?(backup_path)
+            
+            #REF http://stackoverflow.com/questions/3686032/how-to-create-directories-recursively-in-ruby answered Sep 10 '10 at 15:49
+            FileUtils.mkpath backup_path
+            
+            msg += "Dir created: #{backup_path}<br/>"
+            
+        else
+            
+            msg += "Dir exists: #{backup_path}<br/>"
+            
+        end
+        
+        # => Get an array of classes
+        # class_names = [Keyword]
+        class_names = [Genre, Category, Keyword]
+        
+        # => Hash of {class => {column names}}
+        class_and_columns = _backup_db__get_columns(class_names)
+        
+        # => Create files
+        _backup_db__create_backup_files(class_and_columns)
+        
+        # Time
+        now = Time.now
+        
+        msg += "Building time => #{(now - start).to_s}"
+        
+        msg += "<br/>"
+        
+        
+        write_log(
+                  @log_path,
+                  Dir.glob("#{_backup_path}/*"),
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+        write_log(
+                  @log_path,
+                  class_names.collect{|x| x.table_name.singularize.capitalize},
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        # # => FTP the files
+        # _backup_db__ftp_files(
+                 # class_names.collect{
+                     # |x| x.table_name.singularize.capitalize
+                 # })
+        
+        msg += "<br/>"
+
+        msg += "Backup db done(Server=#{Socket.gethostname}
+                     /URL=#{request.host})"
+        
+        @message = msg
+        
+        @file_list = "Keyword_backup.csv"
+        
+    end#_backup_db__execute
+
+    def ___backup_db
         #=============================
         # Steps
         # => Dir exists?
@@ -199,6 +390,7 @@ class Nr4::EnvNr4sController < ApplicationController
         class_and_columns = _backup_db__get_columns(class_names)
         
         # => Create files
+        #REF File.join http://stackoverflow.com/questions/597488/how-to-do-a-safe-join-pathname-in-ruby answered Feb 28 '09 at 4:33
         # msg += File.join(_backup_path, class_and_columns[0].to_s, "_backup.csv")
         # msg += File.join(_backup_path, "#{class_names[0].to_s}_backup.csv")   # => Working
         # msg += File.join(_backup_path, "#{class_and_columns.keys.first.table_name.singularize.capitalize}_backup.csv")
@@ -220,8 +412,10 @@ class Nr4::EnvNr4sController < ApplicationController
                   __LINE__.to_s)
         
         # => FTP the files
-        _backup_db__ftp_files(class_names.collect{|x| x.table_name.singularize.capitalize})
-        
+        _backup_db__ftp_files(
+                 class_names.collect{
+                     |x| x.table_name.singularize.capitalize
+                 })
         
 =begin
         tmp = Dir.glob("app/models/*.rb")
@@ -372,15 +566,6 @@ class Nr4::EnvNr4sController < ApplicationController
         # end
 =end
 
-=begin
-        CSV.generate(fpath) do |writer|
-            
-            writer << data
-            # writer << "abc"
-            
-        end
-=end
-        
         #REF hostname http://stackoverflow.com/questions/7154914/how-to-get-host-name-in-rails-3 answered Aug 23 '11 at 0:34
         # render :text =>
                     # "Backup db (Server=#{Socket.gethostname}\
@@ -645,8 +830,78 @@ private
     
     def _backup_db__ftp_files(names)
         
+        write_log(
+                  @log_path,
+                  "FTP starting...",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
         
+        counter = 0
         
+        names.each do |n|
+            
+            write_log(
+                      @log_path,
+                      "FTP starts for => #{n}",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+            
+        
+            f = File.join(_backup_path, "#{n}_backup.csv")
+            
+            # if !f.exists?
+            if !File.exists?(f)
+                
+                #REF http://stackoverflow.com/questions/4010039/equivalent-of-continue-in-ruby answered Oct 24 '10 at 19:41
+                next
+                
+            end
+            
+            tmp = File.basename(f).split(".")
+            
+            new_f = tmp.join("_#{get_time_label_now_2}.")
+            
+            ftp_url = "ftp.benfranklin.chips.jp"
+            
+            uname = "chips.jp-benfranklin"
+            
+            passwd = "9x9jh4"
+            
+            ftp_dir = "/rails_apps/nr4/db"
+            
+            # return temp_array.join("_#{get_time_label_now_2}.")
+            
+            # return file_path
+            
+            task = Net::FTP.open(ftp_url) do |ftp|
+                
+                ftp.login(uname, passwd)
+                
+                ftp.chdir(ftp_dir)
+                
+                ftp.put(f, new_f)
+                
+                counter += 1
+                
+            end#task = Net::FTP.open('ftp.benfranklin.chips.jp') do |ftp|
+        
+            write_log(
+                  @log_path,
+                  "File ftp-ed => #{f}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
+        end#names.each do |n|
+        
+        write_log(
+                  @log_path,
+                  "Files ftp-ed => #{counter.to_s} item(s)",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
         
     end#_backup_db__ftp_files(names)
         
@@ -718,5 +973,17 @@ private
         return result
         
     end#get_index_array(target=10, unit =2)
+
+    def _download_file(fullpath)
+        
+        #REF http://qiita.com/akkun_choi/items/64080a8e17930879b4da
+        
+        stat = File::stat(fullpath)
+        
+        send_file(fullpath,
+            :filename => File.basename(fullpath),
+            :length => stat.size)
+        
+    end
 
 end

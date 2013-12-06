@@ -1,4 +1,32 @@
 <%#= @message %>
 <%= raw(@message) %>
 
+<br />
+
+<%= @file_list %>
+
+<br />
+
+<%= link_to "Genre",
+		:controller => "env_nr4s",
+		:action => "backup_db",
+		:dl => "genre"%>
+		
+<%= link_to "Category",
+		:controller => "env_nr4s",
+		:action => "backup_db",
+		:dl => "category"%>
+		
+<%= link_to "Keyword",
+		:controller => "env_nr4s",
+		:action => "backup_db",
+		:dl => "keyword"%>
+
+<br />
+
+<%= link_to "Build csv",
+		:controller => "env_nr4s",
+		:action => "backup_db",
+		:dl => "build_csv"%>
+
 <%#= @dir %>

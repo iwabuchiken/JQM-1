@@ -16,3 +16,6 @@
 
 /doc/mylog/*.*
 /doc/mylog/articles/*.*
+
+/doc/backup/*.*
+/doc/backup/nr4/*.*
