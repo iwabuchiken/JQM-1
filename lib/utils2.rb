@@ -1,4 +1,7 @@
 require 'fileutils'
+require 'net/ftp'
+require "net/http"
+require "uri"
 
 # @max_line_num = 3000
 
@@ -116,3 +119,69 @@ def write_log(dpath, text, file, line)
     f.close
   
 end#def write_log()
+
+def _post_data(remote_url, model)
+    
+    parameters = _backup_db__build_params(model)
+    # return remote_url
+    # return _get_backup_url
+    
+    #params = _backup_db__build_params(model)
+  
+  
+    #debug
+    write_log(
+                  @log_path,
+                  "Posting data...",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
+    x = Net::HTTP.post_form(
+            URI.parse(URI.encode(remote_url)),
+            parameters)
+#    x = Net::HTTP.post_form(
+#            URI.parse(remote_url),
+#            parameters)
+    
+
+    #debug
+    write_log(
+                  @log_path,
+                  "Posting data => Done: result=#{x.message}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+    return "Done (result => #{x})"
+    
+end#_post_data(remote_url, model)
+
+def _get_backup_url
+    
+    return "http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add"
+    
+end
+
+def _backup_db__build_params(kw)
+    # Name
+    params = {}
+    
+    attrs = [
+                "name", "genre_id", "category_id",
+                "remote_id", "created_at", "updated_at"]
+    
+    values = [
+                kw.name, kw.genre_id, kw.category_id,
+                kw.id, kw.created_at, kw.updated_at]
+    
+    attrs.size.times do |i|
+        
+        #REF add element http://www.rubylife.jp/ini/hash/index5.html
+        params["data[Keyword][#{attrs[i]}]"] = values[i]
+    
+    end
+
+    return params
+    
+end#_backup_db__build_params

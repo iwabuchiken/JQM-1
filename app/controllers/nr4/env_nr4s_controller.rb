@@ -662,6 +662,7 @@ class Nr4::EnvNr4sController < ApplicationController
 
     end#backup_db
 
+
     def _backup_db__build_params(kw)
         # Name
         params = {}
@@ -724,6 +725,17 @@ class Nr4::EnvNr4sController < ApplicationController
     end#_backup_db_sqlite
     
 private
+
+    def _post_data(remote_url, model)
+        
+        params = _backup_db__build_params(model)
+      
+        x = Net::HTTP.post_form(
+                URI.parse(remote_url),
+                params)
+        
+        
+    end
 
     def log_path
        

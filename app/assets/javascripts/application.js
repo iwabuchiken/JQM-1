@@ -15,3 +15,21 @@
 //= require admin
 //= require_tree .
 
+$(document).ready(function() {
+		    // $('#choose').hover(
+		    $('.focus').hover(
+		    	
+		    	function() {
+		            // alert("Hover!");
+		            this.focus();
+		            this.select();
+		            //alert("<%= @current_controller %>");
+		        },
+		        
+		        function() {
+		        	// alert("Done");
+		        }
+		        
+		    );//$('#choose').hover(function() {
+
+		  });//$(document).ready(function() {

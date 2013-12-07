@@ -20,7 +20,8 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :class => "focus" %>
+    <%#= f.text_field :name, :onmouseover => "this.focus(); this.select();" %>
   </div>
   
   <div class="field">

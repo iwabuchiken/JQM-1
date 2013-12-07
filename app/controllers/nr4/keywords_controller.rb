@@ -1,4 +1,5 @@
 #encoding: utf-8
+require 'utils2'
 
 class Nr4::KeywordsController < ApplicationController
   # GET /keywords
@@ -8,7 +9,8 @@ class Nr4::KeywordsController < ApplicationController
   
   #REF http://maskana-soft.com/rails/pro/body/41
   before_filter :log_path
-  
+
+
   def index
       #debug
       if @log_path == nil
@@ -374,8 +376,6 @@ class Nr4::KeywordsController < ApplicationController
        
        if tokens.length > 1
             
-            #aa
-            
             tokens.length.times do |i|
             
                 keyword = Keyword.new(params[:keyword])
@@ -385,7 +385,9 @@ class Nr4::KeywordsController < ApplicationController
                 
                 
                 if keyword.save
-                
+                    
+                    # _post_data(remote_url, model)
+                    
                     @keyword = keyword
                     
                 end
@@ -409,6 +411,15 @@ class Nr4::KeywordsController < ApplicationController
             
             respond_to do |format|
               if @keyword.save
+                  
+                  # msg = _post_data("aaaaa", @keyword)
+                  # _get_backup_url => utils2.rb
+                  t = Thread.new do
+                      
+                      msg = _post_data(_get_backup_url, @keyword)
+                      
+                  end
+                  
                 format.html { redirect_to @keyword, notice: 'Keyword was successfully created.' }
                 format.json { render json: @keyword, status: :created, location: @keyword }
               else
@@ -569,4 +580,5 @@ private
         
         
     end#_index__2_filter(params['filter'])
+
 end
