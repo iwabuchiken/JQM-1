@@ -376,6 +376,8 @@ class Nr4::KeywordsController < ApplicationController
        
        if tokens.length > 1
             
+            tmp = 0
+            
             tokens.length.times do |i|
             
                 keyword = Keyword.new(params[:keyword])
@@ -385,6 +387,14 @@ class Nr4::KeywordsController < ApplicationController
                 
                 
                 if keyword.save
+                    
+                    tmp += 1
+                    
+                    t = Thread.new do
+                      
+                      msg = _post_data(_get_backup_url, keyword)
+                      
+                  end
                     
                     # _post_data(remote_url, model)
                     
@@ -396,7 +406,7 @@ class Nr4::KeywordsController < ApplicationController
             
             respond_to do |format|
                 if @keyword != nil
-                    format.html { redirect_to @keyword, notice: 'Keyword was successfully created.' }
+                    format.html { redirect_to @keyword, notice: "Keyword was successfully created => #{tmp.to_s} itetm(s)" }
                     format.json { render json: @keyword, status: :created, location: @keyword }
                 else
                     format.html { render action: "new" }

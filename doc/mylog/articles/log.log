@@ -77,3 +77,255 @@ Posting data => Done: result=Found
 File size=9957
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/07 10:28:32] [keywords_controller.rb: 374]
+tokens=["自作ライブラリ"]
+File size=10117
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:28:33] [utils2.rb: 138]
+Posting data...
+File size=10289
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:28:33] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=10431
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:29:12] [keywords_controller.rb: 374]
+tokens=["良いです"]
+File size=10592
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:29:13] [utils2.rb: 138]
+Posting data => Starts
+File size=10755
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:29:13] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=10904
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:30:16] [keywords_controller.rb: 374]
+tokens=["使うような", "印象"]
+File size=11065
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:30:16] [utils2.rb: 138]
+Posting data => Starts
+File size=11241
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:30:16] [utils2.rb: 138]
+Posting data => Starts
+File size=11390
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:30:16] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=11539
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:30:16] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=11700
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:33:13] [keywords_controller.rb: 374]
+tokens=["DSLを", "使った", "記述を", "シンプルに"]
+File size=11861
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:25] [keywords_controller.rb: 374]
+tokens=["DSLを", "使った", "記述を", "シンプルに"]
+File size=12063
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:25] [utils2.rb: 138]
+Posting data => Starts
+File size=12265
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:25] [utils2.rb: 138]
+Posting data => Starts
+File size=12414
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:25] [utils2.rb: 138]
+Posting data => Starts
+File size=12563
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:25] [utils2.rb: 138]
+Posting data => Starts
+File size=12563
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:26] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=12861
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:26] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=13022
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:27] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=13183
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:27] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=13344
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:43] [keywords_controller.rb: 374]
+tokens=["DSLを", "使った", "記述を", "シンプルに"]
+File size=13505
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:43] [utils2.rb: 138]
+Posting data => Starts
+File size=13707
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:43] [utils2.rb: 138]
+Posting data => Starts
+File size=13856
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:43] [utils2.rb: 138]
+Posting data => Starts
+File size=14005
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:43] [utils2.rb: 138]
+Posting data => Starts
+File size=14154
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:44] [utils2.rb: 154]
+Posting data => Done: result=OK
+File size=14303
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:44] [utils2.rb: 154]
+Posting data => Done: result=OK
+File size=14461
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:44] [utils2.rb: 154]
+Posting data => Done: result=OK
+File size=14619
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:34:44] [utils2.rb: 154]
+Posting data => Done: result=OK
+File size=14777
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:04] [keywords_controller.rb: 374]
+tokens=["DSLを", "使った", "記述を", "シンプルに"]
+File size=14935
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:04] [utils2.rb: 138]
+Posting data => Starts
+File size=15137
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:04] [utils2.rb: 138]
+Posting data => Starts
+File size=15286
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:04] [utils2.rb: 138]
+Posting data => Starts
+File size=15435
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:04] [utils2.rb: 138]
+Posting data => Starts
+File size=15584
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:05] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=15733
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:05] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=15733
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:05] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=15894
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:05] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=16216
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:40] [keywords_controller.rb: 374]
+tokens=["初期値"]
+File size=16377
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:40] [utils2.rb: 138]
+Posting data => Starts
+File size=16537
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/07 10:35:40] [utils2.rb: 154]
+Posting data => Done: result=Found
+File size=16686
+------------------------=[end]
+

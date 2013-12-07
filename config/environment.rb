@@ -20,8 +20,6 @@ JQM1::Application.configure do
     # config.autoload_paths += %W( #{RAILS_ROOT}/lib )
     # config.load_paths += %W( #{RAILS_ROOT}/lib )
     
-    #REF https://github.com/teohm/require_reloader
-    RequireReloader.watch :utils2
     
 end
 

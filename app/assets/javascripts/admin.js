@@ -15,6 +15,8 @@ $(document).ready(function(){
   
   $("#show_button").click(function(){
 	  
+	  $(this).attr("disabled", true);
+	  
 	  //REF http://www.tohoho-web.com/js/jquery/ajax.htm
 	  $.ajax({
 //		    url: "/genres/show_log",
@@ -68,6 +70,8 @@ $(document).ready(function(){
 	  $("#show_log").html("LOG");
 	  
 	  $(this).attr("disabled", true);
+	  
+	  $("#show_button").removeAttr("disabled");
 	  
 	  $(".log_navigation").hide();
 	  
