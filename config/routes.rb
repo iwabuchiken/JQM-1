@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
 
+  resources :visuals
+
   resources :ai_kodakas, module: 'ai_kodaka'
 
   resources :histories, module: 'nr4'

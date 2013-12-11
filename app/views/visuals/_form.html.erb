@@ -1,0 +1,21 @@
+<%= form_for(@visual) do |f| %>
+  <% if @visual.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visual.errors.count, "error") %> prohibited this visual from being saved:</h2>
+
+      <ul>
+      <% @visual.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :main %><br />
+    <%= f.text_field :main %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

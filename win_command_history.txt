@@ -185,6 +185,10 @@ bundle exec rake assets:clean
 
 bundle exec rake assets:precompile
 
+[12/12/2013 00:10:09]----------------------------
+rails generate controller D3 main sub1 sub2 log
+rails destroy controller D3 main sub1 sub2 log
+
 aa
 
 ============RESOURCE============
