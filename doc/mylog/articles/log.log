@@ -329,3 +329,51 @@ Posting data => Done: result=Found
 File size=16686
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/12 00:26:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=16847
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/12 00:26:04] [articles_controller.rb: 51]
+genre_code=soci
+File size=17065
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/12 00:26:05] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=17219
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/12 00:26:05] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=17398
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/14 10:07:12] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
+genre => soci
+File size=17582
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/14 10:07:12] [articles_controller.rb: 51]
+genre_code=soci
+File size=17800
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/14 10:07:14] [articles_controller.rb: 327]
+vendor_list.size=0/a_tags_href.size=105
+File size=17954
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/14 10:07:14] [articles_controller.rb: 823]
+categories.size => 2 / categories=Nuc plants
+File size=18133
+------------------------=[end]
+
