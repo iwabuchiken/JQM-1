@@ -36,6 +36,7 @@ JQM1::Application.configure do
   config.assets.debug = true
 
     #REF https://github.com/teohm/require_reloader
-    RequireReloader.watch :utils2
+    RequireReloader.watch :utils2  
+    RequireReloader.watch :const  
 
 end

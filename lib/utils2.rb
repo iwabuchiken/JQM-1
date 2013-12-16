@@ -3,6 +3,9 @@ require 'net/ftp'
 require "net/http"
 require "uri"
 
+require_dependency 'const'
+include Const
+
 # @max_line_num = 3000
 
 def get_time_label_now()
@@ -185,3 +188,37 @@ def _backup_db__build_params(kw)
     return params
     
 end#_backup_db__build_params
+
+def get_models()
+    
+    tmp = Dir.glob(File.join(Const::MODELS_PATH, "*.rb"))
+    #tmp = Dir.glob("app/models/*.rb")
+    
+    models = []
+        
+    tmp.each do |x|
+        
+        model = File.basename(x, File.extname(x)).classify.constantize
+        
+        if model.class.to_s == "Class"
+            #REF extension https://www.ruby-forum.com/topic/179524 2009-02-24 00:03
+            models.push(File.basename(x, File.extname(x)).classify.constantize)
+        end
+        
+    end#tmp.each do |x|
+    
+    return models
+    
+end#get_models()
+
+def _download_file(fullpath)
+    
+    #REF http://qiita.com/akkun_choi/items/64080a8e17930879b4da
+    
+    stat = File::stat(fullpath)
+    
+    send_file(fullpath,
+        :filename => File.basename(fullpath),
+        :length => stat.size)
+    
+end#_download_file(fullpath)

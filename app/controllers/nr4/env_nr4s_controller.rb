@@ -9,6 +9,9 @@ require "socket"
 
 require 'fileutils'
 
+require_dependency 'const'
+include Const
+
 class Nr4::EnvNr4sController < ApplicationController
     
     layout 'layouts/nr4/genres'
@@ -175,10 +178,32 @@ class Nr4::EnvNr4sController < ApplicationController
         # => Create files
         # => FTP the files
         #=============================
+=begin
+        #debug
+        write_log(
+                  @log_path,
+                  Keyword.methods.sort,
+                  #Keyword.columns.collect{|c| c.class.to_s},
+                  # Keyword.columns.collect{|c| c.name},
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+=end
+        
+        model_names = get_models.collect{|m| m.to_s.downcase}
+        
+        @model_names = model_names
         
         param = params['dl']
         
         if param
+            if model_names.include?(param)
+                
+                f = File.join(_backup_path, "#{param.capitalize}_backup.csv")
+                
+                _download_file(f)
+                
+=begin
             if param == "keyword"
                 
                 f = File.join(_backup_path, "Keyword_backup.csv")
@@ -197,10 +222,15 @@ class Nr4::EnvNr4sController < ApplicationController
                 f = File.join(_backup_path, "Category_backup.csv")
                 
                 _download_file(f)
-            
+=end
+
             elsif param == "build_csv"
                 
                 _backup_db__execute
+                
+            else
+                
+                @message = "Unknown parameter value => #{param}"
                 
             end#if param == "keyword"
             
@@ -308,7 +338,8 @@ class Nr4::EnvNr4sController < ApplicationController
         
         # => Get an array of classes
         # class_names = [Keyword]
-        class_names = [Genre, Category, Keyword]
+        #class_names = [Genre, Category, Keyword]
+        class_names = get_models
         
         # => Hash of {class => {column names}}
         class_and_columns = _backup_db__get_columns(class_names)
@@ -785,9 +816,12 @@ private
             t = Time.now
             
             # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
+            model_name = m.table_name.singularize.gsub(/_/, '').capitalize
+            
             fpath = File.join(
                         _backup_path,
-                        "#{m.table_name.singularize.capitalize}_backup.csv")
+                        "#{model_name}_backup.csv")
+                        #"#{m.table_name.singularize.capitalize}_backup.csv")
             
             CSV.open(fpath, 'w') do |w|
                 
@@ -986,6 +1020,7 @@ private
         
     end#get_index_array(target=10, unit =2)
 
+=begin
     def _download_file(fullpath)
         
         #REF http://qiita.com/akkun_choi/items/64080a8e17930879b4da
@@ -997,5 +1032,6 @@ private
             :length => stat.size)
         
     end
+=end
 
 end
