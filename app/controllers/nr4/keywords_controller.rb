@@ -346,6 +346,13 @@ class Nr4::KeywordsController < ApplicationController
     
     @categories = Category.find(:all, :conditions => {:genre_id => @genres[0].id})
     
+    # @categories.sort!
+    @categories.sort! do |c1, c2|
+           
+        c1.name <=> c2.name
+            
+    end
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @keyword }
@@ -512,6 +519,14 @@ class Nr4::KeywordsController < ApplicationController
         
         @categories = Category.find(:all, :conditions => {:genre_id => @genre})
         
+        # @categories.sort!
+        @categories.sort! do |c1, c2|
+           
+            c1.name <=> c2.name
+            # c1.name <=> c2.name
+            
+        end
+        
         # layout 'layouts/nr4/keywords/show_genre_list'
         #REF http://www.rubylife.jp/rails/template/index3.html#section3
         render :layout => 'layouts/nr4/keywords/show_genre_list'
@@ -534,7 +549,7 @@ class Nr4::KeywordsController < ApplicationController
           # #format.json { render json: @keywords }
         # end        
         
-    end#show_genre_list
+    end#show_category_list
   
 private
 

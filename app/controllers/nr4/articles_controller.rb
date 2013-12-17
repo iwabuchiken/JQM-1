@@ -65,7 +65,24 @@ class Nr4::ArticlesController < ApplicationController
     
     @categorized_articles_set = 
             get_categorized_set(articles_model_set, @genre_code)
-    
+            
+            
+    #@categorized_articles_set =
+        @categorized_articles_set.sort do |(k1, v1), (k2, v2)|
+        
+            k1 <=> k2
+            
+        end
+
+=begin
+    #debug
+    write_log(
+              Const::LOG_PATH_ARTICLES,
+              "@categorized_articles_set.keys => #{@categorized_articles_set.keys}",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+=end
     # @categorized_set = 
     
     respond_to do |format|

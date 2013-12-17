@@ -31,6 +31,13 @@ class Nr4::CategoriesController < ApplicationController
 
     @genres = Genre.all
     
+    # @categories.sort!
+    @genres.sort! do |x1, x2|
+           
+        x1.name <=> x2.name
+            
+    end
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @category }
