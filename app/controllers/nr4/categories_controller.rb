@@ -49,7 +49,11 @@ class Nr4::CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to @category, notice: 'Category was successfully created.' }
+          
+          message = _post_data_2(Const::BACKUP_URL_NR4_CATEGORIES, @category)
+          
+        format.html { redirect_to @category, 
+                        notice: "Category was successfully created. (Backup => #{message})" }
         format.json { render json: @category, status: :created, location: @category }
       else
         format.html { render action: "new" }

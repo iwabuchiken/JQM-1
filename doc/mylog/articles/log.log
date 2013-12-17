@@ -1,181 +1,296 @@
 [begin]------------------------=
-[2013/12/07 10:16:34] [keywords_controller.rb: 59]
+[2013/12/17 09:45:00] [keywords_controller.rb: 59]
 sort => nil
 File size=0
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:16:48] [keywords_controller.rb: 25]
-keywords#index
+[2013/12/17 09:45:22] [keywords_controller.rb: 374]
+tokens=["ダミーデータロガー"]
 File size=146
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:16:48] [keywords_controller.rb: 263]
-filter_genre => 
-File size=297
+[2013/12/17 09:45:22] [utils2.rb: 139]
+ダミーデータロガー
+File size=322
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:16:48] [keywords_controller.rb: 85]
+[2013/12/17 09:45:22] [utils2.rb: 154]
+Posting data...
+File size=474
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:45:23] [utils2.rb: 170]
+Posting data => Done: result=Found
+File size=614
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:47:42] [keywords_controller.rb: 374]
+tokens=["特養", "ホーム暴行"]
+File size=773
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:47:42] [utils2.rb: 139]
+特養
+File size=947
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:47:42] [utils2.rb: 154]
+Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/words/add)
+File size=1078
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:47:42] [utils2.rb: 170]
+Posting data => Done: result=Found
+File size=1293
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:47:42] [utils2.rb: 139]
+ホーム暴行
+File size=1453
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:47:42] [utils2.rb: 154]
+Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/words/add)
+File size=1594
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:47:43] [utils2.rb: 170]
+Posting data => Done: result=Found
+File size=1809
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:50:04] [keywords_controller.rb: 374]
+tokens=["特養", "ホーム暴行"]
+File size=1969
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:50:26] [keywords_controller.rb: 374]
+tokens=["特養", "ホーム暴行"]
+File size=2144
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:50:26] [utils2.rb: 139]
+特養
+File size=2319
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:50:26] [utils2.rb: 154]
+Posting data... (url=doc/backup)
+File size=2451
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:52:52] [keywords_controller.rb: 25]
+keywords#index
+File size=2609
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:52:52] [keywords_controller.rb: 263]
+filter_genre => 
+File size=2761
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:52:52] [keywords_controller.rb: 85]
 filter_categories => 
                             [1, 2, 3, 4, 5, 6](class=Array)
-File size=451
+File size=2916
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:16:48] [keywords_controller.rb: 141]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">, #<Keyword id: 39, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:58:37", updated_at: "2013-12-06 23:58:37">, #<Keyword id: 40, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:35", updated_at: "2013-12-06 23:59:35">, #<Keyword id: 41, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:58", updated_at: "2013-12-06 23:59:58">, #<Keyword id: 42, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:35", updated_at: "2013-12-07 00:00:35">, #<Keyword id: 43, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:51", updated_at: "2013-12-07 00:00:51">, #<Keyword id: 44, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:06:18", updated_at: "2013-12-07 00:06:18">, #<Keyword id: 45, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:14:53", updated_at: "2013-12-07 00:14:53">, #<Keyword id: 46, name: "汚染", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:15:42", updated_at: "2013-12-07 00:15:42">, #<Keyword id: 47, name: "ベクレル", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:17:00", updated_at: "2013-12-07 00:17:00">, #<Keyword id: 48, name: "エネルギー", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:02", updated_at: "2013-12-07 00:33:02">, #<Keyword id: 49, name: "ダウンロード", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:43", updated_at: "2013-12-07 00:33:43">, #<Keyword id: 50, name: "Railsを使わない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:37:52", updated_at: "2013-12-07 00:37:52">, #<Keyword id: 51, name: "ログインしています", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:38:26", updated_at: "2013-12-07 00:38:26">, #<Keyword id: 52, name: "ホーム", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:06", updated_at: "2013-12-07 00:40:06">, #<Keyword id: 53, name: "ボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:07", updated_at: "2013-12-07 00:40:07">, #<Keyword id: 54, name: "ホームボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:27", updated_at: "2013-12-07 00:40:27">, #<Keyword id: 55, name: "同期データを管理します", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:41:12", updated_at: "2013-12-07 00:41:12">, #<Keyword id: 56, name: "新しいタブ", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:55:03", updated_at: "2013-12-07 00:55:03">, #<Keyword id: 57, name: "利用しない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:56:03", updated_at: "2013-12-07 00:56:03">, #<Keyword id: 58, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:02:28", updated_at: "2013-12-07 01:02:28">, #<Keyword id: 59, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:03:26", updated_at: "2013-12-07 01:03:26">, #<Keyword id: 60, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:04:21", updated_at: "2013-12-07 01:04:21">, #<Keyword id: 62, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:06:44", updated_at: "2013-12-07 01:06:44">, #<Keyword id: 63, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:07:55", updated_at: "2013-12-07 01:07:55">, #<Keyword id: 64, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:08:58", updated_at: "2013-12-07 01:08:58">, #<Keyword id: 65, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:09:23", updated_at: "2013-12-07 01:09:23">, #<Keyword id: 66, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:10:26", updated_at: "2013-12-07 01:10:26">, #<Keyword id: 67, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:11:09", updated_at: "2013-12-07 01:11:09">](size=58)
-File size=670
+[2013/12/17 09:52:52] [keywords_controller.rb: 141]
+keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">, #<Keyword id: 39, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:58:37", updated_at: "2013-12-06 23:58:37">, #<Keyword id: 40, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:35", updated_at: "2013-12-06 23:59:35">, #<Keyword id: 41, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:58", updated_at: "2013-12-06 23:59:58">, #<Keyword id: 42, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:35", updated_at: "2013-12-07 00:00:35">, #<Keyword id: 43, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:51", updated_at: "2013-12-07 00:00:51">, #<Keyword id: 44, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:06:18", updated_at: "2013-12-07 00:06:18">, #<Keyword id: 45, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:14:53", updated_at: "2013-12-07 00:14:53">, #<Keyword id: 46, name: "汚染", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:15:42", updated_at: "2013-12-07 00:15:42">, #<Keyword id: 47, name: "ベクレル", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:17:00", updated_at: "2013-12-07 00:17:00">, #<Keyword id: 48, name: "エネルギー", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:02", updated_at: "2013-12-07 00:33:02">, #<Keyword id: 49, name: "ダウンロード", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:43", updated_at: "2013-12-07 00:33:43">, #<Keyword id: 50, name: "Railsを使わない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:37:52", updated_at: "2013-12-07 00:37:52">, #<Keyword id: 51, name: "ログインしています", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:38:26", updated_at: "2013-12-07 00:38:26">, #<Keyword id: 52, name: "ホーム", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:06", updated_at: "2013-12-07 00:40:06">, #<Keyword id: 53, name: "ボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:07", updated_at: "2013-12-07 00:40:07">, #<Keyword id: 54, name: "ホームボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:27", updated_at: "2013-12-07 00:40:27">, #<Keyword id: 55, name: "同期データを管理します", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:41:12", updated_at: "2013-12-07 00:41:12">, #<Keyword id: 56, name: "新しいタブ", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:55:03", updated_at: "2013-12-07 00:55:03">, #<Keyword id: 57, name: "利用しない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:56:03", updated_at: "2013-12-07 00:56:03">, #<Keyword id: 58, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:02:28", updated_at: "2013-12-07 01:02:28">, #<Keyword id: 59, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:03:26", updated_at: "2013-12-07 01:03:26">, #<Keyword id: 60, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:04:21", updated_at: "2013-12-07 01:04:21">, #<Keyword id: 62, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:06:44", updated_at: "2013-12-07 01:06:44">, #<Keyword id: 63, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:07:55", updated_at: "2013-12-07 01:07:55">, #<Keyword id: 64, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:08:58", updated_at: "2013-12-07 01:08:58">, #<Keyword id: 65, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:09:23", updated_at: "2013-12-07 01:09:23">, #<Keyword id: 66, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:10:26", updated_at: "2013-12-07 01:10:26">, #<Keyword id: 67, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:11:09", updated_at: "2013-12-07 01:11:09">, #<Keyword id: 68, name: "読み込みの対象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:17:23", updated_at: "2013-12-07 01:17:23">, #<Keyword id: 69, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:21:17", updated_at: "2013-12-07 01:21:17">, #<Keyword id: 70, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:28:33", updated_at: "2013-12-07 01:28:33">, #<Keyword id: 71, name: "良いです", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:29:12", updated_at: "2013-12-07 01:29:12">, #<Keyword id: 72, name: "使うような", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 73, name: "印象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 74, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:33:13", updated_at: "2013-12-07 01:33:13">, #<Keyword id: 75, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 76, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 77, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 78, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 79, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 80, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 81, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 82, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 83, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 84, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 85, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 86, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 87, name: "初期値", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:40", updated_at: "2013-12-07 01:35:40">, #<Keyword id: 88, name: "ダミーデータロガー", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:45:22", updated_at: "2013-12-17 00:45:22">, #<Keyword id: 89, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 90, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 91, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:04", updated_at: "2013-12-17 00:50:04">, #<Keyword id: 92, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:26", updated_at: "2013-12-17 00:50:26">](size=83)
+File size=3136
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:16:48] [keywords_controller.rb: 59]
+[2013/12/17 09:52:52] [keywords_controller.rb: 59]
 sort => nil
-File size=8841
+File size=14796
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:17:23] [keywords_controller.rb: 374]
-tokens=["読み込みの対象"]
-File size=8990
+[2013/12/17 09:52:57] [keywords_controller.rb: 374]
+tokens=["特養", "ホーム暴行"]
+File size=14946
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:17:23] [utils2.rb: 138]
-Posting data...
-File size=9161
+[2013/12/17 09:52:57] [utils2.rb: 139]
+特養
+File size=15122
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:17:23] [utils2.rb: 154]
+[2013/12/17 09:52:57] [utils2.rb: 154]
+Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add)
+File size=15255
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 09:52:57] [utils2.rb: 170]
 Posting data => Done: result=Found
-File size=9302
+File size=15474
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:17:23] [keywords_controller.rb: 425]
-Done (result => #<Net::HTTPFound:0x5cf6e98>)
-File size=9462
+[2013/12/17 09:52:57] [utils2.rb: 139]
+ホーム暴行
+File size=15635
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:21:17] [keywords_controller.rb: 374]
-tokens=["自作ライブラリ"]
-File size=9645
+[2013/12/17 09:52:57] [utils2.rb: 154]
+Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add)
+File size=15777
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/07 10:21:17] [utils2.rb: 138]
-Posting data...
-File size=9816
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:21:17] [utils2.rb: 154]
+[2013/12/17 09:52:57] [utils2.rb: 170]
 Posting data => Done: result=Found
-File size=9957
+File size=15996
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 18:45:50] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
-genre => soci
-File size=10117
+[2013/12/17 10:04:39] [utils2.rb: 184]
+model.class.to_s => Keyword
+File size=16157
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 18:45:50] [articles_controller.rb: 51]
-genre_code=soci
-File size=10335
+[2013/12/17 10:11:04] [utils2.rb: 184]
+model.class.to_s => Category
+File size=16311
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 18:45:51] [articles_controller.rb: 327]
-vendor_list.size=0/a_tags_href.size=105
-File size=10489
+[2013/12/17 10:12:19] [utils2.rb: 186]
+model.class.to_s => Category
+File size=16466
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 18:45:51] [articles_controller.rb: 823]
-categories.size => 2 / categories=Nuc plants
-File size=10668
+[2013/12/17 10:12:19] [utils2.rb: 193]
+attrs => ["name", "genre_id", "remote_id", "created_at", "updated_at"]
+File size=16621
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:16:43] [env_nr4s_controller.rb: 188]
-[#<ActiveRecord::ConnectionAdapters::SQLiteColumn:0x32b2e10 @name="id", @sql_type="INTEGER", @null=false, @limit=nil, @precision=nil, @scale=nil, @type=:integer, @default=nil, @primary=true, @coder=nil>, #<ActiveRecord::ConnectionAdapters::SQLiteColumn:0x32b6e48 @name="name", @sql_type="varchar(255)", @null=true, @limit=255, @precision=nil, @scale=nil, @type=:string, @default=nil, @primary=false, @coder=nil>, #<ActiveRecord::ConnectionAdapters::SQLiteColumn:0x32b6e18 @name="genre_id", @sql_type="integer", @null=true, @limit=nil, @precision=nil, @scale=nil, @type=:integer, @default=nil, @primary=false, @coder=nil>, #<ActiveRecord::ConnectionAdapters::SQLiteColumn:0x32b6d70 @name="category_id", @sql_type="integer", @null=true, @limit=nil, @precision=nil, @scale=nil, @type=:integer, @default=nil, @primary=false, @coder=nil>, #<ActiveRecord::ConnectionAdapters::SQLiteColumn:0x32b6cf8 @name="created_at", @sql_type="datetime", @null=false, @limit=nil, @precision=nil, @scale=nil, @type=:datetime, @default=nil, @primary=false, @coder=nil>, #<ActiveRecord::ConnectionAdapters::SQLiteColumn:0x32b6cc8 @name="updated_at", @sql_type="datetime", @null=false, @limit=nil, @precision=nil, @scale=nil, @type=:datetime, @default=nil, @primary=false, @coder=nil>]
-File size=10852
+[2013/12/17 10:17:04] [utils2.rb: 186]
+attrs => ["name", "genre_id", "remote_id", "created_at", "updated_at"]
+File size=16818
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:17:17] [env_nr4s_controller.rb: 188]
-["id", "name", "genre_id", "category_id", "created_at", "updated_at"]
-File size=12253
+[2013/12/17 10:17:04] [utils2.rb: 193]
+values => ["China", 2, 1, "2013-10-29 16:22:57 UTC", "2013-10-29 16:22:57 UTC"]
+File size=17015
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:17:43] [env_nr4s_controller.rb: 189]
-["ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn"]
-File size=12462
+[2013/12/17 10:27:03] [utils2.rb: 188]
+params => {"data[Category][name]"=>"China", "data[Category][genre_id]"=>2, "data[Category][remote_id]"=>1, "data[Category][created_at]"=>"2013-10-29 16:22:57 UTC", "data[Category][updated_at]"=>"2013-10-29 16:22:57 UTC"}
+File size=17221
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:19:57] [env_nr4s_controller.rb: 189]
-["ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn", "ActiveRecord::ConnectionAdapters::SQLiteColumn"]
-File size=12902
+[2013/12/17 10:27:14] [keywords_controller.rb: 25]
+keywords#index
+File size=17568
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:20:51] [env_nr4s_controller.rb: 190]
-[:!, :!=, :!~, :<, :<=, :<=>, :==, :===, :=~, :>, :>=, :__callback_runner_name, :__define_runner, :__id__, :__reset_runner, :__run_callback, :__send__, :__update_callbacks, :_accessible_attributes, :_accessible_attributes=, :_accessible_attributes?, :_active_authorizer, :_active_authorizer=, :_active_authorizer?, :_attr_readonly, :_attr_readonly=, :_attr_readonly?, :_commit_callbacks, :_commit_callbacks=, :_commit_callbacks?, :_create_callbacks, :_create_callbacks=, :_create_callbacks?, :_define_after_model_callback, :_define_around_model_callback, :_define_before_model_callback, :_destroy_callbacks, :_destroy_callbacks=, :_destroy_callbacks?, :_find_callbacks, :_find_callbacks=, :_find_callbacks?, :_initialize_callbacks, :_initialize_callbacks=, :_initialize_callbacks?, :_mass_assignment_sanitizer, :_mass_assignment_sanitizer=, :_mass_assignment_sanitizer?, :_parse_validates_options, :_protected_attributes, :_protected_attributes=, :_protected_attributes?, :_rollback_callbacks, :_rollback_callbacks=, :_rollback_callbacks?, :_save_callbacks, :_save_callbacks=, :_save_callbacks?, :_to_partial_path, :_touch_callbacks, :_touch_callbacks=, :_touch_callbacks?, :_update_callbacks, :_update_callbacks=, :_update_callbacks?, :_validate_callbacks, :_validate_callbacks=, :_validate_callbacks?, :_validates_default_keys, :_validation_callbacks, :_validation_callbacks=, :_validation_callbacks?, :_validators, :_validators=, :_validators?, :`, :abstract_class, :abstract_class=, :abstract_class?, :accepts_nested_attributes_for, :accessible_attributes, :active_authorizer, :active_authorizers, :acts_like?, :add_observer, :after_commit, :after_create, :after_destroy, :after_find, :after_initialize, :after_rollback, :after_save, :after_touch, :after_update, :after_validation, :alias_attribute, :alias_method_chain, :all, :allocate, :ancestors, :anonymous?, :any?, :arel_engine, :arel_table, :around_create, :around_destroy, :around_save, :around_update, :as_json, :attr_accessible, :attr_internal, :attr_internal_accessor, :attr_internal_reader, :attr_internal_writer, :attr_protected, :attr_readonly, :attribute_method?, :attribute_method_affix, :attribute_method_matchers, :attribute_method_matchers=, :attribute_method_matchers?, :attribute_method_prefix, :attribute_method_suffix, :attribute_methods_generated?, :attribute_names, :attribute_types_cached_by_default, :attribute_types_cached_by_default=, :auto_explain_threshold_in_seconds, :auto_explain_threshold_in_seconds=, :auto_explain_threshold_in_seconds?, :autoload, :autoload?, :average, :base_class, :before_create, :before_destroy, :before_remove_const, :before_save, :before_update, :before_validation, :belongs_to, :benchmark, :blank?, :breakpoint, :build_default_scope, :cache, :cache_attribute?, :cache_attributes, :cached_attributes, :calculate, :capture, :cattr_accessor, :cattr_reader, :cattr_writer, :class, :class_attribute, :class_eval, :class_exec, :class_of_active_record_descendant, :class_variable_defined?, :class_variable_get, :class_variable_set, :class_variables, :clear_active_connections!, :clear_all_connections!, :clear_cache!, :clear_reloadable_connections!, :clone, :collecting_queries_for_explain, :column_defaults, :column_methods_hash, :column_names, :columns, :columns_hash, :composed_of, :compute_type, :configurations, :configurations=, :connected?, :connection, :connection_config, :connection_handler, :connection_handler=, :connection_handler?, :connection_id, :connection_id=, :connection_pool, :const_defined?, :const_get, :const_missing, :const_set, :constants, :content_columns, :count, :count_by_sql, :count_observers, :create, :create!, :create_reflection, :create_with, :current_scope, :current_scope=, :dangerous_attribute_method?, :debugger, :decrement_counter, :default_scope, :default_scopes, :default_scopes=, :default_scopes?, :default_timezone, :default_timezone=, :define_attr_method, :define_attribute_method, :define_attribute_methods, :define_callbacks, :define_method__attribute, :define_method_attribute, :define_method_attribute=, :define_model_callbacks, :define_singleton_method, :delegate, :delete, :delete_all, :deprecate, :descendants, :descends_from_active_record?, :destroy, :destroy_all, :direct_descendants, :display, :dup, :duplicable?, :eager_load, :enable_warnings, :enum_for, :eql?, :equal?, :establish_connection, :evaluate_default_scope, :except, :exec_explain, :exists?, :expand_hash_conditions_for_aggregates, :expand_range_bind_variables, :extend, :find, :find_by_sql, :find_each, :find_in_batches, :finder_needs_type_condition?, :first, :first!, :first_or_create, :first_or_create!, :first_or_initialize, :freeze, :from, :frozen?, :full_table_name_prefix, :gem, :generated_attribute_methods, :generated_external_attribute_methods, :generated_feature_methods, :get_primary_key, :group, :has_and_belongs_to_many, :has_many, :has_one, :has_secure_password, :hash, :having, :html_safe?, :human_attribute_name, :i18n_scope, :ignore_default_scope=, :ignore_default_scope?, :in?, :include?, :include_root_in_json, :include_root_in_json=, :include_root_in_json?, :included_modules, :includes, :increment_counter, :inheritance_column, :inheritance_column=, :inherited, :initialize_attributes, :initialize_clone, :initialize_dup, :initialize_generated_modules, :inspect, :instance_eval, :instance_exec, :instance_method, :instance_method_already_implemented?, :instance_method_names, :instance_methods, :instance_of?, :instance_values, :instance_variable_defined?, :instance_variable_get, :instance_variable_names, :instance_variable_set, :instance_variables, :instantiate, :instantiate_observer, :instantiate_observers, :is_a?, :joins, :json_creatable?, :kind_of?, :last, :last!, :limit, :load, :load_dependency, :local_constant_names, :local_constants, :lock, :lock_optimistically, :lock_optimistically=, :locking_column, :locking_column=, :locking_enabled?, :logger, :logger=, :logging_query_plan, :lookup_ancestors, :many?, :mass_assignment_sanitizer=, :mattr_accessor, :mattr_reader, :mattr_writer, :maximum, :method, :method_defined?, :method_defined_within?, :method_names, :methods, :minimum, :model_name, :module_eval, :module_exec, :name, :nested_attributes_options, :nested_attributes_options=, :nested_attributes_options?, :new, :nil?, :notify_observers, :object_id, :observer_instances, :observers, :observers=, :offset, :order, :original_inheritance_column, :original_locking_column, :original_primary_key, :original_sequence_name, :original_table_name, :page, :paginate, :paginate_by_sql, :parent, :parent_name, :parents, :partial_updates, :partial_updates=, :partial_updates?, :per_page, :per_page=, :pluck, :pluralize_table_names, :pluralize_table_names=, :pluralize_table_names?, :preload, :presence, :present?, :primary_key, :primary_key=, :primary_key_prefix_type, :primary_key_prefix_type=, :private_class_method, :private_constant, :private_instance_methods, :private_method_defined?, :private_methods, :protected_attributes, :protected_instance_methods, :protected_method_defined?, :protected_methods, :psych_to_yaml, :psych_y, :psych_yaml_as, :public_class_method, :public_constant, :public_instance_method, :public_instance_methods, :public_method, :public_method_defined?, :public_methods, :public_send, :qualified_const_defined?, :qualified_const_get, :qualified_const_set, :quietly, :quote_bound_value, :quote_value, :quoted_locking_column, :quoted_primary_key, :quoted_table_name, :raise_if_bind_arity_mismatch, :reachable?, :readonly, :readonly_attributes, :record_timestamps, :record_timestamps=, :record_timestamps?, :redefine_method, :reflect_on_aggregation, :reflect_on_all_aggregations, :reflect_on_all_associations, :reflect_on_all_autosave_associations, :reflect_on_association, :reflections, :reflections=, :reflections?, :remove_class_variable, :remove_connection, :remove_possible_method, :reorder, :replace_bind_variables, :replace_named_bind_variables, :require, :require_association, :require_dependency, :require_or_load, :reset_callbacks, :reset_column_information, :reset_counters, :reset_locking_column, :reset_primary_key, :reset_sequence_name, :reset_table_name, :respond_to?, :respond_to_missing?, :retrieve_connection, :sanitize, :sanitize_conditions, :sanitize_sql, :sanitize_sql_array, :sanitize_sql_for_assignment, :sanitize_sql_for_conditions, :sanitize_sql_hash, :sanitize_sql_hash_for_assignment, :sanitize_sql_hash_for_conditions, :schema_format, :schema_format=, :scope, :scope_attributes, :scope_attributes?, :scoped, :select, :send, :sequence_name, :sequence_name=, :serialize, :serialized_attributes, :serialized_attributes=, :serialized_attributes?, :set_callback, :set_inheritance_column, :set_locking_column, :set_primary_key, :set_sequence_name, :set_table_name, :silence, :silence_auto_explain, :silence_stderr, :silence_stream, :silence_warnings, :singleton_class, :singleton_methods, :skip_callback, :skip_time_zone_conversion_for_attributes, :skip_time_zone_conversion_for_attributes=, :skip_time_zone_conversion_for_attributes?, :sqlite3_connection, :sti_name, :store, :store_accessor, :store_full_sti_class, :store_full_sti_class=, :store_full_sti_class?, :subclasses, :sum, :superclass, :superclass_delegating_accessor, :suppress, :suppress_warnings, :symbolized_base_class, :symbolized_sti_name, :synchronize, :synchronize_with_deprecation, :synchronize_without_deprecation, :table_exists?, :table_name, :table_name=, :table_name_prefix, :table_name_prefix=, :table_name_prefix?, :table_name_suffix, :table_name_suffix=, :table_name_suffix?, :taint, :tainted?, :tap, :time_zone_aware_attributes, :time_zone_aware_attributes=, :timestamped_migrations, :timestamped_migrations=, :to_enum, :to_json, :to_param, :to_query, :to_s, :to_yaml, :to_yaml_properties, :transaction, :trust, :try, :type_cast_attribute, :uncached, :undefine_attribute_methods, :uniq, :unloadable, :unscoped, :untaint, :untrust, :untrusted?, :update, :update_all, :update_counters, :valid_scope_name?, :validate, :validates, :validates!, :validates_acceptance_of, :validates_associated, :validates_confirmation_of, :validates_each, :validates_exclusion_of, :validates_format_of, :validates_inclusion_of, :validates_length_of, :validates_numericality_of, :validates_presence_of, :validates_size_of, :validates_uniqueness_of, :validates_with, :validators, :validators_on, :verify_active_connections!, :where, :with_exclusive_scope, :with_options, :with_scope, :with_warnings, :yaml_as, :yaml_tag]
-File size=13342
+[2013/12/17 10:27:14] [keywords_controller.rb: 263]
+filter_genre => 
+File size=17721
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:20:54] [env_nr4s_controller.rb: 190]
-[:!, :!=, :!~, :<, :<=, :<=>, :==, :===, :=~, :>, :>=, :__callback_runner_name, :__define_runner, :__id__, :__reset_runner, :__run_callback, :__send__, :__update_callbacks, :_accessible_attributes, :_accessible_attributes=, :_accessible_attributes?, :_active_authorizer, :_active_authorizer=, :_active_authorizer?, :_attr_readonly, :_attr_readonly=, :_attr_readonly?, :_commit_callbacks, :_commit_callbacks=, :_commit_callbacks?, :_create_callbacks, :_create_callbacks=, :_create_callbacks?, :_define_after_model_callback, :_define_around_model_callback, :_define_before_model_callback, :_destroy_callbacks, :_destroy_callbacks=, :_destroy_callbacks?, :_find_callbacks, :_find_callbacks=, :_find_callbacks?, :_initialize_callbacks, :_initialize_callbacks=, :_initialize_callbacks?, :_mass_assignment_sanitizer, :_mass_assignment_sanitizer=, :_mass_assignment_sanitizer?, :_parse_validates_options, :_protected_attributes, :_protected_attributes=, :_protected_attributes?, :_rollback_callbacks, :_rollback_callbacks=, :_rollback_callbacks?, :_save_callbacks, :_save_callbacks=, :_save_callbacks?, :_to_partial_path, :_touch_callbacks, :_touch_callbacks=, :_touch_callbacks?, :_update_callbacks, :_update_callbacks=, :_update_callbacks?, :_validate_callbacks, :_validate_callbacks=, :_validate_callbacks?, :_validates_default_keys, :_validation_callbacks, :_validation_callbacks=, :_validation_callbacks?, :_validators, :_validators=, :_validators?, :`, :abstract_class, :abstract_class=, :abstract_class?, :accepts_nested_attributes_for, :accessible_attributes, :active_authorizer, :active_authorizers, :acts_like?, :add_observer, :after_commit, :after_create, :after_destroy, :after_find, :after_initialize, :after_rollback, :after_save, :after_touch, :after_update, :after_validation, :alias_attribute, :alias_method_chain, :all, :allocate, :ancestors, :anonymous?, :any?, :arel_engine, :arel_table, :around_create, :around_destroy, :around_save, :around_update, :as_json, :attr_accessible, :attr_internal, :attr_internal_accessor, :attr_internal_reader, :attr_internal_writer, :attr_protected, :attr_readonly, :attribute_method?, :attribute_method_affix, :attribute_method_matchers, :attribute_method_matchers=, :attribute_method_matchers?, :attribute_method_prefix, :attribute_method_suffix, :attribute_methods_generated?, :attribute_names, :attribute_types_cached_by_default, :attribute_types_cached_by_default=, :auto_explain_threshold_in_seconds, :auto_explain_threshold_in_seconds=, :auto_explain_threshold_in_seconds?, :autoload, :autoload?, :average, :base_class, :before_create, :before_destroy, :before_remove_const, :before_save, :before_update, :before_validation, :belongs_to, :benchmark, :blank?, :breakpoint, :build_default_scope, :cache, :cache_attribute?, :cache_attributes, :cached_attributes, :calculate, :capture, :cattr_accessor, :cattr_reader, :cattr_writer, :class, :class_attribute, :class_eval, :class_exec, :class_of_active_record_descendant, :class_variable_defined?, :class_variable_get, :class_variable_set, :class_variables, :clear_active_connections!, :clear_all_connections!, :clear_cache!, :clear_reloadable_connections!, :clone, :collecting_queries_for_explain, :column_defaults, :column_methods_hash, :column_names, :columns, :columns_hash, :composed_of, :compute_type, :configurations, :configurations=, :connected?, :connection, :connection_config, :connection_handler, :connection_handler=, :connection_handler?, :connection_id, :connection_id=, :connection_pool, :const_defined?, :const_get, :const_missing, :const_set, :constants, :content_columns, :count, :count_by_sql, :count_observers, :create, :create!, :create_reflection, :create_with, :current_scope, :current_scope=, :dangerous_attribute_method?, :debugger, :decrement_counter, :default_scope, :default_scopes, :default_scopes=, :default_scopes?, :default_timezone, :default_timezone=, :define_attr_method, :define_attribute_method, :define_attribute_methods, :define_callbacks, :define_method__attribute, :define_method_attribute, :define_method_attribute=, :define_model_callbacks, :define_singleton_method, :delegate, :delete, :delete_all, :deprecate, :descendants, :descends_from_active_record?, :destroy, :destroy_all, :direct_descendants, :display, :dup, :duplicable?, :eager_load, :enable_warnings, :enum_for, :eql?, :equal?, :establish_connection, :evaluate_default_scope, :except, :exec_explain, :exists?, :expand_hash_conditions_for_aggregates, :expand_range_bind_variables, :extend, :find, :find_by_sql, :find_each, :find_in_batches, :finder_needs_type_condition?, :first, :first!, :first_or_create, :first_or_create!, :first_or_initialize, :freeze, :from, :frozen?, :full_table_name_prefix, :gem, :generated_attribute_methods, :generated_external_attribute_methods, :generated_feature_methods, :get_primary_key, :group, :has_and_belongs_to_many, :has_many, :has_one, :has_secure_password, :hash, :having, :html_safe?, :human_attribute_name, :i18n_scope, :ignore_default_scope=, :ignore_default_scope?, :in?, :include?, :include_root_in_json, :include_root_in_json=, :include_root_in_json?, :included_modules, :includes, :increment_counter, :inheritance_column, :inheritance_column=, :inherited, :initialize_attributes, :initialize_clone, :initialize_dup, :initialize_generated_modules, :inspect, :instance_eval, :instance_exec, :instance_method, :instance_method_already_implemented?, :instance_method_names, :instance_methods, :instance_of?, :instance_values, :instance_variable_defined?, :instance_variable_get, :instance_variable_names, :instance_variable_set, :instance_variables, :instantiate, :instantiate_observer, :instantiate_observers, :is_a?, :joins, :json_creatable?, :kind_of?, :last, :last!, :limit, :load, :load_dependency, :local_constant_names, :local_constants, :lock, :lock_optimistically, :lock_optimistically=, :locking_column, :locking_column=, :locking_enabled?, :logger, :logger=, :logging_query_plan, :lookup_ancestors, :many?, :mass_assignment_sanitizer=, :mattr_accessor, :mattr_reader, :mattr_writer, :maximum, :method, :method_defined?, :method_defined_within?, :method_names, :methods, :minimum, :model_name, :module_eval, :module_exec, :name, :nested_attributes_options, :nested_attributes_options=, :nested_attributes_options?, :new, :nil?, :notify_observers, :object_id, :observer_instances, :observers, :observers=, :offset, :order, :original_inheritance_column, :original_locking_column, :original_primary_key, :original_sequence_name, :original_table_name, :page, :paginate, :paginate_by_sql, :parent, :parent_name, :parents, :partial_updates, :partial_updates=, :partial_updates?, :per_page, :per_page=, :pluck, :pluralize_table_names, :pluralize_table_names=, :pluralize_table_names?, :preload, :presence, :present?, :primary_key, :primary_key=, :primary_key_prefix_type, :primary_key_prefix_type=, :private_class_method, :private_constant, :private_instance_methods, :private_method_defined?, :private_methods, :protected_attributes, :protected_instance_methods, :protected_method_defined?, :protected_methods, :psych_to_yaml, :psych_y, :psych_yaml_as, :public_class_method, :public_constant, :public_instance_method, :public_instance_methods, :public_method, :public_method_defined?, :public_methods, :public_send, :qualified_const_defined?, :qualified_const_get, :qualified_const_set, :quietly, :quote_bound_value, :quote_value, :quoted_locking_column, :quoted_primary_key, :quoted_table_name, :raise_if_bind_arity_mismatch, :reachable?, :readonly, :readonly_attributes, :record_timestamps, :record_timestamps=, :record_timestamps?, :redefine_method, :reflect_on_aggregation, :reflect_on_all_aggregations, :reflect_on_all_associations, :reflect_on_all_autosave_associations, :reflect_on_association, :reflections, :reflections=, :reflections?, :remove_class_variable, :remove_connection, :remove_possible_method, :reorder, :replace_bind_variables, :replace_named_bind_variables, :require, :require_association, :require_dependency, :require_or_load, :reset_callbacks, :reset_column_information, :reset_counters, :reset_locking_column, :reset_primary_key, :reset_sequence_name, :reset_table_name, :respond_to?, :respond_to_missing?, :retrieve_connection, :sanitize, :sanitize_conditions, :sanitize_sql, :sanitize_sql_array, :sanitize_sql_for_assignment, :sanitize_sql_for_conditions, :sanitize_sql_hash, :sanitize_sql_hash_for_assignment, :sanitize_sql_hash_for_conditions, :schema_format, :schema_format=, :scope, :scope_attributes, :scope_attributes?, :scoped, :select, :send, :sequence_name, :sequence_name=, :serialize, :serialized_attributes, :serialized_attributes=, :serialized_attributes?, :set_callback, :set_inheritance_column, :set_locking_column, :set_primary_key, :set_sequence_name, :set_table_name, :silence, :silence_auto_explain, :silence_stderr, :silence_stream, :silence_warnings, :singleton_class, :singleton_methods, :skip_callback, :skip_time_zone_conversion_for_attributes, :skip_time_zone_conversion_for_attributes=, :skip_time_zone_conversion_for_attributes?, :sqlite3_connection, :sti_name, :store, :store_accessor, :store_full_sti_class, :store_full_sti_class=, :store_full_sti_class?, :subclasses, :sum, :superclass, :superclass_delegating_accessor, :suppress, :suppress_warnings, :symbolized_base_class, :symbolized_sti_name, :synchronize, :synchronize_with_deprecation, :synchronize_without_deprecation, :table_exists?, :table_name, :table_name=, :table_name_prefix, :table_name_prefix=, :table_name_prefix?, :table_name_suffix, :table_name_suffix=, :table_name_suffix?, :taint, :tainted?, :tap, :time_zone_aware_attributes, :time_zone_aware_attributes=, :timestamped_migrations, :timestamped_migrations=, :to_enum, :to_json, :to_param, :to_query, :to_s, :to_yaml, :to_yaml_properties, :transaction, :trust, :try, :type_cast_attribute, :uncached, :undefine_attribute_methods, :uniq, :unloadable, :unscoped, :untaint, :untrust, :untrusted?, :update, :update_all, :update_counters, :valid_scope_name?, :validate, :validates, :validates!, :validates_acceptance_of, :validates_associated, :validates_confirmation_of, :validates_each, :validates_exclusion_of, :validates_format_of, :validates_inclusion_of, :validates_length_of, :validates_numericality_of, :validates_presence_of, :validates_size_of, :validates_uniqueness_of, :validates_with, :validators, :validators_on, :verify_active_connections!, :where, :with_exclusive_scope, :with_options, :with_scope, :with_warnings, :yaml_as, :yaml_tag]
-File size=23956
+[2013/12/17 10:27:14] [keywords_controller.rb: 85]
+filter_categories => 
+                            [1, 2, 3, 4, 5, 6](class=Array)
+File size=17877
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:31:58] [env_nr4s_controller.rb: 363]
-[]
-File size=34570
+[2013/12/17 10:27:14] [keywords_controller.rb: 141]
+keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">, #<Keyword id: 39, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:58:37", updated_at: "2013-12-06 23:58:37">, #<Keyword id: 40, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:35", updated_at: "2013-12-06 23:59:35">, #<Keyword id: 41, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:58", updated_at: "2013-12-06 23:59:58">, #<Keyword id: 42, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:35", updated_at: "2013-12-07 00:00:35">, #<Keyword id: 43, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:51", updated_at: "2013-12-07 00:00:51">, #<Keyword id: 44, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:06:18", updated_at: "2013-12-07 00:06:18">, #<Keyword id: 45, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:14:53", updated_at: "2013-12-07 00:14:53">, #<Keyword id: 46, name: "汚染", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:15:42", updated_at: "2013-12-07 00:15:42">, #<Keyword id: 47, name: "ベクレル", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:17:00", updated_at: "2013-12-07 00:17:00">, #<Keyword id: 48, name: "エネルギー", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:02", updated_at: "2013-12-07 00:33:02">, #<Keyword id: 49, name: "ダウンロード", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:43", updated_at: "2013-12-07 00:33:43">, #<Keyword id: 50, name: "Railsを使わない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:37:52", updated_at: "2013-12-07 00:37:52">, #<Keyword id: 51, name: "ログインしています", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:38:26", updated_at: "2013-12-07 00:38:26">, #<Keyword id: 52, name: "ホーム", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:06", updated_at: "2013-12-07 00:40:06">, #<Keyword id: 53, name: "ボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:07", updated_at: "2013-12-07 00:40:07">, #<Keyword id: 54, name: "ホームボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:27", updated_at: "2013-12-07 00:40:27">, #<Keyword id: 55, name: "同期データを管理します", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:41:12", updated_at: "2013-12-07 00:41:12">, #<Keyword id: 56, name: "新しいタブ", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:55:03", updated_at: "2013-12-07 00:55:03">, #<Keyword id: 57, name: "利用しない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:56:03", updated_at: "2013-12-07 00:56:03">, #<Keyword id: 58, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:02:28", updated_at: "2013-12-07 01:02:28">, #<Keyword id: 59, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:03:26", updated_at: "2013-12-07 01:03:26">, #<Keyword id: 60, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:04:21", updated_at: "2013-12-07 01:04:21">, #<Keyword id: 62, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:06:44", updated_at: "2013-12-07 01:06:44">, #<Keyword id: 63, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:07:55", updated_at: "2013-12-07 01:07:55">, #<Keyword id: 64, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:08:58", updated_at: "2013-12-07 01:08:58">, #<Keyword id: 65, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:09:23", updated_at: "2013-12-07 01:09:23">, #<Keyword id: 66, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:10:26", updated_at: "2013-12-07 01:10:26">, #<Keyword id: 67, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:11:09", updated_at: "2013-12-07 01:11:09">, #<Keyword id: 68, name: "読み込みの対象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:17:23", updated_at: "2013-12-07 01:17:23">, #<Keyword id: 69, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:21:17", updated_at: "2013-12-07 01:21:17">, #<Keyword id: 70, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:28:33", updated_at: "2013-12-07 01:28:33">, #<Keyword id: 71, name: "良いです", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:29:12", updated_at: "2013-12-07 01:29:12">, #<Keyword id: 72, name: "使うような", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 73, name: "印象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 74, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:33:13", updated_at: "2013-12-07 01:33:13">, #<Keyword id: 75, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 76, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 77, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 78, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 79, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 80, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 81, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 82, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 83, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 84, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 85, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 86, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 87, name: "初期値", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:40", updated_at: "2013-12-07 01:35:40">, #<Keyword id: 88, name: "ダミーデータロガー", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:45:22", updated_at: "2013-12-17 00:45:22">, #<Keyword id: 89, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 90, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 91, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:04", updated_at: "2013-12-17 00:50:04">, #<Keyword id: 92, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:26", updated_at: "2013-12-17 00:50:26">, #<Keyword id: 93, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:52:57", updated_at: "2013-12-17 00:52:57">, #<Keyword id: 94, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:52:57", updated_at: "2013-12-17 00:52:57">](size=85)
+File size=18098
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:31:58] [env_nr4s_controller.rb: 370]
-["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4"]
-File size=34712
+[2013/12/17 10:27:14] [keywords_controller.rb: 59]
+sort => nil
+File size=30036
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:33:10] [env_nr4s_controller.rb: 363]
-["doc/backup/nr4/Ai_kodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Env_nr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/Key_word_set_backup.csv", "doc/backup/nr4/Settings_nr4_backup.csv", "doc/backup/nr4/Setting_backup.csv"]
-File size=34973
+[2013/12/17 10:27:38] [keywords_controller.rb: 374]
+tokens=["5500年前の骨分析"]
+File size=30186
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:33:10] [env_nr4s_controller.rb: 370]
-["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4"]
-File size=35494
+[2013/12/17 10:27:38] [utils2.rb: 139]
+5500年前の骨分析
+File size=30359
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:35:54] [env_nr4s_controller.rb: 363]
-["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv"]
-File size=35755
+[2013/12/17 10:27:38] [utils2.rb: 154]
+Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add)
+File size=30508
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:35:54] [env_nr4s_controller.rb: 370]
-["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4"]
-File size=36271
+[2013/12/17 10:27:39] [utils2.rb: 170]
+Posting data => Done: result=Found
+File size=30727
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/16 19:36:32] [histories_controller.rb: 28]
-@histories.size => 6
-File size=36532
+[2013/12/17 10:28:05] [utils2.rb: 188]
+params => {"data[Category][name]"=>"China", "data[Category][genre_id]"=>2, "data[Category][remote_id]"=>1, "data[Category][created_at]"=>"2013-10-29 16:22:57 UTC", "data[Category][updated_at]"=>"2013-10-29 16:22:57 UTC"}
+File size=30888
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 10:34:02] [utils2.rb: 188]
+params => {"data[Category][name]"=>"5500年前の骨分析", "data[Category][genre_id]"=>1, "data[Category][remote_id]"=>8, "data[Category][created_at]"=>"2013-12-17 01:34:02 UTC", "data[Category][updated_at]"=>"2013-12-17 01:34:02 UTC"}
+File size=31235
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 10:40:53] [utils2.rb: 189]
+Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/categories/add)
+File size=31599
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 10:41:25] [utils2.rb: 189]
+Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/categories/add)
+File size=31820
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/17 10:41:25] [utils2.rb: 205]
+Posting data => Done: result=Found
+File size=32041
 ------------------------=[end]
 

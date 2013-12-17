@@ -123,7 +123,20 @@ def write_log(dpath, text, file, line)
   
 end#def write_log()
 
+=begin
+    _post_data(remote_url, model)
+    
+    @param  model => Class
+=end
 def _post_data(remote_url, model)
+    
+    #debug
+    write_log(
+                  @log_path,
+                  model.name,
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
     
     parameters = _backup_db__build_params(model)
     # return remote_url
@@ -135,7 +148,7 @@ def _post_data(remote_url, model)
     #debug
     write_log(
                   @log_path,
-                  "Posting data...",
+                  "Posting data... (url=#{remote_url})",
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
@@ -159,6 +172,41 @@ def _post_data(remote_url, model)
     return "Done (result => #{x})"
     
 end#_post_data(remote_url, model)
+
+def _post_data_2(remote_url, model)
+    
+    #debug
+    model_name = model.class.to_s
+    
+    parameters = _backup_db__build_params_2(model)
+    
+    #debug
+    write_log(
+                  Const::LOG_PATH_ARTICLES,
+                  "Posting data... (url=#{remote_url})",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
+    x = Net::HTTP.post_form(
+            URI.parse(URI.encode(remote_url)),
+            parameters)
+#    x = Net::HTTP.post_form(
+#            URI.parse(remote_url),
+#            parameters)
+    
+
+    #debug
+    write_log(
+                  Const::LOG_PATH_ARTICLES,
+                  "Posting data => Done: result=#{x.message}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+    return "Done (result => #{x})"
+    
+end#_post_data_2(remote_url, model)
 
 def _get_backup_url
     
@@ -188,6 +236,27 @@ def _backup_db__build_params(kw)
     return params
     
 end#_backup_db__build_params
+
+def _backup_db__build_params_2(model)
+    # Name
+    params = {}
+    
+    model_name = model.class.to_s
+    
+    attrs = _get_attrs(model_name)
+    
+    values = _get_values(model)
+    
+    attrs.size.times do |i|
+        
+        #REF add element http://www.rubylife.jp/ini/hash/index5.html
+        params["data[#{model_name}][#{attrs[i]}]"] = values[i]
+    
+    end
+
+    return params
+    
+end#_backup_db__build_params_2(model)
 
 def get_models()
     
@@ -222,3 +291,48 @@ def _download_file(fullpath)
         :length => stat.size)
     
 end#_download_file(fullpath)
+
+def _get_attrs(model_name)
+    
+    attrs = []
+    
+    if model_name == "Category"
+        
+        attrs.push("name")
+        attrs.push("genre_id")
+        attrs.push("remote_id")
+        
+        attrs.push("created_at")
+        attrs.push("updated_at")
+        
+    else
+        
+        return nil
+        
+    end
+    
+end
+
+def _get_values(model)
+    
+    values = []
+    
+    # m = model_name.constantize
+    
+    if model.class.to_s == "Category"
+    #if model == "Word"
+        
+        values.push(model.name)
+        values.push(model.genre_id)
+        values.push(model.id)
+        
+        values.push(model.created_at.to_s)
+        values.push(model.updated_at.to_s)
+
+    else
+        
+        return nil
+        
+    end
+    
+end#def _get_values(model_name)

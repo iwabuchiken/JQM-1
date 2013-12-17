@@ -180,6 +180,13 @@ class Nr4::EnvNr4sController < ApplicationController
         #=============================
 =begin
         #debug
+        cat = Category.first
+        
+        _post_data_2(Const::BACKUP_URL_NR4_KEYWORDS, cat)
+=end
+
+=begin
+        #debug
         write_log(
                   @log_path,
                   Keyword.methods.sort,
@@ -693,7 +700,7 @@ class Nr4::EnvNr4sController < ApplicationController
 
     end#backup_db
 
-
+=begin
     def _backup_db__build_params(kw)
         # Name
         params = {}
@@ -716,7 +723,8 @@ class Nr4::EnvNr4sController < ApplicationController
         return params
         
     end#_backup_db__build_params
-    
+=end
+
     def _backup_db_sqlite
         
         file_path = Rails.root.join(
