@@ -397,6 +397,7 @@ class Nr4::KeywordsController < ApplicationController
                   end
                     
                     # _post_data(remote_url, model)
+                    msg = _post_data(Const::BACKUP_URL_NR4_KEYWORDS, keyword)
                     
                     @keyword = keyword
                     
@@ -426,7 +427,8 @@ class Nr4::KeywordsController < ApplicationController
                   # _get_backup_url => utils2.rb
                   t = Thread.new do
                       
-                      msg = _post_data(_get_backup_url, @keyword)
+                      msg = _post_data(Const::BACKUP_URL_NR4_KEYWORDS, @keyword)
+                      # msg = _post_data(_get_backup_url, @keyword)
                       
                   end
                   
