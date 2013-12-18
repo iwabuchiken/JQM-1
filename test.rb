@@ -68,6 +68,29 @@ module V_1_8_1_1
         puts "string is #{a.match(/#{kw}/)}"
         
     end
+
+    def v_4_1_3_7_zip_file
+        
+        require 'zip/zip'
+        require 'zip/zipfilesystem'
+        
+        archive = "test.zip"
+        
+        # Zip::ZipFile.open(archive, Zip::CREATE) do |zipfile|
+        Zip::ZipFile.open(archive, 'w') do |zipfile|
+            
+              zipfile.add("zip","test.rb")  # => param1: file name to be created in the zip fle
+                                            # => param2: The taget file name to be zipped
+              # zipfile.add("test.rb","zip")  # => No such file or directory - zip
+              # zipfile.add(".",File.basename(__FILE__))
+            
+        end
+        
+        
+        puts "DONE"
+        
+    end
+
 end
 
 class Test
@@ -77,4 +100,7 @@ end
 
 
 # do_2
-Test.new.do_3
+# Test.new.do_3
+t = Test.new
+
+t.v_4_1_3_7_zip_file
