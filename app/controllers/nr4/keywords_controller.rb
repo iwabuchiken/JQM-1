@@ -346,6 +346,13 @@ class Nr4::KeywordsController < ApplicationController
     
     @categories = Category.find(:all, :conditions => {:genre_id => @genres[0].id})
     
+    # @categories.sort!
+    @categories.sort! do |c1, c2|
+           
+        c1.name <=> c2.name
+            
+    end
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @keyword }
@@ -396,14 +403,14 @@ class Nr4::KeywordsController < ApplicationController
                       
                   end
                     
-                    # _post_data(remote_url, model)
-                    msg = _post_data(Const::BACKUP_URL_NR4_KEYWORDS, keyword)
+                    # # _post_data(remote_url, model)
+                    # msg = _post_data(Const::BACKUP_URL_NR4_KEYWORDS, keyword)
                     
                     @keyword = keyword
                     
-                end
+                end#if keyword.save
                 
-            end
+            end#tokens.length.times do |i|
             
             respond_to do |format|
                 if @keyword != nil
@@ -413,14 +420,16 @@ class Nr4::KeywordsController < ApplicationController
                     format.html { render action: "new" }
                     format.json { render json: @keyword.errors, status: :unprocessable_entity }            
                 end
-            end
+                
+            end#respond_to do |format|
             
-       else
+       else#if tokens.length > 1
        
             @keyword = Keyword.new(params[:keyword])
         
             
             respond_to do |format|
+              
               if @keyword.save
                   
                   # msg = _post_data("aaaaa", @keyword)
@@ -430,18 +439,22 @@ class Nr4::KeywordsController < ApplicationController
                       msg = _post_data(Const::BACKUP_URL_NR4_KEYWORDS, @keyword)
                       # msg = _post_data(_get_backup_url, @keyword)
                       
-                  end
+                  end#t = Thread.new do
                   
                 format.html { redirect_to @keyword, notice: 'Keyword was successfully created.' }
                 format.json { render json: @keyword, status: :created, location: @keyword }
-              else
+                
+              else#if @keyword.save
+                
                 format.html { render action: "new" }
                 format.json { render json: @keyword.errors, status: :unprocessable_entity }
-              end
+                
+              end#if @keyword.save
+              
             end
        end#if tokens.length > 1
         
-  end
+  end#def create
 
   # PUT /keywords/1
   # PUT /keywords/1.json
@@ -512,6 +525,14 @@ class Nr4::KeywordsController < ApplicationController
         
         @categories = Category.find(:all, :conditions => {:genre_id => @genre})
         
+        # @categories.sort!
+        @categories.sort! do |c1, c2|
+           
+            c1.name <=> c2.name
+            # c1.name <=> c2.name
+            
+        end
+        
         # layout 'layouts/nr4/keywords/show_genre_list'
         #REF http://www.rubylife.jp/rails/template/index3.html#section3
         render :layout => 'layouts/nr4/keywords/show_genre_list'
@@ -534,7 +555,7 @@ class Nr4::KeywordsController < ApplicationController
           # #format.json { render json: @keywords }
         # end        
         
-    end#show_genre_list
+    end#show_category_list
   
 private
 

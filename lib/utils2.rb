@@ -148,7 +148,7 @@ def _post_data(remote_url, model)
     #debug
     write_log(
                   @log_path,
-                  "Posting data => Starts",
+                  #"Posting data => Starts",
                   "Posting data... (url=#{remote_url})",
                   # __FILE__,
                   __FILE__.split("/")[-1],

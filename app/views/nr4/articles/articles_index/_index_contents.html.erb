@@ -1,5 +1,5 @@
 <hr />
-<% @categorized_articles_set.keys.each_with_index do |key, i| %>
+<% @categorized_articles_set.keys.sort.each_with_index do |key, i| %>
 
 	<%= link_to key + " (#{@categorized_articles_set[key].size})", "##{key}" %> |
 
@@ -7,7 +7,8 @@
 
 
 <%# @categorized_articles_set.keys.each_with_index do |a, i| %>
-<% @categorized_articles_set.keys.each_with_index do |key, i| %>
+<%# @categorized_articles_set.keys.each_with_index do |key, i| %>
+<% @categorized_articles_set.keys.sort.each_with_index do |key, i| %>
 
 	<table>
 		<hr />

@@ -1,598 +1,73 @@
 [begin]------------------------=
-[2013/12/17 09:45:00] [keywords_controller.rb: 59]
+[2013/12/18 09:13:18] [keywords_controller.rb: 59]
 sort => nil
 File size=0
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:45:22] [keywords_controller.rb: 374]
-tokens=["ダミーデータロガー"]
+[2013/12/18 09:13:29] [keywords_controller.rb: 25]
+keywords#index
 File size=146
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:45:22] [utils2.rb: 139]
-ダミーデータロガー
-File size=322
+[2013/12/18 09:13:29] [keywords_controller.rb: 263]
+filter_genre => 1
+File size=297
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:45:22] [utils2.rb: 154]
-Posting data...
-File size=474
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:45:23] [utils2.rb: 170]
-Posting data => Done: result=Found
-File size=614
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:47:42] [keywords_controller.rb: 374]
-tokens=["特養", "ホーム暴行"]
-File size=773
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:47:42] [utils2.rb: 139]
-特養
-File size=947
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:47:42] [utils2.rb: 154]
-Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/words/add)
-File size=1078
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:47:42] [utils2.rb: 170]
-Posting data => Done: result=Found
-File size=1293
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:47:42] [utils2.rb: 139]
-ホーム暴行
-File size=1453
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:47:42] [utils2.rb: 154]
-Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/words/add)
-File size=1594
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:47:43] [utils2.rb: 170]
-Posting data => Done: result=Found
-File size=1809
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:50:04] [keywords_controller.rb: 374]
-tokens=["特養", "ホーム暴行"]
-File size=1969
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:50:26] [keywords_controller.rb: 374]
-tokens=["特養", "ホーム暴行"]
-File size=2144
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:50:26] [utils2.rb: 139]
-特養
-File size=2319
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:50:26] [utils2.rb: 154]
-Posting data... (url=doc/backup)
-File size=2451
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:52:52] [keywords_controller.rb: 25]
-keywords#index
-File size=2609
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:52:52] [keywords_controller.rb: 263]
-filter_genre => 
-File size=2761
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:52:52] [keywords_controller.rb: 85]
+[2013/12/18 09:13:29] [keywords_controller.rb: 85]
 filter_categories => 
-                            [1, 2, 3, 4, 5, 6](class=Array)
-File size=2916
+                            [4](class=Array)
+File size=452
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:52:52] [keywords_controller.rb: 141]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">, #<Keyword id: 39, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:58:37", updated_at: "2013-12-06 23:58:37">, #<Keyword id: 40, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:35", updated_at: "2013-12-06 23:59:35">, #<Keyword id: 41, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:58", updated_at: "2013-12-06 23:59:58">, #<Keyword id: 42, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:35", updated_at: "2013-12-07 00:00:35">, #<Keyword id: 43, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:51", updated_at: "2013-12-07 00:00:51">, #<Keyword id: 44, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:06:18", updated_at: "2013-12-07 00:06:18">, #<Keyword id: 45, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:14:53", updated_at: "2013-12-07 00:14:53">, #<Keyword id: 46, name: "汚染", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:15:42", updated_at: "2013-12-07 00:15:42">, #<Keyword id: 47, name: "ベクレル", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:17:00", updated_at: "2013-12-07 00:17:00">, #<Keyword id: 48, name: "エネルギー", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:02", updated_at: "2013-12-07 00:33:02">, #<Keyword id: 49, name: "ダウンロード", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:43", updated_at: "2013-12-07 00:33:43">, #<Keyword id: 50, name: "Railsを使わない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:37:52", updated_at: "2013-12-07 00:37:52">, #<Keyword id: 51, name: "ログインしています", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:38:26", updated_at: "2013-12-07 00:38:26">, #<Keyword id: 52, name: "ホーム", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:06", updated_at: "2013-12-07 00:40:06">, #<Keyword id: 53, name: "ボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:07", updated_at: "2013-12-07 00:40:07">, #<Keyword id: 54, name: "ホームボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:27", updated_at: "2013-12-07 00:40:27">, #<Keyword id: 55, name: "同期データを管理します", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:41:12", updated_at: "2013-12-07 00:41:12">, #<Keyword id: 56, name: "新しいタブ", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:55:03", updated_at: "2013-12-07 00:55:03">, #<Keyword id: 57, name: "利用しない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:56:03", updated_at: "2013-12-07 00:56:03">, #<Keyword id: 58, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:02:28", updated_at: "2013-12-07 01:02:28">, #<Keyword id: 59, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:03:26", updated_at: "2013-12-07 01:03:26">, #<Keyword id: 60, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:04:21", updated_at: "2013-12-07 01:04:21">, #<Keyword id: 62, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:06:44", updated_at: "2013-12-07 01:06:44">, #<Keyword id: 63, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:07:55", updated_at: "2013-12-07 01:07:55">, #<Keyword id: 64, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:08:58", updated_at: "2013-12-07 01:08:58">, #<Keyword id: 65, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:09:23", updated_at: "2013-12-07 01:09:23">, #<Keyword id: 66, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:10:26", updated_at: "2013-12-07 01:10:26">, #<Keyword id: 67, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:11:09", updated_at: "2013-12-07 01:11:09">, #<Keyword id: 68, name: "読み込みの対象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:17:23", updated_at: "2013-12-07 01:17:23">, #<Keyword id: 69, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:21:17", updated_at: "2013-12-07 01:21:17">, #<Keyword id: 70, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:28:33", updated_at: "2013-12-07 01:28:33">, #<Keyword id: 71, name: "良いです", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:29:12", updated_at: "2013-12-07 01:29:12">, #<Keyword id: 72, name: "使うような", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 73, name: "印象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 74, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:33:13", updated_at: "2013-12-07 01:33:13">, #<Keyword id: 75, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 76, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 77, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 78, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 79, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 80, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 81, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 82, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 83, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 84, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 85, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 86, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 87, name: "初期値", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:40", updated_at: "2013-12-07 01:35:40">, #<Keyword id: 88, name: "ダミーデータロガー", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:45:22", updated_at: "2013-12-17 00:45:22">, #<Keyword id: 89, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 90, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 91, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:04", updated_at: "2013-12-17 00:50:04">, #<Keyword id: 92, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:26", updated_at: "2013-12-17 00:50:26">](size=83)
-File size=3136
+[2013/12/18 09:13:29] [keywords_controller.rb: 141]
+keywords=[#<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 39, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:58:37", updated_at: "2013-12-06 23:58:37">, #<Keyword id: 40, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:35", updated_at: "2013-12-06 23:59:35">, #<Keyword id: 41, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:58", updated_at: "2013-12-06 23:59:58">, #<Keyword id: 42, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:35", updated_at: "2013-12-07 00:00:35">, #<Keyword id: 43, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:51", updated_at: "2013-12-07 00:00:51">, #<Keyword id: 44, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:06:18", updated_at: "2013-12-07 00:06:18">, #<Keyword id: 45, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:14:53", updated_at: "2013-12-07 00:14:53">, #<Keyword id: 46, name: "汚染", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:15:42", updated_at: "2013-12-07 00:15:42">, #<Keyword id: 47, name: "ベクレル", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:17:00", updated_at: "2013-12-07 00:17:00">, #<Keyword id: 48, name: "エネルギー", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:02", updated_at: "2013-12-07 00:33:02">, #<Keyword id: 49, name: "ダウンロード", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:43", updated_at: "2013-12-07 00:33:43">, #<Keyword id: 50, name: "Railsを使わない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:37:52", updated_at: "2013-12-07 00:37:52">, #<Keyword id: 51, name: "ログインしています", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:38:26", updated_at: "2013-12-07 00:38:26">, #<Keyword id: 52, name: "ホーム", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:06", updated_at: "2013-12-07 00:40:06">, #<Keyword id: 53, name: "ボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:07", updated_at: "2013-12-07 00:40:07">, #<Keyword id: 54, name: "ホームボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:27", updated_at: "2013-12-07 00:40:27">, #<Keyword id: 55, name: "同期データを管理します", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:41:12", updated_at: "2013-12-07 00:41:12">, #<Keyword id: 56, name: "新しいタブ", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:55:03", updated_at: "2013-12-07 00:55:03">, #<Keyword id: 57, name: "利用しない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:56:03", updated_at: "2013-12-07 00:56:03">, #<Keyword id: 68, name: "読み込みの対象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:17:23", updated_at: "2013-12-07 01:17:23">, #<Keyword id: 69, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:21:17", updated_at: "2013-12-07 01:21:17">, #<Keyword id: 70, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:28:33", updated_at: "2013-12-07 01:28:33">, #<Keyword id: 71, name: "良いです", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:29:12", updated_at: "2013-12-07 01:29:12">, #<Keyword id: 72, name: "使うような", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 73, name: "印象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 74, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:33:13", updated_at: "2013-12-07 01:33:13">, #<Keyword id: 75, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 76, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 77, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 78, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 79, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 80, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 81, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 82, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 83, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 84, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 85, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 86, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 87, name: "初期値", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:40", updated_at: "2013-12-07 01:35:40">, #<Keyword id: 88, name: "ダミーデータロガー", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:45:22", updated_at: "2013-12-17 00:45:22">, #<Keyword id: 89, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 90, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 91, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:04", updated_at: "2013-12-17 00:50:04">, #<Keyword id: 92, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:26", updated_at: "2013-12-17 00:50:26">, #<Keyword id: 93, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:52:57", updated_at: "2013-12-17 00:52:57">](size=47)
+File size=656
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:52:52] [keywords_controller.rb: 59]
+[2013/12/18 09:13:29] [keywords_controller.rb: 59]
 sort => nil
-File size=14796
+File size=7424
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:52:57] [keywords_controller.rb: 374]
-tokens=["特養", "ホーム暴行"]
-File size=14946
+[2013/12/18 09:14:55] [keywords_controller.rb: 381]
+tokens=["検討"]
+File size=7573
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:52:57] [utils2.rb: 139]
-特養
-File size=15122
+[2013/12/18 09:14:55] [utils2.rb: 139]
+検討
+File size=7729
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:52:57] [utils2.rb: 154]
+[2013/12/18 09:17:32] [keywords_controller.rb: 381]
+tokens=["南岸低気圧接近"]
+File size=7861
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 09:17:32] [utils2.rb: 139]
+南岸低気圧接近
+File size=8032
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 09:17:32] [utils2.rb: 155]
 Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add)
-File size=15255
+File size=8179
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 09:52:57] [utils2.rb: 170]
+[2013/12/18 09:17:32] [utils2.rb: 171]
 Posting data => Done: result=Found
-File size=15474
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:52:57] [utils2.rb: 139]
-ホーム暴行
-File size=15635
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:52:57] [utils2.rb: 154]
-Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add)
-File size=15777
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 09:52:57] [utils2.rb: 170]
-Posting data => Done: result=Found
-File size=15996
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:28:32] [keywords_controller.rb: 374]
-tokens=["自作ライブラリ"]
-[2013/12/16 18:45:50] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
-genre => soci
-File size=10117
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:28:33] [utils2.rb: 138]
-Posting data...
-File size=10289
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:28:33] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=10431
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:29:12] [keywords_controller.rb: 374]
-tokens=["良いです"]
-File size=10592
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:29:13] [utils2.rb: 138]
-Posting data => Starts
-File size=10755
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:29:13] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=10904
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:30:16] [keywords_controller.rb: 374]
-tokens=["使うような", "印象"]
-File size=11065
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:30:16] [utils2.rb: 138]
-Posting data => Starts
-File size=11241
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:30:16] [utils2.rb: 138]
-Posting data => Starts
-File size=11390
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:30:16] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=11539
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:30:16] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=11700
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:33:13] [keywords_controller.rb: 374]
-tokens=["DSLを", "使った", "記述を", "シンプルに"]
-File size=11861
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:25] [keywords_controller.rb: 374]
-tokens=["DSLを", "使った", "記述を", "シンプルに"]
-File size=12063
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:25] [utils2.rb: 138]
-Posting data => Starts
-File size=12265
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:25] [utils2.rb: 138]
-Posting data => Starts
-File size=12414
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:25] [utils2.rb: 138]
-Posting data => Starts
-File size=12563
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:25] [utils2.rb: 138]
-Posting data => Starts
-File size=12563
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:26] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=12861
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:26] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=13022
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:27] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=13183
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:27] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=13344
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:43] [keywords_controller.rb: 374]
-tokens=["DSLを", "使った", "記述を", "シンプルに"]
-File size=13505
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:43] [utils2.rb: 138]
-Posting data => Starts
-File size=13707
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:43] [utils2.rb: 138]
-Posting data => Starts
-File size=13856
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:43] [utils2.rb: 138]
-Posting data => Starts
-File size=14005
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:43] [utils2.rb: 138]
-Posting data => Starts
-File size=14154
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:44] [utils2.rb: 154]
-Posting data => Done: result=OK
-File size=14303
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:44] [utils2.rb: 154]
-Posting data => Done: result=OK
-File size=14461
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:44] [utils2.rb: 154]
-Posting data => Done: result=OK
-File size=14619
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:34:44] [utils2.rb: 154]
-Posting data => Done: result=OK
-File size=14777
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:04] [keywords_controller.rb: 374]
-tokens=["DSLを", "使った", "記述を", "シンプルに"]
-File size=14935
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:04] [utils2.rb: 138]
-Posting data => Starts
-File size=15137
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:04] [utils2.rb: 138]
-Posting data => Starts
-File size=15286
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:04] [utils2.rb: 138]
-Posting data => Starts
-File size=15435
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:04] [utils2.rb: 138]
-Posting data => Starts
-File size=15584
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:05] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=15733
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:05] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=15733
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:05] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=15894
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:05] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=16216
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:40] [keywords_controller.rb: 374]
-tokens=["初期値"]
-File size=16377
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:40] [utils2.rb: 138]
-Posting data => Starts
-File size=16537
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/07 10:35:40] [utils2.rb: 154]
-Posting data => Done: result=Found
-File size=16686
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/12 00:26:04] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
-genre => soci
-File size=16847
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/12 00:26:04] [articles_controller.rb: 51]
-genre_code=soci
-File size=17065
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/12 00:26:05] [articles_controller.rb: 327]
-vendor_list.size=0/a_tags_href.size=105
-File size=17219
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/12 00:26:05] [articles_controller.rb: 823]
-categories.size => 2 / categories=Nuc plants
-File size=17398
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/14 10:07:12] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 440]
-genre => soci
-File size=17582
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/14 10:07:12] [articles_controller.rb: 51]
-genre_code=soci
-File size=17800
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/14 10:07:14] [articles_controller.rb: 327]
-vendor_list.size=0/a_tags_href.size=105
-File size=17954
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/14 10:07:14] [articles_controller.rb: 823]
-categories.size => 2 / categories=Nuc plants
-File size=18133
-[2013/12/16 18:45:50] [articles_controller.rb: 51]
-genre_code=soci
-File size=10335
-[2013/12/17 10:04:39] [utils2.rb: 184]
-model.class.to_s => Keyword
-File size=16157
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:11:04] [utils2.rb: 184]
-model.class.to_s => Category
-File size=16311
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:12:19] [utils2.rb: 186]
-model.class.to_s => Category
-File size=16466
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:12:19] [utils2.rb: 193]
-attrs => ["name", "genre_id", "remote_id", "created_at", "updated_at"]
-File size=16621
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:17:04] [utils2.rb: 186]
-attrs => ["name", "genre_id", "remote_id", "created_at", "updated_at"]
-File size=16818
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:17:04] [utils2.rb: 193]
-values => ["China", 2, 1, "2013-10-29 16:22:57 UTC", "2013-10-29 16:22:57 UTC"]
-File size=17015
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:03] [utils2.rb: 188]
-params => {"data[Category][name]"=>"China", "data[Category][genre_id]"=>2, "data[Category][remote_id]"=>1, "data[Category][created_at]"=>"2013-10-29 16:22:57 UTC", "data[Category][updated_at]"=>"2013-10-29 16:22:57 UTC"}
-File size=17221
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:14] [keywords_controller.rb: 25]
-keywords#index
-File size=17568
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:14] [keywords_controller.rb: 263]
-filter_genre => 
-File size=17721
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:14] [keywords_controller.rb: 85]
-filter_categories => 
-                            [1, 2, 3, 4, 5, 6](class=Array)
-File size=17877
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:14] [keywords_controller.rb: 141]
-keywords=[#<Keyword id: 1, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:31:44", updated_at: "2013-10-30 23:31:44">, #<Keyword id: 2, name: "天安門", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:10", updated_at: "2013-10-30 23:37:10">, #<Keyword id: 3, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-10-30 23:37:35", updated_at: "2013-10-30 23:37:35">, #<Keyword id: 4, name: "北京", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 5, name: "上海", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 6, name: "広州", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:50:31", updated_at: "2013-11-03 01:50:31">, #<Keyword id: 10, name: "ウイグル", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 11, name: "チベット", genre_id: 2, category_id: 1, created_at: "2013-11-03 01:56:21", updated_at: "2013-11-03 01:56:21">, #<Keyword id: 12, name: "習近平", genre_id: 2, category_id: 1, created_at: "2013-11-07 02:43:03", updated_at: "2013-11-07 02:43:03">, #<Keyword id: 13, name: "米中", genre_id: 2, category_id: 1, created_at: "2013-11-07 06:06:29", updated_at: "2013-11-07 06:06:29">, #<Keyword id: 14, name: "日中", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 15, name: "尖閣", genre_id: 2, category_id: 1, created_at: "2013-11-08 09:24:40", updated_at: "2013-11-08 09:24:40">, #<Keyword id: 16, name: "米大統領", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:17", updated_at: "2013-11-08 09:44:17">, #<Keyword id: 17, name: "FDA", genre_id: 2, category_id: 2, created_at: "2013-11-08 09:44:57", updated_at: "2013-11-08 09:44:57">, #<Keyword id: 18, name: "オバマ", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:18:46", updated_at: "2013-11-09 14:18:46">, #<Keyword id: 19, name: "国務長官", genre_id: 2, category_id: 2, created_at: "2013-11-09 14:23:07", updated_at: "2013-11-09 14:23:07">, #<Keyword id: 20, name: "欧州", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 21, name: "ヨーロッパ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 22, name: "ドイツ", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 23, name: "フランス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 24, name: "イギリス", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 25, name: "イタリア", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 26, name: "ポーランド", genre_id: 2, category_id: 3, created_at: "2013-11-09 23:39:32", updated_at: "2013-11-09 23:39:32">, #<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 34, name: "米軍", genre_id: 2, category_id: 2, created_at: "2013-11-11 03:39:21", updated_at: "2013-11-11 03:39:21">, #<Keyword id: 35, name: "鳥....", genre_id: 2, category_id: 1, created_at: "2013-11-15 12:20:38", updated_at: "2013-11-15 12:20:38">, #<Keyword id: 36, name: "集中...", genre_id: 2, category_id: 2, created_at: "2013-11-15 12:48:14", updated_at: "2013-11-15 12:48:14">, #<Keyword id: 37, name: "自動車", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:22:59", updated_at: "2013-11-22 01:22:59">, #<Keyword id: 38, name: "トヨタ", genre_id: 3, category_id: 6, created_at: "2013-11-22 01:24:17", updated_at: "2013-11-22 01:24:17">, #<Keyword id: 39, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:58:37", updated_at: "2013-12-06 23:58:37">, #<Keyword id: 40, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:35", updated_at: "2013-12-06 23:59:35">, #<Keyword id: 41, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:58", updated_at: "2013-12-06 23:59:58">, #<Keyword id: 42, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:35", updated_at: "2013-12-07 00:00:35">, #<Keyword id: 43, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:51", updated_at: "2013-12-07 00:00:51">, #<Keyword id: 44, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:06:18", updated_at: "2013-12-07 00:06:18">, #<Keyword id: 45, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:14:53", updated_at: "2013-12-07 00:14:53">, #<Keyword id: 46, name: "汚染", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:15:42", updated_at: "2013-12-07 00:15:42">, #<Keyword id: 47, name: "ベクレル", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:17:00", updated_at: "2013-12-07 00:17:00">, #<Keyword id: 48, name: "エネルギー", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:02", updated_at: "2013-12-07 00:33:02">, #<Keyword id: 49, name: "ダウンロード", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:43", updated_at: "2013-12-07 00:33:43">, #<Keyword id: 50, name: "Railsを使わない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:37:52", updated_at: "2013-12-07 00:37:52">, #<Keyword id: 51, name: "ログインしています", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:38:26", updated_at: "2013-12-07 00:38:26">, #<Keyword id: 52, name: "ホーム", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:06", updated_at: "2013-12-07 00:40:06">, #<Keyword id: 53, name: "ボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:07", updated_at: "2013-12-07 00:40:07">, #<Keyword id: 54, name: "ホームボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:27", updated_at: "2013-12-07 00:40:27">, #<Keyword id: 55, name: "同期データを管理します", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:41:12", updated_at: "2013-12-07 00:41:12">, #<Keyword id: 56, name: "新しいタブ", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:55:03", updated_at: "2013-12-07 00:55:03">, #<Keyword id: 57, name: "利用しない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:56:03", updated_at: "2013-12-07 00:56:03">, #<Keyword id: 58, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:02:28", updated_at: "2013-12-07 01:02:28">, #<Keyword id: 59, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:03:26", updated_at: "2013-12-07 01:03:26">, #<Keyword id: 60, name: "中国", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:04:21", updated_at: "2013-12-07 01:04:21">, #<Keyword id: 62, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:06:44", updated_at: "2013-12-07 01:06:44">, #<Keyword id: 63, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:07:55", updated_at: "2013-12-07 01:07:55">, #<Keyword id: 64, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:08:58", updated_at: "2013-12-07 01:08:58">, #<Keyword id: 65, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:09:23", updated_at: "2013-12-07 01:09:23">, #<Keyword id: 66, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:10:26", updated_at: "2013-12-07 01:10:26">, #<Keyword id: 67, name: "china", genre_id: 2, category_id: 1, created_at: "2013-12-07 01:11:09", updated_at: "2013-12-07 01:11:09">, #<Keyword id: 68, name: "読み込みの対象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:17:23", updated_at: "2013-12-07 01:17:23">, #<Keyword id: 69, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:21:17", updated_at: "2013-12-07 01:21:17">, #<Keyword id: 70, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:28:33", updated_at: "2013-12-07 01:28:33">, #<Keyword id: 71, name: "良いです", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:29:12", updated_at: "2013-12-07 01:29:12">, #<Keyword id: 72, name: "使うような", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 73, name: "印象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 74, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:33:13", updated_at: "2013-12-07 01:33:13">, #<Keyword id: 75, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 76, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 77, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 78, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 79, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 80, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 81, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 82, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 83, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 84, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 85, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 86, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 87, name: "初期値", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:40", updated_at: "2013-12-07 01:35:40">, #<Keyword id: 88, name: "ダミーデータロガー", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:45:22", updated_at: "2013-12-17 00:45:22">, #<Keyword id: 89, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 90, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 91, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:04", updated_at: "2013-12-17 00:50:04">, #<Keyword id: 92, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:26", updated_at: "2013-12-17 00:50:26">, #<Keyword id: 93, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:52:57", updated_at: "2013-12-17 00:52:57">, #<Keyword id: 94, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:52:57", updated_at: "2013-12-17 00:52:57">](size=85)
-File size=18098
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:14] [keywords_controller.rb: 59]
-sort => nil
-File size=30036
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:38] [keywords_controller.rb: 374]
-tokens=["5500年前の骨分析"]
-File size=30186
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:38] [utils2.rb: 139]
-5500年前の骨分析
-File size=30359
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:38] [utils2.rb: 154]
-Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add)
-File size=30508
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:27:39] [utils2.rb: 170]
-Posting data => Done: result=Found
-File size=30727
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:28:05] [utils2.rb: 188]
-params => {"data[Category][name]"=>"China", "data[Category][genre_id]"=>2, "data[Category][remote_id]"=>1, "data[Category][created_at]"=>"2013-10-29 16:22:57 UTC", "data[Category][updated_at]"=>"2013-10-29 16:22:57 UTC"}
-File size=30888
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:34:02] [utils2.rb: 188]
-params => {"data[Category][name]"=>"5500年前の骨分析", "data[Category][genre_id]"=>1, "data[Category][remote_id]"=>8, "data[Category][created_at]"=>"2013-12-17 01:34:02 UTC", "data[Category][updated_at]"=>"2013-12-17 01:34:02 UTC"}
-File size=31235
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:40:53] [utils2.rb: 189]
-Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/categories/add)
-File size=31599
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:41:25] [utils2.rb: 189]
-Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/categories/add)
-File size=31820
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/17 10:41:25] [utils2.rb: 205]
-Posting data => Done: result=Found
-File size=32041
+File size=8397
 ------------------------=[end]
 
