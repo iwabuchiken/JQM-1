@@ -12,6 +12,11 @@ require 'fileutils'
 require_dependency 'const'
 include Const
 
+# require 'zip'
+# require 'zipfilesystem'
+require 'zip/zip'
+require 'zip/zipfilesystem'
+
 class Nr4::EnvNr4sController < ApplicationController
     
     layout 'layouts/nr4/genres'
@@ -234,6 +239,12 @@ class Nr4::EnvNr4sController < ApplicationController
             elsif param == "build_csv"
                 
                 _backup_db__execute
+                
+            elsif param == "zip_file"
+                
+                f = File.join(_backup_path, Const::BACKUP_FNAME_CSV)
+                
+                _download_file(f)
                 
             else
                 
@@ -859,6 +870,42 @@ private
             
         end#models.each do |m|
         
+        #============================
+        #
+        #   Zip file
+        #
+        #============================
+        build_zip_file
+=begin
+        archive = File.join(Const::BACKUP_PATH, "nr4", Const::BACKUP_FNAME_CSV)
+        # archive = File.join(Const::BACKUP_PATH, "nr4", "csv.zip")
+        
+        Zip::ZipFile.open(archive, 'w') do |zipfile|
+            
+            # Dir["#{path}/**/**"].reject{|f|f==archive}.each do |file|
+            Dir[File.join(Const::BACKUP_PATH, "nr4") + "/*"].reject{|f|f==archive}.each do |file|
+              # zipfile.add(file.sub(path+'/',''),file)
+                begin
+                    
+                    zipfile.add(File.basename(file),file)
+                    #zipfile.add("csv_files",file)
+                
+                rescue => e
+                    
+                    write_log(
+                          @log_path,
+                          e.to_s,
+                          # __FILE__,
+                          __FILE__.split("/")[-1],
+                          __LINE__.to_s)
+
+                    
+                end
+            end#Dir[File.join(Const::BACKUP_PATH, "nr4") + "/*"]
+            
+        end#Zip::ZipFile.open(archive, 'w') do |zipfile|
+=end
+
 =begin
         # fpath = "tmp/backup/backup_#{models[0].to_s}.csv"
         fpath = File.join(

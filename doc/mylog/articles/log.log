@@ -71,3 +71,141 @@ Posting data => Done: result=Found
 File size=8397
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/18 11:07:22] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 457]
+genre => soci
+File size=8557
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:07:22] [articles_controller.rb: 51]
+genre_code=soci
+File size=8774
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:07:23] [articles_controller.rb: 344]
+vendor_list.size=0/a_tags_href.size=105
+File size=8927
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:07:23] [articles_controller.rb: 840]
+categories.size => 5 / categories=Nuc plants
+File size=9105
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=9288
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=9469
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=9650
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=9831
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=10012
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=10194
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=10376
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=10558
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=10740
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=10922
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
+add failed. Entry csv_files already exists
+File size=11104
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 375]
+["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/csv.zip", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
+File size=11286
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:36:11] [env_nr4s_controller.rb: 382]
+["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
+File size=11864
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:38:42] [env_nr4s_controller.rb: 375]
+["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/csv.zip", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
+File size=12135
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:38:42] [env_nr4s_controller.rb: 382]
+["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
+File size=12713
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:43:18] [env_nr4s_controller.rb: 381]
+["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/nr4_csv.zip", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
+File size=12984
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:43:18] [env_nr4s_controller.rb: 388]
+["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
+File size=13566
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:47:07] [env_nr4s_controller.rb: 381]
+["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/nr4_csv.zip", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
+File size=13837
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/18 11:47:07] [env_nr4s_controller.rb: 388]
+["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
+File size=14419
+------------------------=[end]
+
