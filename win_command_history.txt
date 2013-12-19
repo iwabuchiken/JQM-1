@@ -16,6 +16,9 @@ a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001
 # CakePHP/NR4
 /rails_apps/nr4/cakephp-2.3.10
 
+# Backup files
+C:\WORKS\WS\WS_Android_20130929_122122\JQM-1\doc\backup\nr4
+
 # gitk
 pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
