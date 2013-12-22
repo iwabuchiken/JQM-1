@@ -118,6 +118,7 @@ DEPENDENCIES
   pg (= 0.12.2)
   rails (= 3.2.1)
   rails-i18n
+  rake (= 10.1.0)
   require_reloader
   rubyzip (= 0.9.9)
   sass-rails (~> 3.2.3)

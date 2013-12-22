@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20131211152032) do
   end
 
   create_table "articles", :force => true do |t|
-    t.text     "line"
+    t.text     "line"           # => Headline text
     t.string   "url"
     t.string   "vendor"
     t.string   "news_time"

@@ -213,10 +213,146 @@ class Nr4::ArticlesController < ApplicationController
             
         end
         
+        #==============================
+        # => Store text
+        #==============================
+        if redirect_url != "/nr4/articles"
+            
+            _open_article__store_text(redirect_url)
+            
+        else
+            
+            write_log(
+              @log_path,
+              "redirect_url => /nr4/articles",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+            
+        end
+        
         
         redirect_to redirect_url
         
     end#open_article
+  
+    def _open_article__store_text(url)
+      
+        doc = Nokogiri::HTML(open(url))
+        
+        # target = doc[@class]
+        # a = doc.css("class")  # => size=0
+        a = doc.css("p")
+        
+        write_log(
+              @log_path,
+              "a.size => #{a.size.to_s}",
+              # "target.size => #{target.size.to_s}",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)        
+        
+        count = 0
+        
+        a.each_with_index do |x, i|
+            
+            # if x.keys.include?("class")
+            if x.keys.include?("class") and x['class'] == "ynDetailText"
+                
+                if x['class'] == "ynDetailText"
+                    
+                    write_log(
+                           @log_path,
+                           # "a[#{i.to_s}] => #{a[i]}(class=#{a[i].class.to_s}/keys=#{a[i].keys}/x['class']=#{x['class']})",
+                           "x['class'] => #{x['class']}\n#{x.content}",
+                           # "target.size => #{target.size.to_s}",
+                           # __FILE__,
+                           __FILE__.split("/")[-1],
+                           __LINE__.to_s)
+                    
+                else
+                    
+                    write_log(
+                           @log_path,
+                           "x['class'] => \"ynDetailText\"",
+                           # "target.size => #{target.size.to_s}",
+                           # __FILE__,
+                           __FILE__.split("/")[-1],
+                           __LINE__.to_s)
+                    
+                end
+                
+            else
+                
+                 write_log(
+                       @log_path,
+                       "No attribute 'class'",
+                       # "target.size => #{target.size.to_s}",
+                       # __FILE__,
+                       __FILE__.split("/")[-1],
+                       __LINE__.to_s)
+                       
+            end
+                       
+=begin
+            write_log(
+                  @log_path,
+                  "a[#{i.to_s}] => #{a[i]}(class=#{a[i].class.to_s}/keys=#{a[i].keys}/keys.size=#{a[i].keys.size})",
+                  # "target.size => #{target.size.to_s}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+=end
+
+        end
+        
+        
+=begin
+        a.size.times do |x|
+            
+            begin
+                write_log(
+                      @log_path,
+                      "a['class'] => #{a['class']}",
+                      # "target.size => #{target.size.to_s}",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+            rescue => e
+                
+                write_log(
+                      @log_path,
+                      e.to_s,
+                      # "target.size => #{target.size.to_s}",
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+                      
+            end
+            
+            
+            # if x[@class]      # => can't convert nil into Integer
+            # if x['class']     # => can't convert String into Integer
+            # if x['class'] != nil    # => can't convert String into Integer
+            # if x['class'] != ""    # => can't convert String into Integer
+                
+                # count += 1
+                
+            # end
+            
+        end
+=end
+        write_log(
+              @log_path,
+              "count => #{count}",
+              # "target.size => #{target.size.to_s}",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+        
+        #p = doc.css("div ul li a")
+      
+    end
   
 private
     

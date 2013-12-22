@@ -1,348 +1,186 @@
 [begin]------------------------=
-[2013/12/17 11:10:46] [articles_controller.rb: 51]
-genre_code=soci
-[2013/12/18 09:13:18] [keywords_controller.rb: 59]
-sort => nil
+[2013/12/22 13:41:44] [articles_controller.rb: 293]
+No attribute 'class'
 File size=0
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:10:47] [articles_controller.rb: 335]
-vendor_list.size=0/a_tags_href.size=105
-File size=150
+[2013/12/22 13:41:44] [articles_controller.rb: 293]
+No attribute 'class'
+File size=156
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:10:47] [articles_controller.rb: 831]
-categories.size => 5 / categories=Nuc plants
-File size=327
+[2013/12/22 13:41:44] [articles_controller.rb: 293]
+No attribute 'class'
+File size=314
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:10:47] [articles_controller.rb: 75]
-@categorized_articles_set.keys => ["Nuc plants", "医療・介護", "中韓と競争激化", "exothermic", "Others"]
-File size=509
+[2013/12/22 13:41:44] [articles_controller.rb: 293]
+No attribute 'class'
+File size=472
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:01] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 456]
-genre => soci
-File size=762
+[2013/12/22 13:41:44] [articles_controller.rb: 293]
+No attribute 'class'
+File size=630
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:01] [articles_controller.rb: 51]
-genre_code=soci
-File size=978
+[2013/12/22 13:41:44] [articles_controller.rb: 293]
+No attribute 'class'
+File size=788
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:02] [articles_controller.rb: 343]
-vendor_list.size=0/a_tags_href.size=105
-File size=1130
+[2013/12/22 13:41:44] [articles_controller.rb: 293]
+No attribute 'class'
+File size=946
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:02] [articles_controller.rb: 839]
-categories.size => 5 / categories=Nuc plants
-File size=1308
+[2013/12/22 13:41:44] [articles_controller.rb: 351]
+count => 0
+File size=1104
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:42] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 457]
-genre => soci
-File size=1491
+[2013/12/22 13:42:43] [articles_controller.rb: 253]
+a.size => 19
+File size=1253
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:42] [articles_controller.rb: 51]
-genre_code=soci
-File size=1708
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=1404
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:43] [articles_controller.rb: 344]
-vendor_list.size=0/a_tags_href.size=105
-File size=1861
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=1563
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:14:43] [articles_controller.rb: 840]
-categories.size => 5 / categories=Nuc plants
-File size=2039
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=1722
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:15:20] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 457]
-genre => soci
-File size=2222
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=1881
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:15:20] [articles_controller.rb: 51]
-genre_code=soci
-File size=2439
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=2040
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:15:21] [articles_controller.rb: 344]
-vendor_list.size=0/a_tags_href.size=105
-File size=2592
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=2199
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:15:21] [articles_controller.rb: 840]
-categories.size => 5 / categories=Nuc plants
-File size=2770
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=2358
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:08] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 457]
-genre => soci
-File size=2953
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=2517
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:08] [articles_controller.rb: 51]
-genre_code=soci
-File size=3170
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=2676
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:09] [articles_controller.rb: 344]
-vendor_list.size=0/a_tags_href.size=105
-File size=3323
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=2835
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:09] [articles_controller.rb: 840]
-categories.size => 5 / categories=Nuc plants
-File size=3501
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=2994
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:38] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 457]
-genre => soci
-File size=3684
+[2013/12/22 13:42:43] [articles_controller.rb: 271]
+x['class'] => ynDetailText
+
+【入場券がないイベントの人数ってどう把握するの？　その手法を調査せよ！】
+　神戸ルミナリエ３５４万人、神戸マラソンの沿道観衆５８万人、今春、兵庫県内で開業した大型商業施設の入館者数や初詣の参拝者数もしかり。入場券もないのに一体どのようにカウントしているのか？　その計測手法に迫った。（阿部江利）
+　７年ぶりに来場者数が前年比を上回った（１４万人増）今年のルミナリエ。採用しているのは国土交通省観光庁が例示する調査手法だ。「１平方メートル当たりの人数×開催面積」を１時間ごとに足し合わせてその日の来場者数をはじき出すという。
+　会場内やＪＲ元町駅方向に続く行列の途中などに最大１５カ所の計測点が設けられており、密度を警備員が１時間ごとに目視で確認。少なければ０・５人、混雑時は４〜５人程度という。その数字に警備員が担当するエリア面積を掛け、計測回数ごとに足し合わせる。
+　神戸マラソンの沿道観衆の計測手法はルミナリエに似ている。事務局によると、調査は電通（東京）が手掛け、４２・１９５キロの沿線にある観覧可能面積を把握した上で、計測点の密度（何列できているか）や回転数（声援者の入れ替わり）などを目視し、割り出すという。
+　開業半年で１千万人を超える入館者数となった神戸ハーバーランドの「ｕｍｉｅ（ウミエ）」やＪＲ姫路駅の「ｐｉｏｌｅ（ピオレ）姫路」には、いずれも出入り口にセンサー式のカウンターが設置されていた。ウミエは１８カ所あり、モザイクと行き来する客が全体の２割ほどいるため、重複数となっている。
+　一方、年明けの一大イベントの初詣。県内最多の参拝者数を誇る生田神社（神戸市中央区）は、「正月三が日の祈祷（きとう）件数やおみくじ販売数、境内の一区画の参拝者密度などを基に、神主が算出している」。同じ神社でも湊川神社（同）は「さい銭の額を基に、過去の実績を踏まえ、数字を出している」という。
+　　　□　　□
+　最後に観光庁に尋ねてみた。「例示手法で実数値を反映できていますか？」
+　「真の値（実数値）は把握できない。あくまでも推計値。ただ、これまでの試験調査やノウハウに基づき、目視や映像解析、レーザーなど数種類の方法を例示している。手法によって誤差の大小はあるが、大きくかけ離れていない数字が出ているのでは…」としている。
+観光庁「あくまでも推計値」
+File size=3153
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:38] [articles_controller.rb: 51]
-genre_code=soci
-File size=3901
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=6245
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:39] [articles_controller.rb: 344]
-vendor_list.size=0/a_tags_href.size=105
-File size=4054
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=6404
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/17 11:22:39] [articles_controller.rb: 840]
-categories.size => 5 / categories=Nuc plants
-File size=4232
-[2013/12/18 09:13:29] [keywords_controller.rb: 25]
-keywords#index
-File size=146
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=6563
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/18 09:13:29] [keywords_controller.rb: 263]
-filter_genre => 1
-File size=297
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=6722
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/18 09:13:29] [keywords_controller.rb: 85]
-filter_categories => 
-                            [4](class=Array)
-File size=452
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=6881
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/18 09:13:29] [keywords_controller.rb: 141]
-keywords=[#<Keyword id: 32, name: "原発", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 33, name: "福島", genre_id: 1, category_id: 4, created_at: "2013-11-11 03:30:57", updated_at: "2013-11-11 03:30:57">, #<Keyword id: 39, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:58:37", updated_at: "2013-12-06 23:58:37">, #<Keyword id: 40, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:35", updated_at: "2013-12-06 23:59:35">, #<Keyword id: 41, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-06 23:59:58", updated_at: "2013-12-06 23:59:58">, #<Keyword id: 42, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:35", updated_at: "2013-12-07 00:00:35">, #<Keyword id: 43, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:00:51", updated_at: "2013-12-07 00:00:51">, #<Keyword id: 44, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:06:18", updated_at: "2013-12-07 00:06:18">, #<Keyword id: 45, name: "放射能", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:14:53", updated_at: "2013-12-07 00:14:53">, #<Keyword id: 46, name: "汚染", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:15:42", updated_at: "2013-12-07 00:15:42">, #<Keyword id: 47, name: "ベクレル", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:17:00", updated_at: "2013-12-07 00:17:00">, #<Keyword id: 48, name: "エネルギー", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:02", updated_at: "2013-12-07 00:33:02">, #<Keyword id: 49, name: "ダウンロード", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:33:43", updated_at: "2013-12-07 00:33:43">, #<Keyword id: 50, name: "Railsを使わない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:37:52", updated_at: "2013-12-07 00:37:52">, #<Keyword id: 51, name: "ログインしています", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:38:26", updated_at: "2013-12-07 00:38:26">, #<Keyword id: 52, name: "ホーム", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:06", updated_at: "2013-12-07 00:40:06">, #<Keyword id: 53, name: "ボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:07", updated_at: "2013-12-07 00:40:07">, #<Keyword id: 54, name: "ホームボタンを表示する", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:40:27", updated_at: "2013-12-07 00:40:27">, #<Keyword id: 55, name: "同期データを管理します", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:41:12", updated_at: "2013-12-07 00:41:12">, #<Keyword id: 56, name: "新しいタブ", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:55:03", updated_at: "2013-12-07 00:55:03">, #<Keyword id: 57, name: "利用しない", genre_id: 1, category_id: 4, created_at: "2013-12-07 00:56:03", updated_at: "2013-12-07 00:56:03">, #<Keyword id: 68, name: "読み込みの対象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:17:23", updated_at: "2013-12-07 01:17:23">, #<Keyword id: 69, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:21:17", updated_at: "2013-12-07 01:21:17">, #<Keyword id: 70, name: "自作ライブラリ", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:28:33", updated_at: "2013-12-07 01:28:33">, #<Keyword id: 71, name: "良いです", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:29:12", updated_at: "2013-12-07 01:29:12">, #<Keyword id: 72, name: "使うような", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 73, name: "印象", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:30:16", updated_at: "2013-12-07 01:30:16">, #<Keyword id: 74, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:33:13", updated_at: "2013-12-07 01:33:13">, #<Keyword id: 75, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 76, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 77, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 78, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:25", updated_at: "2013-12-07 01:34:25">, #<Keyword id: 79, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 80, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 81, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 82, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:34:43", updated_at: "2013-12-07 01:34:43">, #<Keyword id: 83, name: "DSLを", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 84, name: "使った", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 85, name: "記述を", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 86, name: "シンプルに", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:04", updated_at: "2013-12-07 01:35:04">, #<Keyword id: 87, name: "初期値", genre_id: 1, category_id: 4, created_at: "2013-12-07 01:35:40", updated_at: "2013-12-07 01:35:40">, #<Keyword id: 88, name: "ダミーデータロガー", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:45:22", updated_at: "2013-12-17 00:45:22">, #<Keyword id: 89, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 90, name: "ホーム暴行", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:47:42", updated_at: "2013-12-17 00:47:42">, #<Keyword id: 91, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:04", updated_at: "2013-12-17 00:50:04">, #<Keyword id: 92, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:50:26", updated_at: "2013-12-17 00:50:26">, #<Keyword id: 93, name: "特養", genre_id: 1, category_id: 4, created_at: "2013-12-17 00:52:57", updated_at: "2013-12-17 00:52:57">](size=47)
-File size=656
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=7040
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/18 09:13:29] [keywords_controller.rb: 59]
-sort => nil
-File size=7424
+[2013/12/22 13:42:43] [articles_controller.rb: 293]
+No attribute 'class'
+File size=7199
 ------------------------=[end]
 
 [begin]------------------------=
-[2013/12/18 09:14:55] [keywords_controller.rb: 381]
-tokens=["検討"]
-File size=7573
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 09:14:55] [utils2.rb: 139]
-検討
-File size=7729
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 09:17:32] [keywords_controller.rb: 381]
-tokens=["南岸低気圧接近"]
-File size=7861
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 09:17:32] [utils2.rb: 139]
-南岸低気圧接近
-File size=8032
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 09:17:32] [utils2.rb: 155]
-Posting data... (url=http://benfranklin.chips.jp/rails_apps/nr4/cakephp-2.3.10/keywords/add)
-File size=8179
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 09:17:32] [utils2.rb: 171]
-Posting data => Done: result=Found
-File size=8397
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:07:22] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 457]
-genre => soci
-File size=8557
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:07:22] [articles_controller.rb: 51]
-genre_code=soci
-File size=8774
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:07:23] [articles_controller.rb: 344]
-vendor_list.size=0/a_tags_href.size=105
-File size=8927
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:07:23] [articles_controller.rb: 840]
-categories.size => 5 / categories=Nuc plants
-File size=9105
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=9288
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=9469
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=9650
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=9831
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=10012
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=10194
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=10376
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=10558
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=10740
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=10922
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 890]
-add failed. Entry csv_files already exists
-File size=11104
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 375]
-["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/csv.zip", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
-File size=11286
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:36:11] [env_nr4s_controller.rb: 382]
-["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
-File size=11864
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:38:42] [env_nr4s_controller.rb: 375]
-["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/csv.zip", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
-File size=12135
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:38:42] [env_nr4s_controller.rb: 382]
-["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
-File size=12713
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:43:18] [env_nr4s_controller.rb: 381]
-["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/nr4_csv.zip", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
-File size=12984
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:43:18] [env_nr4s_controller.rb: 388]
-["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
-File size=13566
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:47:07] [env_nr4s_controller.rb: 381]
-["doc/backup/nr4/Aikodaka_backup.csv", "doc/backup/nr4/Article_backup.csv", "doc/backup/nr4/Category_backup.csv", "doc/backup/nr4/Envnr4_backup.csv", "doc/backup/nr4/Genre_backup.csv", "doc/backup/nr4/History_backup.csv", "doc/backup/nr4/Keywordset_backup.csv", "doc/backup/nr4/Keyword_backup.csv", "doc/backup/nr4/nr4_csv.zip", "doc/backup/nr4/Settingsnr4_backup.csv", "doc/backup/nr4/Setting_backup.csv", "doc/backup/nr4/Visual_backup.csv"]
-File size=13837
-------------------------=[end]
-
-[begin]------------------------=
-[2013/12/18 11:47:07] [env_nr4s_controller.rb: 388]
-["Ai_kodaka", "Article", "Category", "Env_nr4", "Genre", "History", "Keyword", "Key_word_set", "Setting", "Settings_nr4", "Visual"]
-File size=14419
+[2013/12/22 13:42:43] [articles_controller.rb: 351]
+count => 0
+File size=7358
 ------------------------=[end]
 
