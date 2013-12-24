@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131211152032) do
+ActiveRecord::Schema.define(:version => 20131224163926) do
 
   create_table "ai_kodakas", :force => true do |t|
     t.text     "line"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20131211152032) do
   end
 
   create_table "articles", :force => true do |t|
-    t.text     "line"           # => Headline text
+    t.text     "line"
     t.string   "url"
     t.string   "vendor"
     t.string   "news_time"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20131211152032) do
     t.string   "subcat"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.text     "content"
   end
 
   create_table "key_word_sets", :force => true do |t|

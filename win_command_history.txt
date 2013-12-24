@@ -199,6 +199,12 @@ bundle exec rake assets:precompile
 rails generate controller D3 main sub1 sub2 log
 rails destroy controller D3 main sub1 sub2 log
 
+[25/12/2013 01:37:03]----------------------------
+rails generate migration AddColumnContentToHistories
+bundle exec rake db:migrate
+
+
+
 aa
 
 ============RESOURCE============
