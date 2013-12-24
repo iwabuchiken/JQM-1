@@ -184,3 +184,93 @@ count => 0
 File size=7358
 ------------------------=[end]
 
+[begin]------------------------=
+[2013/12/25 01:34:17] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 593]
+genre => soci
+File size=7507
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:34:18] [articles_controller.rb: 51]
+genre_code=soci
+File size=7724
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:34:21] [articles_controller.rb: 480]
+vendor_list.size=0/a_tags_href.size=105
+File size=7877
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:34:21] [articles_controller.rb: 976]
+categories.size => 5 / categories=Nuc plants
+File size=8055
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:34:36] [histories_controller.rb: 28]
+@histories.size => 6
+File size=8238
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:43:53] [histories_controller.rb: 28]
+@histories.size => 6
+File size=8397
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:00] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 610]
+genre => soci
+File size=8556
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:00] [articles_controller.rb: 51]
+genre_code=soci
+File size=8773
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:02] [articles_controller.rb: 497]
+vendor_list.size=0/a_tags_href.size=105
+File size=8926
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:02] [articles_controller.rb: 993]
+categories.size => 5 / categories=Nuc plants
+File size=9104
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:09] [articles_controller.rb: 258]
+a.size => 19
+File size=9287
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:25] [histories_controller.rb: 28]
+@histories.size => 6
+File size=9438
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:31] [histories_controller.rb: 28]
+@histories.size => 6
+File size=9597
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:49] [articles_controller.rb: 258]
+a.size => 18
+File size=9756
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/25 01:52:54] [histories_controller.rb: 28]
+@histories.size => 6
+File size=9907
+------------------------=[end]
+

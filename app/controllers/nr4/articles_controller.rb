@@ -199,7 +199,7 @@ class Nr4::ArticlesController < ApplicationController
         
         #h.cat       = article_key
 
-        h.save
+        # h.save
         
         # article = params['article']
         
@@ -218,7 +218,8 @@ class Nr4::ArticlesController < ApplicationController
         #==============================
         if redirect_url != "/nr4/articles"
             
-            _open_article__store_text(redirect_url)
+            h = _open_article__store_text(redirect_url, h)
+            # _open_article__store_text(redirect_url)
             
         else
             
@@ -232,11 +233,15 @@ class Nr4::ArticlesController < ApplicationController
         end
         
         
+        
+        # Save history
+        h.save
+        
         redirect_to redirect_url
         
     end#open_article
   
-    def _open_article__store_text(url)
+    def _open_article__store_text(url, history)
       
         doc = Nokogiri::HTML(open(url))
         
@@ -254,6 +259,15 @@ class Nr4::ArticlesController < ApplicationController
         
         count = 0
         
+        a.each_with_index do |x, i|
+            
+            # if x.keys.include?("class")
+            if x.keys.include?("class") and x['class'] == "ynDetailText"
+                
+                history.content = x.content
+                
+            end
+=begin
         a.each_with_index do |x, i|
             
             # if x.keys.include?("class")
@@ -293,7 +307,7 @@ class Nr4::ArticlesController < ApplicationController
                        __LINE__.to_s)
                        
             end
-                       
+=end
 =begin
             write_log(
                   @log_path,
@@ -304,8 +318,9 @@ class Nr4::ArticlesController < ApplicationController
                   __LINE__.to_s)
 =end
 
-        end
+        end#a.each_with_index do |x, i|
         
+        return history
         
 =begin
         a.size.times do |x|
@@ -342,6 +357,7 @@ class Nr4::ArticlesController < ApplicationController
             
         end
 =end
+=begin
         write_log(
               @log_path,
               "count => #{count}",
@@ -351,8 +367,9 @@ class Nr4::ArticlesController < ApplicationController
               __LINE__.to_s)
         
         #p = doc.css("div ul li a")
-      
-    end
+=end
+
+    end#def _open_article__store_text(url, history)
   
 private
     
