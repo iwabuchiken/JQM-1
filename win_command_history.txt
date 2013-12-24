@@ -45,6 +45,7 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 g p origin master && g p heroku master
 
 
+
 [Set up 2013/05/17 12:23:23]----------------------------
 bundle install
 
