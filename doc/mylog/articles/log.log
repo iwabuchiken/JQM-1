@@ -284,3 +284,75 @@ File size=9907
 ------------------------=[end]
 
 
+[begin]------------------------=
+[2013/12/28 08:33:28] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 610]
+genre => soci
+File size=10354
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 08:33:28] [articles_controller.rb: 51]
+genre_code=soci
+File size=10572
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 08:33:29] [articles_controller.rb: 497]
+vendor_list.size=0/a_tags_href.size=105
+File size=10726
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 08:33:29] [articles_controller.rb: 993]
+categories.size => 5 / categories=Nuc plants
+File size=10905
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:24] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 610]
+genre => soci
+File size=11089
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:24] [articles_controller.rb: 51]
+genre_code=soci
+File size=11307
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:26] [articles_controller.rb: 497]
+vendor_list.size=0/a_tags_href.size=105
+File size=11461
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:26] [articles_controller.rb: 993]
+categories.size => 5 / categories=Nuc plants
+File size=11640
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:34] [C:/WORKS/WS/WS_Android_20130929_122122/JQM-1/app/controllers/nr4/articles_controller.rb: 610]
+genre => soci
+File size=11824
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:34] [articles_controller.rb: 51]
+genre_code=soci
+File size=12042
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:35] [articles_controller.rb: 497]
+vendor_list.size=0/a_tags_href.size=105
+File size=12196
+------------------------=[end]
+
+[begin]------------------------=
+[2013/12/28 10:07:35] [articles_controller.rb: 993]
+categories.size => 5 / categories=Nuc plants
+File size=12375
+------------------------=[end]
+

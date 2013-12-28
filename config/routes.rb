@@ -1,5 +1,9 @@
 JQM1::Application.routes.draw do
 
+  resources :setting_sls, module: 'sl'
+
+  resources :items, module: 'sl'
+
   resources :visuals
 
   resources :ai_kodakas, module: 'ai_kodaka'

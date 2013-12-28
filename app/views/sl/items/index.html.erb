@@ -1,0 +1,46 @@
+<h1>Listing items</h1>
+
+<table>
+  <tr>
+    <th>Store</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Genre</th>
+    <th>Yomi</th>
+    <th>Mobile</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.store_id %></td>
+    <td><%= item.name %></td>
+    <td><%= item.price %></td>
+    <td><%= item.genre_id %></td>
+    <td><%= item.yomi %></td>
+    <td><%= item.mobile_id %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Item', new_item_path %>
+
+<br />
+<%= form_tag("/items") do %>
+	<div class="field">
+		
+		Name: <%= text_field :item, :name %><br />
+	</div>
+
+	<div class="field">	
+		<%= submit_tag "Create" %><br />
+	</div>
+	
+<% end %><%#= form_tag do %>

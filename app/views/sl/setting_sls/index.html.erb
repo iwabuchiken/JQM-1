@@ -1,0 +1,23 @@
+<h1>Listing setting_sls</h1>
+
+<table>
+  <tr>
+    <th>Num of item per page</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @setting_sls.each do |setting_sl| %>
+  <tr>
+    <td><%= setting_sl.num_of_item_per_page %></td>
+    <td><%= link_to 'Show', setting_sl %></td>
+    <td><%= link_to 'Edit', edit_setting_sl_path(setting_sl) %></td>
+    <td><%= link_to 'Destroy', setting_sl, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Setting sl', new_setting_sl_path %>

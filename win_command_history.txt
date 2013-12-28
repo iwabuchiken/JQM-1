@@ -204,6 +204,17 @@ rails destroy controller D3 main sub1 sub2 log
 rails generate migration AddColumnContentToHistories
 bundle exec rake db:migrate
 
+[28/12/2013 08:39:37]----------------------------
+.explain on
+.tables
+pragma table_info(shopping_item)
+pragma table_info(genres);
+
+#rails generate scaffold Item store_id:integer name:string price:integer genre_id:integer yomi:string mobile_id:integer
+#rails generate scaffold SettingSL num_of_item_per_page:integer
+#bundle exec rake db:migrate
+
+bundle exec rake assets:clean && bundle exec rake assets:precompile
 
 
 aa

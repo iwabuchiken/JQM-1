@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  num_of_item_per_page: 1
+
+two:
+  num_of_item_per_page: 1

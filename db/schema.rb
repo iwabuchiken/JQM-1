@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131224163926) do
+ActiveRecord::Schema.define(:version => 20131227235733) do
 
   create_table "ai_kodakas", :force => true do |t|
     t.text     "line"
@@ -70,6 +70,17 @@ ActiveRecord::Schema.define(:version => 20131224163926) do
     t.text     "content"
   end
 
+  create_table "items", :force => true do |t|
+    t.integer  "store_id"
+    t.string   "name"
+    t.integer  "price"
+    t.integer  "genre_id"
+    t.string   "yomi"
+    t.integer  "mobile_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "key_word_sets", :force => true do |t|
     t.string   "genre"
     t.string   "category"
@@ -102,6 +113,12 @@ ActiveRecord::Schema.define(:version => 20131224163926) do
     t.integer  "category_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "setting_sls", :force => true do |t|
+    t.integer  "num_of_item_per_page"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   create_table "settings", :force => true do |t|
