@@ -1,8 +1,12 @@
 <hr />
 
-<input type="button" value="Show log"   id="show_button" /> |
+<%# REF hidden field // http://railsdoc.com/references/hidden_field -- %>
+<%= hidden_field :app, :name, :value => 'sl' %>
 
-<input type="button" value="Hide log"   id="hide_button" disabled/>
+<!-- <input type="button" value="Show log"   id="show_button" /> | -->
+<input type="button" value="Show log"   id="show_button_generic" /> |
+
+<input type="button" value="Hide log"   id="hide_button_generic" disabled/>
 
 <div class="log_navigation" style="display: none;">
 

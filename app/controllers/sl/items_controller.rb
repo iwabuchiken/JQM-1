@@ -7,7 +7,17 @@ class Sl::ItemsController < ApplicationController
   # GET /items.json
   def index
     @items = Item.all
+    
+    #debug
+        #debug
+    write_log(
+              Const::SL::LOG_PATH_SL,
+              "items_controller#index",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
 
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @items }
@@ -84,4 +94,30 @@ class Sl::ItemsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+    def show_log
+        
+        #REF File.join // http://d.hatena.ne.jp/lurker/20060618/1150604454
+        #target = "doc/mylog/articles/log.log"
+        target = File.join(Const::SL::LOG_PATH_SL, Const::SL::LOG_FILE_NAME)
+        
+        @content = ""
+        
+        if File.exists?(target)
+          
+          contentArray = File.readlines(target).reverse!
+    
+        else
+          
+          contentArray = ['No log data']
+          
+        end
+        
+        respond_to do |format|
+          format.html { render :text => contentArray.join('<br/>') }
+          # format.json { head :no_content }
+        end        
+    end#show_log
+
+
 end

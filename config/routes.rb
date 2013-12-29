@@ -2,6 +2,11 @@ JQM1::Application.routes.draw do
 
   resources :setting_sls, module: 'sl'
 
+  get "/sl/items/show_log"
+  # get "/sl/items/show_log" # => ActiveRecord::RecordNotFound (Couldn't find Item with id=show_log):
+  # =>                          app/controllers/sl/items_controller.rb:30:in `show'
+  # get "/items/show_log" # => ActionController::RoutingError (uninitialized constant ItemsController) 
+  
   resources :items, module: 'sl'
 
   resources :visuals
