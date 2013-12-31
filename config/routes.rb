@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
 
+  resources :eqms
+
   resources :setting_sls, module: 'sl'
 
   get "/sl/items/show_log"

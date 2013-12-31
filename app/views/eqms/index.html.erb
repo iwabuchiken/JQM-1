@@ -1,0 +1,27 @@
+<h1>Listing eqms</h1>
+
+<table>
+  <tr>
+    <th>Main</th>
+    <th>Sub1</th>
+    <th>Sub1</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @eqms.each do |eqm| %>
+  <tr>
+    <td><%= eqm.main %></td>
+    <td><%= eqm.sub1 %></td>
+    <td><%= eqm.sub1 %></td>
+    <td><%= link_to 'Show', eqm %></td>
+    <td><%= link_to 'Edit', edit_eqm_path(eqm) %></td>
+    <td><%= link_to 'Destroy', eqm, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Eqm', new_eqm_path %>

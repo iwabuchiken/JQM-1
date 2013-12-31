@@ -1,63 +1,23 @@
 <table>
-	<tr>
-		<td>
-			1
-		</td>
-		<td>
-			
-			<%= link_to_unless_current \
-							'TwitterApp',
-							:controller => 'twitter_app',
-							:action => 'main',
-							:class => 'link' %>
-							
-		</td>
-	</tr>
-
-	<tr>
-		<td>
-			2
-		</td>
-		<td>
-			
-			<%= link_to_unless_current \
-							'NR4',
-							:controller => 'nr4/articles',
-							:action => 'index',
-							:class => 'link' %>
-							
-		</td>
-	</tr>
-
-	<tr>
-		<td>
-			3
-		</td>
-		<td>
-			
-			<%= link_to_unless_current \
-							'AiKodaka',
-							:controller => 'ai_kodaka/ai_kodakas',
-							:action => 'index',
-							:class => 'link' %>
-							
-		</td>
-	</tr>
-
-	<tr>
-		<td>
-			3
-		</td>
-		<td>
-			
-			<%= link_to_unless_current \
-							'Item',
-							:controller => 'sl/items',
-							:action => 'index',
-							:class => 'link' %>
-							
-		</td>
-	</tr>
-
+	
+	<% @applist.size.times do |i| %>
+	
+		<tr>
+			<td>
+				<%= i + 1 %>
+			</td>
+			<td>
+				
+				<%= link_to_unless_current \
+								@applist[i].name,
+								:controller => @applist[i].cont,
+								:action => @applist[i].action,
+								:class => 'link' %>
+								
+			</td>
+		</tr>
+		
+	
+	<% end %>
 
 </table>

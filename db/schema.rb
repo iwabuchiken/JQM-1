@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131227235733) do
+ActiveRecord::Schema.define(:version => 20131231012639) do
 
   create_table "ai_kodakas", :force => true do |t|
     t.text     "line"
@@ -48,6 +48,13 @@ ActiveRecord::Schema.define(:version => 20131227235733) do
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
     t.integer  "history_pagination_size"
+  end
+
+  create_table "eqms", :force => true do |t|
+    t.string   "main"
+    t.string   "sub1"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "genres", :force => true do |t|
