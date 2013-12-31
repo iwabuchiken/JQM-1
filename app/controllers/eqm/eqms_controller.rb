@@ -1,4 +1,7 @@
-class EqmsController < ApplicationController
+class Eqm::EqmsController < ApplicationController
+    
+    layout 'layouts/eqm/eqm_main'
+    
   # GET /eqms
   # GET /eqms.json
   def index
