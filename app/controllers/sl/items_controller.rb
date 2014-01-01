@@ -8,16 +8,6 @@ class Sl::ItemsController < ApplicationController
   def index
     @items = Item.all
     
-    #debug
-        #debug
-    write_log(
-              Const::SL::LOG_PATH_SL,
-              "items_controller#index",
-              # __FILE__,
-              __FILE__.split("/")[-1],
-              __LINE__.to_s)
-
-    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @items }
@@ -54,6 +44,16 @@ class Sl::ItemsController < ApplicationController
   # POST /items
   # POST /items.json
   def create
+    
+    #debug
+    write_log(
+              Const::SL::LOG_PATH_SL,
+              "items_controller#create(params[:item] => #{params[:item]})",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+
+    
     @item = Item.new(params[:item])
 
     respond_to do |format|
