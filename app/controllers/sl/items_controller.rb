@@ -121,25 +121,55 @@ class Sl::ItemsController < ApplicationController
 
   def new_data_from_device
       
+        #REF app name // http://stackoverflow.com/questions/3539148/how-do-i-access-the-name-of-the-rails-3-application-object Rails.application.class.to_s.split("::").first
+        #REF method name // http://stackoverflow.com/questions/6426598/how-to-get-current-method-in-rails-3 answered Jun 21 '11 at 15:53
+        #REF cont name // http://stackoverflow.com/questions/3757491/can-i-get-the-name-of-the-current-controller-in-the-view answered Sep 21 '10 at 5:27
           #debug
         write_log(
               Const::SL::LOG_PATH_SL,
-              "",
+              "#{Rails.application.class.to_s.split("::").first} 
+                    #{params[:controller]} # #{__method__}",
               # __FILE__,
               __FILE__.split("/")[-1],
               __LINE__.to_s)
 
-        if params['items']
+        if params['item']
         
-            msg = params['items']
+            # msg = "#{params['item']}(#{params['item']['name']})"
+            # msg = params['item']
+            
+            item = Item.new
+            
+            item.name = params['item']['name']
+            
+            if item.save
+                
+                msg = "New item saved => #{params['item']}"
+                
+            else
+                
+                msg = "Saving new item => Failed"
+                
+            end
+            
           
         else
       
-            msg = "params['items'] => null"
+            msg = "params['item'] => null"
 
         end
 
-
+          #debug
+        write_log(
+              Const::SL::LOG_PATH_SL,
+              msg,
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+              
+        render :text => msg
+        # render :text => "DONE"
+        
   end#def _new__1_data_from_device
 
 

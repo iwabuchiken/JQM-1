@@ -10,6 +10,7 @@ JQM1::Application.routes.draw do
   # get "/items/show_log" # => ActionController::RoutingError (uninitialized constant ItemsController) 
   
   #
+  # post "/items/new_data_from_device"
   post "/sl/items/new_data_from_device"
   
   resources :items, module: 'sl'
