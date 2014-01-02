@@ -34,6 +34,26 @@ module Const
       
     end
     
+    module Admin
+        
+        HerokuLocal = {
+            "sl/items" =>
+                {"heroku_url" =>
+                    "items",
+                    # "http://cosmos-jqm-1.herokuapp.com/items?class=link",
+                 "local_url" =>
+                    "items"},
+                    # "http://localhost:3001/items?class=link"},
+            "nr4/articles" =>
+                {"heroku_url" =>
+                    "nr4/articles",
+                    # "http://cosmos-jqm-1.herokuapp.com/nr4/articles?class=link",
+                 "local_url" =>
+                    "nr4/articles"},
+                    # "http://localhost:3001/articles?class=link"},
+        }
+        
+    end
 end
 
 #doc/backup/nr4

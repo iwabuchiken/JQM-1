@@ -119,5 +119,28 @@ class Sl::ItemsController < ApplicationController
         end        
     end#show_log
 
+  def new_data_from_device
+      
+          #debug
+        write_log(
+              Const::SL::LOG_PATH_SL,
+              "",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+
+        if params['items']
+        
+            msg = params['items']
+          
+        else
+      
+            msg = "params['items'] => null"
+
+        end
+
+
+  end#def _new__1_data_from_device
+
 
 end
