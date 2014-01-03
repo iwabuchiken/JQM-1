@@ -140,7 +140,7 @@ private
             #debug
             write_log(
                   Const::SL::LOG_PATH_SL,
-                  "!params['passwd_sl']",
+                  "!params['passwd'](params => #{params.keys}",
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
