@@ -185,9 +185,31 @@ private
                 
                 #item.name = params['item']['name']
                 #item.id = params['item_store_id']
-                item.mobile_id = params['item_mobile_id']
-                item.name = params['item_name']
+                item.mobile_id  = params['item_mobile_id']
                 
+                item.name       = params['item_name']
+                item.store_id   = params['item_store_id']
+                
+                item.price      = params['item_price']
+                item.genre_id   = params['item_genre_id']
+                
+                item.yomi       = params['item_yomi']
+                
+=begin
+            "item_store_id",  "item_name",
+            "item_price",   "item_genre_id",
+            "item_yomi",    "item_mobile_id",
+            
+            t.integer  "store_id"
+            t.string   "name"
+            t.integer  "price"
+            t.integer  "genre_id"
+            t.string   "yomi"
+            t.integer  "mobile_id"
+            t.datetime "created_at", :null => false
+            t.datetime "updated_at", :null => false
+  
+=end
                 if item.save
                     
                     msg = "New item saved => #{item.class.to_s}"
