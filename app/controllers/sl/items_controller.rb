@@ -33,7 +33,7 @@ class Sl::ItemsController < ApplicationController
     
     if res == true
           
-          # redirect_to :controller => 'items', :action => 'index'
+          redirect_to :controller => 'items', :action => 'index'
           
           return
         
@@ -134,13 +134,14 @@ class Sl::ItemsController < ApplicationController
 private
   def _new_data_from_device
         
-        if !params['passwd']
+        if !params['passwd_sl']
+        #if !params['passwd']
         # if !params['passwd_sl']
             
             #debug
             write_log(
                   Const::SL::LOG_PATH_SL,
-                  "!params['passwd'](params => #{params.keys}",
+                  "!params['passwd_sl'](params => #{params.keys}",
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
@@ -150,12 +151,13 @@ private
             
             return false
             
-        else
+        else#if !params['passwd_sl']
             
               #debug
             write_log(
                   Const::SL::LOG_PATH_SL,
-                  "params['passwd'] => " + params['passwd'].to_s,
+                  "params['passwd_sl'] => " + params['passwd_sl'].to_s,
+                  #"params['passwd'] => " + params['passwd'].to_s,
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
@@ -172,14 +174,19 @@ private
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
     
-            if params['item']
+            #if params['item']
+            #if params['item']
             
                 # msg = "#{params['item']}(#{params['item']['name']})"
                 # msg = params['item']
                 
-                item = Item.new
+                item = Item.new()
+                #item = Item.new
                 
-                item.name = params['item']['name']
+                #item.name = params['item']['name']
+                #item.id = params['item_store_id']
+                item.mobile_id = params['item_mobile_id']
+                item.name = params['item_name']
                 
                 if item.save
                     
@@ -192,8 +199,8 @@ private
                 end
                 
               
-            else
-          
+            #else
+=begin
                 msg = "params['item'] => null"
                 
                 #debug
@@ -205,8 +212,8 @@ private
                       __LINE__.to_s)
                 
                 return false
-    
-            end#if params['item']
+=end
+            #end#if params['item']
     
               #debug
             write_log(
@@ -215,7 +222,7 @@ private
                   # __FILE__,
                   __FILE__.split("/")[-1],
                   __LINE__.to_s)
-                  
+=begin
             respond_to do |format|
                 
                 format.json {render json: item}
@@ -223,10 +230,10 @@ private
             end
             # render :text => msg
             # render :text => "DONE"
-            
+=end
             return true
             
-        end#if !params['password_sl']
+        end#if !params['passwd_sl']
         
   end#def _new__1_data_from_device
 

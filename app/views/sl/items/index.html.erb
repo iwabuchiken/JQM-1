@@ -50,10 +50,12 @@
 <%#= form_tag("/items/new_data_from_device") do %> <!-- No route matches [POST] "/items/new_data_from_device" -->
 	<div class="field">
 		
-		Name: <%= text_field :item, :name %><br />
+		Name: <%= text_field :item, :name, :name => 'item_name' %><br />
+		<!-- Name: <%#= text_field :item, :name %><br /> -->
 	</div>
 
-	<%= hidden_field :pass, :sl, :value => 'abc' %>
+	<%= hidden_field :passwd, :sl, :value => 'abc', :name => 'passwd_sl' %>
+	<%#= hidden_field :pass, :sl, :value => 'abc' %>
 	<%#= hidden_field :passwd, :sl, :value => 'abc' %>
 	<div class="field">	
 		<%= submit_tag "Create" %><br />
