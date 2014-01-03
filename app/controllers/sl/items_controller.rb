@@ -131,6 +131,24 @@ class Sl::ItemsController < ApplicationController
         end        
     end#show_log
 
+    def delete_all
+        #REF delete_all http://stackoverflow.com/questions/5322298/deleting-all-records-in-a-database answered Mar 16 '11 at 7:47
+        res = Item.delete_all
+        
+        #debug
+        write_log(
+                  Const::SL::LOG_PATH_SL,
+                  "#{Rails.application.class.to_s.split("::").first} \
+                        #{params[:controller]} # #{__method__} // res => #{res}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        
+        redirect_to items_path, notice: 'Items were all deleted.'
+        
+    end#delete_all
+
 private
   def _new_data_from_device
         

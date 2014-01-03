@@ -1,3 +1,4 @@
+<p id="notice"><%= notice %></p>
 <h1>Listing items</h1>
 
 <table>
@@ -59,4 +60,11 @@
 	</div>
 	
 <% end %><%#= form_tag do %>
+
+<%= link_to 'Delete all',
+			{:action => "delete_all"},
+			:confirm  => 'Are you sure?' %> <!-- <a href="/sl/items/delete_all" data-confirm="Are you sure?"> -->
+			
+<%#= link_to 'Delete all', :action => "delete_all", :confirm  => 'Are you sure?' %> <!-- <a href="/sl/items/delete_all?confirm=Are+you+sure%3F"> -->
+<%#= link_to 'Delete all', items_path, confirm: 'Are you sure?', method: :delete_all %>
 
