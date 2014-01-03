@@ -190,7 +190,8 @@ private
                 
                 if item.save
                     
-                    msg = "New item saved => #{params['item']}"
+                    msg = "New item saved => #{item.class.to_s}"
+                    #msg = "New item saved => #{params['item']}"
                     
                 else
                     
