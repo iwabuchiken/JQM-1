@@ -11,7 +11,9 @@ JQM1::Application.routes.draw do
   
   #
   # post "/items/new_data_from_device"
-  post "/sl/items/new_data_from_device"
+  # post "/sl/items/new_data_from_device"
+  
+  post "/sl/items/new"
   
   resources :items, module: 'sl'
 

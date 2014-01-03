@@ -28,6 +28,18 @@ class Sl::ItemsController < ApplicationController
   # GET /items/new
   # GET /items/new.json
   def new
+    
+    res = _new_data_from_device
+    
+    if res == true
+          
+          # redirect_to :controller => 'items', :action => 'index'
+          
+          return
+        
+    end
+
+    
     @item = Item.new
 
     respond_to do |format|
@@ -119,56 +131,102 @@ class Sl::ItemsController < ApplicationController
         end        
     end#show_log
 
-  def new_data_from_device
-      
-        #REF app name // http://stackoverflow.com/questions/3539148/how-do-i-access-the-name-of-the-rails-3-application-object Rails.application.class.to_s.split("::").first
-        #REF method name // http://stackoverflow.com/questions/6426598/how-to-get-current-method-in-rails-3 answered Jun 21 '11 at 15:53
-        #REF cont name // http://stackoverflow.com/questions/3757491/can-i-get-the-name-of-the-current-controller-in-the-view answered Sep 21 '10 at 5:27
-          #debug
-        write_log(
-              Const::SL::LOG_PATH_SL,
-              "#{Rails.application.class.to_s.split("::").first} 
-                    #{params[:controller]} # #{__method__}",
-              # __FILE__,
-              __FILE__.split("/")[-1],
-              __LINE__.to_s)
-
-        if params['item']
+private
+  def _new_data_from_device
         
-            # msg = "#{params['item']}(#{params['item']['name']})"
-            # msg = params['item']
+        if !params['passwd']
+        # if !params['passwd_sl']
             
-            item = Item.new
+            #debug
+            write_log(
+                  Const::SL::LOG_PATH_SL,
+                  "!params['passwd_sl']",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
             
-            item.name = params['item']['name']
             
-            if item.save
+        # if !params['password_sl']
+            
+            return false
+            
+        else
+            
+              #debug
+            write_log(
+                  Const::SL::LOG_PATH_SL,
+                  "params['passwd'] => " + params['passwd'].to_s,
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+            
+            #REF app name // http://stackoverflow.com/questions/3539148/how-do-i-access-the-name-of-the-rails-3-application-object Rails.application.class.to_s.split("::").first
+            #REF method name // http://stackoverflow.com/questions/6426598/how-to-get-current-method-in-rails-3 answered Jun 21 '11 at 15:53
+            #REF cont name // http://stackoverflow.com/questions/3757491/can-i-get-the-name-of-the-current-controller-in-the-view answered Sep 21 '10 at 5:27
+              #debug
+            write_log(
+                  Const::SL::LOG_PATH_SL,
+                  "#{Rails.application.class.to_s.split("::").first} 
+                        #{params[:controller]} # #{__method__}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+    
+            if params['item']
+            
+                # msg = "#{params['item']}(#{params['item']['name']})"
+                # msg = params['item']
                 
-                msg = "New item saved => #{params['item']}"
+                item = Item.new
                 
+                item.name = params['item']['name']
+                
+                if item.save
+                    
+                    msg = "New item saved => #{params['item']}"
+                    
+                else
+                    
+                    msg = "Saving new item => Failed"
+                    
+                end
+                
+              
             else
+          
+                msg = "params['item'] => null"
                 
-                msg = "Saving new item => Failed"
+                #debug
+                write_log(
+                      Const::SL::LOG_PATH_SL,
+                      msg,
+                      # __FILE__,
+                      __FILE__.split("/")[-1],
+                      __LINE__.to_s)
+                
+                return false
+    
+            end#if params['item']
+    
+              #debug
+            write_log(
+                  Const::SL::LOG_PATH_SL,
+                  msg,
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+                  
+            respond_to do |format|
+                
+                format.json {render json: item}
                 
             end
+            # render :text => msg
+            # render :text => "DONE"
             
-          
-        else
-      
-            msg = "params['item'] => null"
-
-        end
-
-          #debug
-        write_log(
-              Const::SL::LOG_PATH_SL,
-              msg,
-              # __FILE__,
-              __FILE__.split("/")[-1],
-              __LINE__.to_s)
-              
-        render :text => msg
-        # render :text => "DONE"
+            return true
+            
+        end#if !params['password_sl']
         
   end#def _new__1_data_from_device
 
