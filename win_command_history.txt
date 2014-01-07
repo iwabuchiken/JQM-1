@@ -27,6 +27,15 @@ pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1\db && sqlite3 development.sql
 .explain on
 pragma table_info(nr4)
 
+[Push]
+g p origin master && g p heroku master
+g p origin master && g p heroku master && heroku run rake db:migrate
+
+g merge D-4_NR4 && g p origin master && g p heroku master && heroku run rake db:migrate
+g merge D-4_NR4 && g p origin master && g p heroku master
+g merge D-4_NR4 && g p origin master && g p heroku master && heroku open
+g co master && g merge D-4_NR4 && g p origin master && g p heroku master && heroku open
+
 [Git]
 git init && g a . && gitk
 g a . && gitk
@@ -39,15 +48,6 @@ g l --grep="\bm\b"
 #REF http://git-scm.com/book/ja/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%BF%E3%82%B0
 git tag -am "SL setup done" sl_setup_done
 git push origin sl_setup_done
-
-[Push]
-g merge D-4_NR4 && g p origin master && g p heroku master && heroku run rake db:migrate
-g merge D-4_NR4 && g p origin master && g p heroku master
-g merge D-4_NR4 && g p origin master && g p heroku master && heroku open
-g co master && g merge D-4_NR4 && g p origin master && g p heroku master && heroku open
-
-g p origin master && g p heroku master && heroku run rake db:migrate
-g p origin master && g p heroku master
 
 
 
