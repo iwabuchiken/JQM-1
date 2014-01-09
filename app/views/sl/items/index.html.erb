@@ -1,33 +1,24 @@
 <p id="notice"><%= notice %></p>
 <h1>Listing items</h1>
 
-<table>
-  <tr>
-    <th>Store</th>
-    <th>Name</th>
-    <th>Price</th>
-    <th>Genre</th>
-    <th>Yomi</th>
-    <th>Mobile</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<a name="top"></a>
+<a href="#bottom">To bottom</a>
 
-<% @items.each do |item| %>
-  <tr>
-    <td><%= item.store_id %></td>
-    <td><%= item.name %></td>
-    <td><%= item.price %></td>
-    <td><%= item.genre_id %></td>
-    <td><%= item.yomi %></td>
-    <td><%= item.mobile_id %></td>
-    <td><%= link_to 'Show', item %></td>
-    <td><%= link_to 'Edit', edit_item_path(item) %></td>
-    <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+<table>
+	
+	<%= render 'sl/items/items_index/index_th'%>
+	
+	<%= render 'sl/items/items_index/index_td'%>
+
 </table>
+
+<div>
+	
+	<a name="bottom"></a>
+	<a href="#top">To top</a>
+	
+</div>
+
 
 <br />
 

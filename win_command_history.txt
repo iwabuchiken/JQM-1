@@ -226,6 +226,10 @@ rails generate scaffold EQM main:string sub1:string sub1:string
 bundle exec rake db:migrate
 
 
+[09/01/2014 07:59:17]----------------------------
+rails generate migration AddColumnsMobileCreatedAtToItem
+bundle exec rake db:migrate
+
 aa
 
 ============RESOURCE============

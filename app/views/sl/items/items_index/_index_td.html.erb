@@ -1,0 +1,17 @@
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.id %></td>
+    <td><%= item.store_id %></td>
+    <td><%= item.name %></td>
+    <td><%= item.price %></td>
+    <td><%= item.genre_id %></td>
+    <td><%= item.yomi %></td>
+    <td><%= item.mobile_id %></td>
+    <td><%= item.mobile_created_at %></td>
+    <td><%= item.mobile_updated_at %></td>
+    <td><%= item.mobile_posted_at %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
