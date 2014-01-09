@@ -213,6 +213,10 @@ private
                 
                 item.yomi       = params['item_yomi']
                 
+                item.mobile_created_at  = params['item_mobile_created_at']
+                item.mobile_updated_at  = params['item_mobile_updated_at']
+                item.mobile_posted_at   = params['item_mobile_posted_at']
+                
 =begin
             "item_store_id",  "item_name",
             "item_price",   "item_genre_id",

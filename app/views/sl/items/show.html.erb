@@ -1,35 +1,158 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Store:</b>
-  <%= @item.store_id %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%= @item.name %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @item.price %>
-</p>
-
-<p>
-  <b>Genre:</b>
-  <%= @item.genre_id %>
-</p>
-
-<p>
-  <b>Yomi:</b>
-  <%= @item.yomi %>
-</p>
-
-<p>
-  <b>Mobile:</b>
-  <%= @item.mobile_id %>
-</p>
-
+<table>
+	
+	<tr>
+	    	<td>
+	    		
+		    	ID
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.id %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Store
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.store_id %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Name
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.name %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Price
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.price %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Genre
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.genre_id %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Yomi
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.yomi %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Mobile ID
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.mobile_id %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Mobile created
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.mobile_created_at %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Mobile updated
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.mobile_updated_at %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+	<tr>
+	    	<td>
+	    		
+		    	Mobile posted
+		    	
+	    	</td>
+	    	
+	    	<td>
+	    		
+		    	<%= @item.mobile_posted_at %>
+		    	
+	    	</td>
+	    
+	</tr>
+    
+</table>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>

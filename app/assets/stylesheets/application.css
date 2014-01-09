@@ -19,6 +19,9 @@ table, th, td {
 	border: 2px solid #1e90ff;	/* dodgerblue http://www.colordic.org/*/
 }
 
+th {
+	background: #E3DD34;
+}
 /*.category_label {*/
 div.category_label {
 	
