@@ -10,9 +10,12 @@ class AddColumnsMobileCreatedAtToItem < ActiveRecord::Migration
   
   def self.down
   
-    remove_column :items, :mobile_created_at, :integer
-    remove_column :items, :mobile_updated_at, :integer
-    remove_column :items, :mobile_posted_at, :integer
+    remove_column :items, :mobile_created_at
+    remove_column :items, :mobile_updated_at
+    remove_column :items, :mobile_posted_at
+    # remove_column :items, :mobile_created_at, :integer
+    # remove_column :items, :mobile_updated_at, :integer
+    # remove_column :items, :mobile_posted_at, :integer
     
   end
 end
