@@ -244,7 +244,7 @@ heroku run rake db:version
 
 bundle exec rake db:migrate
 
-
+heroku run rake db:migrate
 
 
 aa

@@ -8,6 +8,17 @@ class Sl::ItemsController < ApplicationController
   def index
     @items = Item.all
     
+    
+    #debug
+    #debug
+    write_log(
+              Const::SL::LOG_PATH_SL,
+              
+              @items[0].methods.sort,
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)    
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @items }
