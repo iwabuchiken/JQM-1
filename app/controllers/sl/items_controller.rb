@@ -13,7 +13,8 @@ class Sl::ItemsController < ApplicationController
     #debug
     write_log(
               Const::SL::LOG_PATH_SL,
-              "updated at => #{@items[0].mobile_updated_at}",
+              "created at => #{@items[0].mobile_created_at}",
+              # "updated at => #{@items[0].mobile_updated_at}",
               # @items[0].methods.sort,
               # __FILE__,
               __FILE__.split("/")[-1],
