@@ -6,7 +6,8 @@ class Sl::ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    @items = Item.find(:all, :order => 'id ASC')
+    # @items = Item.all
     
     
     #debug
