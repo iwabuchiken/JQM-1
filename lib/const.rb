@@ -35,7 +35,7 @@ module Const
         
         PASSWD_SL_NewItem   = "sl_NewItem"
         
-        PASSWD_SL_PurHist   = "sl_PurHistory"
+        PASSWD_SL_PurHist   = "sl_PurHist"
         
     end
     
