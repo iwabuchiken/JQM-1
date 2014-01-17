@@ -256,6 +256,13 @@ private
             
         end
 
+        write_log(
+                  Const::SL::LOG_PATH_SL,
+                  msg,
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+
         return msg
         
     end#def _new_data_from_device_PurHist
