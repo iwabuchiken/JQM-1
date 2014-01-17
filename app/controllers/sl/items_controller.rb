@@ -34,6 +34,14 @@ class Sl::ItemsController < ApplicationController
     
     if res == true
           
+          #debug
+          write_log(
+                Const::SL::LOG_PATH_SL,
+                "res => true",
+                # __FILE__,
+                __FILE__.split("/")[-1],
+                __LINE__.to_s)
+          
           redirect_to :controller => 'items', :action => 'index'
           
           return
