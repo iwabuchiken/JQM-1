@@ -12,6 +12,8 @@ pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk && rails s --port 300
 # Server / No git
 a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && rails s --port 3001
 
+# Gitk / No server
+a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
 # CakePHP/NR4
 /rails_apps/nr4/cakephp-2.3.10

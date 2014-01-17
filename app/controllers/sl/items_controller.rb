@@ -230,6 +230,13 @@ private
         
         hist.pur_date   = params['sl_PurHistory_Time']
         
+        #debug
+        write_log(
+                  Const::SL::LOG_PATH_SL,
+                  "hist => #{hist}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)        
         
         if hist.save
             
