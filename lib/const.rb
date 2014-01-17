@@ -31,7 +31,12 @@ module Const
     
         LOG_FILE_NAME = "log.log"
       
-      
+        PASSWD_SL_Key   = "passwd_sl"
+        
+        PASSWD_SL_NewItem   = "sl_NewItem"
+        
+        PASSWD_SL_PurHist   = "sl_PurHist"
+        
     end
     
     module Admin
