@@ -1,25 +1,11 @@
 <h1>Listing pur_hists</h1>
 
 <table>
-  <tr>
-    <th>Item ids</th>
-    <th>Pur date</th>
-    <th>Store</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @pur_hists.each do |pur_hist| %>
-  <tr>
-    <td><%= pur_hist.item_ids %></td>
-    <td><%= pur_hist.pur_date %></td>
-    <td><%= pur_hist.store_id %></td>
-    <td><%= link_to 'Show', pur_hist %></td>
-    <td><%= link_to 'Edit', edit_pur_hist_path(pur_hist) %></td>
-    <td><%= link_to 'Destroy', pur_hist, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+	
+  <%= render 'sl/pur_hists/pur_hists_index/index_th'%>
+  
+  <%= render 'sl/pur_hists/pur_hists_index/index_td'%>
+  
 </table>
 
 <br />

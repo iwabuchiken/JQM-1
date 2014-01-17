@@ -24,14 +24,17 @@ C:\WORKS\WS\WS_Android_20130929_122122\JQM-1\doc\backup\nr4
 # gitk
 pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1 && gitk
 
-[sqlite3]
-pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1\db && sqlite3 development.sqlite3
-.explain on
-pragma table_info(nr4)
+
+
 
 [Push]
 g p origin master && g p heroku master
 g p origin master && g p heroku master && heroku run rake db:migrate
+
+[sqlite3]
+pushd C:\WORKS\WS\WS_Android_20130929_122122\JQM-1\db && sqlite3 development.sqlite3
+.explain on
+pragma table_info(nr4)
 
 g merge D-4_NR4 && g p origin master && g p heroku master && heroku run rake db:migrate
 g merge D-4_NR4 && g p origin master && g p heroku master

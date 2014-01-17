@@ -44,6 +44,46 @@
 <% end %><%#= form_tag do %>
 
 <%= form_tag("/sl/items/new") do %>
+	<div class="field">
+		
+		Name: <%= text_field :item, :name %><br />
+	</div>
+
+	<div>
+		<%= hidden_field :passwd, :sl,
+					:name => 'passwd_sl',
+					:value => Const::SL::PASSWD_SL_PurHist
+					%>
+	</div>
+	
+	<div>
+		<%= hidden_field :passwd, :sl,
+					:name => 'sl_BoughtItemIds',
+					:value => "12,1 3,1 140,1"
+					%>
+	</div>
+	
+	<div>
+		<%= hidden_field :passwd, :sl,
+					:name => 'sl_PurHistory_Time',
+					:value => get_time_label_now_3(2)
+					%>
+	</div>
+	
+	<div>
+		<%= hidden_field :passwd, :sl,
+					:name => 'sl_PurHistory_Store',
+					:value => 2
+					%>
+	</div>
+
+	<div class="field">	
+		<%= submit_tag "Create(/sl/items/new)" %><br />
+	</div>
+	
+<% end %><%#= form_tag do %>
+
+<%= form_tag("/sl/items/new") do %>
 <%#= form_tag("/sl/items/new_data_from_device") do %>
 <%#= form_tag("/items/new_data_from_device") do %> <!-- No route matches [POST] "/items/new_data_from_device" -->
 	<div class="field">

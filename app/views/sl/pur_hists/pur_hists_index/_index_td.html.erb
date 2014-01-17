@@ -1,0 +1,19 @@
+
+<% @pur_hists.each do |pur_hist| %>
+  <tr>
+    <td class="col_id"><%= pur_hist.id %></td>
+    <% if pur_hist.item_ids != nil %>
+    
+    	<td><%= link_to pur_hist.item_ids, pur_hist %></td>
+    	
+	<% else %>
+	
+		<td><%= link_to 'Show', pur_hist %></td>
+		
+	<% end %>
+    <td><%= pur_hist.pur_date %></td>
+    <td class="col_id"><%= pur_hist.store_id %></td>
+    <td><%= link_to 'Edit', edit_pur_hist_path(pur_hist) %></td>
+    <td><%= link_to 'Destroy', pur_hist, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>

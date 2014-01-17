@@ -238,6 +238,8 @@ private
         
         hist.pur_date   = params['sl_PurHistory_Time']
         
+        hist.store_id   = params['sl_PurHistory_Store']
+        
         #debug
         write_log(
                   Const::SL::LOG_PATH_SL,
@@ -248,7 +250,8 @@ private
         
         if hist.save
             
-            msg = "New PurHist saved => #{item.class.to_s}"
+            msg = "New PurHist saved => #{hist.class.to_s}"
+            # msg = "New PurHist saved => #{item.class.to_s}"
             
         else
             

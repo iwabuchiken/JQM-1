@@ -22,6 +22,28 @@ def get_time_label_now_2()
   
 end#def get_time_label_now()
 
+def get_time_label_now_3(type)
+    
+    time_label = ""
+    
+    if type == 1
+        
+        time_label = Time.now.strftime("%Y%m%d_%H%M%S")
+    
+    elsif type == 2
+        
+        time_label = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+        
+    else
+        
+    end
+    
+    return time_label
+    
+  # return Time.now.strftime("%Y%m%d_%H%M%S")
+  
+end#def get_time_label_now()
+
 
 def write_log(dpath, text, file, line)
     
