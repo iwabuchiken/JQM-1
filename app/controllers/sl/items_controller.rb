@@ -223,30 +223,21 @@ private
 
     def _new_data_from_device_PurHist
         
-        item = Item.new()
+        hist = PurHist.new()
         #item = Item.new
         
-        item.mobile_id  = params['item_mobile_id']
+        hist.item_ids   = params['sl_BoughtItemIds']
         
-        item.name       = params['item_name']
-        item.store_id   = params['item_store_id']
+        hist.pur_date   = params['sl_PurHistory_Time']
         
-        item.price      = params['item_price']
-        item.genre_id   = params['item_genre_id']
         
-        item.yomi       = params['item_yomi']
-        
-        item.mobile_created_at  = params['item_mobile_created_at']
-        item.mobile_updated_at  = params['item_mobile_updated_at']
-        item.mobile_posted_at   = params['item_mobile_posted_at']
-        
-        if item.save
+        if hist.save
             
-            msg = "New item saved => #{item.class.to_s}"
+            msg = "New PurHist saved => #{item.class.to_s}"
             
         else
             
-            msg = "Saving new item => Failed"
+            msg = "Saving new PurHist => Failed"
             
         end
 
