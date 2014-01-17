@@ -225,6 +225,10 @@ bundle exec rake assets:clean && bundle exec rake assets:precompile
 rails generate scaffold EQM main:string sub1:string sub1:string
 bundle exec rake db:migrate
 
+[17/01/2014 09:48:01]----------------------------
+rails generate scaffold PurHist item_ids:text pur_date:string store_id:integer
+bundle exec rake db:migrate
+
 
 aa
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131231012639) do
+ActiveRecord::Schema.define(:version => 20140117004902) do
 
   create_table "ai_kodakas", :force => true do |t|
     t.text     "line"
@@ -84,8 +84,11 @@ ActiveRecord::Schema.define(:version => 20131231012639) do
     t.integer  "genre_id"
     t.string   "yomi"
     t.integer  "mobile_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.string   "mobile_created_at"
+    t.string   "mobile_updated_at"
+    t.string   "mobile_posted_at"
   end
 
   create_table "key_word_sets", :force => true do |t|
@@ -120,6 +123,14 @@ ActiveRecord::Schema.define(:version => 20131231012639) do
     t.integer  "category_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "pur_hists", :force => true do |t|
+    t.text     "item_ids"
+    t.string   "pur_date"
+    t.integer  "store_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "setting_sls", :force => true do |t|

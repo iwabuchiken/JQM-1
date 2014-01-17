@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
 
+  resources :pur_hists, module: 'sl'
+
   resources :eqms, module: 'eqm'
 
   resources :setting_sls, module: 'sl'
