@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140108235357) do
+ActiveRecord::Schema.define(:version => 20140117004902) do
 
   create_table "ai_kodakas", :force => true do |t|
     t.text     "line"
@@ -123,6 +123,14 @@ ActiveRecord::Schema.define(:version => 20140108235357) do
     t.integer  "category_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "pur_hists", :force => true do |t|
+    t.text     "item_ids"
+    t.string   "pur_date"
+    t.integer  "store_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "setting_sls", :force => true do |t|

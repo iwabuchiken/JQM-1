@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item ids:</b>
+  <%= @pur_hist.item_ids %>
+</p>
+
+<p>
+  <b>Pur date:</b>
+  <%= @pur_hist.pur_date %>
+</p>
+
+<p>
+  <b>Store:</b>
+  <%= @pur_hist.store_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_pur_hist_path(@pur_hist) %> |
+<%= link_to 'Back', pur_hists_path %>

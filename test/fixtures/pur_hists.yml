@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  item_ids: MyText
+  pur_date: MyString
+  store_id: 1
+
+two:
+  item_ids: MyText
+  pur_date: MyString
+  store_id: 1

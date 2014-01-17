@@ -1,0 +1,2 @@
+module PurHistsHelper
+end

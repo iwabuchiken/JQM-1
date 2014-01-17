@@ -1,0 +1,29 @@
+<%= form_for(@pur_hist) do |f| %>
+  <% if @pur_hist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pur_hist.errors.count, "error") %> prohibited this pur_hist from being saved:</h2>
+
+      <ul>
+      <% @pur_hist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item_ids %><br />
+    <%= f.text_area :item_ids %>
+  </div>
+  <div class="field">
+    <%= f.label :pur_date %><br />
+    <%= f.text_field :pur_date %>
+  </div>
+  <div class="field">
+    <%= f.label :store_id %><br />
+    <%= f.number_field :store_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
