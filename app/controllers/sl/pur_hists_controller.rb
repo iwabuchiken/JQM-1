@@ -8,12 +8,73 @@ class Sl::PurHistsController < ApplicationController
   def index
     @pur_hists = PurHist.all
 
+    if @pur_hists.size < 1
+        
+        @hist_sets = []
+        
+    else
+        
+        @hist_sets = _index_Build_hist_sets
+        
+    end
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pur_hists }
     end
   end
-
+    #================================
+    # => HistSet
+    #   => attr_accessor :history, :items
+    #================================
+    def _index_Build_hist_sets
+        
+        hist_sets = []
+    
+        @pur_hists.each_with_index do |hist, i|
+            
+            hist_set = HistSet.new()
+            
+            if hist.item_ids == nil
+                
+                next
+                
+            end
+            
+            item_ids = hist.item_ids.split(" ")
+            
+            items = {}
+            
+            item_ids.each_with_index do |elem, j|
+                
+                id_num = elem.split(",")[0].to_i
+                
+                item = Item.first(:conditions => ["id = ?", id_num])
+                
+                if item == nil
+                    
+                    next
+                  
+                end
+                
+                items[item] = {"num" => elem.split(",")[1].to_i}
+                # {<Item> => {"num" => 1}, <Item> => {"num" => 2}, ...}
+                # items << item
+                
+            end#item_ids.each_with_index do |num, j|
+            
+            hist_set.items = items
+            
+            hist_set.history = hist
+            
+            hist_sets << hist_set
+            
+        end#@pur_hists.each_with_index do |hist, i|
+        
+        return hist_sets
+        
+    end#def _index_Build_hist_sets
+    
   # GET /pur_hists/1
   # GET /pur_hists/1.json
   def show
@@ -84,4 +145,12 @@ class Sl::PurHistsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+    class HistSet
+        attr_accessor :history, :items
+        
+        @history
+        
+        @items
+    end
 end

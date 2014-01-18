@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+names   = ["aaa", "bbb", "ccc"]
+stores  = [2,1,2]
+
+names.size.times do |i|
+    
+    Item.create(name: names[i], store_id: stores[i])
+    
+end

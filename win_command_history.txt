@@ -54,7 +54,8 @@ g l --grep="\bm\b"
 git tag -am "SL setup done" sl_setup_done
 git push origin sl_setup_done
 
-
+[rake]
+bundle exec rake db:seed
 
 [Set up 2013/05/17 12:23:23]----------------------------
 bundle install
