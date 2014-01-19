@@ -50,7 +50,8 @@ class Sl::PurHistsController < ApplicationController
                 
                 id_num = elem.split(",")[0].to_i
                 
-                item = Item.first(:conditions => ["id = ?", id_num])
+                item = Item.first(:conditions => ["mobile_id = ?", id_num])
+                # item = Item.first(:conditions => ["id = ?", id_num])
                 
                 if item == nil
                     
