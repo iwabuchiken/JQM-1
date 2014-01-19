@@ -1,8 +1,92 @@
 
 <% @hist_sets.each do |hist_set| %>
+	<% hist = hist_set.history %>
+	
   <tr>
   	
-    <td class="col_id"><%= hist_set.history.id %></td>
+    <td class="col_id" style="background-color: yellow">
+    	
+    	<%= hist.id %>
+    	
+    </td>
+    
+    <td class="col_id"><%= hist.item_ids %></td>
+    <td class="col_id"><%= hist.pur_date %></td>
+    <td class="col_id"><%= hist.store_id %></td>
+    
+    <td>
+    	<!-- <button
+    			style="font-size: 15px"
+    			onclick="toggle_visibility(<%= hist.id %>);"> -->
+    	<button
+    			style="font-size: 15px"
+    			onclick="show_items(<%= hist.id %>);">
+    			
+    		Show items
+    		
+		</button>
+    </td>
+    
+    <td>
+    	<!-- <button style="font-size: 15px" onclick='alert("YES");'> -->
+    	<button
+	    		style="font-size: 15px"
+	    		onclick="hide_items(<%= hist.id %>);">
+    		
+    		Hide items
+    		
+		</button>
+    </td>
     
   </tr>
+  
+	<% items = hist_set.items %>
+	
+  	<% if items == nil  or items.size < 1 %>
+	  	
+		<tr>
+	  		<td colspan="4" class="col_id">
+	  			
+		  		No items data
+		  		
+	  		</td>
+	  	</tr>
+	  	
+  	<% else %>
+		
+		<div id="item_hist_id_<%= hist.id.to_s %>" style="display:inline">
+			
+			<% items.keys.each_with_index do |item, i| %>
+		
+				<tr>
+					<td>
+						
+					</td>
+					
+					<td>
+						<%= (i + 1).to_s %>
+					</td>
+			  		
+			  		<td>
+			  			<%= item.name %>
+			  	
+			  		<%#= items.size.to_s %>
+			  		
+				  	</td>
+			  		<td>
+			  		
+			  			<%= item.store_id %>
+			  			
+				  	</td>
+				</tr>
+			
+			<% end %><%# items.keys.each_with_index do |item, i| %>
+		
+		</div>
+		
+	  	
+		
+	<% end %><%# if items == nil %>
+	
+  	
 <% end %>

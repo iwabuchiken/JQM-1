@@ -1,7 +1,8 @@
 class Sl::PurHistsController < ApplicationController
   
   # layout 'layouts/sl/sl_pur_hist'
-  layout 'layouts/sl/sl_main'
+  layout 'layouts/sl/sl_pur_hist_main'
+  # layout 'layouts/sl/sl_main'
   
   # GET /pur_hists
   # GET /pur_hists.json
