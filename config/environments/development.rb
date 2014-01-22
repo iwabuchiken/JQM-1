@@ -38,5 +38,6 @@ JQM1::Application.configure do
     #REF https://github.com/teohm/require_reloader
     RequireReloader.watch :utils2  
     RequireReloader.watch :const  
+    RequireReloader.watch :nlp  
 
 end

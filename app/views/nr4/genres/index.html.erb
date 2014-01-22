@@ -26,4 +26,17 @@
 
 <%= link_to 'New Genre', new_genre_path %>
 
+<hr />
 
+message => <%= @message %>
+<br />
+
+<% if @history != nil %>
+
+	Content => <%= @history.content %>
+	
+<% else %>
+
+	Content => nil
+
+<% end %>
