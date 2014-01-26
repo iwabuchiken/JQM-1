@@ -1,0 +1,31 @@
+<h1>Listing natulangs</h1>
+
+<table>
+  <tr>
+    <th>Kanji</th>
+    <th>Hira</th>
+    <th>Kata</th>
+    <th>Misc</th>
+    <th>History</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @natulangs.each do |natulang| %>
+  <tr>
+    <td><%= natulang.kanji %></td>
+    <td><%= natulang.hira %></td>
+    <td><%= natulang.kata %></td>
+    <td><%= natulang.misc %></td>
+    <td><%= natulang.history_id %></td>
+    <td><%= link_to 'Show', natulang %></td>
+    <td><%= link_to 'Edit', edit_natulang_path(natulang) %></td>
+    <td><%= link_to 'Destroy', natulang, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Natulang', new_natulang_path %>

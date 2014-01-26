@@ -1,0 +1,33 @@
+<%= form_for(@nlp) do |f| %>
+  <% if @nlp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nlp.errors.count, "error") %> prohibited this nlp from being saved:</h2>
+
+      <ul>
+      <% @nlp.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :kanji %><br />
+    <%= f.text_area :kanji %>
+  </div>
+  <div class="field">
+    <%= f.label :hira %><br />
+    <%= f.text_area :hira %>
+  </div>
+  <div class="field">
+    <%= f.label :kata %><br />
+    <%= f.text_area :kata %>
+  </div>
+  <div class="field">
+    <%= f.label :misc %><br />
+    <%= f.text_area :misc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

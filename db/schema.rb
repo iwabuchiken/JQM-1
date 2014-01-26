@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140117004902) do
+ActiveRecord::Schema.define(:version => 20140122071618) do
+
+  create_table "abcs", :force => true do |t|
+    t.text     "kanji"
+    t.text     "hira"
+    t.text     "kata"
+    t.text     "misc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "ai_kodakas", :force => true do |t|
     t.text     "line"
@@ -105,6 +114,25 @@ ActiveRecord::Schema.define(:version => 20140117004902) do
     t.integer  "category_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "natulangs", :force => true do |t|
+    t.text     "kanji"
+    t.text     "hira"
+    t.text     "kata"
+    t.text     "misc"
+    t.integer  "history_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "nlps", :force => true do |t|
+    t.text     "kanji"
+    t.text     "hira"
+    t.text     "kata"
+    t.text     "misc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "nr4_admin_nr4s", :force => true do |t|

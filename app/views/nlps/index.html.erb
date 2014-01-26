@@ -1,0 +1,29 @@
+<h1>Listing nlps</h1>
+
+<table>
+  <tr>
+    <th>Kanji</th>
+    <th>Hira</th>
+    <th>Kata</th>
+    <th>Misc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nlps.each do |nlp| %>
+  <tr>
+    <td><%= nlp.kanji %></td>
+    <td><%= nlp.hira %></td>
+    <td><%= nlp.kata %></td>
+    <td><%= nlp.misc %></td>
+    <td><%= link_to 'Show', nlp %></td>
+    <td><%= link_to 'Edit', edit_nlp_path(nlp) %></td>
+    <td><%= link_to 'Destroy', nlp, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nlp', new_nlp_path %>

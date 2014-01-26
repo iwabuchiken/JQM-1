@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Kanji:</b>
+  <%= @nlp.kanji %>
+</p>
+
+<p>
+  <b>Hira:</b>
+  <%= @nlp.hira %>
+</p>
+
+<p>
+  <b>Kata:</b>
+  <%= @nlp.kata %>
+</p>
+
+<p>
+  <b>Misc:</b>
+  <%= @nlp.misc %>
+</p>
+
+
+<%= link_to 'Edit', edit_nlp_path(@nlp) %> |
+<%= link_to 'Back', nlps_path %>

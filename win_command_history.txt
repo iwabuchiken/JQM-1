@@ -262,9 +262,19 @@ rails generate controller NLP main sub1 sub2
 
 rails destroy controller NLP main sub1 sub2
 
-rails generate scaffold Nlp kanji:text hira:text kata:text misc:text
+rails generate scaffold NLP kanji:text hira:text kata:text misc:text
 
 rails destroy scaffold NLP
+
+rails generate scaffold Nlp kanji:text hira:text kata:text misc:text
+
+rails generate scaffold ABC kanji:text hira:text kata:text misc:text
+rails destroy scaffold ABC kanji:text hira:text kata:text misc:text
+
+rails generate scaffold Natulang kanji:text hira:text kata:text misc:text history_id:integer
+
+bundle exec rake db:migrate
+
 
 aa
 

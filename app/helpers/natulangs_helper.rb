@@ -1,0 +1,2 @@
+module NatulangsHelper
+end

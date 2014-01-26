@@ -1,0 +1,37 @@
+<%= form_for(@natulang) do |f| %>
+  <% if @natulang.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@natulang.errors.count, "error") %> prohibited this natulang from being saved:</h2>
+
+      <ul>
+      <% @natulang.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :kanji %><br />
+    <%= f.text_area :kanji %>
+  </div>
+  <div class="field">
+    <%= f.label :hira %><br />
+    <%= f.text_area :hira %>
+  </div>
+  <div class="field">
+    <%= f.label :kata %><br />
+    <%= f.text_area :kata %>
+  </div>
+  <div class="field">
+    <%= f.label :misc %><br />
+    <%= f.text_area :misc %>
+  </div>
+  <div class="field">
+    <%= f.label :history_id %><br />
+    <%= f.number_field :history_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

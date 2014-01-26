@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  kanji: MyText
+  hira: MyText
+  kata: MyText
+  misc: MyText
+  history_id: 1
+
+two:
+  kanji: MyText
+  hira: MyText
+  kata: MyText
+  misc: MyText
+  history_id: 1

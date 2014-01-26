@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Kanji:</b>
+  <%= @natulang.kanji %>
+</p>
+
+<p>
+  <b>Hira:</b>
+  <%= @natulang.hira %>
+</p>
+
+<p>
+  <b>Kata:</b>
+  <%= @natulang.kata %>
+</p>
+
+<p>
+  <b>Misc:</b>
+  <%= @natulang.misc %>
+</p>
+
+<p>
+  <b>History:</b>
+  <%= @natulang.history_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_natulang_path(@natulang) %> |
+<%= link_to 'Back', natulangs_path %>
