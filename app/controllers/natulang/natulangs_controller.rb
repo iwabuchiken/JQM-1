@@ -1,4 +1,7 @@
-class NatulangsController < ApplicationController
+class Natulang::NatulangsController < ApplicationController
+    
+    layout 'layouts/natulang/natulang_main'
+    
   # GET /natulangs
   # GET /natulangs.json
   def index

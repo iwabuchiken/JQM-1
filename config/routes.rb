@@ -1,6 +1,6 @@
 JQM1::Application.routes.draw do
 
-  resources :natulangs
+  resources :natulangs, module: 'natulang'
 
   resources :nlps
 

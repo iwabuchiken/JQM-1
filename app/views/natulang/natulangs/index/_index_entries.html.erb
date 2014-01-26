@@ -1,0 +1,11 @@
+<% @natulangs.each do |natulang| %>
+  <tr>
+    <td><%= link_to natulang.id, natulang %></td>
+    <td><%= natulang.kanji %></td>
+    <td><%= natulang.hira %></td>
+    <td><%= natulang.kata %></td>
+    <td><%= natulang.misc %></td>
+    <td><%= natulang.history_id %></td>
+    <td><%= link_to 'Destroy', natulang, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
