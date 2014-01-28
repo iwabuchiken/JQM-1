@@ -1,3 +1,6 @@
+#encoding: utf-8
+# require 'moji'
+
 class Natulang::NatulangsController < ApplicationController
     
     layout 'layouts/natulang/natulang_main'
@@ -8,6 +11,8 @@ class Natulang::NatulangsController < ApplicationController
     @natulangs = Natulang.all
 
     @text = History.last.content
+
+    @msg = Moji.type("漢")
 
     respond_to do |format|
       format.html # index.html.erb

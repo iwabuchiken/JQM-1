@@ -45,6 +45,10 @@ gem 'will_paginate'
 
 gem 'rubyzip', '0.9.9'
 
+#REF http://gimite.net/gimite/rubymess/moji.html
+#REF referred in https://twitter.com/sky_y/status/126222100875845633
+gem 'moji'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
