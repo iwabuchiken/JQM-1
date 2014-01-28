@@ -7,6 +7,8 @@ class Natulang::NatulangsController < ApplicationController
   def index
     @natulangs = Natulang.all
 
+    @text = History.last.content
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @natulangs }
