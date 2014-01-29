@@ -56,6 +56,13 @@ module Const
                  "local_url" =>
                     "nr4/articles"},
                     # "http://localhost:3001/articles?class=link"},
+            "natulang/natulangs" =>
+                {"heroku_url" =>
+                    "natulangs",
+                    # "http://cosmos-jqm-1.herokuapp.com/nr4/articles?class=link",
+                 "local_url" =>
+                    "natulangs"},
+                    # "http://localhost:3001/articles?class=link"},
         }
         
     end

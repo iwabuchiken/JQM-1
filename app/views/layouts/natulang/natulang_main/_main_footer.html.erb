@@ -1,0 +1,47 @@
+<hr />
+
+<% if params[:controller]
+
+	if params[:controller] and \
+		Const::Admin::HerokuLocal.keys.include?(params[:controller])
+	# if params[:controller] == "sl/items"
+		
+		# heroku_url = "http://cosmos-jqm-1.herokuapp.com/items?class=link"
+		heroku_url = 
+			Const::Admin::HerokuLocal[params[:controller]]["heroku_url"]
+		local_url =
+			Const::Admin::HerokuLocal[params[:controller]]["local_url"]
+		# local_url = "http://localhost:3001/items?class=link"
+	
+	else
+		
+		heroku_url = ""
+		local_url = ""
+		# heroku_url = "http://cosmos-jqm-1.herokuapp.com"
+		# local_url = "http://localhost:3001"
+	
+	end
+%>
+
+<% else %>
+	
+	site_url = "http://cosmos-jqm-1.herokuapp.com/nr4/articles?class=link"
+
+<% end %>
+
+	<%= link_to_unless_current \
+					'Heroku site',
+					# heroku_url,
+					"http://cosmos-jqm-1.herokuapp.com/#{heroku_url}?class=link",
+					# "http://cosmos-jqm-1.herokuapp.com/nr4/articles?class=link",
+					target: "_blank"
+					%>&nbsp;|&nbsp;
+					
+	<%= link_to_unless_current \
+					'Local site',
+					# local_url,
+					# 'http://localhost:3001/nr4/articles?class=link',
+					"http://localhost:3001/#{local_url}?class=link",
+					target: "_blank"
+					%>&nbsp;|&nbsp;
+				
