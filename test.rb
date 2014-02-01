@@ -91,6 +91,64 @@ module V_1_8_1_1
         
     end
 
+    def cut_morph(text)
+                morphs = []
+        
+        if text == nil or text.length < 1
+            
+            return morphs
+            
+        end
+        
+        # Setup
+        len = text.length
+        a_kanji = []; a_hira = []
+        
+        i = 0
+        cur_char    = text[i]
+        next_char   = text[i+1]
+        
+        token       = cur_char
+        
+        
+        while (i < (len - 1)) do
+            
+            t1      = Moji.type(cur_char)
+            t2      = Moji.type(next_char)
+            
+            # J1
+            if t1 == t2
+                
+                token += next_char
+                
+                # J2
+                cur_char = next_char
+                i += 1
+                next_char = text[i+1]
+                
+            else#if t1 == t2
+                
+                if t1 == "ZEN_KANJI"
+                    
+                    a_kanji.push(token)
+                    
+                    cur_char = next_char
+                    next_char = text[i+1]
+                    
+                else
+                    
+                    a_kanji.push(token)
+                    
+                end
+                
+            end#if t1 == t2
+            
+        end#while (i < (len - 1)) do
+      
+        return "abcdef"
+
+    end#cur_morph(text)
+    
 end
 
 class Test
@@ -103,4 +161,6 @@ end
 # Test.new.do_3
 t = Test.new
 
-t.v_4_1_3_7_zip_file
+t.cut_morph("abc")
+
+# t.v_4_1_3_7_zip_file

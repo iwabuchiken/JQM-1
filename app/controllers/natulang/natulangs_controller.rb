@@ -13,6 +13,11 @@ class Natulang::NatulangsController < ApplicationController
     @text = History.last.content
 
     @msg = Moji.type("漢")
+    
+    nlp = NLP.new()
+    
+    #@msg = nlp.cut_morph(@text)
+    
 
     respond_to do |format|
       format.html # index.html.erb
@@ -89,5 +94,16 @@ class Natulang::NatulangsController < ApplicationController
       format.html { redirect_to natulangs_url }
       format.json { head :no_content }
     end
+    
   end
-end
+
+private
+
+    def cut_morph(text)
+        
+        
+        
+    end#cut_morph(text)
+        
+end#class Natulang::NatulangsController < ApplicationController
+
