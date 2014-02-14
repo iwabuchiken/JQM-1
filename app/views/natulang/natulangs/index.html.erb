@@ -17,6 +17,9 @@ text => <br />
 <%= @msg %>
 <hr />
 
+<!-- http://stackoverflow.com/questions/10673122/how-to-save-canvas-as-an-image-with-canvas-todataurl answered May 20 '12 at 12:39-->
+<div><button onclick="to_image()">Draw to Image</button></div>
+
 <canvas id="myCanvas"
 		width="220" height="300"
 		style="border:1px solid #000000;">
@@ -25,12 +28,18 @@ text => <br />
 	
 </canvas>
 
+
 <img id="scream"
 	src="http://benfranklin.chips.jp/images/2014-01-15_15-35-51_655.jpg"
 	alt="The Scream"
 	width="220" height="277">
+</image>
+
 	
-<%= render :partial => 'natulang/natulangs/index/index_scripts' %>
+<img id="theimage">
+</image>
+	
+<%#= render :partial => 'natulang/natulangs/index/index_scripts' %>
 
 
 <hr />

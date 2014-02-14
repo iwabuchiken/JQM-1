@@ -21,10 +21,10 @@
   <%= csrf_meta_tags %>
   
 
-                    
+	<%= render :partial => 'natulang/natulangs/index/index_scripts' %>
 	
 </head>
-<body>
+<body onload="set_image()">
 
 <%= yield %>
 

@@ -1,12 +1,47 @@
 <script>
-	var c=document.getElementById("myCanvas");
-	var ctx=c.getContext("2d");
-	var img=document.getElementById("scream");
-	ctx.drawImage(img,10,10);
-	
-	ctx.font="30px Arial";
-	ctx.strokeText("Hello!! World",10,50);
+	function set_image() {
+		
+		alert("Loading...");
+		
+		var c=document.getElementById("myCanvas");
+		var img=document.getElementById("scream");
+		
+		var ctx=c.getContext("2d");
+		
+		c.width = img.width;
+		c.height = img.height;
+		
+		
+		ctx.drawImage(img,10,10);
+		
+		ctx.font="30px Arial";
+		ctx.strokeText("Hello!! World",10,50);
+		
+	}//function set_image()
 
+
+	//REF http://stackoverflow.com/questions/10673122/how-to-save-canvas-as-an-image-with-canvas-todataurl answered May 20 '12 at 12:39
+	function to_image(){
+        var canvas = document.getElementById("myCanvas");
+        document.getElementById("theimage").src = canvas.toDataURL();
+        // Canvas2Image.saveAsPNG(canvas);
+        
+        var img    = canvas.toDataURL("image/png");
+        
+        //REF http://www.icebluedesigns.com/saving-your-html-canvas-drawing-to-a-png/
+        window.open(canvas.toDataURL("image/png"));
+		
+		//REF https://bountify.co/export-html-canvas-to-image By InsaneSpiral over 1 year ago
+		// document.write('<img src="'+img+'"/>');
+        
+        //REF http://tech.pro/tutorial/1084/saving-canvas-data-as-an-image
+        //=> Not working
+        // var dataURL = 
+        		// document.getElementById('canvas').toDataURL("image/png");
+        // dataURL = dataURL.replace("image/png", "image/octet-stream");
+      	// document.location.href = dataURL;		
+        
+    }
 
 /*
 	var c=document.getElementById("myCanvas");
