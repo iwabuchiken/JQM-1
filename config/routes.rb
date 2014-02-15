@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
 
+  resources :locations, module: 'location'
+
   resources :natulangs, module: 'natulang'
 
   resources :nlps

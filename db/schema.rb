@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140122071618) do
+ActiveRecord::Schema.define(:version => 20140215003136) do
 
   create_table "abcs", :force => true do |t|
     t.text     "kanji"
@@ -114,6 +114,17 @@ ActiveRecord::Schema.define(:version => 20140122071618) do
     t.integer  "category_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.integer  "m_id"
+    t.integer  "m_created_at"
+    t.integer  "m_modified_at"
+    t.integer  "longitude"
+    t.integer  "latitude"
+    t.text     "memo"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "natulangs", :force => true do |t|

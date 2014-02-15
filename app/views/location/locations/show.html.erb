@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>M:</b>
+  <%= @location.m_id %>
+</p>
+
+<p>
+  <b>M created at:</b>
+  <%= @location.m_created_at %>
+</p>
+
+<p>
+  <b>M modified at:</b>
+  <%= @location.m_modified_at %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @location.longitude %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @location.latitude %>
+</p>
+
+<p>
+  <b>Memo:</b>
+  <%= @location.memo %>
+</p>
+
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>

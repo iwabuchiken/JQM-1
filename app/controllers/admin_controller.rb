@@ -40,20 +40,23 @@ def _main_get_applist
     names   = [
             "TwitterApp",   "NR4",
             "AiKodaka",     "ShoppingList",
-            "EQM",          "NLP"
+            "EQM",          "NLP",
+            "LocationManager"
             ]
     
     conts   = [
             "twitter_app",          "nr4/articles",
             "ai_kodaka/ai_kodakas", "sl/items",
             # "eqm/eqms",             "natulangs"
-            "eqm/eqms",             "natulang/natulangs"
+            "eqm/eqms",             "natulang/natulangs",
+            "location/locations"
             ]
     
     actions = [
             "main",     "index",
             "index",    "index",
-            "index",    "index"
+            "index",    "index",
+            "index"
             ]
     
     names.size.times do |i|
