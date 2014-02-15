@@ -85,4 +85,25 @@ class Location::LocationsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+    def delete_all
+        #REF delete_all http://stackoverflow.com/questions/5322298/deleting-all-records-in-a-database answered Mar 16 '11 at 7:47
+        res = Location.delete_all
+        
+        #debug
+        write_log(
+                  Const::LM::LOG_PATH_LM,
+                  "#{Rails.application.class.to_s.split("::").first} \
+                    #{params[:controller]} # 
+                    #{__method__} // res => #{res}",
+                  # __FILE__,
+                  __FILE__.split("/")[-1],
+                  __LINE__.to_s)
+        
+        
+        redirect_to locations_path, notice: 'Locations were all deleted.'
+        
+    end#delete_all
+
+
 end

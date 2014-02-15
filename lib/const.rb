@@ -39,6 +39,18 @@ module Const
         
     end
     
+    module LM
+    
+        LOG_PATH_LM    = "doc/mylog/lm"
+    
+        LOG_FILE_NAME = "log.log"
+      
+        PASSWD_LM_Key   = "passwd_lm"
+        
+        PASSWD_LM_NewItem   = "lm_NewItem"
+        
+    end
+    
     module Admin
         
         HerokuLocal = {
@@ -56,6 +68,7 @@ module Const
                  "local_url" =>
                     "nr4/articles"},
                     # "http://localhost:3001/articles?class=link"},
+                    
             "natulang/natulangs" =>
                 {"heroku_url" =>
                     "natulangs",
@@ -63,9 +76,20 @@ module Const
                  "local_url" =>
                     "natulangs"},
                     # "http://localhost:3001/articles?class=link"},
+                    
+            "location/locations" =>
+                {"heroku_url" =>
+                    "locations",
+                    # "http://cosmos-jqm-1.herokuapp.com/nr4/articles?class=link",
+                 "local_url" =>
+                    "locations"},
+                    # "http://localhost:3001/articles?class=link"},
         }
         
     end
+
+
+
 end
 
 #doc/backup/nr4

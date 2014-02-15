@@ -1,4 +1,6 @@
+<p id="notice"><%= notice %></p>
 <h1>Listing locations</h1>
+
 
 <table>
   <tr>
@@ -31,3 +33,6 @@
 <br />
 
 <%= link_to 'New Location', new_location_path %>
+
+<hr />
+	<%= render 'location/locations/loc_index/index_delete_all' %>

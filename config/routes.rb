@@ -1,5 +1,7 @@
 JQM1::Application.routes.draw do
 
+    get  "/location/locations/delete_all"
+    
   resources :locations, module: 'location'
 
   resources :natulangs, module: 'natulang'
