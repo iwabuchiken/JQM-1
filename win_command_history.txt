@@ -279,6 +279,9 @@ bundle exec rake db:migrate
 rails generate scaffold Location m_id:integer m_created_at:integer m_modified_at:integer longitude:integer latitude:integer memo:text
 
 rails g migration ChangeColumnLongitudeInLocation
+
+[17/02/2014 10:33:47]----------------------------
+rails g migration ChangeColumnCreatedAtInLocation
  
 aa
 

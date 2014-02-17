@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140215021959) do
+ActiveRecord::Schema.define(:version => 20140217013436) do
 
   create_table "abcs", :force => true do |t|
     t.text     "kanji"
@@ -118,8 +118,8 @@ ActiveRecord::Schema.define(:version => 20140215021959) do
 
   create_table "locations", :force => true do |t|
     t.integer  "m_id"
-    t.integer  "m_created_at"
-    t.integer  "m_modified_at"
+    t.string   "m_created_at"
+    t.string   "m_modified_at"
     t.string   "longitude"
     t.string   "latitude"
     t.text     "memo"

@@ -1,9 +1,21 @@
-<%= form_tag("/sl/items/new") do %>
+<%= form_tag("http://cosmos-jqm-1.herokuapp.com/sl/items/new") do %>
+<%#= form_tag("/sl/items/new") do %>
 	<div class="field">
 		
 		Memo: 
 			<%= text_field :passwd, :lm,
 					:name => 'lm_memo'
+		 	%>
+		 
+		 <br />
+		 
+	</div>
+
+	<div class="field">
+		
+		Created at: 
+			<%= text_field :passwd, :lm,
+					:name => 'lm_mobile_created_at'
 		 	%>
 		 
 		 <br />
