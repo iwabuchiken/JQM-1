@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140217013436) do
+ActiveRecord::Schema.define(:version => 20140217020201) do
 
   create_table "abcs", :force => true do |t|
     t.text     "kanji"
@@ -123,8 +123,9 @@ ActiveRecord::Schema.define(:version => 20140217013436) do
     t.string   "longitude"
     t.string   "latitude"
     t.text     "memo"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "m_created_at_new"
   end
 
   create_table "natulangs", :force => true do |t|

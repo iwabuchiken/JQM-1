@@ -282,6 +282,12 @@ rails g migration ChangeColumnLongitudeInLocation
 
 [17/02/2014 10:33:47]----------------------------
 rails g migration ChangeColumnCreatedAtInLocation
+g p origin master && g p heroku master && heroku run rake db:migrate
+heroku run rake db:migrate
+
+rails g migration AddColumnCreatedAtNewInLocation
+g p origin master && g p heroku master && heroku run rake db:migrate
+
  
 aa
 
