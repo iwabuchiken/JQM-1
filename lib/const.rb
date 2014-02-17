@@ -47,7 +47,7 @@ module Const
       
         PASSWD_LM_Key   = "passwd_lm"
         
-        PASSWD_LM_NewItem   = "lm_NewItem"
+        PASSWD_LM_NewLoc   = "lm_NewLoc"
         
     end
     

@@ -30,6 +30,14 @@ class Sl::ItemsController < ApplicationController
   # GET /items/new.json
   def new
     
+    #debug
+          write_log(
+                Const::SL::LOG_PATH_SL,
+                "new() => Starts",
+                # __FILE__,
+                __FILE__.split("/")[-1],
+                __LINE__.to_s)
+    
     res = _new_data_from_device
     
     if res == true
@@ -41,11 +49,23 @@ class Sl::ItemsController < ApplicationController
                 # __FILE__,
                 __FILE__.split("/")[-1],
                 __LINE__.to_s)
-          
-          redirect_to :controller => 'items', :action => 'index'
-          
-          return
+                
+          if params[Const::LM::PASSWD_LM_Key]
+              
+              redirect_to locations_path
+              # redirect_to :controller => 'locations', :action => 'index'
+              
+              return
+              
+          else
+              
+              
+              redirect_to :controller => 'items', :action => 'index'
+              
+              return
         
+          end
+          
     end
 
     
@@ -166,7 +186,56 @@ private
   #=================================
   def _new_data_from_device
         
-        if !params[Const::SL::PASSWD_SL_Key]
+        #debug
+        write_log(
+              Const::SL::LOG_PATH_SL,
+              "params => #{params}",
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+                  
+        if params[Const::SL::PASSWD_SL_Key] and 
+            params[Const::SL::PASSWD_SL_Key] \
+                    == Const::SL::PASSWD_SL_NewItem
+            
+            
+            msg = _new_data_from_device_NewItem
+
+        elsif params[Const::SL::PASSWD_SL_Key] and
+                params[Const::SL::PASSWD_SL_Key] \
+                    == Const::SL::PASSWD_SL_PurHist#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
+            
+            msg = _new_data_from_device_PurHist
+            
+        elsif params[Const::LM::PASSWD_LM_Key] and
+                params[Const::LM::PASSWD_LM_Key] \
+                    == Const::LM::PASSWD_LM_NewLoc#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
+            
+            msg = _new_data_from_device_NewLoc
+            
+        end#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
+        
+        #debug
+        write_log(
+              Const::SL::LOG_PATH_SL,
+              msg,
+              # __FILE__,
+              __FILE__.split("/")[-1],
+              __LINE__.to_s)
+              
+        return true
+            
+  end#def _new__1_data_from_device
+
+  #=================================
+  # => _new_data_from_device
+  # => @return false => param "passwd_XX" --> nill
+  # =>          true => Operation done
+  #=================================
+  def _new_data_from_device__LM_D_2_v_0
+        
+        if !params[Const::SL::PASSWD_SL_Key] and
+            !params[Const::LM::PASSWD_LM_Key]
             
             #debug
             write_log(
@@ -212,6 +281,11 @@ private
                         == Const::SL::PASSWD_SL_PurHist#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
                 
                 msg = _new_data_from_device_PurHist
+                
+            elsif params[Const::LM::PASSWD_LM_Key] \
+                        == Const::LM::PASSWD_LM_NewLoc#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
+                
+                msg = _new_data_from_device_NewLoc
                 
             end#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
             
@@ -303,4 +377,31 @@ private
         
     end#def _new_data_from_device_NewItem
 
+    def _new_data_from_device_NewLoc
+        
+        lm = Location.new()
+        #item = Item.new
+        
+        lm.m_id          = params['lm_mobile_id']
+        lm.m_created_at  = params['lm_mobile_created_at']
+        lm.m_modified_at  = params['lm_mobile_modified_at']
+        
+        lm.longitude       = params['lm_longitude']
+        lm.latitude        = params['lm_latitude']
+        
+        lm.memo            = params['lm_memo']
+        
+        if lm.save
+            
+            msg = "New location saved => #{lm.class.to_s}"
+            
+        else
+            
+            msg = "Saving new location => Failed"
+            
+        end
+
+        return msg
+
+    end#_new_data_from_device_NewLoc
 end

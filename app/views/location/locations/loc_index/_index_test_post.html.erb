@@ -1,0 +1,33 @@
+<%= form_tag("/sl/items/new") do %>
+	<div class="field">
+		
+		Memo: 
+			<%= text_field :passwd, :lm,
+					:name => 'lm_memo'
+		 	%>
+		 
+		 <br />
+		 
+	</div>
+
+	<div>
+		<%= hidden_field :passwd, :lm,
+					:name => Const::LM::PASSWD_LM_Key,
+					#:name => 'passwd_lm',
+					:value => Const::LM::PASSWD_LM_NewLoc
+					%>
+	</div>
+	
+	<div>
+		<%= hidden_field :passwd, :lm,
+					:name => 'lm_longitude',
+					:value => 2.3.to_s
+					%>
+	</div>
+	
+
+	<div class="field">	
+		<%= submit_tag "Create(/sl/items/new)" %><br />
+	</div>
+	
+<% end %><%#= form_tag do %>
