@@ -213,6 +213,12 @@ private
             
             msg = _new_data_from_device_NewLoc
             
+        elsif params[Const::LM::PASSWD_LM_Key] and
+                params[Const::LM::PASSWD_LM_Key] \
+                    == Const::LM::PASSWD_LM_UpdateLoc#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
+            
+            msg = _new_data_from_device_UpdateLoc
+            
         end#if params['passwd_sl'] == Const::SL::PASSWD_SL_NEW
         
         #debug
@@ -401,6 +407,37 @@ private
             
         end
 
+        return msg
+
+    end#_new_data_from_device_NewLoc
+    
+    def _new_data_from_device_UpdateLoc
+        
+        mobile_id = params[Const::LM::ATTRIBUTES_LM["m_id"]]
+        memo = params[Const::LM::ATTRIBUTES_LM["memo"]]
+        
+        # loc = Location.find_by m_id: mobile_id    # => undefined method `find_by' for #<Class:0x4c95dc8>
+        loc = Location.find_by_m_id(mobile_id)
+        
+        if loc != nil
+            
+            msg = "mobile_id => " + mobile_id.to_s \
+                    + "(loc.m_id => #{loc.m_id.to_s})" \
+                    + " memo => #{memo}"
+            
+            # loc.save
+            #REF update http://maxivak.com/update_attribute-and-update_attributes-ruby-on-rails/
+            loc.update_attribute(:memo, memo)
+                    
+        else
+            
+            msg = "mobile_id => " + mobile_id.to_s \
+                    + "loc => nil"
+            
+        end
+        
+        
+        
         return msg
 
     end#_new_data_from_device_NewLoc

@@ -49,6 +49,21 @@ module Const
         
         PASSWD_LM_NewLoc   = "lm_NewLoc"
         
+        PASSWD_LM_UpdateLoc   = "lm_UpdateLoc"
+        
+        ATTRIBUTES_LM = {
+            
+			"m_id" => "lm_mobile_id",              # 0
+			"m_created" => "lm_mobile_created_at",              # 1
+			"m_modified" => "lm_mobile_modified_at",              # 2
+            
+			"longi" => "lm_longitude",              # 3
+			"lat" => "lm_latitude",              # 4
+            
+			"memo" => "lm_memo"              # 5
+
+        }
+        
     end
     
     module Admin

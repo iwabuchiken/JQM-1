@@ -1,0 +1,41 @@
+LM(R) D-4/v-1.0
+
+<%#= form_tag("http://cosmos-jqm-1.herokuapp.com/sl/items/new") do %>
+<%= form_tag("/sl/items/new") do %>
+	<div>
+		
+		mobile id
+		
+		<%= number_field :passwd, :lm,
+					:name => Const::LM::ATTRIBUTES_LM['m_id']
+					#:name => 'passwd_lm',
+					# :value => 16
+					%>
+		
+	</div>
+	
+	<div class="field">
+		
+		Memo: 
+			<%= text_field :passwd, :lm,
+					# :name => 'lm_memo'
+					:name => Const::LM::ATTRIBUTES_LM['memo']
+		 	%>
+		 
+		 <br />
+		 
+	</div>
+
+	<div>
+		<%= hidden_field :passwd, :lm,
+					:name => Const::LM::PASSWD_LM_Key,
+					#:name => 'passwd_lm',
+					:value => Const::LM::PASSWD_LM_UpdateLoc
+					%>
+	</div>
+	
+	<div class="field">	
+		<%= submit_tag "Create(/sl/items/new)" %><br />
+	</div>
+	
+<% end %><%#= form_tag do %>
