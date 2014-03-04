@@ -431,8 +431,8 @@ private
             #REF update http://maxivak.com/update_attribute-and-update_attributes-ruby-on-rails/
             loc.update_attribute(:memo, memo)
             loc.update_attribute(
-                        :mobile_modified_at,
-                        m_modified_at)
+                        :m_modified_at,
+                        mobile_modified_at)
                     
         else
             
