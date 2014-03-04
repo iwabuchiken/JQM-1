@@ -413,8 +413,10 @@ private
     
     def _new_data_from_device_UpdateLoc
         
-        mobile_id = params[Const::LM::ATTRIBUTES_LM["m_id"]]
-        memo = params[Const::LM::ATTRIBUTES_LM["memo"]]
+        mobile_id           = params[Const::LM::ATTRIBUTES_LM["m_id"]]
+        mobile_modified_at  = 
+                        params[Const::LM::ATTRIBUTES_LM["m_modified"]]
+        memo                = params[Const::LM::ATTRIBUTES_LM["memo"]]
         
         # loc = Location.find_by m_id: mobile_id    # => undefined method `find_by' for #<Class:0x4c95dc8>
         loc = Location.find_by_m_id(mobile_id)
@@ -428,6 +430,9 @@ private
             # loc.save
             #REF update http://maxivak.com/update_attribute-and-update_attributes-ruby-on-rails/
             loc.update_attribute(:memo, memo)
+            loc.update_attribute(
+                        :mobile_modified_at,
+                        mobile_modified_at)
                     
         else
             
